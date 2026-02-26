@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean-Michel Perez — Deux souvenirs scolaires</title>
+<meta name="description" content="Racontez-moi deux souvenirs scolaires. Enquête permanente sur les micro-violences éducatives. Jean-Michel Perez, Université de Lorraine.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --noir: #101828;
+  --noir-profond: #0c1220;
+  --blanc: #f5f0eb;
+  --rouge: #c41e1e;
+  --rouge-vif: #e52020;
+  --rouge-sombre: #1a0505;
+  --bleu: #1565c0;
+  --bleu-vif: #1e88e5;
+  --bleu-sombre: #020d1a;
+  --gris: #888;
+  --gris-clair: #bbb;
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
+
+/* ══════════════════════════════
+   BANDEAU
+   ══════════════════════════════ */
+#bandeau {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 1rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(10,10,10,0.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+  transition: var(--transition);
+}
+#bandeau.scrolled { padding: 0.6rem 2rem; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-weight: 300; letter-spacing: 0.04em; }
+.bandeau-nav { display: flex; gap: 2.2rem; align-items: center; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,240,235,0.92); text-decoration: none; transition: color 0.2s; }
+.bandeau-nav a:hover { color: #fff; }
+.bandeau-id { text-align: right; }
+
+/* ══════════════════════════════
+   SECTION 1 — ENTRÉE
+   ══════════════════════════════ */
+#entree {
+  min-height: 100vh; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 8rem 2rem 4rem; position: relative;
+  background: #0d1b2a;
+}
+#entree::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 35%, rgba(21,101,192,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+/* ── Qui je suis ── */
+#qui-je-suis {
+  min-height: 100vh; background: #0d1b2a;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 6rem 2rem; position: relative; text-align: center;
+}
+.qjs-inner { max-width: 680px; display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+.qjs-question {
+  font-family: 'EB Garamond', serif; font-size: clamp(2rem, 4vw, 3rem);
+  font-style: italic; color: var(--blanc); line-height: 1.3; margin: 0;
+}
+.qjs-reponse {
+  font-family: 'EB Garamond', serif; font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-style: italic; color: rgba(245,240,235,0.5); line-height: 1.6; margin: 0;
+}
+.qjs-compteur {
+  display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+  text-decoration: none; margin-top: 1rem;
+  transition: opacity 0.2s;
+}
+.qjs-compteur:hover { opacity: 0.75; }
+.qjs-n {
+  font-family: 'Inter', sans-serif; font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 800; color: #fff; line-height: 1; letter-spacing: -0.02em;
+}
+.qjs-l {
+  font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 0.22em; color: rgba(245,240,235,0.4);
+}
+.qjs-fleche {
+  font-size: 1.4rem; color: rgba(245,240,235,0.3); margin-top: 0.5rem;
+}
+
+.entree-epigraphe {
+  font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-style: italic; color: rgba(245,240,235,0.42); text-align: center;
+  max-width: 620px; line-height: 1.8; margin-bottom: 3.5rem;
+  letter-spacing: 0.01em; position: relative;
+}
+.entree-phrase { max-width: 680px; text-align: center; margin-bottom: 3rem; position: relative; }
+.entree-phrase h1 {
+  font-size: clamp(1.7rem, 3.8vw, 2.6rem); font-weight: 400;
+  line-height: 1.4; font-style: italic; color: var(--blanc);
+}
+.entree-invite {
+  font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-style: italic; color: rgba(245,240,235,0.55);
+  line-height: 1.7; margin-top: 1.8rem; max-width: 580px; margin-left: auto; margin-right: auto;
+}
+.entree-phrase .sous-invite {
+  font-family: 'Inter', sans-serif; font-size: 0.82rem;
+  color: rgba(245,240,235,0.3); text-transform: uppercase; letter-spacing: 0.18em;
+  margin-top: 1.2rem;
+}
+
+/* Compteurs */
+.compteurs-zone { display: flex; gap: 3rem; justify-content: center; align-items: flex-start; margin: 0 0 1.5rem; flex-wrap: wrap; }
+.compteur-bloc { text-align: center; }
+.compteur-annee { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--gris-clair); margin-bottom: 0.4rem; }
+.compteur-val { font-family: 'Inter', sans-serif; font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 700; color: var(--rouge); line-height: 1; letter-spacing: -0.02em; }
+.compteur-val.bleu-c { color: var(--bleu-vif); }
+.compteur-label { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--gris-clair); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.4rem; }
+.compteur-sep { font-family: 'Inter', sans-serif; font-size: 2rem; color: rgba(245,240,235,0.1); padding-top: 1.2rem; }
+.total-zone { text-align: center; margin: 0.5rem 0 2rem; }
+.total-val { font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 600; color: rgba(245,240,235,0.6); }
+.total-label { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(245,240,235,0.5); margin-top: 0.3rem; }
+.pays-mention { font-family: 'Inter', sans-serif; font-size: 0.88rem; color: rgba(245,240,235,0.45); text-align: center; margin-bottom: 2.5rem; max-width: 500px; line-height: 1.7; }
+
+/* CTA */
+.cta-groupe { display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+.btn-principal {
+  display: inline-block; padding: 1.1rem 3.5rem;
+  background: var(--rouge); color: var(--blanc);
+  font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+  border: none; cursor: pointer; transition: var(--transition);
+}
+.btn-principal:hover { background: #9b1515; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(196,30,30,0.35); }
+.btn-ia {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: transparent; border: 1px solid rgba(245,240,235,0.2);
+  color: rgba(245,240,235,0.65); font-family: 'Inter', sans-serif;
+  font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; transition: var(--transition);
+}
+.btn-ia:hover { border-color: rgba(245,240,235,0.5); color: var(--blanc); }
+
+/* Stats */
+.stats-inline { display: flex; gap: 2.5rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap; }
+.si { text-align: center; }
+.si .n { font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--blanc); line-height: 1; }
+.si .l { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: var(--gris-clair); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.2rem; }
+
+/* ══════════════════════════════
+   DIALOGUE IA — VOICE FIRST
+   Même charge graphique que les flashers
+   ══════════════════════════════ */
+#dialogue-ia {
+  display: none; position: relative;
+  min-height: 100vh; background: #0d1b2a;
+  flex-direction: column; justify-content: center; align-items: center;
+  padding: 8rem 2rem 5rem;
+}
+#dialogue-ia::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(196,30,30,0.06) 0%, transparent 60%);
+  pointer-events: none; transition: background 0.8s;
+}
+#dialogue-ia.bleu-phase::before {
+  background: radial-gradient(ellipse at 50% 40%, rgba(21,101,192,0.06) 0%, transparent 60%);
+}
+#dialogue-ia.visible { display: flex; }
+
+.dialogue-inner {
+  width: 100%; max-width: 780px;
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; position: relative; z-index: 1;
+}
+.dialogue-header {
+  font-family: 'Inter', sans-serif; font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: 0.2em; color: var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.dial-ia-label {
+  font-family: 'Inter', sans-serif; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  color: rgba(196,30,30,0.75); margin-bottom: 2rem; display: block;
+  transition: color 0.5s;
+}
+.dial-ia-label.bleu-label { color: rgba(30,136,229,0.6); }
+
+/* La question — grand, Garamond, comme les flashers */
+.dial-question {
+  max-width: 760px; min-height: 10rem;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 4rem;
+}
+.dial-question p {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+  font-style: italic; line-height: 1.5;
+  color: var(--blanc); transition: opacity 0.4s ease;
+}
+
+/* Confirmation discrète */
+.dial-confirm {
+  font-family: 'Inter', sans-serif; font-size: 0.78rem;
+  color: rgba(245,240,235,0.35); min-height: 1.2em;
+  font-style: italic; margin-bottom: 1.5rem;
+  transition: opacity 0.4s;
+}
+
+/* Grand bouton micro */
+.micro-zone { text-align: center; padding: 0.5rem 0 0.5rem; }
+.btn-micro-grand {
+  width: 88px; height: 88px; border-radius: 50%;
+  background: var(--rouge); border: none; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 0.3rem; margin: 0 auto;
+  box-shadow: 0 4px 28px rgba(196,30,30,0.4); transition: var(--transition);
+}
+.btn-micro-grand.bleu-mic { background: var(--bleu); box-shadow: 0 4px 28px rgba(21,101,192,0.4); }
+.btn-micro-grand:hover { transform: scale(1.06); }
+.btn-micro-grand.enr-actif { animation: pulse 1s infinite; }
+.micro-icon-g { font-size: 2rem; line-height: 1; }
+.micro-label-g { font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.9); }
+.micro-status {
+  font-family: 'Inter', sans-serif; font-size: 0.8rem;
+  color: var(--gris-clair); text-align: center; margin-top: 1rem;
+  min-height: 1.1em; font-style: italic;
+}
+
+/* Bouton valider */
+.dialogue-actions { display: flex; justify-content: center; margin-top: 1.5rem; }
+.btn-valider {
+  padding: 0.85rem 2.8rem; font-family: 'Inter', sans-serif;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  cursor: pointer; border: none; background: var(--rouge); color: var(--blanc);
+  transition: var(--transition);
+}
+.btn-valider:hover { background: #9b1515; }
+.btn-valider.bleu-btn { background: var(--bleu); }
+.btn-valider.bleu-btn:hover { background: #0d47a1; }
+
+/* Progression */
+.dialogue-progress { margin-top: 2.5rem; }
+.prog-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: rgba(245,240,235,0.12); margin: 0 4px; vertical-align: middle; }
+.prog-dot.actif { background: var(--rouge); }
+.prog-dot.bleu-dot.actif { background: var(--bleu-vif); }
+.prog-dot.done { background: rgba(245,240,235,0.35); }
+
+/* ── Intro micro-violences ── */
+.mv-intro { background: #0d1b2a; text-align: center; padding: 6rem 2rem 4rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; gap: 2rem; }
+.mv-video { display: block; width: 100%; max-width: 680px; position: relative; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.6); text-decoration: none; }
+.mv-video img { width: 100%; display: block; filter: brightness(0.75); transition: filter 0.3s; }
+.mv-video:hover img { filter: brightness(0.9); }
+.mv-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: #fff; opacity: 0.85; pointer-events: none; text-shadow: 0 2px 12px rgba(0,0,0,0.5); }
+.mv-video-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.8rem 1.2rem; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); font-family: 'Inter', sans-serif; font-size: 0.75rem; color: rgba(245,240,235,0.7); letter-spacing: 0.04em; }
+.mv-q { font-family: 'EB Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-style: italic; color: var(--blanc); margin: 0 0 0.8rem; }
+.mv-r { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.3rem); font-style: italic; color: rgba(245,240,235,0.45); margin: 0; }
+
+/* ══════════════════════════════
+   FLASHER ROUGE — Micro-violences
+   ══════════════════════════════ */
+.flash-rouge {
+  min-height: 100vh; display: flex; flex-direction: column;
+  justify-content: center; align-items: center; position: relative;
+  transition: background 0.6s ease;
+}
+.flash-rouge.pair { background: #220808; }
+.flash-rouge.impair { background: #1c0505; }
+
+.flash-badge { font-family: 'Inter', sans-serif; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gris-clair); margin-bottom: 3rem; }
+.flash-badge.rouge-b { color: rgba(196,30,30,0.85); }
+.flash-badge.bleu-b { color: rgba(30,136,229,0.85); }
+
+.flash-q {
+  max-width: 860px; padding: 0 2.5rem; text-align: center;
+  min-height: 14rem; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+.flash-q blockquote {
+  font-size: clamp(1.5rem, 3.2vw, 2.4rem); font-style: italic;
+  line-height: 1.42; color: var(--blanc);
+  opacity: 0; transition: opacity 0.5s ease;
+}
+.flash-q blockquote.v { opacity: 1; }
+.flash-q cite {
+  font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair);
+  font-style: normal; letter-spacing: 0.06em; margin-top: 1rem; display: block;
+  opacity: 0; transition: opacity 0.5s ease 0.15s;
+}
+.flash-q cite.v { opacity: 1; }
+
+.flash-pied {
+  position: absolute; bottom: 2.5rem; left: 0; right: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 0.7rem;
+}
+.flash-barre-w { width: 180px; height: 2px; background: rgba(245,240,235,0.08); overflow: hidden; }
+.flash-barre-r { height: 100%; width: 0%; background: var(--rouge); }
+.flash-barre-bl { height: 100%; width: 0%; background: var(--bleu-vif); }
+.flash-controls { display: flex; align-items: center; gap: 1.2rem; font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--gris-clair); }
+.flash-num-txt { letter-spacing: 0.04em; }
+.flash-cd-txt { color: var(--gris-clair); }
+.flash-ctrl-btn {
+  background: none; border: 1px solid rgba(245,240,235,0.12); cursor: pointer;
+  font-family: 'Inter', sans-serif; font-size: 0.68rem; color: var(--gris-clair);
+  padding: 0.2rem 0.6rem; transition: var(--transition);
+}
+.flash-ctrl-btn:hover { color: var(--blanc); border-color: rgba(245,240,235,0.35); }
+
+/* ══════════════════════════════
+   QUESTIONS — même échelle que les flashers
+   ══════════════════════════════ */
+#questions { background: #0d1b2a; padding: 8rem 2rem; }
+.questions-intro { max-width: 800px; margin: 0 auto 7rem; text-align: center; }
+.questions-intro p { font-family: 'EB Garamond', serif; font-size: clamp(1.3rem, 2.8vw, 1.9rem); font-style: italic; color: rgba(245,240,235,0.6); line-height: 1.65; }
+.questions-intro p strong { color: var(--blanc); font-style: normal; }
+
+.q-bloc { max-width: 900px; margin: 0 auto 7rem; padding: 0; background: transparent; border: none; }
+.q-bloc:last-of-type { margin-bottom: 0; }
+.q-num { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(196,30,30,0.75); margin-bottom: 1.8rem; display: block; }
+.q-texte { font-family: 'EB Garamond', serif; font-size: clamp(1.7rem, 3.5vw, 2.6rem); font-style: italic; line-height: 1.4; color: var(--blanc); margin-bottom: 0.8rem; font-weight: 400; }
+.q-sous { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-style: italic; color: rgba(245,240,235,0.38); margin-bottom: 2.2rem; line-height: 1.5; }
+.q-reponses { display: flex; flex-direction: column; gap: 0; max-width: 680px; }
+.q-btn {
+  display: block; padding: 1rem 1.4rem;
+  background: transparent; border: none; border-left: 2px solid rgba(245,240,235,0.07);
+  color: rgba(245,240,235,0.45); font-family: 'Inter', sans-serif;
+  font-size: 0.95rem; text-align: left; cursor: pointer; transition: var(--transition); line-height: 1.5;
+}
+.q-btn:hover { border-left-color: var(--rouge); color: var(--blanc); padding-left: 1.8rem; }
+.q-btn.sel { border-left-color: var(--rouge); color: var(--blanc); background: rgba(196,30,30,0.05); }
+.q-retour {
+  max-height: 0; overflow: hidden; transition: max-height 0.8s ease, padding 0.4s ease;
+  font-family: 'Inter', sans-serif; font-size: 0.88rem; line-height: 1.8;
+  color: rgba(245,240,235,0.55); padding: 0 1.4rem;
+  border-left: 2px solid rgba(196,30,30,0.3); margin-top: 0.3rem;
+}
+.q-retour.v { max-height: 800px; padding: 1.4rem 1.4rem; }
+.q-retour p { margin-bottom: 0.9rem; }
+.q-retour p:last-child { margin-bottom: 0; }
+.q-retour blockquote {
+  font-family: 'EB Garamond', serif; font-style: italic;
+  font-size: 1rem; color: rgba(245,240,235,0.75);
+  border-left: 1px solid rgba(245,240,235,0.15);
+  padding: 0.5rem 1rem; margin: 0.8rem 0;
+}
+.sas-reflexif {
+  max-width: 640px; margin: 3rem auto; padding: 2rem;
+  text-align: center; font-family: 'EB Garamond', serif;
+  font-size: 1.15rem; font-style: italic; color: rgba(245,240,235,0.55);
+  line-height: 1.8; border-top: 1px solid rgba(245,240,235,0.06);
+}
+.sas-reflexif strong { color: rgba(245,240,235,0.8); font-style: normal; }
+
+/* ══════════════════════════════
+   JONCTION BLANCHE
+   ══════════════════════════════ */
+#jonction { background: var(--blanc); color: var(--noir); padding: 7rem 2rem; text-align: center; }
+.jonction-inner { max-width: 640px; margin: 0 auto; }
+.jonction-inner p { font-size: 1.35rem; line-height: 1.7; color: rgba(10,10,10,0.75); }
+.jonction-inner p strong { color: var(--noir); font-weight: 600; }
+.jonction-inner em { color: #444; }
+
+/* ══════════════════════════════
+   FLASHER BLEU — Micro-attentions
+   ══════════════════════════════ */
+.flash-bleu {
+  min-height: 100vh; display: flex; flex-direction: column;
+  justify-content: center; align-items: center; position: relative;
+  transition: background 0.6s ease;
+}
+.flash-bleu.pair { background: #0d1b2a; }
+.flash-bleu.impair { background: #0b1724; }
+
+/* ══════════════════════════════
+   MÉDIATION — format éditorial
+   ══════════════════════════════ */
+#mediation { background: #0d1b2a; }
+
+/* Ouverture */
+.med-ouv { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 7rem 2rem 4rem; }
+.med-ouv h2 { font-family: 'EB Garamond', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 400; font-style: italic; color: var(--blanc); line-height: 1.25; max-width: 820px; }
+.med-ouv .sous { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: rgba(245,240,235,0.5); text-transform: uppercase; letter-spacing: 0.14em; margin-top: 1.8rem; }
+.med-accroche { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.2rem); color: rgba(245,240,235,0.45); max-width: 680px; margin-top: 1.6rem; line-height: 1.6; }
+
+/* Card texte (sans image) */
+.med-card-texte { background: #101520; aspect-ratio: 16/9; }
+.med-card-texte .med-card-over { position: absolute; inset: 0; padding: 2rem 2rem; background: linear-gradient(135deg, rgba(21,101,192,0.08) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; }
+
+/* Card plateforme (ULTV, Pod Unistra — sans vignette YouTube) */
+.med-card-platform { aspect-ratio: 16/9; position: relative; }
+.med-platform-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -55%); display: flex; flex-direction: column; align-items: center; gap: 0.8rem; }
+.med-platform-logo { width: 56px; height: 56px; border-radius: 12px; object-fit: contain; background: rgba(255,255,255,0.08); padding: 8px; opacity: 0.7; transition: opacity 0.3s; }
+.med-card-platform:hover .med-platform-logo { opacity: 1; }
+.med-platform-play { font-size: 1.6rem; color: rgba(245,240,235,0.35); transition: color 0.3s; }
+.med-card-platform:hover .med-platform-play { color: rgba(245,240,235,0.8); }
+
+/* Grille d'images — thumbnails événements */
+.med-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; max-width: 1100px; margin: 0 auto; padding: 0 0 5rem; }
+.med-card { position: relative; overflow: hidden; text-decoration: none; aspect-ratio: 16/9; display: block; background: #111; }
+.med-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s, filter 0.4s; filter: brightness(0.6) saturate(0.85); }
+.med-card:hover img { transform: scale(1.04); filter: brightness(0.4) saturate(0.7); }
+.med-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 52px; height: 52px; background: rgba(245,240,235,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--blanc); opacity: 0; transition: opacity 0.3s; backdrop-filter: blur(6px); }
+.med-card:hover .med-play-btn { opacity: 1; }
+.med-card-over { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.4rem 1.6rem; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 60%); }
+.med-card-tag { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(245,240,235,0.55); margin-bottom: 0.4rem; display: block; }
+.med-card-title { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.3rem); font-style: italic; color: var(--blanc); line-height: 1.35; display: block; }
+.med-card-lieu { font-family: 'Inter', sans-serif; font-size: 0.72rem; color: rgba(245,240,235,0.5); margin-top: 0.3rem; display: block; }
+/* Article The Conversation — pleine largeur */
+.med-card.wide { grid-column: 1 / -1; aspect-ratio: 21/6; }
+.med-card.wide img { object-position: center 30%; }
+@media (max-width: 600px) { .med-grid { grid-template-columns: 1fr; } .med-card.wide { aspect-ratio: 16/9; } }
+
+/* Événements à venir — cartes avec photo/couleur de fond */
+.med-avenir { max-width: 1100px; margin: 0 auto; padding: 3px 0 0; }
+.med-avenir-label { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(245,240,235,0.4); padding: 2rem 2rem 1.5rem; }
+.med-grid-av { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 3px; }
+.med-card-av {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 1.8rem 1.8rem 1.6rem; min-height: 260px;
+  text-decoration: none; position: relative; overflow: hidden;
+  background-size: cover; background-position: center;
+  transition: transform 0.3s ease;
+}
+/* overlay sombre pour lisibilité */
+.med-card-av::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 40%, rgba(0,0,0,0.35) 100%);
+  transition: background 0.3s; z-index: 0;
+}
+.med-card-av:hover::before { background: linear-gradient(to top, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.45) 100%); }
+.med-card-av::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: rgba(245,240,235,0.07); transition: background 0.3s; z-index: 1; }
+.med-card-av:hover::after { background: rgba(196,30,30,0.55); }
+.med-card-av:hover { transform: scale(1.01); }
+/* logo en haut à gauche */
+.med-av-logo-wrap { position: absolute; top: 1.4rem; left: 1.6rem; z-index: 2; }
+.med-av-logo {
+  height: 36px; width: auto; max-width: 120px;
+  object-fit: contain; object-position: left center;
+  filter: brightness(0) invert(1); opacity: 0.75;
+  transition: opacity 0.3s;
+}
+.med-card-av:hover .med-av-logo { opacity: 1; }
+/* contenu texte */
+.med-av-body { position: relative; z-index: 2; }
+.med-av-tag { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(245,240,235,0.5); margin-bottom: 0.7rem; }
+.med-av-titre { font-family: 'EB Garamond', serif; font-size: clamp(1.05rem, 1.7vw, 1.3rem); font-style: italic; color: #fff; line-height: 1.35; margin-bottom: 0.5rem; }
+.med-av-sub { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: rgba(245,240,235,0.6); line-height: 1.5; }
+.med-av-arr { font-size: 0.85rem; color: rgba(245,240,235,0.3); margin-top: 1rem; transition: color 0.3s; }
+.med-card-av:hover .med-av-arr { color: rgba(245,240,235,0.6); }
+@media (max-width: 700px) { .med-grid-av { grid-template-columns: 1fr; } }
+
+/* Rapport TC */
+.rapport-bloc {
+  background-image: url('https://images.theconversation.com/files/665411/original/file-20250502-56-lzbrx8.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C1000%2C500&q=45&auto=format&w=1356&h=668&fit=crop');
+  background-size: cover; background-position: center;
+  position: relative;
+  max-width: 680px; margin: 0 auto; padding: 3rem 2rem;
+  border-left: none; border-radius: 8px; overflow: hidden;
+}
+.rapport-bloc::before {
+  content: ''; position: absolute; inset: 0;
+  background: rgba(10,15,30,0.82);
+  pointer-events: none;
+}
+.rapport-bloc > * { position: relative; z-index: 1; max-width: 680px; margin-left: auto; margin-right: auto; }
+.rapport-bloc .rlabel { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gris-clair); margin-bottom: 1.5rem; display: block; }
+.rapport-bloc blockquote { font-family: 'EB Garamond', serif; font-size: clamp(1.25rem, 2.5vw, 1.65rem); font-style: italic; line-height: 1.6; color: rgba(245,240,235,0.85); }
+.rapport-bloc cite { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-style: normal; display: block; margin-top: 1rem; }
+.rapport-bloc a { color: rgba(245,240,235,0.45); font-family: 'Inter', sans-serif; font-size: 0.85rem; text-decoration: none; border-bottom: 1px solid rgba(245,240,235,0.15); display: inline-block; margin-top: 0.8rem; transition: color 0.3s; }
+.rapport-bloc a:hover { color: var(--blanc); }
+
+/* Ancrage recherche */
+.prog-ancrage { max-width: 820px; margin: 0 auto; padding: 5rem 2rem 7rem; }
+.prog-ancrage::before { content: ''; display: block; width: 36px; height: 2px; background: rgba(245,240,235,0.18); margin-bottom: 2.5rem; }
+.prog-ancrage p { font-family: 'EB Garamond', serif; font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 1.8; color: rgba(245,240,235,0.55); margin-bottom: 1.5rem; }
+.prog-ancrage p:first-of-type { color: rgba(245,240,235,0.8); font-size: clamp(1.25rem, 2.3vw, 1.6rem); }
+.prog-ancrage em { color: var(--blanc); font-style: italic; }
+
+/* ══════════════════════════════
+   PUBLICATIONS & PROFILS
+   ══════════════════════════════ */
+/* ══ PILOTAGE — poste de commande ══ */
+#pilotage {
+  min-height: 100vh;
+  background: #04080f;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 6rem 2rem 0;
+  position: relative;
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+}
+#pilotage::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(21,101,192,0.12) 0%, transparent 65%),
+    repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(245,240,235,0.025) 80px),
+    repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(245,240,235,0.025) 80px);
+  pointer-events: none;
+}
+.pilotage-h {
+  font-family: 'EB Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-style: italic; font-weight: 400;
+  color: rgba(245,240,235,0.7); margin-bottom: 2.8rem;
+  position: relative; letter-spacing: 0.01em;
+}
+
+/* Profils — grille 3×2 de cartes */
+.profils-g {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+.pl {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 2.8rem 1.5rem 2.4rem;
+  text-decoration: none;
+  background: rgba(245,240,235,0.025);
+  border: 1px solid rgba(245,240,235,0.06);
+  transition: var(--transition);
+  text-align: center; gap: 0.8rem;
+  position: relative; overflow: hidden;
+}
+.pl::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px; background: var(--bleu-vif); transform: scaleX(0);
+  transition: transform 0.35s; transform-origin: left;
+}
+.pl:hover { background: rgba(245,240,235,0.06); border-color: rgba(245,240,235,0.14); transform: translateY(-3px); }
+.pl:hover::after { transform: scaleX(1); }
+.pl-logo {
+  width: 52px; height: 52px; object-fit: contain; border-radius: 12px;
+  display: block; margin-bottom: 0.2rem;
+  background: rgba(255,255,255,0.06);
+  padding: 6px;
+}
+.pl-nom {
+  font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 600;
+  color: rgba(245,240,235,0.85); letter-spacing: 0.02em; display: block;
+}
+.pl-desc {
+  font-family: 'Inter', sans-serif; font-size: 0.7rem;
+  color: rgba(245,240,235,0.3); display: block; margin-top: 0.1rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+}
+@media (max-width: 700px) { .profils-g { grid-template-columns: repeat(2, 1fr); } }
+
+/* ══════════════════════════════
+   CONTACT
+   ══════════════════════════════ */
+#contact { padding: 6rem 2rem 4rem; text-align: center; border-top: 1px solid rgba(245,240,235,0.04); }
+#contact a { color: var(--blanc); text-decoration: none; font-family: 'EB Garamond', serif; font-size: 1.3rem; font-style: italic; border-bottom: 1px solid rgba(245,240,235,0.18); transition: var(--transition); }
+#contact a:hover { border-bottom-color: var(--rouge); }
+.contact-lieu { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--gris-clair); margin-top: 1.5rem; line-height: 1.8; }
+.footer-note { font-family: 'Inter', sans-serif; font-size: 0.72rem; color: rgba(245,240,235,0.18); margin-top: 3.5rem; }
+
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.2)} }
+@keyframes fleche-bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(9px)} }
+.scroll-arrow {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  font-size: 2rem; color: #fff; opacity: 0.9;
+  animation: fleche-bounce 1.8s ease-in-out infinite;
+  pointer-events: none; line-height: 1; user-select: none;
+}
+@media (max-width: 600px) {
+  #bandeau{padding:.8rem 1rem;} .compteurs-zone{gap:1.5rem;} .stats-pil{gap:2rem;}
+  .rapport-bloc{margin-left:1rem;} .med-grille{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- BANDEAU -->
+<header id="bandeau">
+  <nav class="bandeau-nav">
+    <a href="#pilotage">Profils &amp; publications</a>
+    <a href="#entree">Sur vos souvenirs</a>
+    <a href="#mediation">M&eacute;diation</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<!-- ═══ ACCUEIL — Micro-violences ═══ -->
+<div class="mv-intro">
+  <p class="mv-q">Les micro-violences &eacute;ducatives. De quoi parle-t-on&nbsp;?</p>
+  <a class="mv-video" href="https://www.youtube.com/shorts/bc_KbxaHDbo" target="_blank" rel="noopener">
+    <img src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Les micro-violences &agrave; l'&eacute;cole : ces petites phrases qui d&eacute;truisent">
+    <div class="mv-play">▶</div>
+    <div class="mv-video-caption">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases qui d&eacute;truisent &mdash; The Conversation France &middot; 8 nov. 2025</div>
+  </a>
+  <div class="scroll-arrow">↓</div>
+</div>
+
+<!-- ═══ FLASHER ROUGE — Micro-violences ═══ -->
+<div class="flash-rouge pair" id="flash-rouge-section">
+  <div class="flash-badge rouge-b">T&eacute;moignages &mdash; recueil de donn&eacute;es</div>
+  <div class="flash-q">
+    <blockquote id="fr-text"></blockquote>
+    <cite id="fr-cite"></cite>
+  </div>
+  <div class="flash-pied">
+    <div class="flash-barre-w"><div class="flash-barre-r" id="fr-barre"></div></div>
+    <div class="flash-controls">
+      <span class="flash-num-txt"><span id="fr-num">1</span>&thinsp;/&thinsp;<span id="fr-tot">20</span></span>
+      <span class="flash-cd-txt">change dans <span id="fr-cd">3</span>s</span>
+      <button class="flash-ctrl-btn" id="fr-pause">⏸</button>
+      <button class="flash-ctrl-btn" id="fr-tous">voir tous ↓</button>
+    </div>
+  </div>
+  <div class="scroll-arrow">↓</div>
+</div>
+
+<!-- Grille complète micro-violences -->
+<div id="mur-rouge-wrap" style="background:#0d1b2a;padding:0 2rem 2rem;display:none;">
+  <div style="columns:3;column-gap:1.2rem;max-width:1200px;margin:0 auto;padding:2rem 0;">
+    <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;En quatri&egrave;me, un de mes professeurs m'a dit "qu'au mieux, je finirai caissi&egrave;re".&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Femme, 44 ans</cite></div>
+    <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;Un prof m'a &eacute;crit "bouffonne" sur la copie.&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Femme, 21 ans</cite></div>
+    <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;Au lyc&eacute;e, une professeure m'a dit&nbsp;: "Arr&ecirc;te d'y aller au talent, t'en as pas."&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Homme, 22 ans</cite></div>
+    <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;Ma prof d'anglais r&eacute;p&eacute;tait que j'&eacute;tais nulle et que je n'aurais jamais mon bac.&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Femme, 22 ans</cite></div>
+    <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;En CM2, ma prof se moquait parce que j'&eacute;tais gros et que je n'arriverais &agrave; rien.&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Homme, 40 ans</cite></div>
+    <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;Prof de physique de seconde m'a expliqu&eacute; que j'&eacute;tais une faillite pour la science.&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Homme</cite></div>
+  </div>
+</div>
+
+<!-- ═══ ENTRÉE ═══ -->
+<section id="entree">
+  <div class="entree-epigraphe">
+    Plonger dans le feu pour pouvoir le comprendre - ne pas s'y noyer pour pouvoir le vivre et le raconter - aupr&egrave;s d'une humanit&eacute; contamin&eacute;e.
+  </div>
+
+  <div class="entree-phrase">
+    <h1>Durant votre parcours scolaire ou universitaire, vous avez peut-&ecirc;tre, vous aussi, v&eacute;cu des moments difficiles - et probablement aussi des moments agr&eacute;ables.</h1>
+    <p class="entree-invite">Nous aimerions vous inviter &agrave; partager deux de vos souvenirs - un qui vous laisse une impression d&eacute;sagr&eacute;able, l'autre plut&ocirc;t agr&eacute;able.</p>
+    <div class="sous-invite">&agrave; travers notre enqu&ecirc;te permanente</div>
+  </div>
+
+  <div class="compteurs-zone">
+    <div class="compteur-bloc">
+      <div class="compteur-annee">2025</div>
+      <div class="compteur-val" id="c2025">1 851</div>
+      <div class="compteur-label">t&eacute;moignages</div>
+    </div>
+    <div class="compteur-sep">+</div>
+    <div class="compteur-bloc">
+      <div class="compteur-annee">Depuis jan. 2026</div>
+      <div class="compteur-val bleu-c" id="c2026">&mdash;</div>
+      <div class="compteur-label">nouveaux t&eacute;moignages</div>
+    </div>
+  </div>
+
+  <div class="total-zone">
+    <div class="total-val">Total depuis le d&eacute;but&nbsp;: <span id="c-total">1 851</span></div>
+    <div class="total-label">depuis mai 2024 &middot; enquête permanente</div>
+  </div>
+
+  <div class="pays-mention">
+    Enquête men&eacute;e en France &mdash; et depuis 2025 &eacute;galement en Allemagne,
+    au Liban, au Mexique, au Congo et en Angleterre.
+  </div>
+
+  <div class="cta-groupe">
+    <a href="https://enquetes.univ-lorraine.fr/index.php/415241?lang=fr" class="btn-principal" target="_blank" rel="noopener">
+      R&eacute;pondre au questionnaire &rarr;
+    </a>
+    <button class="btn-ia" id="btn-ouvrir-ia">
+      <span>🎙</span>
+      Ou me raconter &agrave; voix haute &mdash; ici (version d&rsquo;essai - test)
+    </button>
+  </div>
+
+  <div class="stats-inline">
+    <div class="si"><div class="n">490+</div><div class="l">Citations</div></div>
+    <div class="si"><div class="n">13</div><div class="l">H-index</div></div>
+    <div class="si"><div class="n">102</div><div class="l">Publications HAL</div></div>
+  </div>
+  <div class="scroll-arrow">↓</div>
+</section>
+
+<!-- ═══ QUESTIONS ═══ -->
+<section id="questions">
+
+  <div class="q-bloc" id="q-bloc-1" data-q="1">
+    <span class="q-num">1 / 3</span>
+    <div class="q-texte">L'&eacute;cole prot&egrave;ge nos enfants. Vrai ou faux&nbsp;?</div>
+    <div class="q-sous">Rapport du D&eacute;fenseur des droits &mdash; <em>Enfance et violence&nbsp;: la part des institutions publiques</em>, 2019</div>
+    <div class="q-reponses" id="q-opts-1">
+      <button class="q-btn" onclick="repondreQ(1,0)">Oui - c'est sa mission, elle la remplit</button>
+      <button class="q-btn" onclick="repondreQ(1,1)">Pas toujours, mais elle essaie</button>
+      <button class="q-btn" onclick="repondreQ(1,2)">L'institution elle-m&ecirc;me peut produire de la violence</button>
+    </div>
+    <div class="q-retour" id="qr-1">
+      <p>Quelle que soit votre r&eacute;ponse, voici ce qu'&eacute;crit <strong>Jacques Toubon</strong>, D&eacute;fenseur des droits (2014-2020), dans <em>Enfance et violence&nbsp;: la part des institutions publiques</em> (2019)&nbsp;:</p>
+      <blockquote>&laquo;&nbsp;Les violences sont une r&eacute;alit&eacute; dans le quotidien des enfants, y compris au sein des institutions dans lesquelles ils sont accueillis ou pris en charge.&nbsp;&raquo;</blockquote>
+      <blockquote>&laquo;&nbsp;Le fonctionnement des institutions publiques est susceptible en lui-m&ecirc;me d'induire ou d'amplifier les violences faites aux enfants dont elles ont la charge.&nbsp;&raquo;</blockquote>
+      <p>La loi parle d'une &laquo;&nbsp;&eacute;cole de la bienveillance&nbsp;&raquo; (2013) et d'une &laquo;&nbsp;&eacute;cole de la confiance&nbsp;&raquo; (2019). L'&eacute;cart entre le discours l&eacute;gislatif et la r&eacute;alit&eacute; v&eacute;cue est un gouffre.</p>
+    </div>
+  </div>
+
+  <div class="q-bloc" id="q-bloc-2" data-q="2">
+    <span class="q-num">2 / 3</span>
+    <div class="q-texte">Maintenant que vous savez, est-ce que &ccedil;a change quelque chose&nbsp;?</div>
+    <div class="q-sous">Indignation, normalisation &mdash; le pi&egrave;ge que suivent toutes les controverses sociales</div>
+    <div class="q-reponses" id="q-opts-2">
+      <button class="q-btn" onclick="repondreQ(2,0)">Savoir suffit - la prise de conscience transforme les pratiques</button>
+      <button class="q-btn" onclick="repondreQ(2,1)">Non, rien ne bouge jamais vraiment</button>
+      <button class="q-btn" onclick="repondreQ(2,2)">C'est plus compliqu&eacute; que &ccedil;a</button>
+    </div>
+    <div class="q-retour" id="qr-2">
+      <p>Les controverses sociales suivent presque toujours le m&ecirc;me sc&eacute;nario&nbsp;: d'abord <strong>l'indignation</strong>, puis <strong>la normalisation</strong>. La vache folle, inacceptable en 1996, est devenue un risque &laquo;&nbsp;g&eacute;r&eacute;&nbsp;&raquo;. Le COVID, terreur collective en 2020, fait aujourd'hui partie du d&eacute;cor.</p>
+      <p>Les violences &eacute;ducatives suivent exactement le m&ecirc;me chemin. Transformer demande un sursaut, du courage, de l'entra&icirc;nement - et probablement une capacit&eacute; &agrave; habiter son existence au sein m&ecirc;me des institutions.</p>
+    </div>
+  </div>
+
+  <div class="q-bloc" id="q-bloc-3" data-q="3">
+    <span class="q-num">3 / 3</span>
+    <div class="q-texte">&laquo;&nbsp;&Ccedil;a le forme. On n'est pas chez les Bisounours.&nbsp;&raquo;</div>
+    <div class="q-sous">Holt-Lunstad et al., 2015 &mdash; 70 &eacute;tudes, 3,4 millions de personnes</div>
+    <div class="q-reponses" id="q-opts-3">
+      <button class="q-btn" onclick="repondreQ(3,0)">C'est vrai - l'adversit&eacute; forge le caract&egrave;re</button>
+      <button class="q-btn" onclick="repondreQ(3,1)">Les enfants sont r&eacute;silients, ils s'en remettent</button>
+      <button class="q-btn" onclick="repondreQ(3,2)">L'isolement n'est pas formateur - c'est un danger</button>
+    </div>
+    <div class="q-retour" id="qr-3">
+      <p>Quand un &eacute;l&egrave;ve est isol&eacute; et qu'aucun m&eacute;canisme de reliance ne vient compenser, ce n'est pas du &laquo;&nbsp;caract&egrave;re&nbsp;&raquo; qui se construit. La science est formelle&nbsp;:</p>
+      <p><strong>Holt-Lunstad et al., 2015</strong> (70 &eacute;tudes, 3,4 millions de personnes)&nbsp;: l'isolement social augmente le risque de mortalit&eacute; pr&eacute;matur&eacute;e - un effet sur la sant&eacute; comparable au tabagisme et &agrave; l'ob&eacute;sit&eacute;.</p>
+      <p>Ce n'est pas une question de Bisounours. C'est une question de vivre ensemble. Les micro-attentions - ces gestes minuscules qui disent &laquo;&nbsp;tu existes, tu comptes&nbsp;&raquo; - sont peut-&ecirc;tre le seul antidote que l'&eacute;cole peut inventer de l'int&eacute;rieur. Encore faut-il que nos institutions apprennent &agrave; les prot&eacute;ger.</p>
+    </div>
+  </div>
+
+  <!-- sas réflexif — révélé après Q3 -->
+  <div class="sas-reflexif" id="sas-refl" style="display:none">
+    Il existe aussi des <strong>micro-attentions</strong> - des gestes qui r&eacute;parent, qui reconnaissent, qui tiennent. Mais on ne les d&eacute;couvre pas comme &ccedil;a. Pour y acc&eacute;der, un d&eacute;tour s'impose.
+  </div>
+  <div class="scroll-arrow">↓</div>
+
+</section>
+
+<!-- ═══ FLASHER BLEU — Micro-attentions (déverrouillé après Q3) ═══ -->
+<div class="flash-bleu pair" id="flash-bleu-section">
+  <div class="flash-badge bleu-b">Micro-attentions &mdash; t&eacute;moignages</div>
+  <div class="flash-q">
+    <blockquote id="fb-text"></blockquote>
+    <cite id="fb-cite"></cite>
+  </div>
+  <div class="flash-pied">
+    <div class="flash-barre-w"><div class="flash-barre-bl" id="fb-barre"></div></div>
+    <div class="flash-controls">
+      <span class="flash-num-txt"><span id="fb-num">1</span>&thinsp;/&thinsp;<span id="fb-tot">6</span></span>
+      <span class="flash-cd-txt">change dans <span id="fb-cd">3</span>s</span>
+      <button class="flash-ctrl-btn" id="fb-pause">⏸</button>
+    </div>
+  </div>
+  <div class="scroll-arrow">↓</div>
+</div>
+
+<!-- ═══ DIALOGUE IA — VOICE FIRST ═══ -->
+<section id="dialogue-ia">
+  <div class="dialogue-inner">
+    <div class="dialogue-header">Dialogue de recherche &mdash; vos souvenirs scolaires</div>
+    <span class="dial-ia-label" id="dial-label">Chercheur</span>
+    <div class="dial-question" id="dial-question"><p></p></div>
+    <div class="dial-confirm" id="dial-confirm"></div>
+    <div class="micro-zone" id="micro-zone">
+      <button class="btn-micro-grand" id="btn-micro-d">
+        <span class="micro-icon-g">🎙</span>
+        <span class="micro-label-g">Parler</span>
+      </button>
+      <div class="micro-status" id="micro-status"></div>
+    </div>
+    <div class="dialogue-actions" id="dialogue-actions" style="display:none">
+      <button class="btn-valider" id="btn-valider">Valider &rarr;</button>
+    </div>
+    <div class="dialogue-progress" id="dialogue-progress">
+      <span class="prog-dot actif" id="d0"></span>
+      <span class="prog-dot" id="d1"></span>
+      <span class="prog-dot" id="d2"></span>
+      <span class="prog-dot bleu-dot" id="d3"></span>
+      <span class="prog-dot bleu-dot" id="d4"></span>
+      <span class="prog-dot bleu-dot" id="d5"></span>
+    </div>
+  </div>
+  <div class="scroll-arrow">↓</div>
+</section>
+
+<!-- ═══ MÉDIATION ═══ -->
+<section id="mediation">
+  <div class="med-ouv">
+    <h2>La m&eacute;diation <span>dans tous ses &eacute;tats</span></h2>
+    <div class="sous">Du mus&eacute;um au podcast &middot; De la conf&eacute;rence pl&eacute;ni&egrave;re au court-m&eacute;trage</div>
+    <p class="med-accroche"><em>Construire des ponts entre la production de savoirs acad&eacute;miques et une soci&eacute;t&eacute; civile qui aspire &agrave; habiter son existence&nbsp;: &laquo;&nbsp;Je&nbsp;/ nous suis&nbsp;/ sommes l&rsquo;institution.&nbsp;&raquo;</em></p>
+  </div>
+
+  <div class="med-grid">
+
+    <!-- #1 YouTube — Et demain ? Muséum-Aquarium Nancy -->
+    <a class="med-card" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/maxresdefault.jpg" alt="Table ronde Et demain ? L'&eacute;cole inclusive est un leurre">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">YouTube &middot; Table ronde &middot; 18 sept. 2025</span>
+        <span class="med-card-title">Table ronde &laquo;&nbsp;Et demain&nbsp;?&nbsp;&raquo; - L'&eacute;cole inclusive est un leurre</span>
+        <span class="med-card-lieu">Mus&eacute;um-Aquarium de Nancy</span>
+      </div>
+    </a>
+
+    <!-- #2 Grand témoin AEIM-Adapei 54 -->
+    <a class="med-card" href="https://www.youtube.com/watch?v=5kKB9Uw5FMo" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/5kKB9Uw5FMo/maxresdefault.jpg" alt="Congr&egrave;s AEIM-Adapei 54 &mdash; Grand t&eacute;moin">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">Grand t&eacute;moin &middot; 2024</span>
+        <span class="med-card-title">Micro-violences et les impens&eacute;s du syst&egrave;me scolaire</span>
+        <span class="med-card-lieu">Congr&egrave;s AEIM-Adapei&nbsp;54 &middot; Nancy</span>
+      </div>
+    </a>
+
+    <!-- #3 YouTube — Webinaire CRAP -->
+    <a class="med-card" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/frwjsdUUjB8/hqdefault.jpg" alt="Apprendre par le corps — Webinaire CRAP">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">YouTube &nbsp;&middot;&nbsp; Webinaire &middot; 22 janv. 2025</span>
+        <span class="med-card-title">Apprendre par le corps &mdash; Webinaire CRAP, Cahiers P&eacute;dagogiques N&deg;597</span>
+        <span class="med-card-lieu">CRAP &mdash; Cahiers P&eacute;dagogiques</span>
+      </div>
+    </a>
+
+    <!-- #4 YouTube — CIACE Anáhuac México -->
+    <a class="med-card" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/n8qTSP1OKrI/maxresdefault.jpg" alt="Transformer les pratiques éducatives inclusives — CIACE Anáhuac">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">YouTube &nbsp;&middot;&nbsp; 6 mars 2025</span>
+        <span class="med-card-title">Transformer les pratiques &eacute;ducatives inclusives &mdash; CIACE An&aacute;huac M&eacute;xico</span>
+        <span class="med-card-lieu">Universidad An&aacute;huac M&eacute;xico</span>
+      </div>
+    </a>
+
+    <!-- #5 ULTV — Entendu! ep.49 -->
+    <a class="med-card" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener">
+      <img src="https://ultv.univ-lorraine.fr/media/cache/f5/93/f593c3665619cd718d11b470f0fe7eb7.jpg" alt="Entendu ! ep.49 — Déconstruire la non-violence">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">ULTV &nbsp;&middot;&nbsp; Entendu&nbsp;! ep.&nbsp;49 &middot; 15 oct. 2025</span>
+        <span class="med-card-title">D&eacute;construire la non-violence&nbsp;: micro-violences et impens&eacute;s institutionnels</span>
+        <span class="med-card-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine</span>
+      </div>
+    </a>
+
+    <!-- #6 Pod Unistra — Le Code Soleil -->
+    <a class="med-card" href="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/" target="_blank" rel="noopener">
+      <img src="https://pod.unistra.fr/media/files/3607c8d0f929c8254eb000fae84af96a1c636fe7ad2f3613d2899d03455fc734/05-jean-michel-perez.png" alt="Le Code Soleil — INSPE Strasbourg">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">Pod Unistra &nbsp;&middot;&nbsp; 12-13 oct. 2023</span>
+        <span class="med-card-title">Le Code Soleil&nbsp;: des micro-violences et des micro-attentions au sein des institutions</span>
+        <span class="med-card-lieu">INSPE Strasbourg &mdash; Centenaire du Code Soleil</span>
+      </div>
+    </a>
+
+    <!-- #7 ULTV — Entendu! ep.21 Mal-vivre -->
+    <a class="med-card" href="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/" target="_blank" rel="noopener">
+      <img src="https://ultv.univ-lorraine.fr/media/cache/ed/f8/edf89fa2897b00151bdd4ff9dc162d96.jpg" alt="Mal-vivre à l'école — Entendu ! ep.21">
+      <div class="med-play-btn">▶</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">ULTV &nbsp;&middot;&nbsp; Entendu&nbsp;! ep.&nbsp;21 &middot; 12 oct. 2022</span>
+        <span class="med-card-title">Mal-vivre &agrave; l&rsquo;&eacute;cole&nbsp;: n&eacute;gligences, micro-violences et attitudes banalis&eacute;es <em>(avec L.&nbsp;Muller)</em></span>
+        <span class="med-card-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine</span>
+      </div>
+    </a>
+
+    <!-- #8 Rapport d'impact TC 2025 -->
+    <a class="med-card" href="https://cdn.theconversation.com/static_files/files/4077/Rapport_d%27impact_2025_compressed_%281%29.pdf" target="_blank" rel="noopener">
+      <img src="https://images.theconversation.com/files/665411/original/file-20250502-56-lzbrx8.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C1000%2C500&q=45&auto=format&w=1356&h=668&fit=crop" alt="Rapport d'impact 2025 The Conversation">
+      <div class="med-card-over">
+        <span class="med-card-tag">Rapport d'impact &middot; The Conversation France &middot; 2025</span>
+        <span class="med-card-title">Impact #5 Recherche, p. 30 - &laquo;&nbsp;Une dynamique collective, riche et inattendue&nbsp;&raquo;</span>
+        <span class="med-card-lieu">Jean-Michel Perez, Universit&eacute; de Lorraine</span>
+      </div>
+    </a>
+
+  </div><!-- /.med-grid -->
+
+  <!-- 3.6 Conférences à venir -->
+  <div class="med-avenir">
+    <div class="med-avenir-label">3.6 &nbsp;&mdash;&nbsp; Conf&eacute;rences &agrave; venir</div>
+    <div class="med-grid-av">
+
+      <!-- OPHriS Toulouse — mars 2026 (photo: bandeau officiel orange/Toulouse) -->
+      <a class="med-card-av" href="https://ophris26.sciencesconf.org/" target="_blank" rel="noopener"
+         style="background-image: url('https://ophris26.sciencesconf.org/data/header/Sans_titre_5.png');">
+        <div class="med-av-logo-wrap">
+          <img class="med-av-logo" src="https://www.google.com/s2/favicons?domain=sciencesconf.org&sz=128" alt="OPHriS">
+        </div>
+        <div class="med-av-body">
+          <div class="med-av-tag">OPHriS &middot; 13-14 mars 2026 &middot; Toulouse</div>
+          <div class="med-av-titre">Accessibilit&eacute; et hypocrisie organisationnelle</div>
+          <div class="med-av-sub">Une lecture institutionnelle et critique de l&rsquo;Universit&eacute; dite &laquo;&nbsp;inclusive&nbsp;&raquo; &mdash; avec G.&nbsp;Suau &amp; M.&nbsp;Gualandi</div>
+          <div class="med-av-arr">↗</div>
+        </div>
+      </a>
+
+      <!-- Colloque IDEE — ULB Bruxelles — mars 2026 (couleur institutionnelle ULB) -->
+      <a class="med-card-av" href="https://www.ulb.be/" target="_blank" rel="noopener"
+         style="background: linear-gradient(135deg, #001f6b 0%, #003189 50%, #0046c8 100%);">
+        <div class="med-av-logo-wrap">
+          <img class="med-av-logo" src="https://www.ulb.be/uas/ulbout/LOGO/Logo-ULB.svg" alt="ULB"
+               style="filter: brightness(0) invert(1); opacity: 0.9; height: 42px;">
+        </div>
+        <div class="med-av-body">
+          <div class="med-av-tag">Colloque IDEE &middot; ULB &middot; 30-31 mars 2026 &middot; Bruxelles</div>
+          <div class="med-av-titre">Diversit&eacute; culturelle et &eacute;ducation inclusive</div>
+          <div class="med-av-sub">Alt&eacute;rit&eacute;, alt&eacute;risation et pratiques transformatrices &mdash; avec G.&nbsp;Suau &amp; E.&nbsp;Marques</div>
+          <div class="med-av-arr">↗</div>
+        </div>
+      </a>
+
+      <!-- Lycée Français Jean Monnet — Bruxelles — avril 2026 (couleur AEFE bleue) -->
+      <a class="med-card-av" href="https://www.lyceefrancais-jmonnet.be/" target="_blank" rel="noopener"
+         style="background: linear-gradient(135deg, #002395 0%, #1a3a8f 50%, #2b4bb5 100%);">
+        <div class="med-av-logo-wrap">
+          <span style="font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.85); border:1px solid rgba(255,255,255,0.35); padding:0.3rem 0.7rem;">LFM Bruxelles</span>
+        </div>
+        <div class="med-av-body">
+          <div class="med-av-tag">Conf&eacute;rence pl&eacute;ni&egrave;re &middot; 10-11 avr. 2026 &middot; Bruxelles</div>
+          <div class="med-av-titre">L&rsquo;&eacute;cole inclusive est un leurre</div>
+          <div class="med-av-sub">Coll. &laquo;&nbsp;Inclusion et Partage&nbsp;&raquo; &middot; Lyc&eacute;e Fran&ccedil;ais Jean Monnet</div>
+          <div class="med-av-arr">↗</div>
+        </div>
+      </a>
+
+      <!-- REF 2026 — Sherbrooke (photo: campus hiver) -->
+      <a class="med-card-av" href="#" target="_blank" rel="noopener"
+         style="background-image: url('https://www.usherbrooke.ca/accueil/fileadmin/templates/accueil/images-entete/hiver.jpg');">
+        <div class="med-av-logo-wrap">
+          <img class="med-av-logo" src="https://www.google.com/s2/favicons?domain=usherbrooke.ca&sz=128" alt="U de Sherbrooke">
+        </div>
+        <div class="med-av-body">
+          <div class="med-av-tag">REF 2026 &middot; Sherbrooke &middot; avec G.&nbsp;Suau</div>
+          <div class="med-av-titre">Pratiques inclusives et micro-dispositifs de pouvoir</div>
+          <div class="med-av-sub">Ce que les micro-violences disent de l&rsquo;accessibilit&eacute; aux savoirs</div>
+          <div class="med-av-arr">↗</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+
+</section>
+
+<!-- ═══ PROFILS / PILOTAGE ═══ -->
+<section id="pilotage">
+  <div class="pilotage-h">Profils &amp; publications &mdash; Jean-Michel Perez</div>
+  <div class="profils-g">
+    <a class="pl" href="https://scholar.google.com/citations?user=LjmJvZQAAAAJ" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=128" alt="Google Scholar">
+      <span class="pl-nom">Google Scholar</span>
+      <span class="pl-desc">490+ citations &middot; H-index 13</span>
+    </a>
+    <a class="pl" href="https://cv.hal.science/jean-michel-perez" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=hal.science&sz=128" alt="HAL">
+      <span class="pl-nom">HAL — CV complet</span>
+      <span class="pl-desc">102 d&eacute;p&ocirc;ts &middot; Archives ouvertes</span>
+    </a>
+    <a class="pl" href="https://orcid.org/0000-0001-9677-7364" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=orcid.org&sz=128" alt="ORCID">
+      <span class="pl-nom">ORCID</span>
+      <span class="pl-desc">0000-0001-9677-7364</span>
+    </a>
+    <a class="pl" href="https://theconversation.com/profiles/jean-michel-perez-2355347" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=theconversation.com&sz=128" alt="The Conversation">
+      <span class="pl-nom">The Conversation</span>
+      <span class="pl-desc">28&thinsp;000 lectures</span>
+    </a>
+    <a class="pl" href="https://www.lisec-recherche.eu/membre/perez-jean-michel/" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=lisec-recherche.eu&sz=128" alt="LISEC">
+      <span class="pl-nom">LISEC</span>
+      <span class="pl-desc">Laboratoire UR 2310 &middot; P&ocirc;le CLCS</span>
+    </a>
+    <a class="pl" href="https://scanr.enseignementsup-recherche.gouv.fr/person/idref117204080" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=scanr.enseignementsup-recherche.gouv.fr&sz=128" alt="scanR">
+      <span class="pl-nom">scanR</span>
+      <span class="pl-desc">Portail national de la recherche</span>
+    </a>
+  </div>
+</section>
+
+<footer id="contact">
+  <a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a>
+  <div class="contact-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine &middot; Nancy<br>LISEC (UR 2310) &middot; P&ocirc;le scientifique CLCS</div>
+  <div class="footer-note">&copy; 2026 Jean-Michel Perez</div>
+</footer>
+
+<script>
+// ── Bandeau ──
+const bandeau = document.getElementById('bandeau');
+window.addEventListener('scroll', () => bandeau.classList.toggle('scrolled', window.scrollY > 80));
+
+// ── Compteur 2025 animé ──
+const c2025el = document.getElementById('c2025');
+let done2025 = false;
+const obs2025 = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting && !done2025) {
+    done2025 = true;
+    const cible = 1851, dur = 2000, start = performance.now();
+    const step = now => {
+      const p = Math.min((now-start)/dur,1), e = 1-Math.pow(1-p,3);
+      c2025el.textContent = Math.floor(cible*e).toLocaleString('fr-FR');
+      if (p<1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+}, { threshold: 0.5 });
+obs2025.observe(c2025el);
+
+// ── Compteur 2026 via GAS (activer quand URL dispo) ──
+// async function fetch2026() { try { const r = await fetch('https://script.google.com/macros/s/XXXX/exec?action=count2026'); const d = await r.json(); if (d.count !== undefined) { document.getElementById('c2026').textContent = d.count.toLocaleString('fr-FR'); document.getElementById('c-total').textContent = (1851 + d.count).toLocaleString('fr-FR'); } } catch(e) {} }
+// fetch2026(); setInterval(fetch2026, 60000);
+
+// ── Questions (toutes visibles, déverrouillage après les 3) ──
+var qAnswered = 0;
+window.repondreQ = function(etape, choix) {
+  const opts = document.getElementById('q-opts-' + etape);
+  if (opts.querySelector('button[disabled]')) return; // déjà répondu
+  opts.querySelectorAll('button').forEach(b => { b.disabled = true; });
+  opts.querySelectorAll('button')[choix].classList.add('sel');
+  const fb = document.getElementById('qr-' + etape);
+  fb.classList.add('v');
+  fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  qAnswered++;
+  if (qAnswered >= 3) {
+    setTimeout(() => {
+      const sas = document.getElementById('sas-refl');
+      if (sas) { sas.style.display = 'block'; sas.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+      setTimeout(() => {
+        const bleu = document.getElementById('flash-bleu-section');
+        if (bleu) { bleu.style.display = 'block'; bleu.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+      }, 1200);
+    }, 2200);
+  }
+};
+
+// ── FLASHER générique ──
+function creerFlasher({ textes, sectionEl, textEl, citeEl, barreEl, numEl, totEl, cdEl, pauseBtn, tousBtnId, mursEl }) {
+  let idx = 0, paused = false, startT, elapsed = 0, raf;
+  const DUR = 3000;
+  totEl.textContent = textes.length;
+  function setBg() {
+    sectionEl.className = sectionEl.className.replace(/\s*(pair|impair)/, '');
+    sectionEl.classList.add(idx % 2 === 0 ? 'pair' : 'impair');
+  }
+  function show(i) {
+    textEl.classList.remove('v'); citeEl.classList.remove('v');
+    setTimeout(() => {
+      textEl.innerHTML = textes[i].q;
+      citeEl.textContent = textes[i].c;
+      textEl.classList.add('v'); citeEl.classList.add('v');
+    }, 280);
+    numEl.textContent = i + 1;
+    setBg();
+  }
+  function tick(ts) {
+    if (!startT) startT = ts;
+    const delta = ts - startT + elapsed;
+    const pct = Math.min(delta / DUR, 1);
+    barreEl.style.width = (pct * 100) + '%';
+    cdEl.textContent = Math.max(Math.ceil((DUR - delta) / 1000), 0);
+    if (delta >= DUR) {
+      idx = (idx + 1) % textes.length;
+      show(idx);
+      elapsed = 0; startT = ts;
+      barreEl.style.transition = 'none'; barreEl.style.width = '0%';
+      setTimeout(() => barreEl.style.transition = '', 40);
+    }
+    if (!paused) raf = requestAnimationFrame(tick);
+  }
+  show(0);
+  raf = requestAnimationFrame(tick);
+  pauseBtn.addEventListener('click', () => {
+    paused = !paused;
+    if (paused) { elapsed += performance.now() - startT; startT = null; cancelAnimationFrame(raf); pauseBtn.textContent = '▶'; }
+    else { startT = null; pauseBtn.textContent = '⏸'; raf = requestAnimationFrame(tick); }
+  });
+  if (tousBtnId && mursEl) {
+    document.getElementById(tousBtnId).addEventListener('click', () => {
+      const vis = mursEl.style.display !== 'none';
+      mursEl.style.display = vis ? 'none' : 'block';
+      document.getElementById(tousBtnId).textContent = vis ? 'voir tous ↓' : 'masquer ↑';
+    });
+  }
+}
+
+const ROUGES = [
+  {q:'&laquo;&nbsp;En quatrième, un de mes professeurs m\'a dit "qu\'au mieux, je finirai caissière".&nbsp;&raquo;', c:'Femme, 44 ans'},
+  {q:'&laquo;&nbsp;Un prof m\'a écrit "bouffonne" sur la copie.&nbsp;&raquo;', c:'Femme, 21 ans'},
+  {q:'&laquo;&nbsp;En CP, mon instituteur a dit à mon père que je ne ferai jamais rien dans la vie.&nbsp;&raquo;', c:'Femme, 50 ans'},
+  {q:'&laquo;&nbsp;Au lycée, une professeure m\'a répondu en me donnant ma copie&nbsp;: "Arrête d\'y aller au talent, t\'en as pas."&nbsp;&raquo;', c:'Homme, 22 ans'},
+  {q:'&laquo;&nbsp;Ma prof d\'anglais de terminale répétait que j\'étais nulle et que je n\'aurais jamais mon bac.&nbsp;&raquo;', c:'Femme, 22 ans'},
+  {q:'&laquo;&nbsp;Au collège, la directrice me tapait avec son parapluie en déformant mon prénom.&nbsp;&raquo;', c:'Femme, 31 ans'},
+  {q:'&laquo;&nbsp;En première, la professeure de math m\'a applaudie de manière sarcastique (4/20).&nbsp;&raquo;', c:'Femme, 20 ans'},
+  {q:'&laquo;&nbsp;En CM2, ma prof principale se moquait parce que j\'étais gros et que je n\'arriverais à rien.&nbsp;&raquo;', c:'Homme, 40 ans'},
+  {q:'&laquo;&nbsp;Prof de physique de seconde m\'a expliqué que j\'étais une faillite pour la science.&nbsp;&raquo;', c:'Homme'},
+  {q:'&laquo;&nbsp;En 3ème, ma professeure d\'anglais a dit devant toute la classe que j\'étais "conne".&nbsp;&raquo;', c:'Femme, 21 ans'},
+  {q:'&laquo;&nbsp;En seconde, le professeur principal m\'a dit que je ferais mieux d\'aller en lycée professionnel.&nbsp;&raquo;', c:'Femme, 53 ans'},
+  {q:'&laquo;&nbsp;"T\'es un p\'tit branleur, et je n\'aime ni le terme ni la chose."&nbsp;&raquo;', c:'Homme, 61 ans'},
+  {q:'&laquo;&nbsp;En 2nde, mon professeur de mathématiques m\'a clairement fait comprendre que je n\'irais pas loin. J\'ai perdu toute confiance en moi.&nbsp;&raquo;', c:'Femme, 20 ans'},
+  {q:'&laquo;&nbsp;Une professeure refusait de m\'appeler par mon prénom. Elle a persisté toute l\'année.&nbsp;&raquo;', c:'Femme, 22 ans'},
+  {q:'&laquo;&nbsp;J\'ai été harcelée en 6ème car j\'avais 18 de moyenne. "Oh l\'intello, en plus t\'as des lunettes."&nbsp;&raquo;', c:'Femme, 24 ans'},
+  {q:'&laquo;&nbsp;En deuxième année de primaire, ma professeure m\'a dit que j\'étais bête comme un âne.&nbsp;&raquo;', c:'Femme, 26 ans'},
+  {q:'&laquo;&nbsp;Mes professeurs du lycée m\'ont orientée vers une filière parallèle sans me croire capable.&nbsp;&raquo;', c:'Femme, 40 ans'},
+  {q:'&laquo;&nbsp;Un professeur critiquait énormément les élèves qui ne réussissaient pas. Il nous décourageait.&nbsp;&raquo;', c:'Femme, 22 ans'},
+  {q:'&laquo;&nbsp;Ma maîtresse de CE2 me tirait les cheveux et se trompait dans mes notes de bulletins.&nbsp;&raquo;', c:'Femme, 48 ans'},
+  {q:'&laquo;&nbsp;En 2nde, j\'ai pleuré silencieusement en rendant ma copie. Il regardait ailleurs.&nbsp;&raquo;', c:'Femme, 30 ans'},
+];
+
+const BLEUS = [
+  {q:'&laquo;&nbsp;Un professeur de français en 3ème m\'a dit que j\'avais du talent pour l\'écriture. Personne ne me l\'avait jamais dit. J\'y pense encore.&nbsp;&raquo;', c:'Femme, 34 ans'},
+  {q:'&laquo;&nbsp;Ma professeure de CM1 passait près de moi et murmurait "je sais que tu sais". Ça suffisait.&nbsp;&raquo;', c:'Femme, 28 ans'},
+  {q:'&laquo;&nbsp;Mon instituteur m\'a dit&nbsp;: "Tu n\'es pas obligé d\'être comme les autres pour être bien." J\'avais 9 ans.&nbsp;&raquo;', c:'Homme, 45 ans'},
+  {q:'&laquo;&nbsp;Un prof de philo a lu mon devoir à voix haute — pour me montrer que ce que je pensais avait de la valeur.&nbsp;&raquo;', c:'Homme, 29 ans'},
+  {q:'&laquo;&nbsp;Ma maîtresse de CE1 m\'a appris à lire sans pression, sans comparaison. Juste de la patience. Je suis devenue bibliothécaire.&nbsp;&raquo;', c:'Femme, 52 ans'},
+  {q:'&laquo;&nbsp;Quand j\'ai redoublé, le nouveau prof principal m\'a dit&nbsp;: "Un redoublement, c\'est pas un échec. C\'est un détour." J\'ai fini ingénieur.&nbsp;&raquo;', c:'Homme, 38 ans'},
+];
+
+creerFlasher({
+  textes: ROUGES, sectionEl: document.getElementById('flash-rouge-section'),
+  textEl: document.getElementById('fr-text'), citeEl: document.getElementById('fr-cite'),
+  barreEl: document.getElementById('fr-barre'), numEl: document.getElementById('fr-num'),
+  totEl: document.getElementById('fr-tot'), cdEl: document.getElementById('fr-cd'),
+  pauseBtn: document.getElementById('fr-pause'), tousBtnId: 'fr-tous',
+  mursEl: document.getElementById('mur-rouge-wrap'),
+});
+creerFlasher({
+  textes: BLEUS, sectionEl: document.getElementById('flash-bleu-section'),
+  textEl: document.getElementById('fb-text'), citeEl: document.getElementById('fb-cite'),
+  barreEl: document.getElementById('fb-barre'), numEl: document.getElementById('fb-num'),
+  totEl: document.getElementById('fb-tot'), cdEl: document.getElementById('fb-cd'),
+  pauseBtn: document.getElementById('fb-pause'),
+});
+
+// ══════════════════════════════
+// DIALOGUE IA — VOICE FIRST
+// ══════════════════════════════
+const FLOW = [
+  { id:0, ia:'Durant votre parcours scolaire ou universitaire, vous avez peut-être vécu des moments difficiles.\n\nNous vous invitons à partager l\'un de ces moments — librement, sans contrainte de longueur ni de détail.', type:'rouge' },
+  { id:1, ia:'Quel âge aviez-vous à cette époque, et à quel niveau étiez-vous ?', type:'rouge' },
+  { id:2, ia:'En y réfléchissant maintenant — ce souvenir a-t-il influencé votre orientation scolaire, professionnelle, ou des décisions importantes dans votre vie ?', type:'rouge' },
+  { id:3, ia:'Durant ce même parcours académique, vous avez probablement aussi vécu des moments agréables.\n\nNous vous invitons à décrire l\'un de ces moments.', type:'bleu' },
+  { id:4, ia:'En y réfléchissant maintenant — ce souvenir a-t-il influencé certains de vos choix, votre confiance en vous, ou votre rapport au savoir ?', type:'bleu' },
+  { id:5, ia:'Merci pour ces deux souvenirs.\n\nVos réponses contribuent à une enquête sur les micro-violences et micro-attentions éducatives menée à l\'Université de Lorraine.\n\nSouhaitez-vous aller plus loin avec le questionnaire complet ?', type:'fin' },
+];
+
+let etape = 0;
+const reponses = [];
+const dialQuestion  = document.getElementById('dial-question');
+const dialLabel     = document.getElementById('dial-label');
+const dialConfirm   = document.getElementById('dial-confirm');
+const btnValider    = document.getElementById('btn-valider');
+const dialogueActions = document.getElementById('dialogue-actions');
+const microStatus   = document.getElementById('micro-status');
+const microZone     = document.getElementById('micro-zone');
+const dialogueIA    = document.getElementById('dialogue-ia');
+
+function majProgression(i) {
+  for (let j = 0; j < 6; j++) {
+    const d = document.getElementById('d'+j);
+    if (!d) continue;
+    d.className = 'prog-dot' + (j < 3 ? '' : ' bleu-dot') + (j < i ? ' done' : (j === i ? ' actif' : ''));
+  }
+}
+
+function lancerEtape(i) {
+  if (i >= FLOW.length) return;
+  const f = FLOW[i];
+  const isBleu = i >= 3;
+  // Texte de la question — fade
+  const qEl = dialQuestion.querySelector('p');
+  qEl.style.opacity = '0';
+  setTimeout(() => { qEl.innerHTML = f.ia.replace(/\n/g, '<br>'); qEl.style.opacity = '1'; }, 300);
+  // Couleurs
+  dialLabel.className = 'dial-ia-label' + (isBleu ? ' bleu-label' : '');
+  document.getElementById('btn-micro-d').className = 'btn-micro-grand' + (isBleu ? ' bleu-mic' : '');
+  btnValider.className = 'btn-valider' + (isBleu ? ' bleu-btn' : '');
+  // Fond radial
+  dialogueIA.classList.toggle('bleu-phase', isBleu);
+  majProgression(i);
+  // Étape finale
+  if (f.type === 'fin') {
+    microZone.style.display = 'none';
+    dialogueActions.style.display = 'none';
+    const btns = document.createElement('div');
+    btns.style.cssText = 'display:flex;gap:.8rem;margin-top:2rem;flex-wrap:wrap;justify-content:center;';
+    const oui = document.createElement('button');
+    oui.className = 'btn-valider'; oui.textContent = 'Oui, aller plus loin →';
+    oui.addEventListener('click', () => window.open('https://enquetes.univ-lorraine.fr/index.php/415241?lang=fr','_blank'));
+    const non = document.createElement('button');
+    non.className = 'btn-valider'; non.style.background = '#333'; non.textContent = 'Non, merci';
+    non.addEventListener('click', () => { dialConfirm.textContent = 'Merci pour votre temps.'; btns.remove(); });
+    btns.appendChild(oui); btns.appendChild(non);
+    dialQuestion.after(btns);
+  }
+}
+
+document.getElementById('btn-ouvrir-ia').addEventListener('click', () => {
+  dialogueIA.classList.add('visible');
+  dialogueIA.scrollIntoView({ behavior: 'smooth' });
+  lancerEtape(0);
+});
+
+btnValider.addEventListener('click', () => {
+  if (!audioBlob || FLOW[etape]?.type === 'fin') return;
+  reponses.push({ q: FLOW[etape].id, r: '[Audio]' });
+  audioBlob = null;
+  microStatus.textContent = '';
+  dialogueActions.style.display = 'none';
+  dialConfirm.textContent = '✓';
+  const micBtn = document.getElementById('btn-micro-d');
+  micBtn.classList.remove('enr-actif');
+  micBtn.querySelector('.micro-label-g').textContent = 'Parler';
+  microZone.style.display = 'block';
+  etape++;
+  if (etape < FLOW.length) {
+    setTimeout(() => { dialConfirm.textContent = ''; lancerEtape(etape); }, 700);
+  }
+});
+
+// ── Micro audio voice-first (Safari compatible) ──
+let mediaRec, chunks = [], audioBlob;
+const btnMicD = document.getElementById('btn-micro-d');
+
+btnMicD.addEventListener('click', async () => {
+  if (mediaRec && mediaRec.state === 'recording') {
+    mediaRec.stop();
+    btnMicD.classList.remove('enr-actif');
+    btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+    return;
+  }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    chunks = [];
+    const mime = ['audio/mp4','audio/aac','audio/webm'].find(m => MediaRecorder.isTypeSupported(m)) || '';
+    mediaRec = new MediaRecorder(stream, mime ? { mimeType: mime } : {});
+    mediaRec.ondataavailable = e => chunks.push(e.data);
+    mediaRec.onstop = () => {
+      audioBlob = new Blob(chunks, { type: mime || 'audio/webm' });
+      stream.getTracks().forEach(t => t.stop());
+      microStatus.textContent = 'Audio enregistré ✓ — transcription à venir';
+      dialogueActions.style.display = 'flex';
+      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+    };
+    mediaRec.start();
+    btnMicD.classList.add('enr-actif');
+    btnMicD.querySelector('.micro-label-g').textContent = 'Stop ⏹';
+    microStatus.textContent = 'Enregistrement en cours…';
+  } catch(e) {
+    microStatus.textContent = 'Microphone inaccessible';
+  }
+});
+
+// ── Animations scroll cartes médiation ──
+const animEls = document.querySelectorAll('.med-carte');
+const ao = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } });
+}, { threshold: 0.1 });
+animEls.forEach(el => { el.style.opacity='0'; el.style.transform='translateY(18px)'; el.style.transition='opacity .5s ease, transform .5s ease'; ao.observe(el); });
+</script>
+</body>
+</html>
