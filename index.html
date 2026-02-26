@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jean-Michel Perez — Deux souvenirs scolaires</title>
-<meta name="description" content="Racontez-moi deux souvenirs scolaires. Enquête permanente sur les micro-violences éducatives. Jean-Michel Perez, Université de Lorraine.">
+<title>Micro-violences éducatives - De quoi parle-t-on ? - Jean-Michel Perez</title>
+<meta name="description" content="Micro-violences éducatives - De quoi parle-t-on ? Enquête permanente, témoignages et médiation. Jean-Michel Perez, Professeur des Universités, Université de Lorraine.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --noir: #0a0a0a;
-  --noir-profond: #050505;
+  --noir: #101828;
+  --noir-profond: #0c1220;
   --blanc: #f5f0eb;
   --rouge: #c41e1e;
   --rouge-vif: #e52020;
@@ -26,7 +26,7 @@
 }
 
 html { scroll-behavior: smooth; font-size: 16px; }
-body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
 
 /* ══════════════════════════════
    BANDEAU
@@ -54,16 +54,16 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
   min-height: 100vh; display: flex; flex-direction: column;
   justify-content: center; align-items: center;
   padding: 8rem 2rem 4rem; position: relative;
-  background: var(--noir);
+  background: #0d1b2a;
 }
 #entree::before {
   content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 50% 35%, rgba(196,30,30,0.07) 0%, transparent 65%);
+  background: radial-gradient(ellipse at 50% 35%, rgba(21,101,192,0.08) 0%, transparent 65%);
   pointer-events: none;
 }
 /* ── Qui je suis ── */
 #qui-je-suis {
-  min-height: 100vh; background: var(--noir-profond);
+  min-height: 100vh; background: #0d1b2a;
   display: flex; flex-direction: column;
   justify-content: center; align-items: center;
   padding: 6rem 2rem; position: relative; text-align: center;
@@ -162,7 +162,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
    ══════════════════════════════ */
 #dialogue-ia {
   display: none; position: relative;
-  min-height: 100vh; background: var(--noir-profond);
+  min-height: 100vh; background: #0d1b2a;
   flex-direction: column; justify-content: center; align-items: center;
   padding: 8rem 2rem 5rem;
 }
@@ -227,13 +227,6 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 .btn-micro-grand.bleu-mic { background: var(--bleu); box-shadow: 0 4px 28px rgba(21,101,192,0.4); }
 .btn-micro-grand:hover { transform: scale(1.06); }
 .btn-micro-grand.enr-actif { animation: pulse 1s infinite; }
-.micro-icon-g { font-size: 2rem; line-height: 1; }
-.micro-label-g { font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.9); }
-.micro-status {
-  font-family: 'Inter', sans-serif; font-size: 0.8rem;
-  color: var(--gris-clair); text-align: center; margin-top: 1rem;
-  min-height: 1.1em; font-style: italic;
-}
 .transcription-live {
   font-family: 'EB Garamond', serif; font-size: 1.1rem; font-style: italic;
   color: rgba(245,240,235,0.85); min-height: 2rem; max-width: 600px;
@@ -248,6 +241,13 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
   line-height: 1.7; outline: none;
 }
 .transcription-edit:focus { border-color: rgba(245,240,235,0.45); }
+.micro-icon-g { font-size: 2rem; line-height: 1; }
+.micro-label-g { font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.9); }
+.micro-status {
+  font-family: 'Inter', sans-serif; font-size: 0.8rem;
+  color: var(--gris-clair); text-align: center; margin-top: 1rem;
+  min-height: 1.1em; font-style: italic;
+}
 
 /* Bouton valider */
 .dialogue-actions { display: flex; justify-content: center; margin-top: 1.5rem; }
@@ -269,7 +269,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 .prog-dot.done { background: rgba(245,240,235,0.35); }
 
 /* ── Intro micro-violences ── */
-.mv-intro { background: var(--noir-profond); text-align: center; padding: 6rem 2rem 4rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; gap: 2rem; }
+.mv-intro { background: #0d1b2a; text-align: center; padding: 6rem 2rem 4rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; gap: 2rem; }
 .mv-video { display: block; width: 100%; max-width: 680px; position: relative; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.6); text-decoration: none; }
 .mv-video img { width: 100%; display: block; filter: brightness(0.75); transition: filter 0.3s; }
 .mv-video:hover img { filter: brightness(0.9); }
@@ -331,7 +331,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 /* ══════════════════════════════
    QUESTIONS — même échelle que les flashers
    ══════════════════════════════ */
-#questions { background: var(--noir-profond); padding: 8rem 2rem; }
+#questions { background: #0d1b2a; padding: 8rem 2rem; }
 .questions-intro { max-width: 800px; margin: 0 auto 7rem; text-align: center; }
 .questions-intro p { font-family: 'EB Garamond', serif; font-size: clamp(1.3rem, 2.8vw, 1.9rem); font-style: italic; color: rgba(245,240,235,0.6); line-height: 1.65; }
 .questions-intro p strong { color: var(--blanc); font-style: normal; }
@@ -390,13 +390,13 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
   justify-content: center; align-items: center; position: relative;
   transition: background 0.6s ease;
 }
-.flash-bleu.pair { background: #05101e; }
-.flash-bleu.impair { background: #040c18; }
+.flash-bleu.pair { background: #0d1b2a; }
+.flash-bleu.impair { background: #0b1724; }
 
 /* ══════════════════════════════
    MÉDIATION — format éditorial
    ══════════════════════════════ */
-#mediation { background: var(--noir-profond); }
+#mediation { background: #0d1b2a; }
 
 /* Ouverture */
 .med-ouv { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 7rem 2rem 4rem; }
@@ -473,9 +473,18 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 
 /* Rapport TC */
 .rapport-bloc {
-  max-width: 680px; margin: 0 auto; padding: 5rem 2rem;
-  border-left: 2px solid rgba(245,240,235,0.08);
+  background-image: url('https://images.theconversation.com/files/665411/original/file-20250502-56-lzbrx8.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C1000%2C500&q=45&auto=format&w=1356&h=668&fit=crop');
+  background-size: cover; background-position: center;
+  position: relative;
+  max-width: 680px; margin: 0 auto; padding: 3rem 2rem;
+  border-left: none; border-radius: 8px; overflow: hidden;
 }
+.rapport-bloc::before {
+  content: ''; position: absolute; inset: 0;
+  background: rgba(10,15,30,0.82);
+  pointer-events: none;
+}
+.rapport-bloc > * { position: relative; z-index: 1; max-width: 680px; margin-left: auto; margin-right: auto; }
 .rapport-bloc .rlabel { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gris-clair); margin-bottom: 1.5rem; display: block; }
 .rapport-bloc blockquote { font-family: 'EB Garamond', serif; font-size: clamp(1.25rem, 2.5vw, 1.65rem); font-style: italic; line-height: 1.6; color: rgba(245,240,235,0.85); }
 .rapport-bloc cite { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-style: normal; display: block; margin-top: 1rem; }
@@ -629,7 +638,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 </div>
 
 <!-- Grille complète micro-violences -->
-<div id="mur-rouge-wrap" style="background:var(--noir-profond);padding:0 2rem 2rem;display:none;">
+<div id="mur-rouge-wrap" style="background:#0d1b2a;padding:0 2rem 2rem;display:none;">
   <div style="columns:3;column-gap:1.2rem;max-width:1200px;margin:0 auto;padding:2rem 0;">
     <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;En quatri&egrave;me, un de mes professeurs m'a dit "qu'au mieux, je finirai caissi&egrave;re".&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Femme, 44 ans</cite></div>
     <div style="break-inside:avoid;margin-bottom:1.2rem;padding:1.5rem;background:rgba(245,240,235,.03);border-left:2px solid rgba(196,30,30,.4);"><blockquote style="font-size:.95rem;line-height:1.55;font-style:italic;color:rgba(245,240,235,.85);margin-bottom:.6rem;">&laquo;&nbsp;Un prof m'a &eacute;crit "bouffonne" sur la copie.&nbsp;&raquo;</blockquote><cite style="font-family:'Inter',sans-serif;font-size:.72rem;color:#555;font-style:normal;">Femme, 21 ans</cite></div>
@@ -643,12 +652,12 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 <!-- ═══ ENTRÉE ═══ -->
 <section id="entree">
   <div class="entree-epigraphe">
-    Plonger dans le feu pour pouvoir le comprendre &mdash; ne pas s'y noyer pour pouvoir le vivre et le raconter &mdash; aupr&egrave;s d'une humanit&eacute; contamin&eacute;e.
+    Plonger dans le feu pour pouvoir le comprendre - ne pas s'y noyer pour pouvoir le vivre et le raconter - aupr&egrave;s d'une humanit&eacute; contamin&eacute;e.
   </div>
 
   <div class="entree-phrase">
-    <h1>Durant votre parcours scolaire ou universitaire, vous avez peut-&ecirc;tre, vous aussi, v&eacute;cu des moments difficiles &mdash; et probablement aussi des moments agr&eacute;ables.</h1>
-    <p class="entree-invite">Nous aimerions vous inviter &agrave; partager deux de vos souvenirs &mdash; un qui vous laisse une impression d&eacute;sagr&eacute;able, l&rsquo;autre plut&ocirc;t agr&eacute;able.</p>
+    <h1>Durant votre parcours scolaire ou universitaire, vous avez peut-&ecirc;tre, vous aussi, v&eacute;cu des moments difficiles - et probablement aussi des moments agr&eacute;ables.</h1>
+    <p class="entree-invite">Nous aimerions vous inviter &agrave; partager deux de vos souvenirs - un qui vous laisse une impression d&eacute;sagr&eacute;able, l'autre plut&ocirc;t agr&eacute;able.</p>
     <div class="sous-invite">&agrave; travers notre enqu&ecirc;te permanente</div>
   </div>
 
@@ -661,7 +670,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
     <div class="compteur-sep">+</div>
     <div class="compteur-bloc">
       <div class="compteur-annee">Depuis jan. 2026</div>
-      <div class="compteur-val bleu-c" id="c2026">&mdash;</div>
+      <div class="compteur-val bleu-c" id="c2026">0</div>
       <div class="compteur-label">nouveaux t&eacute;moignages</div>
     </div>
   </div>
@@ -725,7 +734,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
     </div>
     <div class="q-retour" id="qr-2">
       <p>Les controverses sociales suivent presque toujours le m&ecirc;me sc&eacute;nario&nbsp;: d'abord <strong>l'indignation</strong>, puis <strong>la normalisation</strong>. La vache folle, inacceptable en 1996, est devenue un risque &laquo;&nbsp;g&eacute;r&eacute;&nbsp;&raquo;. Le COVID, terreur collective en 2020, fait aujourd'hui partie du d&eacute;cor.</p>
-      <p>Les violences &eacute;ducatives suivent exactement le m&ecirc;me chemin. Transformer demande un sursaut, du courage, de l'entra&icirc;nement - et probablement une forme de col&egrave;re froide qui ne s'&eacute;teint pas.</p>
+      <p>Les violences &eacute;ducatives suivent exactement le m&ecirc;me chemin. Transformer demande un sursaut, du courage, de l'entra&icirc;nement - et probablement une capacit&eacute; &agrave; habiter son existence au sein m&ecirc;me des institutions.</p>
     </div>
   </div>
 
@@ -741,7 +750,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
     <div class="q-retour" id="qr-3">
       <p>Quand un &eacute;l&egrave;ve est isol&eacute; et qu'aucun m&eacute;canisme de reliance ne vient compenser, ce n'est pas du &laquo;&nbsp;caract&egrave;re&nbsp;&raquo; qui se construit. La science est formelle&nbsp;:</p>
       <p><strong>Holt-Lunstad et al., 2015</strong> (70 &eacute;tudes, 3,4 millions de personnes)&nbsp;: l'isolement social augmente le risque de mortalit&eacute; pr&eacute;matur&eacute;e - un effet sur la sant&eacute; comparable au tabagisme et &agrave; l'ob&eacute;sit&eacute;.</p>
-      <p>Ce n'est pas une question de Bisounours. C'est une question de sant&eacute; publique. Et les micro-attentions - ces gestes minuscules qui disent &laquo;&nbsp;tu existes, tu comptes&nbsp;&raquo; - sont peut-&ecirc;tre le seul antidote que l'&eacute;cole peut inventer de l'int&eacute;rieur.</p>
+      <p>Ce n'est pas une question de Bisounours. C'est une question de vivre ensemble. Les micro-attentions - ces gestes minuscules qui disent &laquo;&nbsp;tu existes, tu comptes&nbsp;&raquo; - sont peut-&ecirc;tre le seul antidote que l'&eacute;cole peut inventer de l'int&eacute;rieur. Encore faut-il que nos institutions apprennent &agrave; les prot&eacute;ger.</p>
     </div>
   </div>
 
@@ -785,7 +794,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
       </button>
       <div class="micro-status" id="micro-status"></div>
       <div class="transcription-live" id="transcription-live"></div>
-      <textarea class="transcription-edit" id="transcription-edit" placeholder="Écrivez votre souvenir ici…" rows="4"></textarea>
+      <textarea class="transcription-edit" id="transcription-edit" placeholder="&Eacute;crivez votre souvenir ici…" rows="4"></textarea>
     </div>
     <div class="dialogue-actions" id="dialogue-actions" style="display:none">
       <button class="btn-valider" id="btn-valider">Valider &rarr;</button>
@@ -812,13 +821,13 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 
   <div class="med-grid">
 
-    <!-- #1 YouTube — Et demain ? Muséum Nancy -->
+    <!-- #1 YouTube — Et demain ? Muséum-Aquarium Nancy -->
     <a class="med-card" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
-      <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/maxresdefault.jpg" alt="Table ronde Et demain ? L'école inclusive est un leurre">
+      <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/maxresdefault.jpg" alt="Table ronde Et demain ? L'&eacute;cole inclusive est un leurre">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
-        <span class="med-card-tag">YouTube &nbsp;&middot;&nbsp; Table ronde &middot; 18 sept. 2025</span>
-        <span class="med-card-title">Table ronde &laquo;&nbsp;Et demain&nbsp;?&nbsp;&raquo; &mdash; L&rsquo;&eacute;cole inclusive est un leurre</span>
+        <span class="med-card-tag">YouTube &middot; Table ronde &middot; 18 sept. 2025</span>
+        <span class="med-card-title">Table ronde &laquo;&nbsp;Et demain&nbsp;?&nbsp;&raquo; - L'&eacute;cole inclusive est un leurre</span>
         <span class="med-card-lieu">Mus&eacute;um-Aquarium de Nancy</span>
       </div>
     </a>
@@ -836,7 +845,7 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
 
     <!-- #3 YouTube — Webinaire CRAP -->
     <a class="med-card" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
-      <img src="https://img.youtube.com/vi/frwjsdUUjB8/maxresdefault.jpg" alt="Apprendre par le corps — Webinaire CRAP">
+      <img src="https://img.youtube.com/vi/frwjsdUUjB8/hqdefault.jpg" alt="Apprendre par le corps — Webinaire CRAP">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
         <span class="med-card-tag">YouTube &nbsp;&middot;&nbsp; Webinaire &middot; 22 janv. 2025</span>
@@ -889,14 +898,13 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
       </div>
     </a>
 
-    <!-- #8 YouTube Shorts — Ces petites phrases (The Conversation France) -->
-    <a class="med-card" href="https://www.youtube.com/shorts/bc_KbxaHDbo" target="_blank" rel="noopener">
-      <img src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Ces petites phrases qui d&eacute;truisent">
-      <div class="med-play-btn">▶</div>
+    <!-- #8 Rapport d'impact TC 2025 -->
+    <a class="med-card" href="https://cdn.theconversation.com/static_files/files/4077/Rapport_d%27impact_2025_compressed_%281%29.pdf" target="_blank" rel="noopener">
+      <img src="https://images.theconversation.com/files/665411/original/file-20250502-56-lzbrx8.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C1000%2C500&q=45&auto=format&w=1356&h=668&fit=crop" alt="Rapport d'impact 2025 The Conversation">
       <div class="med-card-over">
-        <span class="med-card-tag">YouTube Shorts &nbsp;&middot;&nbsp; 8 nov. 2025</span>
-        <span class="med-card-title">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases qui d&eacute;truisent</span>
-        <span class="med-card-lieu">The Conversation France</span>
+        <span class="med-card-tag">Rapport d'impact &middot; The Conversation France &middot; 2025</span>
+        <span class="med-card-title">Impact #5 Recherche, p. 30 - &laquo;&nbsp;Une dynamique collective, riche et inattendue&nbsp;&raquo;</span>
+        <span class="med-card-lieu">Jean-Michel Perez, Universit&eacute; de Lorraine</span>
       </div>
     </a>
 
@@ -967,12 +975,6 @@ body { background: var(--noir); color: var(--blanc); font-family: 'EB Garamond',
     </div>
   </div>
 
-  <div class="rapport-bloc">
-    <div class="rlabel">Rapport d'impact 2025 &mdash; The Conversation France &middot; Impact&nbsp;#5 Recherche, p.&nbsp;30</div>
-    <blockquote>&laquo;&nbsp;Cet article dans The Conversation France a &eacute;t&eacute; le point de d&eacute;part d&rsquo;une dynamique collective, riche et inattendue.&nbsp;&raquo;</blockquote>
-    <cite>Jean-Michel Perez, Universit&eacute; de Lorraine</cite>
-    <a href="https://cdn.theconversation.com/static_files/files/4077/Rapport_d%27impact_2025_compressed_%281%29.pdf" target="_blank" rel="noopener">Lire le rapport d'impact 2025 (PDF) &rarr; p.&nbsp;30</a>
-  </div>
 
 </section>
 
@@ -1035,7 +1037,7 @@ function animCount(el, cible, dur) {
   requestAnimationFrame(step);
 }
 
-// ── Compteur 2026 via GAS — fetch immédiat, animation coordonnée ──
+// ── Compteur 2026 via GAS - fetch immédiat, animation coordonnée ──
 let gasCount2026 = null;
 let anim2026Done = false;
 function triggerAnim2026() {
@@ -1062,7 +1064,7 @@ const obs2025 = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting && !done2025) {
     done2025 = true;
     animCount(c2025el, 1851, 2000);
-    setTimeout(triggerAnim2026, 1000); // 2026 démarre 1s après le 2025
+    setTimeout(triggerAnim2026, 1000);
   }
 }, { threshold: 0.5 });
 obs2025.observe(c2025el);
@@ -1242,14 +1244,7 @@ function lancerEtape(i) {
     btns.style.cssText = 'display:flex;gap:.8rem;margin-top:2rem;flex-wrap:wrap;justify-content:center;';
     const oui = document.createElement('button');
     oui.className = 'btn-valider'; oui.textContent = 'Oui, aller plus loin →';
-    oui.addEventListener('click', () => {
-      const r0 = (reponses.find(r => r.q === 0) || {}).r || '';
-      const r3 = (reponses.find(r => r.q === 3) || {}).r || '';
-      const params = new URLSearchParams({ lang: 'fr' });
-      if (r0) params.set('415241X74121X1087478', r0);
-      if (r3) params.set('415241X74123X1087479', r3);
-      window.open('https://enquetes.univ-lorraine.fr/index.php/415241?' + params.toString(), '_blank');
-    });
+    oui.addEventListener('click', () => window.open('https://enquetes.univ-lorraine.fr/index.php/415241?lang=fr','_blank'));
     const non = document.createElement('button');
     non.className = 'btn-valider'; non.style.background = '#333'; non.textContent = 'Non, merci';
     non.addEventListener('click', () => { dialConfirm.textContent = 'Merci pour votre temps.'; btns.remove(); });
@@ -1324,7 +1319,7 @@ if (!SpeechRec) {
       btnMicD.classList.remove('enr-actif');
       btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
       if (currentTranscript) {
-        microStatus.textContent = 'Transcription terminée — vous pouvez corriger ci-dessous';
+        microStatus.textContent = '';
         transcriptionEdit.value = currentTranscript;
         transcriptionEdit.style.display = 'block';
         transcriptionLive.style.display = 'none';
