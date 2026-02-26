@@ -822,7 +822,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   <div class="med-grid">
 
     <!-- #1 YouTube — Et demain ? Muséum-Aquarium Nancy -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="TtX5Bf-Xpws" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/maxresdefault.jpg" alt="Table ronde Et demain ? L'&eacute;cole inclusive est un leurre">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -833,7 +833,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #2 Grand témoin AEIM-Adapei 54 -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=5kKB9Uw5FMo" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="5kKB9Uw5FMo" href="https://www.youtube.com/watch?v=5kKB9Uw5FMo" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/5kKB9Uw5FMo/maxresdefault.jpg" alt="Congr&egrave;s AEIM-Adapei 54 &mdash; Grand t&eacute;moin">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -844,7 +844,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #3 YouTube — Webinaire CRAP -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="frwjsdUUjB8" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/frwjsdUUjB8/hqdefault.jpg" alt="Apprendre par le corps — Webinaire CRAP">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -855,7 +855,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #4 YouTube — CIACE Anáhuac México -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="n8qTSP1OKrI" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/n8qTSP1OKrI/maxresdefault.jpg" alt="Transformer les pratiques éducatives inclusives — CIACE Anáhuac">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -1022,6 +1022,22 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 </footer>
 
 <script>
+// ── Vidéos YouTube inline (toutes les cartes med + hero) ──
+document.querySelectorAll('.yt-inline').forEach(card => {
+  card.addEventListener('click', function(e) {
+    e.preventDefault();
+    const ytId = this.dataset.yt;
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + ytId + '?autoplay=1&rel=0';
+    iframe.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;border:none;border-radius:12px;';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    this.style.position = 'relative';
+    this.innerHTML = '';
+    this.appendChild(iframe);
+  });
+});
+
 // ── Vidéo hero inline ──
 document.getElementById('mv-video-hero').addEventListener('click', function() {
   const iframe = document.createElement('iframe');
