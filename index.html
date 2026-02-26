@@ -227,6 +227,20 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .btn-micro-grand.bleu-mic { background: var(--bleu); box-shadow: 0 4px 28px rgba(21,101,192,0.4); }
 .btn-micro-grand:hover { transform: scale(1.06); }
 .btn-micro-grand.enr-actif { animation: pulse 1s infinite; }
+.transcription-live {
+  font-family: 'EB Garamond', serif; font-size: 1.1rem; font-style: italic;
+  color: rgba(245,240,235,0.85); min-height: 2rem; max-width: 600px;
+  margin: 1.2rem auto 0; text-align: center; line-height: 1.75;
+}
+.transcription-live .interim { color: rgba(245,240,235,0.38); }
+.transcription-edit {
+  display: none; width: 100%; max-width: 600px; margin: 1.2rem auto 0;
+  background: rgba(245,240,235,0.06); border: 1px solid rgba(245,240,235,0.2);
+  color: var(--blanc); font-family: 'EB Garamond', serif; font-size: 1.05rem;
+  font-style: italic; padding: 1rem 1.2rem; resize: vertical; min-height: 90px;
+  line-height: 1.7; outline: none;
+}
+.transcription-edit:focus { border-color: rgba(245,240,235,0.45); }
 .micro-icon-g { font-size: 2rem; line-height: 1; }
 .micro-label-g { font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.9); }
 .micro-status {
@@ -779,6 +793,8 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
         <span class="micro-label-g">Parler</span>
       </button>
       <div class="micro-status" id="micro-status"></div>
+      <div class="transcription-live" id="transcription-live"></div>
+      <textarea class="transcription-edit" id="transcription-edit" placeholder="&Eacute;crivez votre souvenir ici…" rows="4"></textarea>
     </div>
     <div class="dialogue-actions" id="dialogue-actions" style="display:none">
       <button class="btn-valider" id="btn-valider">Valider &rarr;</button>
@@ -1243,53 +1259,96 @@ document.getElementById('btn-ouvrir-ia').addEventListener('click', () => {
   lancerEtape(0);
 });
 
-btnValider.addEventListener('click', () => {
-  if (!audioBlob || FLOW[etape]?.type === 'fin') return;
-  reponses.push({ q: FLOW[etape].id, r: '[Audio]' });
-  audioBlob = null;
+// ── SpeechRecognition + fallback textarea ──
+const btnMicD          = document.getElementById('btn-micro-d');
+const transcriptionLive = document.getElementById('transcription-live');
+const transcriptionEdit = document.getElementById('transcription-edit');
+const SpeechRec        = window.SpeechRecognition || window.webkitSpeechRecognition;
+let currentTranscript  = '';
+let recActive          = false;
+let rec                = null;
+
+function getTexte() {
+  return transcriptionEdit.style.display !== 'none'
+    ? transcriptionEdit.value.trim()
+    : currentTranscript.trim();
+}
+function resetMicro() {
+  currentTranscript = '';
+  transcriptionLive.innerHTML = '';
+  transcriptionEdit.value = '';
+  transcriptionEdit.style.display = 'none';
+  transcriptionLive.style.display = 'block';
   microStatus.textContent = '';
   dialogueActions.style.display = 'none';
+  btnMicD.classList.remove('enr-actif');
+  btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+}
+
+if (!SpeechRec) {
+  btnMicD.style.display = 'none';
+  transcriptionEdit.style.display = 'block';
+  transcriptionEdit.addEventListener('input', () => {
+    dialogueActions.style.display = transcriptionEdit.value.trim() ? 'flex' : 'none';
+  });
+} else {
+  btnMicD.addEventListener('click', () => {
+    if (recActive) { rec.stop(); return; }
+    rec = new SpeechRec();
+    rec.lang = 'fr-FR';
+    rec.continuous = true;
+    rec.interimResults = true;
+    rec.onstart = () => {
+      recActive = true;
+      btnMicD.classList.add('enr-actif');
+      btnMicD.querySelector('.micro-label-g').textContent = 'Stop ⏹';
+      microStatus.textContent = 'Écoute en cours…';
+    };
+    rec.onresult = e => {
+      let final = '', interim = '';
+      for (let i = e.resultIndex; i < e.results.length; i++) {
+        e.results[i].isFinal ? final += e.results[i][0].transcript
+                             : interim += e.results[i][0].transcript;
+      }
+      currentTranscript += final;
+      transcriptionLive.innerHTML =
+        currentTranscript + (interim ? '<span class="interim"> ' + interim + '</span>' : '');
+    };
+    rec.onend = () => {
+      recActive = false;
+      btnMicD.classList.remove('enr-actif');
+      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+      if (currentTranscript) {
+        microStatus.textContent = '';
+        transcriptionEdit.value = currentTranscript;
+        transcriptionEdit.style.display = 'block';
+        transcriptionLive.style.display = 'none';
+        dialogueActions.style.display = 'flex';
+      } else {
+        microStatus.textContent = '';
+      }
+    };
+    rec.onerror = e => {
+      recActive = false;
+      btnMicD.classList.remove('enr-actif');
+      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+      microStatus.textContent = '';
+      transcriptionEdit.style.display = 'block';
+    };
+    rec.start();
+  });
+}
+
+btnValider.addEventListener('click', () => {
+  const texte = getTexte();
+  if (!texte || FLOW[etape]?.type === 'fin') return;
+  reponses.push({ q: FLOW[etape].id, r: texte });
+  resetMicro();
   dialConfirm.textContent = '✓';
-  const micBtn = document.getElementById('btn-micro-d');
-  micBtn.classList.remove('enr-actif');
-  micBtn.querySelector('.micro-label-g').textContent = 'Parler';
   microZone.style.display = 'block';
   etape++;
   if (etape < FLOW.length) {
     setTimeout(() => { dialConfirm.textContent = ''; lancerEtape(etape); }, 700);
-  }
-});
-
-// ── Micro audio voice-first (Safari compatible) ──
-let mediaRec, chunks = [], audioBlob;
-const btnMicD = document.getElementById('btn-micro-d');
-
-btnMicD.addEventListener('click', async () => {
-  if (mediaRec && mediaRec.state === 'recording') {
-    mediaRec.stop();
-    btnMicD.classList.remove('enr-actif');
-    btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-    return;
-  }
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    chunks = [];
-    const mime = ['audio/mp4','audio/aac','audio/webm'].find(m => MediaRecorder.isTypeSupported(m)) || '';
-    mediaRec = new MediaRecorder(stream, mime ? { mimeType: mime } : {});
-    mediaRec.ondataavailable = e => chunks.push(e.data);
-    mediaRec.onstop = () => {
-      audioBlob = new Blob(chunks, { type: mime || 'audio/webm' });
-      stream.getTracks().forEach(t => t.stop());
-      microStatus.textContent = 'Audio enregistré ✓ — transcription à venir';
-      dialogueActions.style.display = 'flex';
-      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-    };
-    mediaRec.start();
-    btnMicD.classList.add('enr-actif');
-    btnMicD.querySelector('.micro-label-g').textContent = 'Stop ⏹';
-    microStatus.textContent = 'Enregistrement en cours…';
-  } catch(e) {
-    microStatus.textContent = 'Microphone inaccessible';
   }
 });
 
