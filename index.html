@@ -1244,7 +1244,14 @@ function lancerEtape(i) {
     btns.style.cssText = 'display:flex;gap:.8rem;margin-top:2rem;flex-wrap:wrap;justify-content:center;';
     const oui = document.createElement('button');
     oui.className = 'btn-valider'; oui.textContent = 'Oui, aller plus loin →';
-    oui.addEventListener('click', () => window.open('https://enquetes.univ-lorraine.fr/index.php/415241?lang=fr','_blank'));
+    oui.addEventListener('click', () => {
+      const r0 = (reponses.find(r => r.q === 0) || {}).r || '';
+      const r3 = (reponses.find(r => r.q === 3) || {}).r || '';
+      const params = new URLSearchParams({ lang: 'fr' });
+      if (r0) params.set('415241X74121X1087478', r0);
+      if (r3) params.set('415241X74123X1087479', r3);
+      window.open('https://enquetes.univ-lorraine.fr/index.php/415241?' + params.toString(), '_blank');
+    });
     const non = document.createElement('button');
     non.className = 'btn-valider'; non.style.background = '#333'; non.textContent = 'Non, merci';
     non.addEventListener('click', () => { dialConfirm.textContent = 'Merci pour votre temps.'; btns.remove(); });
