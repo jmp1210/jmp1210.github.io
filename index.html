@@ -1395,6 +1395,11 @@ btnValider.addEventListener('click', () => {
   const texte = getTexte();
   if (!texte || FLOW[etape]?.type === 'fin') return;
   reponses.push({ q: FLOW[etape].id, r: texte });
+  // Sauvegarde vers n8n
+  const sv = new URLSearchParams({ q: FLOW[etape].id, r: texte, ts: new Date().toISOString() });
+  fetch('https://srv1351710.tail38289b.ts.net:8444/webhook/souvenir-jmp?' + sv.toString(), {
+    headers: { 'X-JMP-Token': '_qnpjlkQGjH5J53eOZNjOA' }
+  }).catch(() => {});
   resetMicro();
   dialConfirm.textContent = '✓';
   microZone.style.display = 'block';
