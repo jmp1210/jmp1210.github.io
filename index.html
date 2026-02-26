@@ -610,11 +610,11 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 <!-- ═══ ACCUEIL — Micro-violences ═══ -->
 <div class="mv-intro">
   <p class="mv-q">Les micro-violences &eacute;ducatives. De quoi parle-t-on&nbsp;?</p>
-  <a class="mv-video" href="https://www.youtube.com/shorts/bc_KbxaHDbo" target="_blank" rel="noopener">
-    <img src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Les micro-violences &agrave; l'&eacute;cole : ces petites phrases qui d&eacute;truisent">
-    <div class="mv-play">▶</div>
+  <div class="mv-video" id="mv-video-hero" style="cursor:pointer">
+    <img id="mv-thumb" src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Les micro-violences &agrave; l'&eacute;cole : ces petites phrases qui d&eacute;truisent">
+    <div class="mv-play" id="mv-play-btn">▶</div>
     <div class="mv-video-caption">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases qui d&eacute;truisent &mdash; The Conversation France &middot; 8 nov. 2025</div>
-  </a>
+  </div>
   <div class="scroll-arrow">↓</div>
 </div>
 
@@ -1022,6 +1022,19 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 </footer>
 
 <script>
+// ── Vidéo hero inline ──
+document.getElementById('mv-video-hero').addEventListener('click', function() {
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/bc_KbxaHDbo?autoplay=1&rel=0';
+  iframe.style.cssText = 'width:100%;aspect-ratio:9/16;max-width:400px;border:none;border-radius:12px;';
+  iframe.allow = 'autoplay; encrypted-media';
+  iframe.allowFullscreen = true;
+  this.innerHTML = '';
+  this.style.display = 'flex';
+  this.style.justifyContent = 'center';
+  this.appendChild(iframe);
+});
+
 // ── Bandeau ──
 const bandeau = document.getElementById('bandeau');
 window.addEventListener('scroll', () => bandeau.classList.toggle('scrolled', window.scrollY > 80));
