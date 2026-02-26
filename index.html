@@ -1010,40 +1010,48 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 const bandeau = document.getElementById('bandeau');
 window.addEventListener('scroll', () => bandeau.classList.toggle('scrolled', window.scrollY > 80));
 
+// ── animCount partagé ──
+function animCount(el, cible, dur) {
+  const start = performance.now();
+  const step = now => {
+    const p = Math.min((now - start) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(cible * e).toLocaleString('fr-FR');
+    if (p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// ── Compteur 2026 via GAS - fetch immédiat, animation coordonnée ──
+let gasCount2026 = null;
+let anim2026Done = false;
+function triggerAnim2026() {
+  if (!anim2026Done && gasCount2026 !== null) {
+    anim2026Done = true;
+    animCount(document.getElementById('c2026'), gasCount2026, 1800);
+    animCount(document.getElementById('c-total'), 1851 + gasCount2026, 2000);
+  }
+}
+async function fetch2026() {
+  try {
+    const r = await fetch('https://script.google.com/macros/s/AKfycbyYwD5PbY0h7pzkGLsZTfAJmpUHv2YXTbbSMpWdmsviqDg-Xh21g44vI0arga0w-CZmKQ/exec');
+    const d = await r.json();
+    if (d.count !== undefined) { gasCount2026 = d.count; triggerAnim2026(); }
+  } catch(e) {}
+}
+fetch2026();
+setInterval(fetch2026, 60000);
+
 // ── Compteur 2025 animé ──
 const c2025el = document.getElementById('c2025');
 let done2025 = false;
 const obs2025 = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting && !done2025) {
     done2025 = true;
-    const cible = 1851, dur = 2000, start = performance.now();
-    const step = now => {
-      const p = Math.min((now-start)/dur,1), e = 1-Math.pow(1-p,3);
-      c2025el.textContent = Math.floor(cible*e).toLocaleString('fr-FR');
-      if (p<1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
+    animCount(c2025el, 1851, 2000);
+    setTimeout(triggerAnim2026, 1000);
   }
 }, { threshold: 0.5 });
 obs2025.observe(c2025el);
-
-// ── Compteur 2026 animé ──
-const c2026el = document.getElementById('c2026');
-let done2026 = false;
-const obs2026 = new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting && !done2026) {
-    done2026 = true;
-    const cible = 124, dur = 1500, start = performance.now();
-    const step = now => {
-      const p = Math.min((now-start)/dur,1), e = 1-Math.pow(1-p,3);
-      c2026el.textContent = Math.floor(cible*e).toLocaleString('fr-FR');
-      document.getElementById('c-total').textContent = (1851 + Math.floor(cible*e)).toLocaleString('fr-FR');
-      if (p<1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }
-}, { threshold: 0.5 });
-obs2026.observe(c2026el);
 
 // ── Questions (toutes visibles, déverrouillage après les 3) ──
 var qAnswered = 0;
