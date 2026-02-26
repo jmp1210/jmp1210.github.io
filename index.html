@@ -656,13 +656,13 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     <div class="compteur-sep">+</div>
     <div class="compteur-bloc">
       <div class="compteur-annee">Depuis jan. 2026</div>
-      <div class="compteur-val bleu-c" id="c2026">124</div>
+      <div class="compteur-val bleu-c" id="c2026">0</div>
       <div class="compteur-label">nouveaux t&eacute;moignages</div>
     </div>
   </div>
 
   <div class="total-zone">
-    <div class="total-val">Total depuis le d&eacute;but&nbsp;: <span id="c-total">1 975</span></div>
+    <div class="total-val">Total depuis le d&eacute;but&nbsp;: <span id="c-total">1 851</span></div>
     <div class="total-label">depuis mai 2024 &middot; enquête permanente</div>
   </div>
 
@@ -1027,9 +1027,23 @@ const obs2025 = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 obs2025.observe(c2025el);
 
-// ── Compteur 2026 via GAS (activer quand URL dispo) ──
-// async function fetch2026() { try { const r = await fetch('https://script.google.com/macros/s/XXXX/exec?action=count2026'); const d = await r.json(); if (d.count !== undefined) { document.getElementById('c2026').textContent = d.count.toLocaleString('fr-FR'); document.getElementById('c-total').textContent = (1851 + d.count).toLocaleString('fr-FR'); } } catch(e) {} }
-// fetch2026(); setInterval(fetch2026, 60000);
+// ── Compteur 2026 animé ──
+const c2026el = document.getElementById('c2026');
+let done2026 = false;
+const obs2026 = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting && !done2026) {
+    done2026 = true;
+    const cible = 124, dur = 1500, start = performance.now();
+    const step = now => {
+      const p = Math.min((now-start)/dur,1), e = 1-Math.pow(1-p,3);
+      c2026el.textContent = Math.floor(cible*e).toLocaleString('fr-FR');
+      document.getElementById('c-total').textContent = (1851 + Math.floor(cible*e)).toLocaleString('fr-FR');
+      if (p<1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+}, { threshold: 0.5 });
+obs2026.observe(c2026el);
 
 // ── Questions (toutes visibles, déverrouillage après les 3) ──
 var qAnswered = 0;
