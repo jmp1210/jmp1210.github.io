@@ -866,7 +866,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #5 ULTV — Entendu! ep.49 -->
-    <a class="med-card" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener">
+    <a class="med-card ext-inline" data-embed="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/?is_iframe=true" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener">
       <img src="https://ultv.univ-lorraine.fr/media/cache/f5/93/f593c3665619cd718d11b470f0fe7eb7.jpg" alt="Entendu ! ep.49 — Déconstruire la non-violence">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -877,7 +877,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #6 Pod Unistra — Le Code Soleil -->
-    <a class="med-card" href="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/" target="_blank" rel="noopener">
+    <a class="med-card ext-inline" data-embed="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/?is_iframe=true" href="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/" target="_blank" rel="noopener">
       <img src="https://pod.unistra.fr/media/files/3607c8d0f929c8254eb000fae84af96a1c636fe7ad2f3613d2899d03455fc734/05-jean-michel-perez.png" alt="Le Code Soleil — INSPE Strasbourg">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -888,7 +888,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #7 ULTV — Entendu! ep.21 Mal-vivre -->
-    <a class="med-card" href="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/" target="_blank" rel="noopener">
+    <a class="med-card ext-inline" data-embed="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/?is_iframe=true" href="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/" target="_blank" rel="noopener">
       <img src="https://ultv.univ-lorraine.fr/media/cache/ed/f8/edf89fa2897b00151bdd4ff9dc162d96.jpg" alt="Mal-vivre à l'école — Entendu ! ep.21">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -1029,6 +1029,22 @@ document.querySelectorAll('.yt-inline').forEach(card => {
     const ytId = this.dataset.yt;
     const iframe = document.createElement('iframe');
     iframe.src = 'https://www.youtube.com/embed/' + ytId + '?autoplay=1&rel=0';
+    iframe.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;border:none;border-radius:12px;';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    this.style.position = 'relative';
+    this.innerHTML = '';
+    this.appendChild(iframe);
+  });
+});
+
+// ── Vidéos ULTV/Pod inline ──
+document.querySelectorAll('.ext-inline').forEach(card => {
+  card.addEventListener('click', function(e) {
+    e.preventDefault();
+    const embedUrl = this.dataset.embed;
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
     iframe.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;border:none;border-radius:12px;';
     iframe.allow = 'autoplay; encrypted-media';
     iframe.allowFullscreen = true;
