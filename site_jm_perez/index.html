@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jean-Michel Perez — Deux souvenirs scolaires</title>
-<meta name="description" content="Racontez-moi deux souvenirs scolaires. Enquête permanente sur les micro-violences éducatives. Jean-Michel Perez, Université de Lorraine.">
+<title>Micro-violences éducatives - De quoi parle-t-on ? - Jean-Michel Perez</title>
+<meta name="description" content="Micro-violences éducatives - De quoi parle-t-on ? Enquête permanente, témoignages et médiation. Jean-Michel Perez, Professeur des Universités, Université de Lorraine.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -227,6 +227,20 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .btn-micro-grand.bleu-mic { background: var(--bleu); box-shadow: 0 4px 28px rgba(21,101,192,0.4); }
 .btn-micro-grand:hover { transform: scale(1.06); }
 .btn-micro-grand.enr-actif { animation: pulse 1s infinite; }
+.transcription-live {
+  font-family: 'EB Garamond', serif; font-size: 1.1rem; font-style: italic;
+  color: rgba(245,240,235,0.85); min-height: 2rem; max-width: 600px;
+  margin: 1.2rem auto 0; text-align: center; line-height: 1.75;
+}
+.transcription-live .interim { color: rgba(245,240,235,0.38); }
+.transcription-edit {
+  display: none; width: 100%; max-width: 600px; margin: 1.2rem auto 0;
+  background: rgba(245,240,235,0.06); border: 1px solid rgba(245,240,235,0.2);
+  color: var(--blanc); font-family: 'EB Garamond', serif; font-size: 1.05rem;
+  font-style: italic; padding: 1rem 1.2rem; resize: vertical; min-height: 90px;
+  line-height: 1.7; outline: none;
+}
+.transcription-edit:focus { border-color: rgba(245,240,235,0.45); }
 .micro-icon-g { font-size: 2rem; line-height: 1; }
 .micro-label-g { font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.9); }
 .micro-status {
@@ -596,11 +610,11 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 <!-- ═══ ACCUEIL — Micro-violences ═══ -->
 <div class="mv-intro">
   <p class="mv-q">Les micro-violences &eacute;ducatives. De quoi parle-t-on&nbsp;?</p>
-  <a class="mv-video" href="https://www.youtube.com/shorts/bc_KbxaHDbo" target="_blank" rel="noopener">
-    <img src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Les micro-violences &agrave; l'&eacute;cole : ces petites phrases qui d&eacute;truisent">
-    <div class="mv-play">▶</div>
+  <div class="mv-video" id="mv-video-hero" style="cursor:pointer">
+    <img id="mv-thumb" src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Les micro-violences &agrave; l'&eacute;cole : ces petites phrases qui d&eacute;truisent">
+    <div class="mv-play" id="mv-play-btn">▶</div>
     <div class="mv-video-caption">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases qui d&eacute;truisent &mdash; The Conversation France &middot; 8 nov. 2025</div>
-  </a>
+  </div>
   <div class="scroll-arrow">↓</div>
 </div>
 
@@ -656,14 +670,14 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     <div class="compteur-sep">+</div>
     <div class="compteur-bloc">
       <div class="compteur-annee">Depuis jan. 2026</div>
-      <div class="compteur-val bleu-c" id="c2026">&mdash;</div>
+      <div class="compteur-val bleu-c" id="c2026">130</div>
       <div class="compteur-label">nouveaux t&eacute;moignages</div>
     </div>
   </div>
 
   <div class="total-zone">
-    <div class="total-val">Total depuis le d&eacute;but&nbsp;: <span id="c-total">1 851</span></div>
-    <div class="total-label">depuis mai 2024 &middot; enquête permanente</div>
+    <div class="total-val" style="font-size:1.1em;font-weight:600">Total depuis le d&eacute;but&nbsp;: <span id="c-total" style="font-size:2.2em;font-weight:800;color:#f5f0eb;display:inline-block;margin-left:0.2em;letter-spacing:0.04em">1 981</span></div>
+    <div class="total-label">enquête permanente</div>
   </div>
 
   <div class="pays-mention">
@@ -779,6 +793,8 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
         <span class="micro-label-g">Parler</span>
       </button>
       <div class="micro-status" id="micro-status"></div>
+      <div class="transcription-live" id="transcription-live"></div>
+      <textarea class="transcription-edit" id="transcription-edit" placeholder="&Eacute;crivez votre souvenir ici…" rows="4"></textarea>
     </div>
     <div class="dialogue-actions" id="dialogue-actions" style="display:none">
       <button class="btn-valider" id="btn-valider">Valider &rarr;</button>
@@ -806,7 +822,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   <div class="med-grid">
 
     <!-- #1 YouTube — Et demain ? Muséum-Aquarium Nancy -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="TtX5Bf-Xpws" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/maxresdefault.jpg" alt="Table ronde Et demain ? L'&eacute;cole inclusive est un leurre">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -817,7 +833,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #2 Grand témoin AEIM-Adapei 54 -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=5kKB9Uw5FMo" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="5kKB9Uw5FMo" href="https://www.youtube.com/watch?v=5kKB9Uw5FMo" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/5kKB9Uw5FMo/maxresdefault.jpg" alt="Congr&egrave;s AEIM-Adapei 54 &mdash; Grand t&eacute;moin">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -828,7 +844,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #3 YouTube — Webinaire CRAP -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="frwjsdUUjB8" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/frwjsdUUjB8/hqdefault.jpg" alt="Apprendre par le corps — Webinaire CRAP">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -839,7 +855,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #4 YouTube — CIACE Anáhuac México -->
-    <a class="med-card" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
+    <a class="med-card yt-inline" data-yt="n8qTSP1OKrI" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
       <img src="https://img.youtube.com/vi/n8qTSP1OKrI/maxresdefault.jpg" alt="Transformer les pratiques éducatives inclusives — CIACE Anáhuac">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -850,7 +866,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #5 ULTV — Entendu! ep.49 -->
-    <a class="med-card" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener">
+    <a class="med-card ext-inline" data-embed="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/?is_iframe=true" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener">
       <img src="https://ultv.univ-lorraine.fr/media/cache/f5/93/f593c3665619cd718d11b470f0fe7eb7.jpg" alt="Entendu ! ep.49 — Déconstruire la non-violence">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -861,7 +877,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #6 Pod Unistra — Le Code Soleil -->
-    <a class="med-card" href="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/" target="_blank" rel="noopener">
+    <a class="med-card ext-inline" data-embed="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/?is_iframe=true" href="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/" target="_blank" rel="noopener">
       <img src="https://pod.unistra.fr/media/files/3607c8d0f929c8254eb000fae84af96a1c636fe7ad2f3613d2899d03455fc734/05-jean-michel-perez.png" alt="Le Code Soleil — INSPE Strasbourg">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -872,7 +888,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
     <!-- #7 ULTV — Entendu! ep.21 Mal-vivre -->
-    <a class="med-card" href="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/" target="_blank" rel="noopener">
+    <a class="med-card ext-inline" data-embed="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/?is_iframe=true" href="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/" target="_blank" rel="noopener">
       <img src="https://ultv.univ-lorraine.fr/media/cache/ed/f8/edf89fa2897b00151bdd4ff9dc162d96.jpg" alt="Mal-vivre à l'école — Entendu ! ep.21">
       <div class="med-play-btn">▶</div>
       <div class="med-card-over">
@@ -1006,9 +1022,85 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 </footer>
 
 <script>
+// ── Vidéos YouTube inline (toutes les cartes med + hero) ──
+document.querySelectorAll('.yt-inline').forEach(card => {
+  card.addEventListener('click', function(e) {
+    e.preventDefault();
+    const ytId = this.dataset.yt;
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + ytId + '?autoplay=1&rel=0';
+    iframe.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;border:none;border-radius:12px;';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    this.style.position = 'relative';
+    this.innerHTML = '';
+    this.appendChild(iframe);
+  });
+});
+
+// ── Vidéos ULTV/Pod inline ──
+document.querySelectorAll('.ext-inline').forEach(card => {
+  card.addEventListener('click', function(e) {
+    e.preventDefault();
+    const embedUrl = this.dataset.embed;
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
+    iframe.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;border:none;border-radius:12px;';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    this.style.position = 'relative';
+    this.innerHTML = '';
+    this.appendChild(iframe);
+  });
+});
+
+// ── Vidéo hero inline ──
+document.getElementById('mv-video-hero').addEventListener('click', function() {
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/bc_KbxaHDbo?autoplay=1&rel=0';
+  iframe.style.cssText = 'width:100%;aspect-ratio:9/16;max-width:400px;border:none;border-radius:12px;';
+  iframe.allow = 'autoplay; encrypted-media';
+  iframe.allowFullscreen = true;
+  this.innerHTML = '';
+  this.style.display = 'flex';
+  this.style.justifyContent = 'center';
+  this.appendChild(iframe);
+});
+
 // ── Bandeau ──
 const bandeau = document.getElementById('bandeau');
 window.addEventListener('scroll', () => bandeau.classList.toggle('scrolled', window.scrollY > 80));
+
+// ── animCount partagé ──
+function animCount(el, cible, dur) {
+  const start = performance.now();
+  const step = now => {
+    const p = Math.min((now - start) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(cible * e).toLocaleString('fr-FR');
+    if (p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// ── Compteur 2026 via GAS - fetch immédiat, animation coordonnée ──
+let gasCount2026 = 130;
+let anim2026Done = false;
+function triggerAnim2026() {
+  if (!anim2026Done && gasCount2026 != null) {
+    anim2026Done = true;
+    animCount(document.getElementById('c2026'), gasCount2026, 1800);
+    animCount(document.getElementById('c-total'), 1851 + gasCount2026, 2000);
+  }
+}
+async function fetch2026() {
+  try {
+    const r = await fetch('https://script.google.com/macros/s/AKfycbyYwD5PbY0h7pzkGLsZTfAJmpUHv2YXTbbSMpWdmsviqDg-Xh21g44vI0arga0w-CZmKQ/exec');
+    const d = await r.json();
+    if (d.count !== undefined) { gasCount2026 = d.count; triggerAnim2026(); }
+  } catch(e) {}
+}
+fetch2026();
+setInterval(fetch2026, 60000);
 
 // ── Compteur 2025 animé ──
 const c2025el = document.getElementById('c2025');
@@ -1016,20 +1108,11 @@ let done2025 = false;
 const obs2025 = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting && !done2025) {
     done2025 = true;
-    const cible = 1851, dur = 2000, start = performance.now();
-    const step = now => {
-      const p = Math.min((now-start)/dur,1), e = 1-Math.pow(1-p,3);
-      c2025el.textContent = Math.floor(cible*e).toLocaleString('fr-FR');
-      if (p<1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
+    animCount(c2025el, 1851, 2000);
+    setTimeout(triggerAnim2026, 1000);
   }
 }, { threshold: 0.5 });
 obs2025.observe(c2025el);
-
-// ── Compteur 2026 via GAS (activer quand URL dispo) ──
-// async function fetch2026() { try { const r = await fetch('https://script.google.com/macros/s/XXXX/exec?action=count2026'); const d = await r.json(); if (d.count !== undefined) { document.getElementById('c2026').textContent = d.count.toLocaleString('fr-FR'); document.getElementById('c-total').textContent = (1851 + d.count).toLocaleString('fr-FR'); } } catch(e) {} }
-// fetch2026(); setInterval(fetch2026, 60000);
 
 // ── Questions (toutes visibles, déverrouillage après les 3) ──
 var qAnswered = 0;
@@ -1206,7 +1289,14 @@ function lancerEtape(i) {
     btns.style.cssText = 'display:flex;gap:.8rem;margin-top:2rem;flex-wrap:wrap;justify-content:center;';
     const oui = document.createElement('button');
     oui.className = 'btn-valider'; oui.textContent = 'Oui, aller plus loin →';
-    oui.addEventListener('click', () => window.open('https://enquetes.univ-lorraine.fr/index.php/415241?lang=fr','_blank'));
+    oui.addEventListener('click', () => {
+      const r0 = (reponses.find(r => r.q === 0) || {}).r || '';
+      const r3 = (reponses.find(r => r.q === 3) || {}).r || '';
+      const params = new URLSearchParams({ lang: 'fr' });
+      if (r0) params.set('415241X74121X1087478', r0);
+      if (r3) params.set('415241X74123X1087479', r3);
+      window.open('https://enquetes.univ-lorraine.fr/index.php/415241?' + params.toString(), '_blank');
+    });
     const non = document.createElement('button');
     non.className = 'btn-valider'; non.style.background = '#333'; non.textContent = 'Non, merci';
     non.addEventListener('click', () => { dialConfirm.textContent = 'Merci pour votre temps.'; btns.remove(); });
@@ -1221,53 +1311,101 @@ document.getElementById('btn-ouvrir-ia').addEventListener('click', () => {
   lancerEtape(0);
 });
 
-btnValider.addEventListener('click', () => {
-  if (!audioBlob || FLOW[etape]?.type === 'fin') return;
-  reponses.push({ q: FLOW[etape].id, r: '[Audio]' });
-  audioBlob = null;
+// ── SpeechRecognition + fallback textarea ──
+const btnMicD          = document.getElementById('btn-micro-d');
+const transcriptionLive = document.getElementById('transcription-live');
+const transcriptionEdit = document.getElementById('transcription-edit');
+const SpeechRec        = window.SpeechRecognition || window.webkitSpeechRecognition;
+let currentTranscript  = '';
+let recActive          = false;
+let rec                = null;
+
+function getTexte() {
+  return transcriptionEdit.style.display !== 'none'
+    ? transcriptionEdit.value.trim()
+    : currentTranscript.trim();
+}
+function resetMicro() {
+  currentTranscript = '';
+  transcriptionLive.innerHTML = '';
+  transcriptionEdit.value = '';
+  transcriptionEdit.style.display = 'none';
+  transcriptionLive.style.display = 'block';
   microStatus.textContent = '';
   dialogueActions.style.display = 'none';
+  btnMicD.classList.remove('enr-actif');
+  btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+}
+
+if (!SpeechRec) {
+  btnMicD.style.display = 'none';
+  transcriptionEdit.style.display = 'block';
+  transcriptionEdit.addEventListener('input', () => {
+    dialogueActions.style.display = transcriptionEdit.value.trim() ? 'flex' : 'none';
+  });
+} else {
+  btnMicD.addEventListener('click', () => {
+    if (recActive) { rec.stop(); return; }
+    rec = new SpeechRec();
+    rec.lang = 'fr-FR';
+    rec.continuous = true;
+    rec.interimResults = true;
+    rec.onstart = () => {
+      recActive = true;
+      btnMicD.classList.add('enr-actif');
+      btnMicD.querySelector('.micro-label-g').textContent = 'Stop ⏹';
+      microStatus.textContent = 'Écoute en cours…';
+    };
+    rec.onresult = e => {
+      let final = '', interim = '';
+      for (let i = e.resultIndex; i < e.results.length; i++) {
+        e.results[i].isFinal ? final += e.results[i][0].transcript
+                             : interim += e.results[i][0].transcript;
+      }
+      currentTranscript += final;
+      transcriptionLive.innerHTML =
+        currentTranscript + (interim ? '<span class="interim"> ' + interim + '</span>' : '');
+    };
+    rec.onend = () => {
+      recActive = false;
+      btnMicD.classList.remove('enr-actif');
+      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+      if (currentTranscript) {
+        microStatus.textContent = '';
+        transcriptionEdit.value = currentTranscript;
+        transcriptionEdit.style.display = 'block';
+        transcriptionLive.style.display = 'none';
+        dialogueActions.style.display = 'flex';
+      } else {
+        microStatus.textContent = '';
+      }
+    };
+    rec.onerror = e => {
+      recActive = false;
+      btnMicD.classList.remove('enr-actif');
+      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
+      microStatus.textContent = '';
+      transcriptionEdit.style.display = 'block';
+    };
+    rec.start();
+  });
+}
+
+btnValider.addEventListener('click', () => {
+  const texte = getTexte();
+  if (!texte || FLOW[etape]?.type === 'fin') return;
+  reponses.push({ q: FLOW[etape].id, r: texte });
+  // Sauvegarde vers n8n
+  const sv = new URLSearchParams({ q: FLOW[etape].id, r: texte, ts: new Date().toISOString() });
+  fetch('https://srv1351710.tail38289b.ts.net:8444/webhook/souvenir-jmp?' + sv.toString(), {
+    headers: { 'X-JMP-Token': '_qnpjlkQGjH5J53eOZNjOA' }
+  }).catch(() => {});
+  resetMicro();
   dialConfirm.textContent = '✓';
-  const micBtn = document.getElementById('btn-micro-d');
-  micBtn.classList.remove('enr-actif');
-  micBtn.querySelector('.micro-label-g').textContent = 'Parler';
   microZone.style.display = 'block';
   etape++;
   if (etape < FLOW.length) {
     setTimeout(() => { dialConfirm.textContent = ''; lancerEtape(etape); }, 700);
-  }
-});
-
-// ── Micro audio voice-first (Safari compatible) ──
-let mediaRec, chunks = [], audioBlob;
-const btnMicD = document.getElementById('btn-micro-d');
-
-btnMicD.addEventListener('click', async () => {
-  if (mediaRec && mediaRec.state === 'recording') {
-    mediaRec.stop();
-    btnMicD.classList.remove('enr-actif');
-    btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-    return;
-  }
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    chunks = [];
-    const mime = ['audio/mp4','audio/aac','audio/webm'].find(m => MediaRecorder.isTypeSupported(m)) || '';
-    mediaRec = new MediaRecorder(stream, mime ? { mimeType: mime } : {});
-    mediaRec.ondataavailable = e => chunks.push(e.data);
-    mediaRec.onstop = () => {
-      audioBlob = new Blob(chunks, { type: mime || 'audio/webm' });
-      stream.getTracks().forEach(t => t.stop());
-      microStatus.textContent = 'Audio enregistré ✓ — transcription à venir';
-      dialogueActions.style.display = 'flex';
-      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-    };
-    mediaRec.start();
-    btnMicD.classList.add('enr-actif');
-    btnMicD.querySelector('.micro-label-g').textContent = 'Stop ⏹';
-    microStatus.textContent = 'Enregistrement en cours…';
-  } catch(e) {
-    microStatus.textContent = 'Microphone inaccessible';
   }
 });
 
