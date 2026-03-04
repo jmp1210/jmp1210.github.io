@@ -1294,9 +1294,9 @@ window.repondreQ = function(etape, choix) {
 };
 
 // ── FLASHER générique ──
-function creerFlasher({ textes, sectionEl, textEl, citeEl, barreEl, numEl, totEl, cdEl, pauseBtn, tousBtnId, mursEl }) {
+function creerFlasher({ textes, sectionEl, textEl, citeEl, barreEl, numEl, totEl, cdEl, pauseBtn, tousBtnId, mursEl, duree }) {
   let idx = 0, paused = false, startT, elapsed = 0, raf;
-  const DUR = 4000;
+  const DUR = duree || 4000;
   totEl.textContent = textes.length;
   function setBg() {
     sectionEl.className = sectionEl.className.replace(/\s*(pair|impair)/, '');
@@ -1405,6 +1405,7 @@ creerFlasher({
   barreEl: document.getElementById('fb-barre'), numEl: document.getElementById('fb-num'),
   totEl: document.getElementById('fb-tot'), cdEl: document.getElementById('fb-cd'),
   pauseBtn: document.getElementById('fb-pause'),
+  duree: 5000,
 });
 
 // ══════════════════════════════
