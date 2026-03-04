@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean-Michel Perez — Professeur des Universités, Sciences de l'Éducation</title>
+    <meta name="description" content="Jean-Michel Perez, Professeur des Universités en Sciences de l'Éducation (70e CNU), Université de Lorraine. Micro-violences éducatives, accessibilité didactique, éducation inclusive.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jean-Michel Perez",
+        "jobTitle": "Professeur des Universités",
+        "worksFor": {"@type": "Organization", "name": "Université de Lorraine", "department": "INSPE de Lorraine"},
+        "memberOf": {"@type": "Organization", "name": "LISEC (UR 2310)"},
+        "sameAs": [
+            "https://scholar.google.com/citations?user=LjmJvZQAAAAJ",
+            "https://orcid.org/0000-0001-9677-7364",
+            "https://cv.hal.science/jean-michel-perez",
+            "https://theconversation.com/profiles/jean-michel-perez-2355347"
+        ]
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --bleu: #1a3a5c;
+            --bleu-clair: #2d5f8a;
+            --accent: #c0392b;
+            --gris-texte: #4a5568;
+            --gris: #f7f8fa;
+            --blanc: #ffffff;
+            --sombre: #0a0a0a;
+            --sombre-clair: #141414;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2d3748;
+            line-height: 1.7;
+            background: var(--blanc);
+        }
+
+        .container { max-width: 960px; margin: 0 auto; padding: 0 2rem; }
+
+        section[id] { scroll-margin-top: 3.5rem; }
+
+        /* NAV */
+        nav {
+            background: var(--bleu-clair);
+            padding: 0.7rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+        nav a {
+            color: var(--blanc);
+            text-decoration: none;
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            opacity: 0.85;
+            transition: opacity 0.3s;
+        }
+        nav a:hover { opacity: 1; }
+
+        /* FADE IN */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s, transform 0.8s; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== I. PROFILS & PUBLICATIONS ===== */
+        #profils {
+            background: var(--gris);
+            padding: 4rem 0;
+        }
+        #profils h2 {
+            font-size: 1.6rem;
+            color: var(--bleu);
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2.5rem;
+        }
+        .stat-box { text-align: center; }
+        .stat-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--bleu);
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.78rem;
+            color: var(--gris-texte);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 0.3rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .profils-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.8rem;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .profil-link {
+            display: block;
+            padding: 1rem 1.2rem;
+            background: var(--blanc);
+            text-decoration: none;
+            color: var(--bleu);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .profil-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-bottom-color: var(--accent);
+        }
+        .profil-link .source {
+            font-weight: 600;
+            display: block;
+            font-size: 1.15rem;
+            margin-bottom: 0.2rem;
+            font-family: 'Inter', sans-serif;
+        }
+        .profil-link .desc {
+            font-size: 0.85rem;
+            color: var(--gris-texte);
+        }
+
+        /* ===== BANDEAU JMP - PUNCHY ===== */
+        #bandeau {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--sombre);
+            color: var(--blanc);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        #bandeau::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 50% 80%, rgba(192,57,43,0.08) 0%, transparent 60%);
+        }
+        .bandeau-content {
+            position: relative;
+            z-index: 1;
+            max-width: 750px;
+            padding: 0 2rem;
+        }
+        .bandeau-identity {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 3rem;
+        }
+        .bandeau-name { color: rgba(255,255,255,0.7); }
+        .bandeau-sep { margin: 0 0.5rem; opacity: 0.3; }
+        .bandeau-role { }
+
+        .accroche { margin-bottom: 2.5rem; }
+        .grande-phrase {
+            font-size: 2rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: rgba(255,255,255,0.92);
+            font-weight: 400;
+        }
+
+        .compteur-pulse {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: rgba(255,255,255,0.5);
+            letter-spacing: 0.05em;
+            margin-bottom: 3rem;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; text-shadow: 0 0 30px rgba(192,57,43,0.2); }
+        }
+
+        .scroll-hint {
+            font-size: 1.8rem;
+            color: #fff;
+            opacity: 0.9;
+            margin-top: 2rem;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        /* Menu visuel Entrée/Plat/Dessert */
+        .menu-visuel {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+        }
+        .menu-visuel a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s;
+            letter-spacing: 0.03em;
+        }
+        .menu-visuel a:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        /* ===== II. ENQUÊTE / SOUVENIRS ===== */
+        #enquete { background: var(--sombre); color: #e0e0e0; }
+
+        .section-titre {
+            text-align: center;
+            padding: 3rem 2rem 1rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+        }
+
+        /* Étapes conscientisation */
+        #conscientisation { max-width: 700px; margin: 0 auto; padding: 0 2rem 3rem; }
+
+        .etape { margin-bottom: 2.5rem; }
+        .step-num {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: 0.8rem;
+        }
+        .step-question {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #fff;
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+        }
+        .opt-btn {
+            display: block;
+            width: 100%;
+            padding: 0.8rem 1.2rem;
+            margin-bottom: 0.5rem;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #ccc;
+            font-family: Georgia, serif;
+            font-size: 0.95rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .opt-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
+        .opt-btn.selected { border-color: var(--accent); background: rgba(192,57,43,0.15); }
+        .opt-btn:disabled { cursor: default; opacity: 0.6; }
+
+        .feedback {
+            display: none;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            background: rgba(255,255,255,0.03);
+            border-left: 3px solid var(--accent);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+        .feedback p { margin-bottom: 0.8rem; }
+        .feedback blockquote {
+            font-style: italic;
+            padding: 0.8rem 1.2rem;
+            margin: 0.8rem 0;
+            border-left: 2px solid rgba(255,255,255,0.15);
+            color: #bbb;
+        }
+        .feedback ul { margin: 0.8rem 0; padding-left: 1.5rem; }
+        .feedback li { margin-bottom: 0.4rem; }
+
+        /* Sas réflexif */
+        .sas-reflexif {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.05rem;
+            color: #aaa;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        /* Témoignages / Carousel */
+        .temoignages-bloc { padding: 2rem; max-width: 800px; margin: 0 auto; }
+
+        .section-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .section-label.positive { color: #27ae60; }
+
+        .carousel-nav {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .carousel-container {
+            min-height: 120px;
+            position: relative;
+        }
+        .carousel-item {
+            display: none;
+            font-size: 2.2rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.92);
+            text-align: center;
+            line-height: 1.5;
+            padding: 0 1rem;
+            animation: fadeInUp 0.6s ease;
+        }
+        .carousel-item.active { display: block; }
+        .carousel-item .meta {
+            font-size: 0.85rem;
+            font-style: normal;
+            font-family: 'Inter', sans-serif;
+            color: rgba(255,255,255,0.35);
+            margin-top: 1.2rem;
+            letter-spacing: 0.05em;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Dessert */
+        .dessert-bloc {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .btn-participer {
+            display: inline-block;
+            padding: 0.9rem 2.5rem;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn-participer:hover { background: #a93226; transform: translateY(-2px); }
+
+        /* ===== III. MÉDIATION ===== */
+        #mediation {
+            background: var(--sombre);
+            color: #e0e0e0;
+            padding: 4rem 0 2rem;
+        }
+        #mediation h2 {
+            font-size: 1.6rem;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        #mediation .subtitle {
+            text-align: center;
+            font-size: 0.92rem;
+            color: #999;
+            max-width: 700px;
+            margin: 0 auto 1rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        #mediation .sous-titre {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: 2.5rem;
+        }
+
+        /* Stats médiation */
+        .med-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0 0.5rem;
+        }
+        .med-stats .stat-number { color: #fff; }
+        .med-stats .stat-label { color: rgba(255,255,255,0.5); }
+
+        .rapport-citation {
+            text-align: center;
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.45);
+            margin-bottom: 2.5rem;
+            padding: 0 2rem;
+        }
+        .rapport-citation a { color: var(--accent); text-decoration: none; }
+        .rapport-citation a:hover { text-decoration: underline; }
+
+        /* Grille vidéos/médias */
+        .med-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .med-card {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+        .med-card img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .med-card:hover img { transform: scale(1.05); }
+        .med-card .overlay {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 1.5rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+        }
+        .med-card .overlay .tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 0.3rem;
+        }
+        .med-card .overlay .titre {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        .med-card.wide { grid-column: span 2; aspect-ratio: 21/7; }
+
+        /* Conférences à venir */
+        .conf-avenir {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+        .conf-avenir-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: rgba(255,255,255,0.35);
+            padding: 1rem 1rem 1.5rem;
+        }
+        .conf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+        }
+        .conf-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem 1.5rem;
+            min-height: 200px;
+            background: var(--sombre-clair);
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            transition: background 0.3s;
+        }
+        .conf-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: transparent;
+            transition: background 0.3s;
+        }
+        .conf-card:hover { background: #1a1a1a; }
+        .conf-card:hover::after { background: var(--accent); }
+        .conf-card .conf-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: 0.8rem;
+        }
+        .conf-card .conf-titre {
+            font-style: italic;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.35;
+            margin-bottom: 0.5rem;
+        }
+        .conf-card .conf-sub {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.4);
+            line-height: 1.5;
+        }
+        .conf-card .conf-arrow {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.15);
+            margin-top: 1rem;
+            transition: color 0.3s;
+        }
+        .conf-card:hover .conf-arrow { color: rgba(255,255,255,0.6); }
+
+        /* Rapport bloc */
+        .rapport-bloc {
+            max-width: 700px;
+            margin: 3rem auto;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .rapport-bloc .rlabel {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 1rem;
+        }
+        .rapport-bloc blockquote {
+            font-style: italic;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 0.5rem;
+        }
+        .rapport-bloc cite {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.4);
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .rapport-bloc a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .rapport-bloc a:hover { text-decoration: underline; }
+
+        /* ===== CONTACT ===== */
+        #contact {
+            background: var(--bleu);
+            color: var(--blanc);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        #contact h2 { font-size: 1.3rem; font-weight: 400; margin-bottom: 1.5rem; }
+        #contact a { color: rgba(255,255,255,0.8); }
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        .contact-item .label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.5;
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            background: #0d0d0d;
+            color: rgba(255,255,255,0.3);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.8rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .stats-row { gap: 1.5rem; }
+            .stat-number { font-size: 2rem; }
+            .profils-grid { grid-template-columns: 1fr; }
+            .menu-visuel { flex-direction: column; gap: 0.5rem; align-items: center; }
+            .med-grid { grid-template-columns: 1fr; }
+            .med-card.wide { grid-column: span 1; aspect-ratio: 16/10; }
+            .conf-grid { grid-template-columns: 1fr; }
+            .contact-grid { flex-direction: column; align-items: center; gap: 1.5rem; }
+            .grande-phrase { font-size: 1.4rem; }
+            .bandeau-identity { font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="#profils">Profils & Publications</a>
+        <a href="#enquete">Sur vos souvenirs</a>
+        <a href="#mediation">Médiation</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- ===== I. PROFILS & PUBLICATIONS ===== -->
+<section id="profils">
+    <div class="container">
+        <div class="fade-in" style="text-align: center; margin-bottom: 2rem;">
+            <div style="font-size: 2rem; font-weight: 400; color: var(--bleu); letter-spacing: 0.04em;">Jean-Michel Perez</div>
+            <div style="font-size: 1rem; color: var(--gris-texte); font-style: italic; margin-top: 0.3rem;">Professeur des Universités - Sciences de l'Éducation</div>
+        </div>
+        <h2 class="fade-in">Profils & Publications</h2>
+
+        <div class="stats-row fade-in">
+            <div class="stat-box">
+                <div class="stat-number">490+</div>
+                <div class="stat-label">Citations</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">13</div>
+                <div class="stat-label">H-Index</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">102</div>
+                <div class="stat-label">Publications HAL</div>
+            </div>
+        </div>
+
+        <div class="profils-grid fade-in">
+            <a href="https://scholar.google.com/citations?user=LjmJvZQAAAAJ" class="profil-link" target="_blank" rel="noopener">
+                <span class="source">🎓 Google Scholar</span>
+                <span class="desc">Publications, citations, h-index</span>
+            </a>
+            <a href="https://cv.hal.science/jean-michel-perez" class="profil-link" target="_blank" rel="noopener">
+                <span class="source">📚 HAL - CV complet</span>
+                <span class="desc">Archives ouvertes - 102 dépôts</span>
+            </a>
+            <a href="https://orcid.org/0000-0001-9677-7364" class="profil-link" target="_blank" rel="noopener">
+                <span class="source">🔗 ORCID</span>
+                <span class="desc">0000-0001-9677-7364</span>
+            </a>
+            <a href="https://theconversation.com/profiles/jean-michel-perez-2355347" class="profil-link" target="_blank" rel="noopener">
+                <span class="source">📰 The Conversation</span>
+                <span class="desc">Articles grand public</span>
+            </a>
+            <a href="https://www.lisec-recherche.eu/membre/perez-jean-michel/" class="profil-link" target="_blank" rel="noopener">
+                <span class="source">🏢 LISEC</span>
+                <span class="desc">Fiche laboratoire</span>
+            </a>
+            <a href="https://scanr.enseignementsup-recherche.gouv.fr/person/idref117204080" class="profil-link" target="_blank" rel="noopener">
+                <span class="source">🔍 scanR</span>
+                <span class="desc">Portail national recherche</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- BANDEAU JMP + ACCROCHE PUNCHY -->
+<section id="bandeau">
+    <div class="bandeau-content">
+        <div class="accroche fade-in">
+            <div class="grande-phrase">Sur vos souvenirs</div>
+        </div>
+
+        <!-- identité déplacée sur diapo 1 -->
+
+        <div class="menu-visuel fade-in" style="flex-direction: column; gap: 0.8rem; align-items: center; margin-top: 2rem;">
+            <a href="#entree" style="width: 320px; text-align: center;">🍽 Entrée - Conscientiser</a>
+            <a href="#plat" style="width: 320px; text-align: center;">🥘 Plat - Témoignages</a>
+            <a href="#dessert" style="width: 320px; text-align: center;">🍰 Dessert - Participer</a>
+            <a href="#mediation" style="width: 320px; text-align: center;">☕ Café - Médiation</a>
+        </div>
+
+        <div class="compteur-pulse fade-in" style="margin-top: 2.5rem;">1 849 réponses - 6 pays - depuis mai 2025</div>
+
+        <div class="scroll-hint fade-in">↓</div>
+    </div>
+</section>
+
+<!-- ===== II. SUR VOS SOUVENIRS ===== -->
+<section id="enquete">
+
+    <!-- II.1 ENTRÉE - Invitation -->
+    <div id="entree" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4rem 2rem; text-align: center;">
+
+        <div class="fade-in" style="max-width: 650px;">
+            <p style="font-size: 1.6rem; font-style: italic; color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 2rem;">Durant votre parcours scolaire ou universitaire, vous avez peut-être vécu des moments difficiles - et probablement aussi des moments agréables.</p>
+            <p style="font-size: 1.3rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 3rem;">Nous aimerions vous inviter dans quelques minutes à partager deux de vos souvenirs - un qui vous laisse une impression désagréable, l'autre plutôt agréable.</p>
+            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.45); font-family: 'Inter', sans-serif; letter-spacing: 0.05em;">... et en attendant votre programme : 3 questions, les souvenirs + et - recueillis, et nos activités de médiation</p>
+            <div class="scroll-hint">↓</div>
+        </div>
+
+    </div>
+
+    <!-- 3 questions pour conscientiser -->
+    <div class="section-titre fade-in">🍽 Entrée - 3 questions pour conscientiser</div>
+
+    <div id="conscientisation">
+
+        <div class="etape" id="etape-1">
+            <p class="step-num">1 / 3</p>
+            <p class="step-question">L'école protège nos enfants. Vrai ou faux ?</p>
+            <div id="opts-1">
+                <button onclick="repondre(1, 0)" class="opt-btn">Oui - c'est sa mission, elle la remplit</button>
+                <button onclick="repondre(1, 1)" class="opt-btn">Pas toujours, mais elle essaie</button>
+                <button onclick="repondre(1, 2)" class="opt-btn">L'institution elle-même peut produire de la violence</button>
+            </div>
+            <div id="fb-1" class="feedback">
+                <p>Quelle que soit votre réponse, voici ce qu'en dit <strong>Jacques Toubon</strong>, Défenseur des droits (2014-2020), dans son rapport <em>Enfance et violence : la part des institutions publiques</em> (2019) :</p>
+                <blockquote>« Les violences sont une réalité dans le quotidien des enfants, y compris au sein des institutions dans lesquelles ils sont accueillis ou pris en charge » (p. 1)</blockquote>
+                <blockquote>« Le fonctionnement des institutions publiques est susceptible en lui-même d'induire ou d'amplifier les violences faites aux enfants dont elles ont la charge » (p. 1)</blockquote>
+                <p>Pendant ce temps, la loi parle d'une « école de la bienveillance » (2013) et d'une « école de la confiance » (2019). L'écart entre le discours législatif et la réalité vécue est un gouffre.</p>
+            </div>
+        </div>
+
+        <div class="etape" id="etape-2">
+            <p class="step-num">2 / 3</p>
+            <p class="step-question">Maintenant que vous savez, est-ce que ça change quelque chose ?</p>
+            <div id="opts-2">
+                <button onclick="repondre(2, 0)" class="opt-btn">Savoir suffit - la prise de conscience transforme les pratiques</button>
+                <button onclick="repondre(2, 1)" class="opt-btn">Non, rien ne bouge jamais vraiment</button>
+                <button onclick="repondre(2, 2)" class="opt-btn">C'est plus compliqué que ça</button>
+            </div>
+            <div id="fb-2" class="feedback">
+                <p>On aimerait que oui. Mais les controverses sociales suivent presque toujours le même scénario en deux temps : d'abord <strong>l'indignation</strong> puis <strong>la normalisation</strong>.</p>
+                <p>La vache folle, inacceptable en 1996, est devenue un risque « géré » (Masson, Fischler, Laurens & Raude, 2003). Le COVID, terreur collective en 2020, fait aujourd'hui partie du décor. Les violences éducatives suivent exactement le même chemin : on les découvre avec effroi, puis on apprend à vivre avec.</p>
+                <p>Alors non, savoir ne suffit pas. Transformer demande un sursaut, du courage, de l'entrainement, de la patience - et probablement une forme de colère froide qui ne s'éteint pas.</p>
+            </div>
+        </div>
+
+        <div class="etape" id="etape-3">
+            <p class="step-num">3 / 3</p>
+            <p class="step-question">« Ça le forme. On n'est pas chez les Bisounours. »</p>
+            <div id="opts-3">
+                <button onclick="repondre(3, 0)" class="opt-btn">C'est vrai - l'adversité forge le caractère</button>
+                <button onclick="repondre(3, 1)" class="opt-btn">Les enfants sont résilients, ils s'en remettent</button>
+                <button onclick="repondre(3, 2)" class="opt-btn">L'isolement n'est pas formateur - c'est un danger</button>
+            </div>
+            <div id="fb-3" class="feedback">
+                <p>On entend souvent cet argument. Il a la force des évidences. Et il est faux.</p>
+                <p>Quand un élève est isolé et qu'aucun mécanisme de reliance ne vient compenser, ce n'est pas du « caractère » qui se construit. C'est de la <strong>désocialisation</strong>. Et la science est formelle :</p>
+                <ul>
+                    <li><strong>Holt-Lunstad et al., 2015</strong> - 70 études, 3,4 millions de personnes : l'isolement social augmente le risque de mortalité prématurée</li>
+                    <li><strong>Holt-Lunstad et al., 2010</strong> - 148 études, 308 849 personnes : un effet sur la santé <strong>comparable au tabagisme, à l'obésité et à l'alcoolisme</strong></li>
+                </ul>
+                <p>Ce n'est pas une question de Bisounours. C'est une question de santé publique. Et les micro-attentions - ces gestes minuscules qui disent « tu existes, tu comptes » - sont peut-être le seul antidote que l'école puisse inventer de l'intérieur.</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; padding: 2rem 0;"><div class="scroll-hint">↓</div></div>
+
+    <!-- Sas réflexif supprimé -->
+
+    <!-- II.2 PLAT - Souvenirs : ce qu'en disent nos répondants -->
+    <div class="section-titre fade-in" id="plat" style="font-size: 1.4rem; letter-spacing: 0.18em; padding-top: 4rem;">Témoignages - Recueil de données</div>
+
+    <!-- Souvenirs - TÉMOIGNAGES -->
+    <div class="temoignages-bloc" style="min-height: 50vh; display: flex; flex-direction: column; justify-content: center; max-width: 700px;">
+        <div class="carousel-nav" style="margin-bottom: 2rem;">
+            <span class="counter" id="compteur-violences" style="font-size: 0.85rem;">1 / 20</span>
+            <span style="margin-left: 1rem; color: rgba(255,255,255,0.25); font-size: 0.75rem;">change dans <span id="countdown-v">3</span>s</span>
+            <span style="margin-left: 1rem; cursor: pointer; color: rgba(255,255,255,0.3);" onclick="togglePause('violences')" id="pause-btn-v">⏸</span>
+        </div>
+        <div class="carousel-container" id="bloc-violences">
+            <div class="carousel-item active">« En quatrième, un de mes professeurs m'a dit "qu'au mieux, je finirai caissière". »<div class="meta">Femme, 44 ans</div></div>
+            <div class="carousel-item">« Un prof m'a écrit "bouffonne" sur la copie. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« En 3ème, ma professeur d'anglais a dit devant toute la classe que j'étais "conne" car je n'avais pas compris une question. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« En CM2, ma prof principale se moquait de moi parce que j'étais gros et que je n'arriverais à rien dans la vie. »<div class="meta">Homme, 40 ans</div></div>
+            <div class="carousel-item">« Ma prof d'anglais de terminale répétait sans cesse que j'étais nulle et que je n'aurais jamais mon bac. »<div class="meta">Femme, 22 ans</div></div>
+            <div class="carousel-item">« J'ai été harcelée en 6ème car j'avais 18 de moyenne. C'était souvent : "Oh l'intello, en plus t'as des lunettes." »<div class="meta">Femme, 24 ans</div></div>
+            <div class="carousel-item">« Au collège, la professeur d'EPS s'est moquée de moi lorsque je suis tombée. Je me suis sentie humiliée devant toute la classe. »<div class="meta">Femme, 45 ans</div></div>
+            <div class="carousel-item">« En CE1, une maîtresse nous tirait les oreilles, une autre en CE2 nous donnait des claques. »<div class="meta">Femme, 42 ans</div></div>
+            <div class="carousel-item">« En CE2, étant timide, je n'aimais pas chanter. La professeure m'a obligée de chanter devant toute ma classe. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« Je me souviens qu'on se moquait de moi au collège car j'avais de bons résultats. J'ai donc fait exprès de faire des erreurs afin d'être davantage intégrée. »<div class="meta">Femme, 24 ans</div></div>
+            <div class="carousel-item">« En deuxième année de primaire, ma professeure m'a dit que j'étais bête comme un âne parce que je n'avais pas suivi ses ordres. »<div class="meta">Femme, 26 ans</div></div>
+            <div class="carousel-item">« En première, la professeure de math m'a applaudie de manière sarcastique lorsqu'elle m'a rendu ma copie. »<div class="meta">Femme, 20 ans</div></div>
+            <div class="carousel-item">« Ma maîtresse m'a traitée de dinde devant toute la classe en tirant sur mes couettes. J'ai tellement eu honte. »<div class="meta">Femme, 54 ans</div></div>
+            <div class="carousel-item">« Une enseignante de français en 4e m'a dit que je finirais en bac pro comme ma soeur, en les dénigrant. »<div class="meta">Femme, 23 ans</div></div>
+            <div class="carousel-item">« En seconde au lycée, un enseignant n'a pas arrêté de me "pourrir" et de me séparer de mes amis sans aucune raison. »<div class="meta">Homme, 20 ans</div></div>
+            <div class="carousel-item">« Une professeure de primaire refusait de m'appeler par mon prénom. Elle a persisté toute l'année à m'appeler par le prénom de ma grande soeur. »<div class="meta">Femme, 22 ans</div></div>
+            <div class="carousel-item">« Du CM2 jusqu'en 6ème, j'ai subi du harcèlement. J'en ai parlé avec un professeur mais il m'a dit "tu te fais des problèmes à toi-même". »<div class="meta">Femme, 23 ans</div></div>
+            <div class="carousel-item">« Ma professeure de français de 4ème m'avait dit "ton père est ouvrier, tu ne peux pas faire d'études". »<div class="meta">Femme, 57 ans</div></div>
+            <div class="carousel-item">« En primaire, j'étais toujours seule, moquée, j'avais du mal à trouver ma place. »<div class="meta">Femme, 50 ans</div></div>
+            <div class="carousel-item">« En CM1-CM2, ma maîtresse m'a dit que ça ne poserait aucun problème de sauter une classe puisque, de toute façon, je n'avais pas d'amis. »<div class="meta">Femme, 33 ans</div></div>
+        </div>
+    </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#plat" style="color: rgba(255,255,255,0.25); font-family: 'Inter', sans-serif; font-size: 0.78rem; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase;">voir tous</a>
+            <div class="scroll-hint" style="margin-top: 1rem;">↓</div>
+        </div>
+    </div>
+
+    <!-- Souvenirs + TÉMOIGNAGES -->
+    <div class="temoignages-bloc" id="attentions-section" style="min-height: 50vh; display: flex; flex-direction: column; justify-content: center; max-width: 700px;">
+        <div class="section-titre fade-in" style="font-size: 1.4rem; letter-spacing: 0.18em; padding-top: 2rem; color: #3498db;">Souvenirs + Témoignages</div>
+        <div class="carousel-nav" style="margin-bottom: 2rem;">
+            <span class="counter" id="compteur-attentions" style="font-size: 0.85rem;">1 / 20</span>
+            <span style="margin-left: 1rem; color: rgba(255,255,255,0.25); font-size: 0.75rem;">change dans <span id="countdown-a">4</span>s</span>
+            <span style="margin-left: 1rem; cursor: pointer; color: rgba(255,255,255,0.3);" onclick="togglePause('attentions')" id="pause-btn-a">⏸</span>
+        </div>
+        <div class="carousel-container" id="bloc-attentions">
+            <div class="carousel-item active">« Lors des résultats du baccalauréat, ma professeure d'histoire géographie m'attendait au portail. Elle voulait me dire qu'elle était fière de moi car j'avais obtenu 20/20. »<div class="meta">Femme</div></div>
+            <div class="carousel-item">« En CE1, une professeure a suspecté mon handicap quand elle voyait mon écriture. C'est grâce à elle que j'ai pu me faire diagnostiquer. »<div class="meta">Homme, 20 ans</div></div>
+            <div class="carousel-item">« En CP, ma maîtresse m'a offert un livre en fin d'année. Je suis devenue une grande lectrice suite à ça. »<div class="meta">27 ans</div></div>
+            <div class="carousel-item">« Un maître en CE2 a fait preuve d'une grande patience avec moi et était venu me voir lors d'une hospitalisation. »<div class="meta">Femme, 48 ans</div></div>
+            <div class="carousel-item">« Une prof m'a fait comprendre que je pouvais faire des maths. Elle a cru en moi et j'ai réussi mon année. »<div class="meta">Femme, 19 ans</div></div>
+            <div class="carousel-item">« Ma professeure de mathématiques en 6e m'a félicité et m'a annoncé que j'aurais un bel avenir. »<div class="meta">Homme, 30 ans</div></div>
+            <div class="carousel-item">« En 4e, ma prof principale a dit que j'étais une bonne élève mais aussi une bonne personne. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« Les cours de russe en terminale : la professeure traitait notre petit groupe d'élèves d'égal à égal. Je n'ai jamais autant eu l'impression de progresser. »<div class="meta">Femme, 42 ans</div></div>
+            <div class="carousel-item">« Au lycée, une prof d'histoire géo m'a proposé de refaire un contrôle que j'avais raté et m'a prise à part pour en discuter. »<div class="meta">Femme, 49 ans</div></div>
+            <div class="carousel-item">« Des professeurs des écoles encourageants, bienveillants, qui se déplaçaient jusqu'au domicile et ont pris en compte ma situation personnelle. »<div class="meta">Femme, 49 ans</div></div>
+            <div class="carousel-item">« En Terminale, mon professeur de SES m'a félicitée pour ma prise de parole et mon investissement dans les TPE alors que j'étais plutôt réservée. »<div class="meta">Femme, 39 ans</div></div>
+            <div class="carousel-item">« Au lycée en seconde, j'avais un prof d'histoire géographie qui m'a passionné sur la matière mais surtout sur l'envie de partager des connaissances. »<div class="meta">Homme, 23 ans</div></div>
+            <div class="carousel-item">« Un professeur a été mon confident pendant une période où je n'allais pas très bien au lycée. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« Mon prof de math du lycée était exceptionnel. Il ne laissait personne sans comprendre. »<div class="meta">Femme, 40 ans</div></div>
+            <div class="carousel-item">« En quittant le CM2, l'enseignante avait marqué un mot personnalisé à chacun de ses élèves. Sa gentillesse m'avait énormément rassurée avant mon entrée en 6e. »<div class="meta">Femme, 22 ans</div></div>
+            <div class="carousel-item">« Un professeur m'a dit que j'avais de l'esprit critique et que c'était important. »<div class="meta">Homme, 22 ans</div></div>
+            <div class="carousel-item">« J'ai un très bon souvenir de mon enseignante de maternelle avec qui j'ai encore contact aujourd'hui. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« Quand j'ai dit que je souhaitais devenir professeur des écoles, on m'a dit que c'était un métier fait pour moi. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« Certains enseignants sensibles à l'analyse et aux raisonnements plus qu'aux apprentissages ont su m'encourager. »<div class="meta">Homme, 41 ans</div></div>
+            <div class="carousel-item">« Durant tout le lycée, j'ai eu la même prof de SVT. Elle était toujours à l'écoute des élèves et nous poussait à réussir. »<div class="meta">Homme, 21 ans</div></div>
+            <div class="carousel-item">« Mon année de CM1 est celle qui m'a marquée le plus. Ma maîtresse était douce, gentille et attentive. Ce que j'adorais, c'était le coin jeu où dès qu'on avait fini notre travail, on pouvait s'y rendre et jouer librement. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« Mon voyage scolaire en Italie en 3e a été un moment inoubliable. Nous avons visité des villes magnifiques et renforcé nos liens avec nos camarades. »<div class="meta">21 ans</div></div>
+            <div class="carousel-item">« Mr Perez m'a laissé faire l'appel. Ceci m'a permis d'avoir un avant-goût de mon futur métier. »<div class="meta">M1, 2024</div></div>
+            <div class="carousel-item">« En maternelle, nous faisions beaucoup de cours de cuisine que j'adorais. Une fois, nous avons fait de la confiture de citrouille et c'était la meilleure que j'aie jamais mangée. »<div class="meta">21 ans</div></div>
+            <div class="carousel-item">« En CP, il y avait un jeune homme sourd. Durant les moments de chorale, la directrice avait à cœur de nous apprendre tous les chants en langue des signes, pour qu'il puisse participer. »<div class="meta">22 ans</div></div>
+            <div class="carousel-item">« En CM1, notre maître avait installé un énorme aquarium en classe. Chaque élève avait un poisson attitré. Cela a créé une vraie responsabilité et beaucoup de motivation. »<div class="meta">22 ans</div></div>
+            <div class="carousel-item">« Ma professeure de primaire m'a fait un compliment sur l'étymologie de mon prénom, qu'il correspondait à ma gentillesse. »<div class="meta">Femme, 21 ans</div></div>
+            <div class="carousel-item">« J'avais des difficultés en anglais et à l'oral en 6e. Ma professeure a mis en place un jeu où je devais participer minimum 3 fois en cours. Ça m'a encouragée, et voyant les résultats, elle l'a mis en place pour chaque élève. »<div class="meta">Femme, 20 ans</div></div>
+            <div class="carousel-item">« Mon professeur de philosophie de terminale m'a dit, lors d'une discussion sur l'orientation, que peu importe ce que je ferais comme études, il souhaitait que ça me plaise et que j'aille le plus loin possible. »<div class="meta">Femme, 20 ans</div></div>
+        </div>
+    </div>
+    <div style="text-align: center; padding: 2rem 0;"><div class="scroll-hint">↓</div></div>
+
+    <!-- II.3 DESSERT -->
+    <div id="dessert" style="min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4rem 2rem; text-align: center;">
+        <div class="section-titre fade-in" style="font-size: 1.4rem; letter-spacing: 0.18em; padding: 0; margin-bottom: 2.5rem;">🍰 Dessert - L'enquête</div>
+        <p class="fade-in" style="color: rgba(255,255,255,0.85); max-width: 600px; font-size: 1.6rem; font-style: italic; line-height: 1.6; margin-bottom: 1.5rem;">
+            5 minutes pour nous faire partager 2 souvenirs.
+        </p>
+        <p class="fade-in" style="color: rgba(255,255,255,0.45); max-width: 550px; font-size: 1.1rem; line-height: 1.6; margin-bottom: 3rem;">
+            Pour les volontaires : 1 essai d'enquête par enregistrement oral.
+        </p>
+        <a href="https://survey.music-music.fr/index.php/164928?lang=fr" target="_blank" rel="noopener" class="btn-participer fade-in" style="font-size: 1.2rem; padding: 1.2rem 3rem; letter-spacing: 0.08em;">Participez à l'enquête →</a>
+        <div class="scroll-hint" style="margin-top: 3rem;">↓</div>
+    </div>
+
+</section>
+
+<!-- ===== III. LA MÉDIATION DANS TOUS SES ÉTATS ===== -->
+<section id="mediation">
+    <div class="container">
+        <div class="section-titre fade-in" style="font-size: 1.4rem; letter-spacing: 0.18em; color: var(--accent); padding-top: 0;">☕ Café</div>
+        <h2 class="fade-in" style="font-size: 2.2rem; margin-bottom: 1rem;">La médiation dans tous ses états</h2>
+        <p class="subtitle fade-in" style="font-size: 1.1rem;">Construire des ponts entre la production de savoirs académiques et une société civile qui aspire à habiter son existence.</p>
+        <div class="sous-titre fade-in" style="font-size: 0.85rem;">Du muséum au podcast - de la conférence plénière au court-métrage - au Master EPI</div>
+
+        <div class="med-stats fade-in">
+            <div class="stat-box">
+                <div class="stat-number" style="color: #fff;">28 846</div>
+                <div class="stat-label" style="color: rgba(255,255,255,0.5);">Lectures - The Conversation</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="color: #fff;">41 000</div>
+                <div class="stat-label" style="color: rgba(255,255,255,0.5);">Vues - YouTube Shorts</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="color: #fff;">3.0</div>
+                <div class="stat-label" style="color: rgba(255,255,255,0.5);">Facteur d'impact</div>
+            </div>
+        </div>
+
+        <div class="rapport-citation fade-in">
+            📄 <em>Rapport d'impact 2025 - The Conversation France</em> - Impact #5 Recherche, p. 30 :
+            « Violences éducatives - Plus de 400 réponses à son enquête » -
+            <a href="https://cdn.theconversation.com/static_files/files/4077/Rapport_d%27impact_2025_compressed_%281%29.pdf" target="_blank" rel="noopener">Lire le rapport (PDF) → p. 30</a>
+        </div>
+    </div>
+
+    <!-- Grille médias -->
+    <div class="med-grid">
+
+        <!-- 3.01 Article TC -->
+        <a class="med-card wide" href="https://theconversation.com/les-micro-violences-educatives-ordinaires-un-impense-de-linstitution-scolaire-253794" target="_blank" rel="noopener">
+            <img src="https://images.theconversation.com/files/634078/original/file-20241107-17-1v5aqk.jpg?ixlib=rb-4.1.0&rect=0%2C12%2C6000%2C2996&q=45&auto=format&w=1356&h=668&fit=crop" alt="Article The Conversation" onerror="this.style.background='#1a1a1a'">
+            <div class="overlay">
+                <div class="tag">3.01 - Article grand public - 28 846 lectures</div>
+                <div class="titre">Les micro-violences éducatives ordinaires : un impensé de l'institution scolaire</div>
+            </div>
+        </a>
+
+        <!-- 3.2 Et demain ? -->
+        <a class="med-card" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/hqdefault.jpg" alt="Et demain ?">
+            <div class="overlay">
+                <div class="tag">3.2 - « Et demain ? » - Muséum-Aquarium de Nancy - sept. 2025</div>
+                <div class="titre">Table ronde « Et demain ? » - L'école inclusive est un leurre</div>
+            </div>
+        </a>
+
+        <!-- 3.3 YouTube Shorts -->
+        <a class="med-card" href="https://www.youtube.com/shorts/bc_KbxaHDbo" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/bc_KbxaHDbo/hqdefault.jpg" alt="YouTube Shorts TC">
+            <div class="overlay">
+                <div class="tag">3.3 - YouTube Shorts - 41 000 vues</div>
+                <div class="titre">Ces petites phrases qui détruisent - The Conversation France - nov. 2025</div>
+            </div>
+        </a>
+
+        <!-- 3.4 Webinaire CRAP -->
+        <a class="med-card" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/frwjsdUUjB8/hqdefault.jpg" alt="Webinaire CRAP">
+            <div class="overlay">
+                <div class="tag">3.4 - Webinaire</div>
+                <div class="titre">Apprendre par le corps - CRAP - Cahiers Pédagogiques N°597</div>
+            </div>
+        </a>
+
+        <!-- #4 CIACE Anáhuac -->
+        <a class="med-card" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/n8qTSP1OKrI/hqdefault.jpg" alt="CIACE Anáhuac">
+            <div class="overlay">
+                <div class="tag">Conférence - Universidad Anáhuac México - 6 mars 2025</div>
+                <div class="titre">Transformer les pratiques éducatives inclusives - CIACE Anáhuac México</div>
+            </div>
+        </a>
+
+        <!-- #5 Entendu ep.49 -->
+        <a class="med-card" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
+            <div class="overlay" style="background: none; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                <div class="tag">🎙 Podcast - ULTV / INSPÉ Lorraine - 15 oct 2025</div>
+                <div class="titre">Déconstruire la non-violence : micro-violences et impensés institutionnels - Entendu! ep.49</div>
+            </div>
+        </a>
+
+        <!-- #6 Code Soleil -->
+        <a class="med-card" href="https://podv2.unistra.fr/video/56446-jean-michel-perez-le-code-soleil-des-micro-violences-et-des-micro-attentions-au-sein-des-institutions/" target="_blank" rel="noopener" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
+            <div class="overlay" style="background: none; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                <div class="tag">🎙 Conférence - Pod Unistra / INSPE Strasbourg - 12-13 oct 2023</div>
+                <div class="titre">Le Code Soleil : des micro-violences et des micro-attentions au sein des institutions</div>
+            </div>
+        </a>
+
+        <!-- #7 Mal-vivre ep.21 -->
+        <a class="med-card" href="https://ultv.univ-lorraine.fr/video/13546-mal-vivre-a-lecole-une-realite-a-interroger-jean-michel-perez-laurent-muller-negligences-micro-violences-et-attitudes-banalisees/" target="_blank" rel="noopener" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
+            <div class="overlay" style="background: none; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                <div class="tag">🎙 Podcast - ULTV / INSPÉ Lorraine - 12 oct 2022</div>
+                <div class="titre">Mal-vivre à l'école : négligences, micro-violences et attitudes banalisées (avec L. Muller) - Entendu! ep.21</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- Conférences à venir -->
+    <div class="conf-avenir">
+        <div class="conf-avenir-label">Conférences à venir</div>
+        <div class="conf-grid">
+
+            <a class="conf-card" href="https://ophris26.sciencesconf.org/" target="_blank" rel="noopener">
+                <div class="conf-tag">3.6.2 - OPHriS - 11-12 mars 2026 - Toulouse</div>
+                <div class="conf-titre">Accessibilité et hypocrisie organisationnelle</div>
+                <div class="conf-sub">Une lecture institutionnelle et critique de l'Université dite « inclusive »</div>
+                <div class="conf-arrow">↗</div>
+            </a>
+
+            <a class="conf-card" href="https://www.lyceefrancais-jmonnet.be/" target="_blank" rel="noopener">
+                <div class="conf-tag">3.6.1 - Conférence plénière - 10-11 avr. 2026 - Bruxelles</div>
+                <div class="conf-titre">L'école inclusive est un leurre</div>
+                <div class="conf-sub">Coll. « Inclusion et Partage » - Lycée Français Jean Monnet</div>
+                <div class="conf-arrow">↗</div>
+            </a>
+
+            <a class="conf-card" href="#" target="_blank" rel="noopener">
+                <div class="conf-tag">3.6.3 - REF 2026 - Sherbrooke - avec G. Suau</div>
+                <div class="conf-titre">Pratiques inclusives et micro-dispositifs de pouvoir</div>
+                <div class="conf-sub">Ce que les micro-violences disent de l'accessibilité aux savoirs</div>
+                <div class="conf-arrow">↗</div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Rapport d'impact -->
+    <div class="rapport-bloc">
+        <div class="rlabel">Rapport d'impact 2025 - The Conversation France - Impact #5 Recherche, p. 30</div>
+        <blockquote>« Cet article dans The Conversation France a été le point de départ d'une dynamique collective, riche et inattendue. »</blockquote>
+        <cite>Jean-Michel Perez, Université de Lorraine</cite>
+        <a href="https://cdn.theconversation.com/static_files/files/4077/Rapport_d%27impact_2025_compressed_%281%29.pdf" target="_blank" rel="noopener">Lire le rapport d'impact 2025 (PDF) → p. 30</a>
+    </div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="label">Courriel</div>
+                <a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a>
+            </div>
+            <div class="contact-item">
+                <div class="label">Institution</div>
+                INSPE de Lorraine - Université de Lorraine
+            </div>
+            <div class="contact-item">
+                <div class="label">Laboratoire</div>
+                LISEC (UR 2310) - Pôle CLCS
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>Jean-Michel Perez - Université de Lorraine - LISEC (UR 2310) - 2026</footer>
+
+<script>
+(function() {
+    var carousels = {};
+
+    function cycleCarousel(blocId, interval, compteurId, countdownId) {
+        var bloc = document.getElementById(blocId);
+        if (!bloc) return;
+        var items = bloc.querySelectorAll('.carousel-item');
+        if (items.length === 0) return;
+        var total = items.length;
+        var current = 0;
+        var compteur = compteurId ? document.getElementById(compteurId) : null;
+        var countdownEl = countdownId ? document.getElementById(countdownId) : null;
+        var paused = false;
+        var secs = Math.round(interval / 1000);
+        var remaining = secs;
+
+        var ticker = setInterval(function() {
+            if (paused) return;
+            remaining--;
+            if (countdownEl) countdownEl.textContent = remaining;
+            if (remaining <= 0) {
+                items[current].classList.remove('active');
+                current = (current + 1) % total;
+                items[current].classList.add('active');
+                if (compteur) compteur.textContent = (current + 1) + ' / ' + total;
+                remaining = secs;
+            }
+        }, 1000);
+
+        carousels[blocId] = { paused: false, toggle: function() {
+            paused = !paused;
+            carousels[blocId].paused = paused;
+        }};
+    }
+
+    window.togglePause = function(type) {
+        var id = type === 'violences' ? 'bloc-violences' : 'bloc-attentions';
+        var btnId = type === 'violences' ? 'pause-btn-v' : 'pause-btn-a';
+        if (carousels[id]) {
+            carousels[id].toggle();
+            document.getElementById(btnId).textContent = carousels[id].paused ? '▶' : '⏸';
+        }
+    };
+
+    cycleCarousel('bloc-violences', 4000, 'compteur-violences', 'countdown-v');
+
+    window.repondre = function(etape, choix) {
+        var opts = document.getElementById('opts-' + etape);
+        var btns = opts.querySelectorAll('button');
+        btns.forEach(function(b) { b.disabled = true; });
+        btns[choix].classList.add('selected');
+        var fb = document.getElementById('fb-' + etape);
+        fb.style.display = 'block';
+        fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(function() {
+            if (etape < 3) {
+                var next = document.getElementById('etape-' + (etape + 1));
+                next.style.display = 'block';
+                next.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                unlockAttentions();
+            }
+        }, 2000);
+    };
+
+    cycleCarousel('bloc-attentions', 4000, 'compteur-attentions', 'countdown-a');
+
+    function unlockAttentions() {}
+
+    var fadeEls = document.querySelectorAll('.fade-in');
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+        });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(function(el) { observer.observe(el); });
+})();
+</script>
+
+</body>
+</html>
