@@ -1249,7 +1249,7 @@ function triggerAnim2026() {
 }
 async function fetch2026() {
   try {
-    const r = await fetch('https://script.google.com/macros/s/AKfycbyYwD5PbY0h7pzkGLsZTfAJmpUHv2YXTbbSMpWdmsviqDg-Xh21g44vI0arga0w-CZmKQ/exec');
+    const r = await fetch('counter.json?t=' + Date.now());
     const d = await r.json();
     if (d.count !== undefined) { gasCount2026 = d.count; triggerAnim2026(); }
   } catch(e) {}
