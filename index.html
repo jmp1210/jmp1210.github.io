@@ -598,7 +598,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 /* Événements à venir — cartes avec photo/couleur de fond */
 .med-avenir { max-width: 1100px; margin: 0 auto; padding: 3px 0 0; }
 .med-avenir-label { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(245,240,235,0.4); padding: 2rem 2rem 1.5rem; }
-.med-grid-av { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 3px; }
+.med-grid-av { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 3px; justify-items: center; }
 .med-card-av {
   display: flex; flex-direction: column; justify-content: flex-end;
   padding: 1.8rem 1.8rem 1.6rem; min-height: 260px;
@@ -781,6 +781,27 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   <div class="scroll-arrow">↓</div>
 </div>
 
+<!-- ═══ ENCART UNYS — Article presse ═══ -->
+<div style="background:#0d1b2a; padding: 0 2rem 4rem; display:flex; justify-content:center;">
+  <a href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves-2/"
+     target="_blank" rel="noopener"
+     style="display:block; max-width:680px; width:100%; border-radius:8px; overflow:hidden; text-decoration:none; position:relative; box-shadow:0 8px 40px rgba(0,0,0,0.5);">
+    <img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/UNYS_Illus_Article_JeanMichelPerez-scaled.jpg"
+         alt="Unys — Micro-violences éducatives"
+         style="width:100%; display:block; aspect-ratio:16/7; object-fit:cover; filter:brightness(0.65);">
+    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 55%); pointer-events:none;"></div>
+    <div style="position:absolute; top:1.2rem; left:1.4rem;">
+      <img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/Couv_JeanMichelPerez.png"
+           alt="Unys Sciences" style="height:28px; width:auto; object-fit:contain; filter:brightness(0) invert(1); opacity:0.8;">
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; padding:1.4rem 1.6rem;">
+      <div style="font-family:'Inter',sans-serif; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:rgba(245,240,235,0.55); margin-bottom:0.5rem;">Unys Sciences &middot; Article &middot; 2026</div>
+      <div style="font-family:'EB Garamond',serif; font-size:clamp(1rem,2vw,1.35rem); font-style:italic; color:#f5f0eb; line-height:1.35;">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</div>
+      <div style="font-family:'Inter',sans-serif; font-size:0.78rem; color:rgba(245,240,235,0.45); margin-top:0.5rem;">Lire l&rsquo;article ↗</div>
+    </div>
+  </a>
+</div>
+
 <!-- ═══ FLASHER ROUGE — Micro-violences ═══ -->
 <div class="flash-rouge pair" id="flash-rouge-section">
   <div class="flash-badge rouge-b">T&eacute;moignages &mdash; recueil de donn&eacute;es</div>
@@ -833,7 +854,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     <div class="compteur-sep">+</div>
     <div class="compteur-bloc">
       <div class="compteur-annee">Depuis jan. 2026</div>
-      <div class="compteur-val bleu-c" id="c2026">130</div>
+      <div class="compteur-val bleu-c" id="c2026">0</div>
       <div class="compteur-label">nouveaux t&eacute;moignages</div>
     </div>
   </div>
@@ -1081,16 +1102,6 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
       </div>
     </a>
 
-    <!-- #8b Article Unys — Micro-violences éducatives 2026 -->
-    <a class="med-card" href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves-2/" target="_blank" rel="noopener">
-      <img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/UNYS_Illus_Article_JeanMichelPerez-scaled.jpg" alt="Unys — Micro-violences éducatives : quels sont leurs impacts sur l'avenir des élèves ?">
-      <div class="med-card-over">
-        <span class="med-card-tag">Unys Sciences &middot; Article &middot; 2026</span>
-        <span class="med-card-title">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</span>
-        <span class="med-card-lieu">Jean-Michel Perez &middot; unys-sciences.fr</span>
-      </div>
-    </a>
-
     <!-- #8 Rapport d'impact TC 2025 -->
     <a class="med-card" href="https://cdn.theconversation.com/static_files/files/4077/Rapport_d%27impact_2025_compressed_%281%29.pdf" target="_blank" rel="noopener">
       <img src="https://images.theconversation.com/files/665411/original/file-20250502-56-lzbrx8.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C1000%2C500&q=45&auto=format&w=1356&h=668&fit=crop" alt="Rapport d'impact 2025 The Conversation">
@@ -1262,7 +1273,7 @@ function animCount(el, cible, dur) {
 }
 
 // ── Compteur 2026 via GAS - fetch immédiat, animation coordonnée ──
-let gasCount2026 = 130;
+let gasCount2026 = 0;
 let anim2026Done = false;
 function triggerAnim2026() {
   if (!anim2026Done && gasCount2026 != null) {
