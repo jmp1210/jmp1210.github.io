@@ -722,6 +722,73 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   #bandeau{padding:.8rem 1rem;} .compteurs-zone{gap:1.5rem;} .stats-pil{gap:2rem;}
   .rapport-bloc{margin-left:1rem;} .med-grille{grid-template-columns:1fr;}
 }
+
+/* ═══ KILA section ═══ */
+.kila-section {
+  background: #0d1b2a;
+  padding: 3rem 2rem;
+  border-top: 2px solid #003e8f;
+}
+.kila-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kila-img-wrap { flex: 0 0 auto; }
+.kila-img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+.kila-text { flex: 1; min-width: 220px; }
+.kila-titre {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 0 0 0.8rem;
+}
+.kila-accroche {
+  font-size: 1.05rem;
+  color: #b8d4f0;
+  line-height: 1.7;
+  margin: 0 0 1.2rem;
+}
+.kila-prog {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+.kila-tag {
+  background: #003e8f;
+  color: #fff;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  padding: 0.2rem 0.7rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.kila-nom {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+.kila-equipe {
+  font-size: 0.85rem;
+  color: #7ea8d4;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .kila-inner { flex-direction: column; }
+  .kila-img { width: 100%; }
+}
+
 </style>
 </head>
 <body>
@@ -1084,6 +1151,25 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
     </a>
 
   </div><!-- /.med-grid -->
+
+
+  <!-- ═══ KILA — Pratique du travail de groupe ═══ -->
+  <div class="kila-section">
+    <div class="kila-inner">
+      <div class="kila-img-wrap">
+        <img src="patchwork_kila.jpg" alt="Programme KILA — travail de groupe et reliance" class="kila-img">
+      </div>
+      <div class="kila-text">
+        <h3 class="kila-titre">La pratique du travail de groupe</h3>
+        <p class="kila-accroche">C'est le point d'appui. Un mot, un geste, peut rallumer l'élan d'apprendre et de se sentir à sa place — transformer chaque salle de classe en un lieu où l'on relie plutôt qu'on isole.</p>
+        <div class="kila-prog">
+          <span class="kila-tag">Programme franco-allemand</span>
+          <span class="kila-nom">KILA</span>
+        </div>
+        <p class="kila-equipe">Florence Soriano-Gafiuk &middot; Géraldine Suau &middot; Saïd Ait Hammou Taleb &middot; Sandrine Quenet &middot; Laurent Muller &middot; Daniel Fisher &middot; Jean-Michel Perez</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 3.6 Conférences à venir -->
   <div class="med-avenir">
