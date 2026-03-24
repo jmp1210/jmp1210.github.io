@@ -3,9 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://jean-michel-perez.fr/</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jean-michel-perez.fr/tc_article_img.jpg</image:loc>
+      <image:caption>Les micro-violences à l'école : ces petites phrases qui détruisent — The Conversation France</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://jean-michel-perez.fr/jare2026.jpg</image:loc>
       <image:caption>JARE 2026 — De l'inclusion à l'acceptation — Jean-Michel Perez</image:caption>
