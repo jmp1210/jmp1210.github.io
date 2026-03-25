@@ -131,8 +131,9 @@ main {
 
 /* CARTE ARTICLE */
 .pub-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
 }
+@media (max-width: 680px) { .pub-grid { grid-template-columns: 1fr; } }
 .pub-card {
   background: rgba(245,240,235,0.04); border: 1px solid rgba(245,240,235,0.11);
   padding: 2.2rem 2.4rem; display: flex; flex-direction: column; gap: 1rem;
@@ -259,26 +260,12 @@ footer {
 <main>
 
   <!-- ══════════════════════════════
-       1 — PUBLICATIONS
+       1 — PUBLICATIONS (JMP seul)
        ══════════════════════════════ -->
   <div class="revue-section">
     <div class="revue-label"><span class="dot"></span>Publications</div>
 
     <div class="pub-grid">
-
-      <div class="pub-card rouge-c">
-        <div class="pub-year">2025</div>
-        <p class="pub-titre">Micro-violences et micro-attentions&nbsp;: transformer la forme scolaire face à l'incertitude du cadre de l'Éducation 2030</p>
-        <p class="pub-auteurs">Jean-Marie De Ketele &amp; Jean-Michel Pérez</p>
-        <p class="pub-source">NR-ESI n°103, p.&nbsp;76</p>
-        <div class="pub-bottom">
-          <div class="pub-links">
-            <a href="https://shs.cairn.info/revue-la-nouvelle-revue-education-et-societe-inclusives-2025-2-page-76?lang=fr" class="pub-link rouge-l" target="_blank" rel="noopener">Cairn</a>
-            <a href="https://hal.science/hal-05524507" class="pub-link" target="_blank" rel="noopener">HAL</a>
-          </div>
-          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
-        </div>
-      </div>
 
       <div class="pub-card rouge-c">
         <div class="pub-year">2025</div>
@@ -299,7 +286,6 @@ footer {
         <p class="pub-titre">Micro-violences et négligences de l'institution scolaire à l'égard des élèves&nbsp;: un impensé de la formation des enseignants</p>
         <p class="pub-auteurs">Jean-Michel Perez</p>
         <p class="pub-source">Chapitre ÉDUL — p.&nbsp;19–30</p>
-        <p class="pub-source">In Perez, Suau &amp; Gremmo (dir.) — DOI&nbsp;: 10.62688/edul/b9782384510856/03</p>
         <div class="pub-bottom">
           <div class="pub-links">
             <a href="https://editions.univ-lorraine.fr/edul/catalog/book/b9782384510856/chapter/657" class="pub-link rouge-l" target="_blank" rel="noopener">ÉDUL open access</a>
@@ -311,10 +297,95 @@ footer {
         </div>
       </div>
 
-      <div class="pub-card rouge-c">
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       2 — CONTRIBUTIONS DE COLLÈGUES
+       (avec ou sans JMP, ordre alpha)
+       ══════════════════════════════ -->
+  <div class="revue-section">
+    <div class="revue-label"><span class="dot"></span>Contributions de collègues</div>
+
+    <div class="pub-grid">
+
+      <!-- A — Ait Hammou Taleb -->
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <p class="pub-titre">L'accompagnement des étudiants en situation de handicap dans les universités françaises&nbsp;: tension entre praxéologies professionnelles de régulation et d'accessibilité</p>
+        <p class="pub-auteurs">Saïd Ait Hammou Taleb</p>
+        <p class="pub-source">NR-ESI n°103</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://hal.science/hal-05444901" class="pub-link" target="_blank" rel="noopener">HAL</a>
+          </div>
+          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
+        </div>
+      </div>
+
+      <!-- B — Benoit -->
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <p class="pub-titre">Éducation et micro-violences&nbsp;: effet de loupe sur les freins à la transition inclusive</p>
+        <p class="pub-auteurs">Hervé Benoit</p>
+        <p class="pub-source">Éditorial NR-ESI n°103</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://hal.science/hal-05520228" class="pub-link" target="_blank" rel="noopener">HAL</a>
+          </div>
+          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
+        </div>
+      </div>
+
+      <!-- B — Bourdon -->
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <p class="pub-titre">Le sujet-participant au regard des micro-violences et des liminalités institutionnelles</p>
+        <p class="pub-auteurs">Patrice Bourdon &amp; Cécile Lacôte-Coquereau</p>
+        <p class="pub-source">NR-ESI n°103</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://hal.science/hal-05205528" class="pub-link" target="_blank" rel="noopener">HAL</a>
+          </div>
+          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
+        </div>
+      </div>
+
+      <!-- D — De Ketele -->
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <p class="pub-titre">Micro-violences et micro-attentions&nbsp;: transformer la forme scolaire face à l'incertitude du cadre de l'Éducation 2030</p>
+        <p class="pub-auteurs">Jean-Marie De Ketele &amp; Jean-Michel Pérez</p>
+        <p class="pub-source">NR-ESI n°103, p.&nbsp;76</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://shs.cairn.info/revue-la-nouvelle-revue-education-et-societe-inclusives-2025-2-page-76?lang=fr" class="pub-link" target="_blank" rel="noopener">Cairn</a>
+            <a href="https://hal.science/hal-05524507" class="pub-link" target="_blank" rel="noopener">HAL</a>
+          </div>
+          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
+        </div>
+      </div>
+
+      <!-- K — Kolly -->
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <p class="pub-titre">Approcher la violence éducative par le détail</p>
+        <p class="pub-auteurs">Bérengère Kolly</p>
+        <p class="pub-source">NR-ESI n°103</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://shs.cairn.info/revue-la-nouvelle-revue-education-et-societe-inclusives-2025-2-page-94?lang=fr" class="pub-link" target="_blank" rel="noopener">Cairn</a>
+          </div>
+          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
+        </div>
+      </div>
+
+      <!-- S — Soriano-Gafiuk (2 articles) -->
+      <div class="pub-card">
         <div class="pub-year">2025</div>
         <p class="pub-titre">Micro-violences et micro-attentions en contexte éducatif&nbsp;: comparaison France-Allemagne</p>
-        <p class="pub-auteurs">Jean-Michel Perez &amp; Florence Soriano-Gafiuk</p>
+        <p class="pub-auteurs">Florence Soriano-Gafiuk &amp; Jean-Michel Perez</p>
+        <p class="pub-source">Preprint HAL</p>
         <div class="pub-bottom">
           <div class="pub-links">
             <a href="https://hal.science/hal-05524398" class="pub-link" target="_blank" rel="noopener">HAL</a>
@@ -322,10 +393,11 @@ footer {
         </div>
       </div>
 
-      <div class="pub-card rouge-c">
+      <div class="pub-card">
         <div class="pub-year">2024</div>
         <p class="pub-titre">Micro-violences et micro-attentions à l'aune des manuels scolaires&nbsp;: comparaison France-Allemagne</p>
-        <p class="pub-auteurs">Jean-Michel Perez &amp; Florence Soriano-Gafiuk</p>
+        <p class="pub-auteurs">Florence Soriano-Gafiuk &amp; Jean-Michel Perez</p>
+        <p class="pub-source">Preprint HAL</p>
         <div class="pub-bottom">
           <div class="pub-links">
             <a href="https://hal.science/hal-05524548" class="pub-link" target="_blank" rel="noopener">HAL</a>
@@ -333,28 +405,7 @@ footer {
         </div>
       </div>
 
-      <div class="pub-card rouge-c">
-        <div class="pub-year">2026</div>
-        <p class="pub-titre">Pratiques inclusives et micro-dispositifs de pouvoir&nbsp;: ce que les micro-violences disent de l'accessibilité</p>
-        <p class="pub-auteurs">Jean-Michel Perez &amp; Géraldine Suau</p>
-        <div class="pub-bottom">
-          <div class="pub-links">
-            <a href="https://hal.science/hal-05524467" class="pub-link" target="_blank" rel="noopener">HAL</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════
-       2 — CONTRIBUTIONS DE COLLÈGUES
-       ══════════════════════════════ -->
-  <div class="revue-section">
-    <div class="revue-label"><span class="dot"></span>Contributions de collègues</div>
-
-    <div class="pub-grid">
-
+      <!-- S — Suau (3 articles) -->
       <div class="pub-card">
         <div class="pub-year">2026</div>
         <p class="pub-titre">Agentivité et reconnaissance chez les AESH. Le rôle de la recherche formation</p>
@@ -382,6 +433,19 @@ footer {
       </div>
 
       <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <p class="pub-titre">Pratiques inclusives et micro-dispositifs de pouvoir&nbsp;: ce que les micro-violences disent de l'accessibilité</p>
+        <p class="pub-auteurs">Géraldine Suau &amp; Jean-Michel Perez</p>
+        <p class="pub-source">Preprint HAL</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://hal.science/hal-05524467" class="pub-link" target="_blank" rel="noopener">HAL</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- T — Toullec-Théry -->
+      <div class="pub-card">
         <div class="pub-year">2025</div>
         <p class="pub-titre">Assujettissement, tensions et dépassement&nbsp;: le cas des AESH et AESH-référents dans l'institution scolaire française</p>
         <p class="pub-auteurs">Marie Toullec-Théry &amp; Géraldine Suau</p>
@@ -390,58 +454,6 @@ footer {
           <div class="pub-links">
             <a href="https://hal.science/hal-05405827" class="pub-link" target="_blank" rel="noopener">HAL</a>
           </div>
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2025</div>
-        <p class="pub-titre">L'accompagnement des étudiants en situation de handicap dans les universités françaises&nbsp;: tension entre praxéologies professionnelles de régulation et d'accessibilité</p>
-        <p class="pub-auteurs">Saïd Ait Hammou Taleb</p>
-        <p class="pub-source">NR-ESI n°103</p>
-        <div class="pub-bottom">
-          <div class="pub-links">
-            <a href="https://hal.science/hal-05444901" class="pub-link" target="_blank" rel="noopener">HAL</a>
-          </div>
-          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2025</div>
-        <p class="pub-titre">Éducation et micro-violences&nbsp;: effet de loupe sur les freins à la transition inclusive</p>
-        <p class="pub-auteurs">Hervé Benoit</p>
-        <p class="pub-source">Éditorial NR-ESI n°103</p>
-        <div class="pub-bottom">
-          <div class="pub-links">
-            <a href="https://hal.science/hal-05520228" class="pub-link" target="_blank" rel="noopener">HAL</a>
-          </div>
-          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2025</div>
-        <p class="pub-titre">Le sujet-participant au regard des micro-violences et des liminalités institutionnelles</p>
-        <p class="pub-auteurs">Patrice Bourdon &amp; Cécile Lacôte-Coquereau</p>
-        <p class="pub-source">NR-ESI n°103</p>
-        <div class="pub-bottom">
-          <div class="pub-links">
-            <a href="https://hal.science/hal-05205528" class="pub-link" target="_blank" rel="noopener">HAL</a>
-          </div>
-          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2025</div>
-        <p class="pub-titre">Approcher la violence éducative par le détail</p>
-        <p class="pub-auteurs">Bérengère Kolly</p>
-        <p class="pub-source">NR-ESI n°103</p>
-        <div class="pub-bottom">
-          <div class="pub-links">
-            <a href="https://shs.cairn.info/revue-la-nouvelle-revue-education-et-societe-inclusives-2025-2-page-94?lang=fr" class="pub-link" target="_blank" rel="noopener">Cairn</a>
-          </div>
-          <img src="/nresi103_cover.jpg" class="pub-icon" alt="NR-ESI 103">
         </div>
       </div>
 
