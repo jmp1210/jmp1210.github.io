@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comprendre les micro-violences en éducation — Jean-Michel Perez</title>
+<meta name="description" content="Qu'est-ce qu'une micro-violence ? Comment la reconnaître ? Comment passer des micro-violences aux micro-attentions ? Une approche pour comprendre et agir.">
+<meta name="keywords" content="micro-violences éducation, micro-attentions, violence éducative ordinaire, école inclusive, Jean-Michel Perez, reconnaissance scolaire, bienveillance éducative">
+<meta name="author" content="Jean-Michel Perez">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jean-michel-perez.fr/micro-violences.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Comprendre les micro-violences en éducation">
+<meta property="og:description" content="Qu'est-ce qu'une micro-violence ? Comment la reconnaître ? Comment passer des micro-violences aux micro-attentions ?">
+<meta property="og:url" content="https://jean-michel-perez.fr/micro-violences.html">
+<meta property="og:site_name" content="Jean-Michel Perez">
+<meta property="og:locale" content="fr_FR">
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Comprendre les micro-violences en éducation",
+  "description": "Une approche pour identifier, comprendre et transformer les micro-violences éducatives en micro-attentions",
+  "author": {
+    "@type": "Person",
+    "name": "Jean-Michel Perez",
+    "url": "https://jean-michel-perez.fr/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Jean-Michel Perez"
+  },
+  "mainEntityOfPage": "https://jean-michel-perez.fr/micro-violences.html"
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --noir: #101828;
+  --blanc: #f5f0eb;
+  --bleu: #1565c0;
+  --gris: #888;
+  --gris-clair: #bbb;
+}
+html { scroll-behavior: smooth; font-size: 18px; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.8; }
+
+/* BANDEAU */
+#bandeau {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0.55rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(10,10,10,0.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+}
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.bandeau-nav { display: flex; gap: 2rem; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(245,240,235,0.85); text-decoration: none; }
+.bandeau-nav a:hover { color: #fff; }
+
+/* CONTENU */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 6rem 2rem 4rem;
+}
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.sous-titre {
+  font-size: 1.2rem;
+  color: var(--gris-clair);
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  border-left: 3px solid var(--bleu);
+  padding-left: 1rem;
+}
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: rgba(255,255,255,0.03);
+  border-left: 3px solid var(--bleu);
+  font-style: italic;
+  color: var(--gris-clair);
+}
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--gris);
+}
+ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.cta {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(21,101,192,0.15);
+  border: 1px solid rgba(21,101,192,0.3);
+  border-radius: 8px;
+}
+.cta-titre {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+footer a {
+  color: var(--gris-clair);
+}
+</style>
+</head>
+<body>
+
+<header id="bandeau">
+  <div class="bandeau-nom">Jean-Michel Perez</div>
+  <nav class="bandeau-nav">
+    <a href="index.html">Accueil</a>
+    <a href="publications.html">Publications</a>
+    <a href="micro-violences.html">Micro-violences</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Comprendre les micro-violences en éducation</h1>
+  <p class="sous-titre">Un impensé de l'institution scolaire</p>
+
+  <p>D'où vient que ce qui se produit inlassablement sous nos yeux, et qui est le plus effectif, est patent, certes, mais ne se voit pas ?</p>
+
+  <p>Les micro-violences désignent ces attitudes banalisées, ces petits gestes, ces paroles qui passent inaperçues mais qui, accumulées, forment un paysage relationnel abîmé. Elles ne font pas la une des journaux. Elles ne laissent pas de traces visibles. Mais elles œuvrent, silencieusement, au quotidien de l'école.</p>
+
+  <h2>Ce qui se cache derrière l'ordinaire</h2>
+
+  <p>Une remarque sur un bulletin scolaire. Un soupir d'exaspération. Une attente sans explication. Un regard qui passe au-dessus. Ces micro-événements, pris isolément, semblent anodins. Mais ils ne sont pas bénins.</p>
+
+  <p>Le terme de micro-violences englobe une vaste gamme d'interactions qui, de petites jusqu'à l'infime, s'accumulent pour renforcer la dominance sous couvert de « mérite », de « légalité », voire de « démocratie ». Ces manifestations soulèvent des questions fondamentales sur la nature même de la violence et des dynamiques de pouvoir inhérentes aux relations dites éducatives.</p>
+
+  <blockquote>
+    « L'usage nous dérobe le vrai visage des choses. »
+    <cite>— Montaigne</cite>
+  </blockquote>
+
+  <h2>Trois mouvements pour comprendre</h2>
+
+  <p><strong>Identifier.</strong> Les micro-violences ne sont pas toujours spectaculaires. Elles se cachent dans le déni de responsabilité, dans les stratégies de banalisation, dans ces façons de « parler pour que rien ne change ». Les reconnaître, c'est déjà commencer à s'en libérer.</p>
+
+  <p><strong>Débusquer.</strong> Derrière chaque micro-violence se trouve un mécanisme : une norme implicite, un rapport de pouvoir, une habitude institutionnelle. Comprendre ces mécanismes, c'est pouvoir les transformer.</p>
+
+  <p><strong>Transformer.</strong> Le but n'est pas de lutter contre la violence — c'est-à-dire de la faire taire, d'interdire son expression — mais de la comprendre comme un symptôme, comme une pathologie de la relation, dont il est possible de guérir. Le passage des micro-violences aux micro-attentions n'est pas un vœu pieux : c'est un chantier.</p>
+
+  <h2>Vers les micro-attentions</h2>
+
+  <p>Une micro-attention, c'est ce mot, ce geste, qui rallume l'élan d'apprendre et de se sentir à sa place. C'est transformer chaque salle de classe en un lieu où l'on relie plutôt qu'on isole.</p>
+
+  <p>Cette approche s'inscrit dans une tradition : celle de Korczak et des droits de l'enfant, celle de Freire et de la conscientisation, celle de Sen et des capabilités. Elle pose que la responsabilité de tout un chacun à l'égard du devenir de l'enfant est absolue — et que rien ne saurait nous en défausser.</p>
+
+  <blockquote>
+    « Éducateur mon ami ! Laisse-le oublier, laisse-le se reposer. Dans sa vie sinistre, qu'il garde ce puissant levier moral : le souvenir de l'être, unique parfois, qui lui aura été bienveillant. »
+    <cite>— Janusz Korczak</cite>
+  </blockquote>
+
+  <h2>Un chantier ouvert</h2>
+
+  <p>Il ne s'agit pas de poser une définition définitive. Il s'agit d'ouvrir un chantier, d'affiner nos capacités de détection, d'explorer des violences en-deçà de notre seuil ordinaire de vigilance. Si ces réflexions pouvaient contribuer à la conscientisation de la gravité et de l'ampleur du phénomène, leur but serait pleinement atteint.</p>
+
+  <div class="cta">
+    <p class="cta-titre">Pour aller plus loin</p>
+    <p>Consultez les <a href="publications.html">publications scientifiques</a> sur les micro-violences et les micro-attentions, ou lisez l'article dans <a href="https://theconversation.com/les-micro-violences-educatives-ordinaires-un-impense-de-linstitution-scolaire-253794" target="_blank" rel="noopener">The Conversation</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <p><a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a></p>
+  <p>INSPE de Lorraine · Université de Lorraine · LISEC (UR 2310)</p>
+</footer>
+
+</body>
+</html>
