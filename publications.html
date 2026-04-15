@@ -260,23 +260,11 @@ footer {
   footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
 }
 </style>
-<!-- Google tag (gtag.js) + Consent Mode v2 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-21QK0WEE32"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'analytics_storage': 'denied',
-    'wait_for_update': 500
-  });
-  if (localStorage.getItem('jmp_consent') === 'granted') {
-    gtag('consent', 'update', {'analytics_storage': 'granted'});
-  }
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-21QK0WEE32"></script>
-<script>
   gtag('js', new Date());
   gtag('config', 'G-21QK0WEE32', {anonymize_ip: true});
 </script>
@@ -475,30 +463,5 @@ footer {
   </div>
 </footer>
 
-<!-- Bannière consentement cookies -->
-<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a2b3a;color:#f0ebe4;padding:1em 1.5em;box-shadow:0 -2px 12px rgba(0,0,0,0.3);z-index:9999;font-size:0.92em;line-height:1.5;border-top:1px solid rgba(197,212,227,0.3);">
-  <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1em;flex-wrap:wrap;">
-    <p style="margin:0;flex:1 1 300px;">Ce site utilise un outil de mesure d'audience (Google Analytics) pour comprendre comment il est consulté. Vous pouvez accepter ou refuser.</p>
-    <div style="display:flex;gap:0.5em;flex-shrink:0;">
-      <button id="cookie-refuse" style="padding:0.5em 1em;background:transparent;border:1px solid #7a9bbc;color:#c5d4e3;cursor:pointer;border-radius:4px;font-size:0.9em;">Refuser</button>
-      <button id="cookie-accept" style="padding:0.5em 1em;background:#5a7a96;border:none;color:#fff;cursor:pointer;border-radius:4px;font-size:0.9em;font-weight:600;">Accepter</button>
-    </div>
-  </div>
-</div>
-<script>
-(function(){
-  var banner = document.getElementById('cookie-banner');
-  if (!localStorage.getItem('jmp_consent')) { banner.style.display = 'block'; }
-  document.getElementById('cookie-accept').onclick = function(){
-    localStorage.setItem('jmp_consent', 'granted');
-    if (typeof gtag === 'function') { gtag('consent', 'update', {'analytics_storage': 'granted'}); }
-    banner.style.display = 'none';
-  };
-  document.getElementById('cookie-refuse').onclick = function(){
-    localStorage.setItem('jmp_consent', 'denied');
-    banner.style.display = 'none';
-  };
-})();
-</script>
 </body>
 </html>
