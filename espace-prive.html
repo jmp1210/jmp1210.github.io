@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace privé — Jean-Michel Perez</title>
+<meta name="description" content="Espace privé d'accès aux ressources de recherche : souvenirs, méthodologie et micro-violences. Accès sur demande à jean-michel.perez@univ-lorraine.fr.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://jean-michel-perez.fr/espace-prive.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --noir: #101828;
+  --noir-profond: #0c1220;
+  --blanc: #f5f0eb;
+  --rouge: #c41e1e;
+  --rouge-vif: #e52020;
+  --bleu: #1565c0;
+  --bleu-vif: #1e88e5;
+  --gris: #888;
+  --gris-clair: #bbb;
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
+
+/* BANDEAU */
+#bandeau {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0.55rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(10,10,10,0.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+}
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-weight: 300; letter-spacing: 0.04em; }
+.bandeau-nav { display: flex; gap: 2.2rem; align-items: center; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,240,235,0.92); text-decoration: none; transition: color 0.2s; }
+.bandeau-nav a:hover { color: #fff; }
+.bandeau-nav a.active { color: #fff; border-bottom: 1px solid rgba(245,240,235,0.5); padding-bottom: 2px; }
+.bandeau-id { text-align: right; }
+
+/* HÉRO */
+#hero {
+  min-height: 0; display: flex; flex-direction: column;
+  justify-content: flex-end; align-items: flex-start;
+  padding: 5rem 4rem 1.5rem; position: relative; background: #0d1b2a;
+  max-width: 1100px; margin: 0 auto;
+}
+#hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 20% 60%, rgba(122, 155, 188, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-label {
+  font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 0.22em; color: rgba(245,240,235,0.35);
+  margin-bottom: 1rem;
+}
+.hero-titre {
+  font-family: 'EB Garamond', serif; font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 400; font-style: italic; color: var(--blanc); line-height: 1.3;
+  max-width: 820px; margin-bottom: 1rem;
+}
+.hero-sous {
+  font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-style: italic; color: rgba(245,240,235,0.55); max-width: 640px; line-height: 1.7;
+}
+
+/* CONTENU PRINCIPAL */
+main {
+  max-width: 1100px; margin: 0 auto; padding: 3rem 4rem 8rem;
+}
+
+/* INFO BLOC ACCES */
+.info-acces {
+  max-width: 720px; margin: 1rem 0 2.5rem;
+  padding: 1.3rem 1.8rem;
+  background: rgba(90,122,150,0.18);
+  border: 1px solid rgba(197,212,227,0.3);
+  border-left: 5px solid #7a9bbc;
+  border-radius: 6px;
+  color: #f0ebe4;
+  font-size: 0.98rem; line-height: 1.55;
+  font-family: 'EB Garamond', serif;
+}
+.info-acces .titre {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; font-size: 1.04rem; margin-bottom: 0.4rem;
+  color: #ffffff; letter-spacing: 0.02em;
+}
+.info-acces a { color: #c5d4e3; text-decoration: underline; font-weight: 500; }
+.info-acces a:hover { color: #fff; }
+
+/* CARTES PRIVÉES */
+.cartes-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 720px) { .cartes-grid { grid-template-columns: 1fr; } }
+
+.carte-prive {
+  background: rgba(245,240,235,0.04);
+  border: 1px solid rgba(245,240,235,0.11);
+  border-left: 3px solid rgba(122,155,188,0.6);
+  padding: 2rem 2.2rem;
+  display: flex; flex-direction: column; gap: 0.8rem;
+  transition: border-color 0.3s, background 0.3s, transform 0.2s;
+  text-decoration: none; color: var(--blanc);
+}
+.carte-prive:hover {
+  border-color: rgba(245,240,235,0.3);
+  background: rgba(245,240,235,0.07);
+  transform: translateY(-2px);
+}
+.carte-icone {
+  font-size: 1.6rem;
+  color: rgba(122,155,188,0.85);
+  margin-bottom: 0.3rem;
+}
+.carte-titre {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.45rem; font-style: italic;
+  color: var(--blanc); line-height: 1.3;
+}
+.carte-desc {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: rgba(245,240,235,0.6);
+  line-height: 1.6;
+}
+.carte-cta {
+  margin-top: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(122,155,188,0.95);
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.carte-cta::after { content: '→'; transition: transform 0.2s; }
+.carte-prive:hover .carte-cta::after { transform: translateX(4px); }
+
+/* FOOTER */
+footer {
+  border-top: 1px solid rgba(245,240,235,0.06);
+  padding: 3rem 4rem; max-width: 1100px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+}
+.footer-retour {
+  font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(245,240,235,0.5); text-decoration: none; transition: color 0.2s;
+}
+.footer-retour:hover { color: var(--blanc); }
+.footer-hal {
+  font-family: 'Inter', sans-serif; font-size: 0.75rem; color: rgba(245,240,235,0.3);
+  letter-spacing: 0.04em;
+}
+.footer-hal a { color: rgba(245,240,235,0.45); text-decoration: none; transition: color 0.2s; }
+.footer-hal a:hover { color: var(--blanc); }
+
+@media (max-width: 768px) {
+  #hero { padding: 7rem 1.5rem 3rem; }
+  main { padding: 2rem 1.5rem 5rem; }
+  .bandeau-nav a:not(:first-child) { display: none; }
+  footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-21QK0WEE32"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-21QK0WEE32', {anonymize_ip: true});
+</script>
+</head>
+<body>
+
+<!-- BANDEAU -->
+<header id="bandeau">
+  <nav class="bandeau-nav">
+    <a href="/#pilotage">Profils</a>
+    <a href="/#entree">Sur vos souvenirs</a>
+    <a href="/#mediation">M&eacute;diation</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/formation-master-2.html">Formation Master 2</a>
+    <a href="/espace-prive.html" class="active">Espace priv&eacute; 🔒</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<!-- HÉRO -->
+<section id="hero">
+  <div class="hero-label">🔒 Acc&egrave;s sur demande</div>
+  <h1 class="hero-titre">Espace priv&eacute; — Ressources de recherche</h1>
+  <p class="hero-sous">Quatre espaces r&eacute;serv&eacute;s aux participants et collaborateurs : souvenirs, m&eacute;thodologie et micro-violences.</p>
+</section>
+
+<main>
+
+  <div class="info-acces">
+    <div class="titre">🔐 Acc&egrave;s priv&eacute; sur demande</div>
+    <p>Chaque espace est prot&eacute;g&eacute; par un mot de passe. Pour obtenir vos identifiants, merci d'en faire la demande par courriel &agrave; <a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a>.</p>
+  </div>
+
+  <div class="cartes-grid">
+
+    <a href="/souvenirs-positifs.html" class="carte-prive">
+      <div class="carte-icone">✨</div>
+      <div class="carte-titre">Souvenirs +</div>
+      <div class="carte-desc">Recueil et analyse des souvenirs positifs vécus en milieu scolaire ou universitaire.</div>
+      <div class="carte-cta">Acc&eacute;der</div>
+    </a>
+
+    <a href="/souvenirs-negatifs.html" class="carte-prive">
+      <div class="carte-icone">✨</div>
+      <div class="carte-titre">Souvenirs &minus;</div>
+      <div class="carte-desc">Recueil et analyse des souvenirs n&eacute;gatifs vécus en milieu scolaire ou universitaire.</div>
+      <div class="carte-cta">Acc&eacute;der</div>
+    </a>
+
+    <a href="/methodologie.html" class="carte-prive">
+      <div class="carte-titre">M&eacute;thodologie</div>
+      <div class="carte-desc">Cadre m&eacute;thodologique de la recherche et instruments d'analyse mobilis&eacute;s.</div>
+      <div class="carte-cta">Acc&eacute;der</div>
+    </a>
+
+    <a href="/micro-violences.html" class="carte-prive">
+      <div class="carte-titre">Micro-violences</div>
+      <div class="carte-desc">Espace de travail sur les micro-violences &eacute;ducatives et les micro-attentions.</div>
+      <div class="carte-cta">Acc&eacute;der</div>
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  <a href="/" class="footer-retour">← Retour &agrave; l'accueil</a>
+  <div class="footer-hal">
+    R&eacute;f&eacute;rences scientifiques sur <a href="https://cv.hal.science/jean-michel-perez" target="_blank" rel="noopener">HAL</a> &middot; ORCID <a href="https://orcid.org/0000-0001-9677-7364" target="_blank" rel="noopener">0000-0001-9677-7364</a>
+  </div>
+</footer>
+
+</body>
+</html>
