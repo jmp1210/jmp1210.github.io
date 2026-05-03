@@ -217,6 +217,42 @@
   gtag('js', new Date());
   gtag('config', 'G-21QK0WEE32', {anonymize_ip: true});
 </script>
+    <script>
+    /* CC override: intercept staticrypt decrypt */
+    window.replaceHtmlCallback = function(plainHTML) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(plainHTML, 'text/html');
+        Array.from(doc.head.children).forEach(node => {
+            if (node.tagName === 'STYLE' ||
+                (node.tagName === 'LINK' && node.getAttribute('rel') === 'stylesheet') ||
+                node.tagName === 'TITLE') {
+                document.head.appendChild(node.cloneNode(true));
+            }
+        });
+        document.body.innerHTML = doc.body.innerHTML;
+        if (doc.body.className) document.body.className = doc.body.className;
+        const overrideStyle = document.createElement('style');
+        overrideStyle.id = 'cc-post-decrypt-override';
+        overrideStyle.textContent = `
+            body, body p, body div, body span, body article, body section, body li { color: #ffffff !important; }
+            body a:not(.bandeau-nav a) { color: #ffffff !important; }
+            .bandeau-sous { font-size: 0.65rem !important; max-width: 180px !important; line-height: 1.3 !important; opacity: 0.7 !important; }
+            .bandeau-id { max-width: 220px !important; }
+            .bandeau-nom { font-size: 0.85rem !important; line-height: 1.1 !important; }
+            #bandeau { padding: 0.4rem 1.5rem !important; }
+            .bandeau-nav { gap: 1.2rem !important; }
+            .bandeau-nav a { font-size: 0.78rem !important; color: #ffffff !important; text-transform: uppercase; }
+            em, i, strong, b { color: #ffffff !important; }
+        `;
+        document.head.appendChild(overrideStyle);
+        Array.from(document.body.querySelectorAll('script')).forEach(oldScript => {
+            const newScript = document.createElement('script');
+            Array.from(oldScript.attributes).forEach(a => newScript.setAttribute(a.name, a.value));
+            newScript.textContent = oldScript.textContent;
+            oldScript.parentNode.replaceChild(newScript, oldScript);
+        });
+    };
+    </script>
 </head>
 
     <body class="staticrypt-body">
