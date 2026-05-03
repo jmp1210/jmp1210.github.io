@@ -174,6 +174,29 @@
                     font-size: 16px;
                 }
             }
+
+            /* === OVERRIDE - coherence visuelle avec jean-michel-perez.fr === */
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+            html.staticrypt-html { background: #0d1b2a; }
+            body.staticrypt-body { background: #0d1b2a; color: #f5f0eb; font-family: 'EB Garamond', Georgia, serif; }
+            .staticrypt-content { background: #0d1b2a !important; color: #f5f0eb; font-family: 'EB Garamond', Georgia, serif; }
+            .staticrypt-form { background: rgba(255,255,255,0.04); color: #f5f0eb; border: 1px solid rgba(245,240,235,0.08); box-shadow: 0 4px 30px 0 rgba(0,0,0,0.5); border-radius: 8px; }
+            .staticrypt-title { color: #f5f0eb; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.6em; }
+            .staticrypt-instructions { color: rgba(245,240,235,0.85); font-family: 'Inter', sans-serif; }
+            .staticrypt-instructions p { color: rgba(245,240,235,0.85); }
+            .staticrypt-hr { border-top-color: rgba(245,240,235,0.15); }
+            .staticrypt-form input[type="password"],
+            .staticrypt-form input[type="text"] { color: #f5f0eb; background: transparent; font-family: 'Inter', sans-serif; }
+            .staticrypt-form input[type="password"]::placeholder,
+            .staticrypt-form input[type="text"]::placeholder { color: rgba(245,240,235,0.45); }
+            .staticrypt-password-container { background: rgba(245,240,235,0.07) !important; border: 1px solid rgba(245,240,235,0.12); border-radius: 4px; }
+            .staticrypt-form .staticrypt-decrypt-button { background: #1565c0; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: 0.06em; border-radius: 4px; }
+            .staticrypt-form .staticrypt-decrypt-button:hover,
+            .staticrypt-form .staticrypt-decrypt-button:active,
+            .staticrypt-form .staticrypt-decrypt-button:focus { background: #1e88e5; filter: none; }
+            .staticrypt-spinner { border-color: rgba(245,240,235,0.3); border-right-color: transparent; }
+            label.staticrypt-remember { color: rgba(245,240,235,0.85); font-family: 'Inter', sans-serif; }
+            .staticrypt-toggle-password-visibility { filter: invert(1) opacity(0.7); }
         </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-21QK0WEE32"></script>
@@ -194,7 +217,7 @@
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
-                        <p class="staticrypt-title">Protected Page</p>
+                        <p class="staticrypt-title">Espace privé · Micro-violences</p>
                         <p></p>
                     </div>
 
