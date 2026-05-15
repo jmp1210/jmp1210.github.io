@@ -133,7 +133,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 .bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-weight: 300; letter-spacing: 0.04em; }
 .bandeau-nav { display: flex; gap: 2.2rem; align-items: center; }
-.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,240,235,0.92); text-decoration: none; transition: color 0.2s; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; text-decoration: none; transition: color 0.2s; }
 .bandeau-nav a:hover { color: #fff; }
 .bandeau-nav a.active { color: #fff; border-bottom: 1px solid rgba(245,240,235,0.5); padding-bottom: 2px; }
 .bandeau-id { text-align: right; }
@@ -152,7 +152,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 }
 .hero-label {
   font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 400;
-  text-transform: uppercase; letter-spacing: 0.22em; color: rgba(245,240,235,0.35);
+  text-transform: uppercase; letter-spacing: 0.22em; color: #fff;
   margin-bottom: 1rem;
 }
 .hero-titre {
@@ -162,7 +162,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 }
 .hero-sous {
   font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.25rem);
-  font-style: italic; color: rgba(245,240,235,0.55); max-width: 640px; line-height: 1.7;
+  font-style: italic; color: #fff; max-width: 640px; line-height: 1.7;
 }
 
 /* CONTENU PRINCIPAL */
@@ -183,7 +183,7 @@ main {
 }
 .section-texte {
   font-family: 'EB Garamond', serif; font-size: 1.1rem; line-height: 1.7;
-  color: rgba(245,240,235,0.85); margin-bottom: 0.8rem;
+  color: #fff; margin-bottom: 0.8rem;
 }
 .section-texte em { color: var(--blanc); font-style: italic; }
 .section-texte strong { color: var(--blanc); font-weight: 600; }
@@ -192,7 +192,7 @@ main {
   border-left: 3px solid rgba(21,101,192,0.5);
   padding: 0.4rem 0 0.4rem 1.6rem; margin: 1.5rem 0;
   font-family: 'EB Garamond', serif; font-style: italic;
-  font-size: 1.18rem; color: rgba(245,240,235,0.92); line-height: 1.7;
+  font-size: 1.18rem; color: #fff; line-height: 1.7;
 }
 
 ul.modalites {
@@ -200,7 +200,7 @@ ul.modalites {
 }
 ul.modalites li {
   font-family: 'EB Garamond', serif; font-size: 1.05rem; line-height: 1.8;
-  color: rgba(245,240,235,0.85); padding: 0.4rem 0 0.4rem 1.4rem;
+  color: #fff; padding: 0.4rem 0 0.4rem 1.4rem;
   position: relative;
 }
 ul.modalites li::before {
@@ -233,7 +233,7 @@ ul.modalites li strong { color: var(--blanc); font-weight: 600; }
   background: rgba(196,30,30,0.12); border: 1px solid rgba(196,30,30,0.35);
   border-radius: 6px; padding: 1.2rem 1.6rem; margin: 1.5rem 0;
   font-family: 'Inter', sans-serif; font-size: 0.95rem;
-  color: rgba(245,240,235,0.92); line-height: 1.6;
+  color: #fff; line-height: 1.6;
 }
 .deadline-banner strong { color: #ff8888; font-weight: 700; letter-spacing: 0.02em; }
 
@@ -246,14 +246,14 @@ footer {
 .footer-retour {
   font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 500;
   letter-spacing: 0.08em; text-transform: uppercase;
-  color: rgba(245,240,235,0.5); text-decoration: none; transition: color 0.2s;
+  color: #fff; text-decoration: none; transition: color 0.2s;
 }
 .footer-retour:hover { color: var(--blanc); }
 .footer-hal {
-  font-family: 'Inter', sans-serif; font-size: 0.75rem; color: rgba(245,240,235,0.3);
+  font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #fff;
   letter-spacing: 0.04em;
 }
-.footer-hal a { color: rgba(245,240,235,0.45); text-decoration: none; transition: color 0.2s; }
+.footer-hal a { color: #fff; text-decoration: none; transition: color 0.2s; }
 .footer-hal a:hover { color: var(--blanc); }
 
 @media (max-width: 768px) {
@@ -304,13 +304,15 @@ footer {
   <!-- Section accroche -->
   <section class="section-bloc">
     <div class="section-label"><span class="dot"></span>Pourquoi ce parcours ?</div>
-    <h2 class="section-titre">L'inclusion comme espace pour penser en &ecirc;tre d'action et agir en &ecirc;tre de pens&eacute;e</h2>
-    <p class="section-texte" style="margin-bottom:0.7rem;">En effet, le public de l'inclusion se d&eacute;finit<sup>*</sup> internationalement par &laquo;&nbsp;les minorit&eacute;s ethniques, culturelles, rurales, hommes, femmes, enfants (des rues, surdou&eacute;s, affect&eacute;s par le VIH, en difficult&eacute; d'apprentissage, qui travaillent... dont ceux en situation de handicap)&nbsp;&raquo;.</p>
-    <p class="section-texte" style="margin-bottom:0.7rem;">Penser alors l'inclusion, c'est cr&eacute;er des espaces entre les cloisons que l'institution pose entre les savoirs, entre les disciplines. D&eacute;passer l'&eacute;miettement d'une pens&eacute;e par objectif qui g&egrave;re en r&eacute;duisant, en divisant, mais qui laisse dans l'<strong>impens&eacute;</strong> le travail du relier &ndash; ce travail propre au devenir humain. Car l&agrave; o&ugrave; ce relier manque, une porte s'ouvre aux <strong>micro-violences</strong>.</p>
-    <p class="section-texte" style="margin-bottom:0.7rem;">Un Master qui vise, dans un cadre universitaire, un agir critique en son topos - sur le rapport <em>isolement / reliance</em> au sein des institutions.</p>
-    <p class="section-texte" style="margin-bottom:0.7rem;">&laquo;&nbsp;Comment passer du mot d'ordre <em>inclusion</em> &agrave; des gestes, des attitudes, une relation &eacute;ducative ou didactique qui rattachent - &agrave; soi-m&ecirc;me, aux autres, au savoir, &agrave; l'&eacute;cole, &agrave; l'universit&eacute;, &agrave; la soci&eacute;t&eacute; -&nbsp;?&nbsp;&raquo;</p>
-    <p class="section-texte"><strong>Le parcours EPI = trois interrogations conceptuelles : &Eacute;ducation [?] Pratiques [?] Inclusives [?]</strong></p>
-    <p class="section-texte" style="font-size:0.9rem; color:rgba(245,240,235,0.55); font-style:italic; margin-top:1.2rem;"><sup>*</sup> &Agrave; partir des r&eacute;f&eacute;rences internationales (UNESCO, 1994 ; 2000 ; 2005 ; 2015...).</p>
+    <h2 class="section-titre">Une formation comme espace pour &laquo;&nbsp;penser en &ecirc;tre d'action et agir en &ecirc;tre de pens&eacute;e&nbsp;&raquo;</h2>
+    <p class="section-texte" style="margin-bottom:0.7rem;">D'abord parce que le public de l'inclusion se d&eacute;finit<sup>*</sup> internationalement par &laquo;&nbsp;les minorit&eacute;s ethniques, culturelles, rurales, hommes, femmes, enfants (des rues, surdou&eacute;s, affect&eacute;s par le VIH, en difficult&eacute; d'apprentissage, qui travaillent... dont ceux en situation de handicap)&nbsp;&raquo;.</p>
+    <p class="section-texte" style="margin-bottom:0.7rem;">Ensuite, parce qu'en posant cette d&eacute;finition &ndash; o&ugrave; le handicap n'y figure qu'en dernier, dans une parenth&egrave;se &ndash; la question est d'embl&eacute;e pos&eacute;e&nbsp;: pourquoi en France, cette parenth&egrave;se est-elle devenue le centre&nbsp;? Qu'est-ce que &ccedil;a traduit&nbsp;?</p>
+    <p class="section-texte" style="margin-bottom:0.7rem;">D&egrave;s lors, le handicap se d&eacute;couvre comme un effet de loupe de discriminations. C'est le point de d&eacute;part d'une formation interrogeant une pratique professionnelle &agrave; travers l'outillage du &laquo;&nbsp;pouvoir d'agir&nbsp;&raquo; de ces agents, au sein d'une institution qui peut favoriser &ndash; ou y faire obstacle. Enfin, penser par cette voie, c'est apprendre &agrave; s'affranchir d'une &eacute;vidence&nbsp;: &laquo;&nbsp;Il/elle va en inclusion&nbsp;&raquo; en est le paradoxe.</p>
+    <p class="section-texte" style="margin-bottom:0.7rem;">Penser alors l'inclusion, c'est cr&eacute;er des espaces entre les cloisons que l'institution pose entre les savoirs, entre les disciplines. D&eacute;passer l'&eacute;miettement d'une pens&eacute;e par objectif qui g&egrave;re en r&eacute;duisant, en divisant, mais qui laisse dans l'<strong>impens&eacute;</strong> le travail du relier &ndash; ce travail propre au devenir humain. Car l&agrave; o&ugrave; ce relier manque, l'isolement domine et une porte s'ouvre aux <strong>micro-violences</strong>.</p>
+    <p class="section-texte" style="margin-bottom:0.7rem;">Un Master qui vise, dans un cadre universitaire, un agir critique en son topos &ndash; sur le rapport <em>isolement / reliance</em> au sein des institutions.</p>
+    <p class="section-texte" style="margin-bottom:0.7rem;">&laquo;&nbsp;Comment passer du mot d'ordre <em>inclusion</em> &agrave; des gestes, des attitudes, une relation &eacute;ducative ou didactique qui rattachent &ndash; &agrave; soi-m&ecirc;me, aux autres, au savoir, &agrave; l'&eacute;cole, &agrave; l'universit&eacute;, &agrave; la soci&eacute;t&eacute; &ndash;&nbsp;?&nbsp;&raquo;</p>
+    <p class="section-texte"><strong>Le parcours EPI = trois interrogations conceptuelles&nbsp;: &Eacute;ducation [?] Pratiques [?] Inclusives [?]</strong></p>
+    <p class="section-texte" style="font-size:0.9rem; color:#fff; font-style:italic; margin-top:1.2rem; opacity:0.55;"><sup>*</sup> &Agrave; partir des r&eacute;f&eacute;rences internationales (UNESCO, 1994&nbsp;; 2000&nbsp;; 2005&nbsp;; 2015...).</p>
   </section>
 
   <!-- Section candidatures (remontee en tete) -->
@@ -335,7 +337,7 @@ footer {
       </a>
     </div>
 
-    <p class="section-texte" style="font-size:0.95rem; color:rgba(245,240,235,0.55); margin-top:1.5rem;">
+    <p class="section-texte" style="font-size:0.95rem; color:#fff; opacity:0.55; margin-top:1.5rem;">
       Pour toute question relative au parcours ou &agrave; la coordination p&eacute;dagogique : <a href="mailto:jean-michel.perez@univ-lorraine.fr" style="color:var(--bleu-vif); text-decoration:underline;">jean-michel.perez@univ-lorraine.fr</a> &middot; <a href="mailto:geraldine.suau@univ-lorraine.fr" style="color:var(--bleu-vif); text-decoration:underline;">geraldine.suau@univ-lorraine.fr</a>
     </p>
   </section>
@@ -376,7 +378,7 @@ footer {
       <li><strong>Formation, financement par un tiers</strong> (employeur, organisme de formation, etc.) : frais d'inscription 254 € + frais de formation 4 555 €.</li>
       <li><strong>Formation initiale :</strong> frais d'inscription 254 € + frais de CVEC 105 €.</li>
     </ul>
-    <p class="section-texte" style="font-size:0.9rem; color:rgba(245,240,235,0.55); font-style:italic; margin-top:0.8rem;">Ces montants sont donn&eacute;s &agrave; titre indicatif et concernent l'ann&eacute;e universitaire 2025-2026.</p>
+    <p class="section-texte" style="font-size:0.9rem; color:#fff; opacity:0.55; font-style:italic; margin-top:0.8rem;">Ces montants sont donn&eacute;s &agrave; titre indicatif et concernent l'ann&eacute;e universitaire 2025-2026.</p>
   </section>
 
 </main>
