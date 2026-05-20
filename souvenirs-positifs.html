@@ -644,9 +644,10 @@ function init(staticryptConfig, templateConfig) {
         }
         let plainHTML = result.decoded;
 
-        // Force dark text on light background for readability
-        const cssOverride = '<style>body,html,body *{background-color:#fff!important;color:#1a1a1a!important}blockquote,blockquote *{color:#1a1a1a!important}cite,cite *{color:#444!important}a,a *{color:#1565c0!important}header,header *,nav,nav *,.bandeau-nav a{color:#f5f0eb!important;background-color:rgba(10,10,10,0.94)!important}header a,nav a,.bandeau-nav a{color:#f5f0eb!important}blockquote{border-left-color:#1565c0!important}</style>';
+        // Invert dark theme to light: redefine CSS variables + JS fallback
+        const cssOverride = '<style>:root{--blanc:#1a1a1a!important;--noir:#f5f5f5!important;--noir-profond:#ffffff!important;--gris-clair:#555!important;--gris:#666!important;--rouge-sombre:#fff0f0!important;--bleu-sombre:#f0f4ff!important}body{background:#fff!important;color:#1a1a1a!important}</style>';
         plainHTML = plainHTML + cssOverride;
+        plainHTML = plainHTML + '<script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("*").forEach(function(e){var s=getComputedStyle(e);var c=s.color;var b=s.backgroundColor;if(c){var m=c.match(/\\d+/g);if(m&&+m[0]>200&&+m[1]>200&&+m[2]>200)e.style.setProperty("color","#1a1a1a","important")}if(b){var m2=b.match(/\\d+/g);if(m2&&+m2[0]<40&&+m2[1]<40&&+m2[2]<40)e.style.setProperty("background-color","#ffffff","important")}})});<\/script>';
 
         // if the user configured a callback call it, otherwise just replace the whole HTML
         if (typeof replaceHtmlCallback === "function") {
