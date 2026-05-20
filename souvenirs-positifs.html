@@ -642,7 +642,11 @@ function init(staticryptConfig, templateConfig) {
         if (!result.success) {
             return false;
         }
-        const plainHTML = result.decoded;
+        let plainHTML = result.decoded;
+
+        // Force dark text on light background for readability
+        const cssOverride = '<style>body,html{background:#fff!important;color:#111!important}*{color:#111!important}blockquote,cite,p,div,span,h1,h2,h3,h4,h5,h6,li,td,th,a{color:#111!important}blockquote{border-left-color:#1565c0!important}cite{color:#555!important}a{color:#1565c0!important}</style>';
+        plainHTML = plainHTML.replace('</head>', cssOverride + '</head>');
 
         // if the user configured a callback call it, otherwise just replace the whole HTML
         if (typeof replaceHtmlCallback === "function") {
