@@ -1,6 +1,336 @@
 {
   "micro_violences": [
     {
+      "text": "J’avais une bande d’amies depuis la sixième et en classe de 3eme elles se sont un peu liguées contre moi sans raison valable : paroles à voix basses, regards de travers, surnoms désagréables…",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact durable - choix sans effet - décisions touchées"
+    },
+    {
+      "text": "Mon poids tout au long de l'école secondaire( lycée ici en France ) a été vraiment un souvenir douloureux. Ma croyance d'être mesurée en fonction de mon apparence .",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-20 - impact durable - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "En 5eme, j avais 1 prof de maths qui avait plein de grosses bagues. Il écrivait au tableau avec 1 longue craie qu il faisait crisser. Il me faisait peur au point qu 1 fois j ai perdu mes moyens et n aie pas pu à 1 question orale alors que je savais par cœur la définition.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions sans effet"
+    },
+    {
+      "text": "En première A1 , mon professeur de maths m'a rendu une copie où j avais obtenu 1.5 sur 20. Il a fait le commentaire suivant: \" vous ne ferez jamais rien dans votre vie\".",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact marginal - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "Harcèlement scolaire pendant tout le collège",
+      "genre": "Femme",
+      "age": "28",
+      "sig": "Femme - 28 ans - 2026-05-20 - impact très fort - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "J'ai globalement de très bons souvenirs de ma scolarité. Cependant, la maîtresse en CE2 était très violente avec les \"mauvais élèves\" : coups de règles sur les doigts, coups de grande règle (celle qui servait au tableau) sur les fesses. Je n'ai jamais reçu ces châtiments mais c'était très difficile à regarder.",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-20 - impact marginal - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "Au collège (je ne me rappelle plus l'année mais ca devait etre en 6eme) j'ai recu un coup de poing dans la récréation de la part d'un ado un peu plus vieux que je ne connaissais pas, pour absolument aucune raison, et il a fait passer ca comme un accident or c'etait orienté pour moi (j'etais tres petite et maigre donc facile a attaquer)",
+      "genre": "Femme",
+      "age": "25",
+      "sig": "Femme - 25 ans - 2026-05-20 - impact très fort - choix marqués - décisions sans effet"
+    },
+    {
+      "text": "Mon professeur de maths en 6e me faisait passer au tableau et me faisait pleurer à chaque fois Je déteste les maths",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2026-05-20 - impact durable - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "J’étais la plus petite de ma classe pendant toute ma scolarité. Camarades ou professeurs avaient toujours une petite remarque sur la taille : la petite, la naine…",
+      "genre": "Non renseigné",
+      "age": "51",
+      "sig": "51 ans - 2026-05-20 - impact très fort - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "Malentendante de naissance et appareillée à 5 ans. Entendre mon prof de physique en seconde C, mais ne pas comprendre ce qu’il dit, lui demander de répéter et m’entendre dire « tu n’es pas idiote au point d’avoir des aides auditives, tu n’avais qu’à écouter ». J’ai cru qu’être malentendant c’était être idiote, je le pensais déjà avant. J’ai mis 40 ans pour oser en parler ostensiblement.",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-20 - impact très fort - choix marqués - décisions majeures"
+    },
+    {
+      "text": "Concernant ce souvenir, nous vous invitons à réfléchir à l’influence qu’il a pu avoir sur vous.",
+      "genre": "Femme",
+      "age": "51",
+      "sig": "Femme - 51 ans - 2026-05-20"
+    },
+    {
+      "text": "La période du collège a été très compliquée car j’étais un peu différent physiquement de la « norme » & le regard des autres a été difficile à supporter",
+      "genre": "Homme",
+      "age": "42",
+      "sig": "Homme - 42 ans - 2026-05-20 - impact très fort - choix sensibles - décisions importantes"
+    },
+    {
+      "text": "durant les années de collège, j'avais un prof d'EPS qui nous parlait pas forcément correctement. eu égard à nous performances sportives de l'époque",
+      "genre": "Homme",
+      "age": "58",
+      "sig": "Homme - 58 ans - 2026-05-20 - impact très fort - choix sensibles - décisions majeures"
+    },
+    {
+      "text": "J'ai subi du harcèlement durant les 4 années de collège. Ma voix, mon physique... tout était sujet à moquerie...",
+      "genre": "Homme",
+      "age": "53",
+      "sig": "Homme - 53 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "Prépa littéraire : la prof d'anglais qui fait lire chaque étudiant et saute le tour de quelques uns car \"leurs accents dénaturent le poème de l'auteur\"",
+      "genre": "Femme",
+      "age": "48",
+      "sig": "Femme - 48 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "Au lycée, mon enseignante en SVT était très désagréable, faisait des remarques négatives a tous les élèves de la classe sauf les 2 meilleures! Du coup, je stressais avant d aller en cours avec des maux de ventre, des diarrhées...",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En CE2, lors d’un projet chorale, je n’ai pas été choisie en tant que soliste. Personne n’en a reparlé ensuite. Cela a beaucoup affecté ma confiance en moi.",
+      "genre": "Femme",
+      "age": "38",
+      "sig": "Femme - 38 ans - 2026-05-20 - impact très fort - choix marqués - décisions majeures"
+    },
+    {
+      "text": "Au lycée , un professeur d eps m a fait prendre une posture ridicule lors d un passage en gym pour générer des moqueries",
+      "genre": "Non renseigné",
+      "age": "54",
+      "sig": "54 ans - 2026-05-20 - impact durable - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "L'orthographe et moi, nous avons longtemps fait deux. En CM2, un jour de dictée, j'avais tellement mal au ventre que j'ai été autorisée à ne pas aller à l'école le matin. A midi, j'allais mieux, ma mère m'a envoyée à l'école l'après-midi, le maître, après une remarque sur mon niveau catastrophique en orthographe, m'a fait refaire la dictée alors que les autres élèves travaillaient sur une autre activité. J'ai écrit \"picsine\" au lieu de \"piscine\", c'était un mot à apprendre. J'ai eu droit à une moquerie de la part du maître devant toute la classe. Non seulement je n'étais pas là le matin mais en plus, je n'avais pas fait correctement mes devoirs.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En cm2, pour nous punir un enseignant nous faisait asseoir sous le bureau",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact sensible - choix sensibles - décisions sans effet"
+    },
+    {
+      "text": "Chantage au sein de groupe : à l’école primaire, une leader me forçait à manger à la cantine. N’y allant pas, elle demandait à d’autres amies si je le faisais. Si ce n’était pas le cas, j’étais exclue du groupe. Formes de harcèlement.",
+      "genre": "Femme",
+      "age": "39",
+      "sig": "Femme - 39 ans - 2026-05-20 - impact très fort - choix sensibles - décisions importantes"
+    },
+    {
+      "text": "J avais ma mere en GS maternelle. Dès qu une bêtise était faite, j etais accusée et, comme c etait dans les 80s, je me prenais des paires de baffes devant toute la classe.",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-05-20 - impact très fort - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "Pas au niveau",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "C'était en prépa. Hypokhâgne. Un prof (Histoire, je crois) a commenté une de mes copies d'un violent \"vous faites partie de l'erreur de recrutement\". Je n'ai même pas osé en parler à mes parents. (Je précise, au risque de passer pour qqn devtres prétentieux que j'ai fini 5ème au classement général annuel)",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En cm1 notre maître nous donnait la fessée a l’aide du des branches du compas pour tableau. Pour chaque point en dessous de la moyenne il y avait 1 coup. Il nous positionnait sur l’estrade aux yeux de tous… cette année la, j’ai fait en sorte de n’avoir aucune note au dessous de la moyenne. Je m’en suis souvenue l’année dernière en thérapie, j’ai réalisé que cela avait encore un impact aujourd’hui dans ma pratique professionnelle, je suis tétanisée à l’idée de faire la moindre erreur…",
+      "genre": "Femme",
+      "age": "44",
+      "sig": "Femme - 44 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En 2nde, au début de l’année mon prof de maths m’a dit que je n’arriverai à rien au lycée en maths car je venais d’un collège Rep+. Je suis restée à 8 toute mon année avec lui",
+      "genre": "Femme",
+      "age": "32",
+      "sig": "Femme - 32 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "Je n'ai pas de souvenir de réels moments difficiles pendant toute ma scolarité. En classe préparatoire scientifique, j'ai été envoyée au tableau le jour de mes 18 ans. Je travaillais beaucoup mais j'avais des difficultés. Le prof m'a dit \" ça fait deux mois que vous êtes là et vous ne savez faire que ça\". J'étais un peu blessée mais ce n'est pas un évènement très difficile.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact durable - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "En CM1 ou CM2, j’ai été giflée à deux mains sur les 2 joues par mon enseignante. Je ne trouvais pas la stratégie me permettant de résoudre des problèmes…",
+      "genre": "Femme",
+      "age": "55",
+      "sig": "Femme - 55 ans - 2026-05-20 - impact sensible - choix marqués - décisions touchées"
+    },
+    {
+      "text": "En 4e, le professeur de mathématiques m’a rendu ma copie en me jetant la feuille au visage en disant : « mademoiselle vous n’arriverez jamais à rien ». C’est une violence qui m’a au départ freiné dans mes apprentissages mais ensuite est devenu un véritable moteur de réussite.",
+      "genre": "Femme",
+      "age": "46",
+      "sig": "Femme - 46 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En 2nde, j'ai posé une question :\" les hommes préhistoriques parlaient-ils ?\" Je voulais savoir comment ils s'exprimaient, la prof d'histoire géo a ri, et s'est moqué de ma question, qu'elle n'a pas comprise, et n'a pas cherché à comprendre. ET elle a amené toute la classe à se moquer de moi.",
+      "genre": "Femme",
+      "age": "47",
+      "sig": "Femme - 47 ans - 2026-05-20 - impact durable - choix décisifs - décisions sans effet"
+    },
+    {
+      "text": "J'étais très timide et en classe de seconde, classe que je redoublais, mon professeur de français m'a surpris en train de \"bavarder\" (je demandais en fait un mouchoir à un camarade). Aussitôt, elle me demanda ce que j'avais à dire, et j'ai répondu \"rien\". Elle m'a humiliée devant la classe en disant que si je n'avais rien à dire, j'étais une imbécile car seuls les imbéciles discutaient pour ne rien dire.",
+      "genre": "Femme",
+      "age": "48",
+      "sig": "Femme - 48 ans - 2026-05-20 - impact très fort - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "En seconde, j'avais très peu de bagage littéraire et cela se voyait. L'enseignante lisait les bonnes copies à toute la classe. Elle avait écrit dans mon bulletin que je manquais de confiance en moi.",
+      "genre": "Femme",
+      "age": "55",
+      "sig": "Femme - 55 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En cinquième, à la rentrée, la prof de français nous demande si on a lu pendant les vacances. Toute fière je dis que j’ai lu plusieurs livres de Paul-Lou sulitzer et elle me répond « ça n’est pas de la littérature »",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "A l'ecole primaire mon institeur nous tirait les cheveux, les oreilles, parfois même giflait certains élèves plus turbulent. Il gérait une classe entière de CE1 à CM2.",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2026-05-20 - impact très fort - choix marqués - décisions majeures"
+    },
+    {
+      "text": "Je garde un mauvais souvenir de mon année de CM1, une maitresse qui me faisait peur, pas aimable non souriante. Je me sentais en échec...",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - choix sensibles"
+    },
+    {
+      "text": "M'obliger à lire un texte que j'avais produit devant le reste de la classe, alors que la prise de parole devant un grand groupe était très difficile pour moi. Malgré le fait que je pleurais, l'enseignante a continué à me forcer à lire. Ca a été une grande humiliation. Cela a renforcé mes difficultés à prendre la parole devant les autres et a perduré jusqu'à mes passages à l'oral en concours.",
+      "genre": "Femme",
+      "age": "48",
+      "sig": "Femme - 48 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En cinquième, j' ai eu un prof de math très heureux, cinglant, moqueur. Cela m'a complètement dégoûtée des math. Je n'y ai repris plaisir que bien plus tard dans mon travail de thèse. Et bien entendu j' ai fait des études en sciences humaines...",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "Ma prof de SVT s’est moquée de ma sensibilité lorsque j’ai raconté que je prenais soin d’oiseaux blessés. Je n’ai plus eu envie de participer oralement à ses cours",
+      "genre": "Femme",
+      "age": "51",
+      "sig": "Femme - 51 ans - 2026-05-20 - impact durable - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "Un jour, un élève plus âgé que moi est rentré dans les sanitaires et m'a asséné un coup de pied violent, sans aucune raison.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "J’ai reçu une claque de ma maîtresse de CP parce que lors d’un regroupement j’ai été poussée par un camarade. J’ai été propulsée vers l’avant, vers ma maîtresse qui m’a alors frappée",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-20 - impact très fort - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "J'ai 23 ans, mon maitre en CM1-CM2 m'a forcé à réaliser une saynète en allemand avec un camarade que je n'appréciais pas, la situation était très malaisante pour moi, je l'ai très mal vécu. Je me souviens de mon maitre en CE1-CE2 qui avait tiré les oreilles d'un camarade en pleurs, à plusieurs reprises. Un professeur en 5e se mettait en colère et cassait des choses dans la classe de façon violente, il terrifiait beaucoup d'élèves.",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "Primaire : en EPS, mesure de la fréquence cardiaque : \"Non c'est pas possible t'as pas pu trouver ça!\" J'ai le cœur qui bat vite, je n'y peux rien ! J'ai dû inventer autre chose en \"copiant\" mes camarades pour entrer dans la \"norme\" du professeur ! Je me suis sentie \"pas normale\". Collège : contexte familial compliqué, au lieu de se sentir entourée et en sécurité, j'ai subi du harcèlement moral (j'ai longtemps eu du mal à le nommer ainsi alors qu'il s'agissait bien de harcèlement) à propos de mon physique. Insultes quotidiennes, à la vue de toute la communauté éducative : personne n'a rien fait.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Comme j’avais rendu une évaluation sur une copie simple ou lieu double m’a valu un zéro et lorsque le professeur me rend ce contrôle « vous connaissez pas les copies doubles (mon nom) zéro » en me le jetant. (4eme)",
+      "genre": "Non renseigné",
+      "age": "57",
+      "sig": "57 ans - 2026-05-20 - impact très fort - choix décisifs"
+    },
+    {
+      "text": "J'ai un bac scientifique (bac C). En 2nde, 1ère et terminale j'avais le même professeur de Physiques/Chimie. Il me mettait systématiquement des notes inférieures à la moyenne malgré des réponses juste. J'étais une élève très timide et j'ai pris mon courage à deux mains pour aller le voir et le questionner. J'y suis allée avec la copie de ma copine qui avait les mêmes réponses que moi mais une très bonne note. Il m'a répondu que c'était comme ça. Au dernier conseil de classe, j'ai eu \"doit faire ses preuves\" à cause de lui, il était le seul à penser que je n'aurais pas le bac. Cela m'a déstabilisée et j'ai perdu confiance en moi. J'ai eu mon bac. En 1ère, le professeur de Mathématiques qui pensait être bienveillant m'a demandé si je n'étais pas anorexique car j'étais très grande et très mince. j'ai pleuré pendant une journée entière.",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2026-05-20 - impact très fort - choix décisifs - décisions sans effet"
+    },
+    {
+      "text": "En CE1, j'apporte mon cahier pour correction au bureau de la maîtresse. J'avais dû faire une erreur dans mon travail, la maîtresse m'a alors tiré les couettes. Je n'ai plus jamais porté cette coiffure de ma vie.",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-20 - impact très fort - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "Je ne me souviens pas d'avoir subi des violences mais par contre je me souviens de violences sur mes camarades, le climat de classe n'était pas secure. Ca pouvait tomber sur toi à tout moment. Une enseignante de maternelle a mis un élève dans la bouche d'égout et lui a dit que c'était là sa place, et combien d'enseignants qui ont giflé, ou mis des fessées. mis ont fond de la classe les élèves en difficulté...c'étaient les années 80",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "\"En deuxième année de licence informatique, mon professeur m'a bien fait comprendre que je n'irai nulle part en validant mon année avec une bonne note en anglais, que ça ne servait à rien.\"",
+      "genre": "Femme",
+      "age": "31",
+      "sig": "Femme - 31 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En année de maths sup, prof de physique qui m'a dit que je n'arriverai à rien.",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En 4 eme en maths j'avais une prof tres sévère qui nous notait sans arret avec des \" 0 \" ou \" 20\". Elle rendait les ds avec les notes du moins bon résultat au meilleur avec des commentaires tres humiliants parfois.",
+      "genre": "Femme",
+      "age": "46",
+      "sig": "Femme - 46 ans - 2026-05-20 - impact durable - choix marqués - décisions touchées"
+    },
+    {
+      "text": "En primaire, j'ai eu la chance d'avoir un instituteur très proche des ses élèves, ne laissant personne derrière. Je me souviens en particulier d'une année où l'on a fait un petit jardin pour y faire pousser des radis et des tagettes; et appris à faire du fromage et du pain. On a pu ainsi en fin d'année scolaire débuter ce que l'on avais réaliser nous-même.",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2026-05-20 - impact très fort - choix marqués - décisions majeures"
+    },
+    {
+      "text": "En CE1 mon instit' me faisait rester en classe durant les récréation car je n'arrivais pas à me débarrasser de poux et elle faisait la chasse aux poux sur ma tête \"pour mon bien\" et pour \"aider ma mère\" Heureusement ma mère a fini par me traiter au Parapoux car tout le monde se moquait de moi et me mettait à l'écart.",
+      "genre": "Femme",
+      "age": "55",
+      "sig": "Femme - 55 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "- En CM2, mon instituteur me traite de fumiste expliquant devant toute la classe la différence avec mon père pour qui il a un grand respect pour son travail et moi. Je suis restéeinterdite car je ne comprenais pas cette remarque. Il m’enverra un autre jour au milieu de la cour en me disant que je suis un âne. Il me corrigera en me criant dessus de dire « je suis une ânesse » afin que tout le monde entende - Alors que je suis en maîtrise, une professeur de collège me demande ce que je deviens et me répondra : « Ah quand même ! » cette enseignante avait en 3eme remis en cause ma capacité à étudier pendant que j’avais copié sur ma camarade et souhaitais m’orienter en voix professionnelle me laissant croire que c’était pas place. Plus tard j’ai appris que j’etais dyslexique et il y a deux ans suite à un buen out on a découvert un TDAH et un HPI.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En CE2 nous avions une maitresse qui était connue de tous comme étant très sévère (voire maltraitante). Nous avons accueilli en classe un enfant qui venait de Yougoslavie. Elle était sortie de classe et une bataille de papier s'est déclarée en son absence. Nous l'avons entendue revenir mais cet élève s'est retrouvé debout à son arrivée car il ramassait les papiers au sol. Elle l'a relevé et lui a donnée une claque sur chaque joue. Ce moment m'a profondément choqué, ce souvenir est ancré en moi. Je me suis toujours demandée comment, connaissant le vécu de la guerre de cet enfant elle avait pu avoir ce geste.",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-20 - impact très fort - choix marqués - décisions majeures"
+    },
+    {
+      "text": "En CE1, mon enseignante, pour une raison que je n'ai jamais identifiée, me témoignait son animosité . J'en suis venue à la détester également et à agir pour la faire pester. Je n'étais portant pas mauvaise élève (' contrôles -terme de l'époque- trimestriels avec un résultat de 68-70 /100. Un maintien a été proposé. Mes parents qui visaient l'excellence est acté ce maintien. Fort heureusement, l'année d'après, je n'étais plus dans sa classe. J'obtenais des résultats avoisinants les 90/100 mais je restais vigilante à être loin d'elle dans la cour. et on repart sur de bonnes bases. Devenue enseignante, je me suis fait un point d'honneur de ne jamais garder grief d'un différend avec un élève. Chaque jour est nouveau",
+      "genre": "Femme",
+      "age": "57",
+      "sig": "Femme - 57 ans - 2026-05-20 - impact très fort - choix sensibles"
+    },
+    {
+      "text": "Lorsque j’étais en CE2, je me souviens que je ne comprenais pas la leçon malgré les explications de mon institutrice. Elle m’a alors dit qu’elle ne pouvait rien faire de plus pour moi et a demandé à un autre élève de m’expliquer, ce qu’il a fait gentiment. Cet épisode m’a marqué.",
+      "genre": "Femme",
+      "age": "41",
+      "sig": "Femme - 41 ans - 2026-05-20 - impact très fort - choix marqués"
+    },
+    {
       "text": "En quatrième, un de mes professeurs m'a dit \"qu'au mieux, je finirai caissière\"",
       "genre": "Femme",
       "age": "44",
@@ -4929,6 +5259,306 @@
   ],
   "micro_attentions": [
     {
+      "text": "J’ai toujours été cataloguée comme une élève scientifique donc je me rangeais moi-même dans cette case. Arrivée en terminale j’ai adoré la philosophie et j’avais un enseignement exceptionnel qui m’a permis de m’épanouir et de me sentir valorisée dans une discipline qui sur le papier ne collait pas à mon profil pré-défini. Encore aujourd’hui je repense régulièrement à des cours passionnants, à sa façon de nous faire progresser dans nous stigmatiser et à ses mots valorisants qu’il tenait devant nous mais également devant ses collègues enseignants.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "Un moment vraiment agréable fut quand j'ai réussi mon premier partiel à ma fac, je me suis dite : si tu y arrives, tu m'abandonnes pas.",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "L option photo au lycée : des moments d échanges chaleureux sur l analyse et l interprétation",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Ma professeure de français en seconde m'a qualifiée d élève brillante.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions sans effet"
+    },
+    {
+      "text": "Je ne crois pas avoir eu un seul souvenir heureux dans mon cursus",
+      "genre": "Femme",
+      "age": "28",
+      "sig": "Femme - 28 ans - 2026-05-20"
+    },
+    {
+      "text": "Difficile de choisir un souvenir, il y en a beaucoup. En terminale, ma professeure d'espagnol est partie en congé maternité et a été remplacée pendant 3 mois par une jeune stagiaire espagnole. Le premier jour, elle est arrivée avec une valise pleine d'objets typiques d'Espagne (aliments, machine à churros, cd...). J'étais déjà amoureuse de l'Espagne et de la langue espagnole depuis le collège, grâce à un excellent prof. Mais j'avoue que je garde un souvenir très ému de ces 3 mois avec cette remplaçante qui acceptait la plupart de nos propositions (étudier telle chanson, aller au cinéma voir tel film espagnol, aller manger des tapas le week-end, en dehors des court)",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-20 - impact durable - choix marqués - décisions touchées"
+    },
+    {
+      "text": "En seconde, ma professeure de francais m'avait rendu un devoir que j'avais réalisé a la maison et m'a dit que j'avais vraiment de bonne capacités et une facilité a raconter des histoires et a faire ressentir des émotions",
+      "genre": "Femme",
+      "age": "25",
+      "sig": "Femme - 25 ans - 2026-05-20 - impact durable - choix sensibles - décisions touchées"
+    },
+    {
+      "text": "En cm1 j’ai eu un professeur exceptionnel qui a monté des projets fabuleux tout au long de l’année J’étais admirative et j’ai adoré ce métier à ce moment là",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Pendant mes années lycée j’ai développé des capacités de mémoire et une facilité d’expression en français. Mon professeur de français et de matières professionnelles m’encourageait et mettaient régulièrement en avant ces qualités J’en garde un souvenir reconnaissant",
+      "genre": "Non renseigné",
+      "age": "51",
+      "sig": "51 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Prof d’allemand en 6e qui me dit : tu n’as pas appris ta leçon « alors que j’y avais passé un temps conséquent. Remarques répétées sur le 1er trimestre, j’ai cessé ensuite de travailler cette matière (ma première LV), je ne l’ai pas prise au bac.",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Les plus belles années scolaires épanouissantes étaient les années primaires avec moins de jugement entre les élèves.",
+      "genre": "Homme",
+      "age": "42",
+      "sig": "Homme - 42 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "mes enseignants dans une école primaire privée à Dijon. l'école sainte bénigne pour pas la nommer, surtout la maîtresse de CO2 et le maître de CM2 qui était extraordinaire pour l'époque avec une avancée dans les pédagogies et dans les sorties scolaires et dans l'ambiance de classe excuser les fautes. je dicte lol",
+      "genre": "Homme",
+      "age": "58",
+      "sig": "Homme - 58 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Prof de français de lycée qui m'a encourager à être ambitieuse dans mes choix d orientation",
+      "genre": "Femme",
+      "age": "48",
+      "sig": "Femme - 48 ans - 2026-05-20 - impact durable - choix marqués - décisions importantes"
+    },
+    {
+      "text": "L appréciation de mon prof de philosophie dans mon livret scolaire \" j étais comme un poisson dans l eau en cours de philo\"",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-20 - impact très fort - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "En terminale, j’ai été première de la classe et mes professeurs ont dit à mes parents que je pouvais aller loin, faire une grande école. Cela m’a beaucoup valorisée.",
+      "genre": "Femme",
+      "age": "38",
+      "sig": "Femme - 38 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Classe de CM1 avec une enseignante prônant la créativité , la liberté , la coopération et la singularité de chacun",
+      "genre": "Non renseigné",
+      "age": "54",
+      "sig": "54 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En terminale, ma prof d'anglais m'a invitée à faire des voeux pour aller en prépa lettres alors que je pensais aller à la fac. C'est la première enseignante qui a cru en moi.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact durable - choix marqués"
+    },
+    {
+      "text": "Mon enseignant de CP et ce1 était vraiment bienveillant, je ne serai pas dire pourquoi mais je le ressens encore",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact durable - choix marqués - décisions sans effet"
+    },
+    {
+      "text": "Mon professeur de CM2 nous proposait de regarder l’actualité et d’en faire une synthèse devant la classe à tour de rôle. Cette posture d’engagement actif m’a porté. Ce professeur a généralement permis de renforcer ma curiosité.",
+      "genre": "Femme",
+      "age": "39",
+      "sig": "Femme - 39 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "Pas vraiment de bons souvenirs malheureusement",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-05-20"
+    },
+    {
+      "text": "J'aimerais lui vos écrits lors de vos prochains dossiers",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "En classe de première, ma prof d'allemand (c'était ma LV2) m'a rendu un devoir avec la meilleure note de la classe et m'a demandé si l'un de mes parents était allemand. J'ai été intensément heureuse. L'année suivante, j'ai échangé mes langues et pris l'allemand en LV1 pour le bac. Puis, j'ai fait une licence d'allemand par la suite alors que rien ne m'y prédestinait ;-)",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En 6ème, ma professeure principale d’allemand ayant eu vent de mes talents d’imitatrice, réservait systématiquement 5 minutes à la fin du cours pour que je puisse faire un petit show face à la classe hilare. Cela nous motivait tous à bien travailler et à accomplir nos tâches rapidement et efficacement pour avoir 5 minutes de spectacle à la fin.7 ans plus tard, J’ai eu 18/20 en allemand au bac ;)",
+      "genre": "Femme",
+      "age": "44",
+      "sig": "Femme - 44 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En 1ereS, mon prof de SVT m’a reprise car je bavardais et m’a demandé de t’expliquer aux autres, j’ai formidablement réussi cet exercice et en aparté à la fin il m’a dit que je ferai une bonne prof de SVT (je suis devenue prof de SVT depuis)",
+      "genre": "Femme",
+      "age": "32",
+      "sig": "Femme - 32 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Être élue \"fille la plus sympa de la classe\" en seconde... Election et vote des élèves.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact marginal - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "Mes années de cp, ce1 et ce2. Les élèves de l’école étaient répartis dans 2 classes, j’avais eu la chance d’être dans les classes des maîtresses que je qualifiais de « gentilles ». J’étais en confiance.",
+      "genre": "Femme",
+      "age": "55",
+      "sig": "Femme - 55 ans - 2026-05-20 - impact durable - choix sensibles - décisions touchées"
+    },
+    {
+      "text": "En première, mon professeur d’espagnol a pris le temps de m’expliquer que si on fait les choses avec passion et qu’on trouve du sens dans nos apprentissages, on fait les choses avec plus de cœur. Elle parlait des langues mais plus tard j’ai compris que cela s’applique à tout",
+      "genre": "Femme",
+      "age": "46",
+      "sig": "Femme - 46 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "prof de maths de 5eme : on ne donne pas de la confiture aux cochons. Nous étions les cochons et il gâchait son temps avec nous !",
+      "genre": "Femme",
+      "age": "47",
+      "sig": "Femme - 47 ans - 2026-05-20 - impact durable"
+    },
+    {
+      "text": "En classe de première, mon professeur de français m'a dit que je devrais réfléchir à faire une prépa littéraire. Je manquais de confiance en moi et j'ai été flattée par sa remarque.",
+      "genre": "Femme",
+      "age": "48",
+      "sig": "Femme - 48 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "J’ai eu un 20/20 en maths en 5eme",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact sensible - choix sans effet - décisions sans effet"
+    },
+    {
+      "text": "Je me souviens de mon prof d'histoire géographie en classe de terminale qui nous comptait l'histoire c'était vraiment un narrateur qui nous captivait j'ai eu grâce à lui 18/20 au bac dans sa matière. Merci à ce monsieur!",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En première j' ai eu un professeur de français extraordinaire, passionné, passionnant, qui s' intéressait à ses élèves. J' ai adoré ses cours",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact durable - choix marqués - décisions importantes"
+    },
+    {
+      "text": "Un enseignant de primaire qui avait réellement un lien avec ses élèves, une ambiance de classe qui m’a marquée positivement",
+      "genre": "Femme",
+      "age": "51",
+      "sig": "Femme - 51 ans - 2026-05-20 - impact durable - choix marqués - décisions importantes"
+    },
+    {
+      "text": "J'ai eu une enseignante bienveillante en grande section. C'est elle qui a été déterminante dans le choix de mon métier.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Mon professeur de français au collège critiquait nos comportements et notre travail et jamais notre personne, qui on etait",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Ma professeure de philo en terminale m'a encouragé à tenter science politique lors d'un rendez-vous parents et professeurs, cela m'a encouragé et m'a aidé à me faire un peu plus confiance. J'ai beaucoup aimé étudier la philo avec cette professeure et j'étais surprise de bien m'en sortir malgré ce qu'on m'en avait dit. J'ai gardé mes dissertations et je me sens bien quand je les relis et repense à cette enseignante qui a été encourageante envers moi.",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2026-05-20 - impact durable - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Le lycée professionnel, de manière plus générale. Les professeurs étaient beaucoup plus bienveillants, dans l'accompagnement.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En arts plastiques, j’avais fait un hors sujet « vous confirmez bien que vous êtes blonde »",
+      "genre": "Non renseigné",
+      "age": "57",
+      "sig": "57 ans - 2026-05-20 - impact très fort"
+    },
+    {
+      "text": "En primaire les enseignantes que j'ai eu m'ont toujours dit que malgré ma timidité je réussirai et m'ont encouragée à prendre la parole en classe.",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2026-05-20 - impact très fort - choix décisifs - décisions sans effet"
+    },
+    {
+      "text": "J'avais pris espagnol en LV3 en seconde. Ma professeure était toujours dynamique et encourageante, j'ai pu participer à un échange qu'elle avait organisé. J'ai été très heureuse der la retrouver à la fac, en LEA. Elle n'avait pas changée dans sa manière d'enseigner.",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "J'ai eu 4/20 à un devoir de français de 1ère. Ma professeure de français m'a demandé si j'étais allophone",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-05-20 - impact durable - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "En physique-chimie : tout le monde avait raté l'exercice qui était de présenter un sujet serieux par l'humour, le professeur a râlé sur toute la classe mais m'a prise en exemple pour dire que j'avais réussi à faire une affiche humoristique. J'étais la dernière dans cette matière. Je me rappelle de cette camarade première de la classe à m'avoir félicité.",
+      "genre": "Femme",
+      "age": "31",
+      "sig": "Femme - 31 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
+      "text": "Au collège, un prof de maths qui m'a fortement encouragé dans la voie scientifique.",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En primaire j'avais une totale confiance en mes maîtresses, qui nous le rendaient bien. Nous avions meme été accueillis chez l'une d'elle pour un goûter , J’ ai vraiment pris conscience qu'elles s’impliquaient beaucoup pour leurs élèves.",
+      "genre": "Femme",
+      "age": "46",
+      "sig": "Femme - 46 ans - 2026-05-20 - impact durable - choix marqués - décisions touchées"
+    },
+    {
+      "text": "C'est lors de ma prépa à l'université que j'ai découvert qu'il y avait moyen d'aimer faire des exercices de physique et chimie, alors que c'était une étude pénible lors des premières années secondaires",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "J'avais une instit qui valorisait mon travail et mes compétences et mes demandait souvent d'aider les plus petits (j'étais dans une classe unique) ou les plus petits ou les plus en difficulté.",
+      "genre": "Femme",
+      "age": "55",
+      "sig": "Femme - 55 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En collège, une professeur de français en particulier m’a mise en confiance en me témoignant de l’intérêt, en valorisant mon travail, mes idées. Elle était exigeante mais bienveillante et respectueuse. Je l’ai eu les 4 années de collège et elle a influencé positivement mon future en développant la confiance en moi et en les capacités. En 3eme, elle m’a conseillé et a soutenu ma demande en voie générale. Aujourd’hui après une maîtrise de sociologie avec mention, un concours de CPE à la 1ere présentation, une admissible au concours de chef d’établissement ( mais toujours avec l’idee d’être en situation d’imposture et donc d’auto sabotage à l’oral) je travaille comme CPE dans un etablissement français à l’étranger avec l’AEFE. Les tests HP m’ont permis de penser enfin que je n’étais peut être plus une imposture et que j’étais capable et à ma place. Le TDAH et la dyslexie m’ont permis de comprendre mon fonctionnement et d’être aussi plus bienveillante envers moi même. Je n’étais plus nulle, incapable ou obligée de prouver quelque chose. J’etais moi même et tout aussi capable que les autres.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En première, ma prof de français m'a dit \"tu ne parles pas souvent mais c'est toujours pour dire des choses très pertinentes\"",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-20 - impact très fort - choix décisifs"
+    },
+    {
+      "text": "Mon enseignante de CM2, directrice de l'école également, que nous étions autorisés à appeler par son prénom - fait 'révolutionnaire en 1980- nous responsabilisait ( tirage des fiches avec machine de reprographie à alcool, ménage, rangement de le bibliothèque,...), activités d'apprentissages à l'extérieur, projets innovants ( classes découverte, ateliers bricolage, recherche de groupe,tutorat entre élèves...). Elle apportait le plaisir d'apprendre à chaque élève, Une superbe fin d'école primaire grâce à elle. Cette enseignante a motivé mon choix professionnel.",
+      "genre": "Femme",
+      "age": "57",
+      "sig": "Femme - 57 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Petite, j’avais énormément de difficultés scolaires. Je me souviens que mon maître de CM1-CM2 prenait sur sa pause méridienne pour me faire poser des additions au tableau. Je lui en suis reconnaissante de m’avoir aidée comme il a pu le faire.",
+      "genre": "Femme",
+      "age": "41",
+      "sig": "Femme - 41 ans - 2026-05-20 - impact très fort - décisions majeures"
+    },
+    {
       "text": "Lors des résultats du baccalauréat, ma professeur d'histoire géographie m'attendait au portail, elle voulait me dire qu'elle était fière de moi car j'avais obtenu 20/20.",
       "genre": "Femme",
       "age": "44",
@@ -9279,5 +9909,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1851
+  "total_reponses": 1651
 }
