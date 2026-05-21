@@ -1,6 +1,36 @@
 {
   "micro_violences": [
     {
+      "text": "J’avais une bande d’amies depuis la sixième et en classe de 3eme elles se sont un peu liguées contre moi sans raison valable : paroles à voix basses, regards de travers, surnoms désagréables…",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact durable - choix sans effet - décisions touchées"
+    },
+    {
+      "text": "Concernant ce souvenir, nous vous invitons à réfléchir à l’influence qu’il a pu avoir sur vous.",
+      "genre": "Femme",
+      "age": "51",
+      "sig": "Femme - 51 ans - 2026-05-20"
+    },
+    {
+      "text": "Pas au niveau",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "Un jour, un élève plus âgé que moi est rentré dans les sanitaires et m'a asséné un coup de pied violent, sans aucune raison.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix sans effet - décisions majeures"
+    },
+    {
+      "text": "- En CM2, mon instituteur me traite de fumiste expliquant devant toute la classe la différence avec mon père pour qui il a un grand respect pour son travail et moi. Je suis restéeinterdite car je ne comprenais pas cette remarque. Il m’enverra un autre jour au milieu de la cour en me disant que je suis un âne. Il me corrigera en me criant dessus de dire « je suis une ânesse » afin que tout le monde entende - Alors que je suis en maîtrise, une professeur de collège me demande ce que je deviens et me répondra : « Ah quand même ! » cette enseignante avait en 3eme remis en cause ma capacité à étudier pendant que j’avais copié sur ma camarade et souhaitais m’orienter en voix professionnelle me laissant croire que c’était pas place. Plus tard j’ai appris que j’etais dyslexique et il y a deux ans suite à un buen out on a découvert un TDAH et un HPI.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix marqués - décisions importantes"
+    },
+    {
       "text": "En terminale, une de mes amies proche à perdue sa mère dans un accident de la route, et cette amie est venue vivre chez moi cette année-là. Cet évènement a rendu notre année de terminale très compliqué, puisque nous avons manqués beaucoup de cours, et accumulés du retard.",
       "genre": "Femme",
       "age": "24",
@@ -9999,6 +10029,36 @@
   ],
   "micro_attentions": [
     {
+      "text": "J’ai toujours été cataloguée comme une élève scientifique donc je me rangeais moi-même dans cette case. Arrivée en terminale j’ai adoré la philosophie et j’avais un enseignement exceptionnel qui m’a permis de m’épanouir et de me sentir valorisée dans une discipline qui sur le papier ne collait pas à mon profil pré-défini. Encore aujourd’hui je repense régulièrement à des cours passionnants, à sa façon de nous faire progresser dans nous stigmatiser et à ses mots valorisants qu’il tenait devant nous mais également devant ses collègues enseignants.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact très fort - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "Le lycée professionnel, de manière plus générale. Les professeurs étaient beaucoup plus bienveillants, dans l'accompagnement.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
+      "text": "En arts plastiques, j’avais fait un hors sujet « vous confirmez bien que vous êtes blonde »",
+      "genre": "Non renseigné",
+      "age": "57",
+      "sig": "57 ans - 2026-05-20 - impact très fort"
+    },
+    {
+      "text": "J'ai eu 4/20 à un devoir de français de 1ère. Ma professeure de français m'a demandé si j'étais allophone",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-05-20 - impact durable - choix décisifs - décisions importantes"
+    },
+    {
+      "text": "En collège, une professeur de français en particulier m’a mise en confiance en me témoignant de l’intérêt, en valorisant mon travail, mes idées. Elle était exigeante mais bienveillante et respectueuse. Je l’ai eu les 4 années de collège et elle a influencé positivement mon future en développant la confiance en moi et en les capacités. En 3eme, elle m’a conseillé et a soutenu ma demande en voie générale. Aujourd’hui après une maîtrise de sociologie avec mention, un concours de CPE à la 1ere présentation, une admissible au concours de chef d’établissement ( mais toujours avec l’idee d’être en situation d’imposture et donc d’auto sabotage à l’oral) je travaille comme CPE dans un etablissement français à l’étranger avec l’AEFE. Les tests HP m’ont permis de penser enfin que je n’étais peut être plus une imposture et que j’étais capable et à ma place. Le TDAH et la dyslexie m’ont permis de comprendre mon fonctionnement et d’être aussi plus bienveillante envers moi même. Je n’étais plus nulle, incapable ou obligée de prouver quelque chose. J’etais moi même et tout aussi capable que les autres.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-20 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
       "text": "La réussite de notre bac. Malgré cet évènement en terminale, nos professeurs ont été très compréhensifs et n’ont pas cessés de croire en nous et finalement nous avons toutes les deux obtenus notre bac, malgré le retard que nous avions pu prendre.",
       "genre": "Femme",
       "age": "24",
@@ -19185,5 +19245,5 @@
       "sig": "Femme - 45 ans - impact modéré - orientation sans effet"
     }
   ],
-  "total_reponses": 3197
+  "total_reponses": 3207
 }
