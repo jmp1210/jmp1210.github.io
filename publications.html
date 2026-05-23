@@ -233,6 +233,41 @@ main {
   color: rgba(245,240,235,0.35); margin-top: 0.2rem;
 }
 
+/* CARTE THÈSE/HDR — pleine largeur avec couverture */
+.these-card {
+  background: rgba(245,240,235,0.03); border: 1px solid rgba(245,240,235,0.08);
+  border-left: 3px solid rgba(196,30,30,0.6);
+  padding: 2.2rem 2.5rem; margin-bottom: 1.8rem;
+  display: grid; grid-template-columns: 120px 1fr; gap: 2rem;
+  transition: border-color 0.3s, background 0.3s;
+}
+.these-card:hover { border-color: rgba(245,240,235,0.2); background: rgba(245,240,235,0.05); }
+.these-card.bleu-c { border-left: 3px solid rgba(30,136,229,0.5); }
+.these-cover { width: 120px; height: auto; border: 1px solid rgba(245,240,235,0.1); opacity: 0.9; }
+.these-body { display: flex; flex-direction: column; gap: 0.6rem; }
+.these-resume {
+  font-family: 'EB Garamond', serif; font-size: 1.05rem;
+  color: rgba(245,240,235,0.7); line-height: 1.7; font-style: italic;
+}
+.these-details summary {
+  font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.4);
+  cursor: pointer; padding: 0.5rem 0; list-style: none; transition: color 0.2s;
+}
+.these-details summary::-webkit-details-marker { display: none; }
+.these-details summary::before { content: '▸ '; }
+.these-details[open] summary::before { content: '▾ '; }
+.these-details summary:hover { color: rgba(245,240,235,0.7); }
+.these-details .these-long {
+  font-family: 'EB Garamond', serif; font-size: 1rem;
+  color: rgba(245,240,235,0.6); line-height: 1.8; padding-top: 0.8rem;
+  border-top: 1px solid rgba(245,240,235,0.06);
+}
+@media (max-width: 680px) {
+  .these-card { grid-template-columns: 1fr; }
+  .these-cover { width: 80px; }
+}
+
 /* FOOTER */
 footer {
   border-top: 1px solid rgba(245,240,235,0.06);
@@ -375,12 +410,110 @@ footer {
         </div>
       </div>
 
+      <div class="pub-card rouge-c">
+        <div class="pub-year">2015</div>
+        <p class="pub-titre">Normes, École et inclusion</p>
+        <p class="pub-auteurs">Jean-Michel Perez</p>
+        <p class="pub-source">NRAS n°70-71, p.&nbsp;25–38 — Basculement foucaldien&nbsp;: passage explicite à Foucault (micro-dispositifs de pouvoir), assumé avec Freire (conscientisation, biopolitique)</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="https://hal.science/hal-05524309" class="pub-link" target="_blank" rel="noopener">HAL</a>
+          </div>
+          <img src="/nras_2015_cover.jpg" class="pub-icon" alt="NRAS 70-71">
+        </div>
+      </div>
+
+      <div class="pub-card rouge-c">
+        <div class="pub-year">2011</div>
+        <p class="pub-titre">Les douces violences&nbsp;: position originaire du programme de recherche</p>
+        <p class="pub-auteurs">Jean-Michel Perez</p>
+        <p class="pub-source">Conférence-débat, 6 décembre 2011 — Diapo 2&nbsp;: «&nbsp;MICRO VIOLENCE - DOUCE VIOLENCE est un oxymore&nbsp;». Diapo 6&nbsp;: violence institutionnelle (Tomkiewicz)</p>
+        <div class="pub-bottom">
+          <div class="pub-links">
+            <a href="/ppt_2011_douces_violences.pdf" class="pub-link rouge-l" target="_blank" rel="noopener">PPT (PDF)</a>
+          </div>
+          <img src="/ppt_2011_cover.jpg" class="pub-icon" alt="PPT 2011">
+        </div>
+      </div>
+
     </div>
 
   </div>
 
   <!-- ══════════════════════════════
-       2 — CONTRIBUTIONS DE COLLÈGUES
+       2bis — THÈSES ET HDR DU PROGRAMME
+       ══════════════════════════════ -->
+  <div class="revue-section">
+    <div class="revue-label"><span class="dot"></span>Thèses et HDR du programme</div>
+    <p class="revue-meta">Travaux dirigés ou co-dirigés — résumés et textes intégraux</p>
+
+    <!-- ESTELLE RACHED -->
+    <div class="these-card">
+      <img src="/these_rached_cover.jpg" class="these-cover" alt="Thèse Estelle Rached 2024">
+      <div class="these-body">
+        <div class="pub-year">2024</div>
+        <p class="pub-titre">Le devenir humain dans et pour l'incertitude&nbsp;: la qualité en éducation. Cas des établissements scolaires du second degré au Liban</p>
+        <p class="pub-auteurs">Estelle Rached — Thèse de doctorat (Section 70), Université de Lorraine, LISEC UR 2310</p>
+        <p class="pub-source">Direction&nbsp;: Jean-Michel Perez (PR, UL) et Jean-Marie De Ketele (PR émérite, UCL). Soutenue le 16 septembre 2024. Rapportrices&nbsp;: Maitena Armagnague (Genève), Caroline Ladage (Aix-Marseille). Présidente&nbsp;: Emmanuelle Annoot (Rouen). Examinateur&nbsp;: Augustin Mutuale (ICP)</p>
+        <p class="these-resume">L'a-qualité, par analogie au modèle de l'a-synthèse (Perez, 2008)&nbsp;: suspendre la qualité éducative normative pour interroger le construit humain, dans un Liban en crise, à travers ses deux facettes de micro-attentions et de micro-violences.</p>
+        <details class="these-details">
+          <summary>Lire le résumé développé</summary>
+          <div class="these-long">
+            Le Liban s'effondre — crises en cascade, institutions fracturées. C'est là qu'Estelle pose sa question&nbsp;: que reste-t-il de la qualité éducative quand les murs ne tiennent plus&nbsp;? Sa réponse est un geste théorique&nbsp;: l'a-qualité, «&nbsp;par analogie au modèle de l'a-synthèse (Perez, 2008)&nbsp;». Le préfixe «&nbsp;a-&nbsp;» n'annule pas la qualité, il la suspend — il déporte le regard des indicateurs normatifs vers le construit humain qui les sous-tend. C'est Estelle qui installe la métaphore de l'iceberg comme opérateur du couple micro-violences / micro-attentions. La partie émergée&nbsp;: les normes, la productivité, les indicateurs universels. La partie immergée&nbsp;: «&nbsp;les micro-attentions et les micro-violences qui se déroulent souvent d'une façon sous-jacente au sein de l'établissement scolaire. Elles sont enfouies et façonnent les conduites des personnes sans être perceptibles par elles&nbsp;» (p.&nbsp;162). En conclusion (p.&nbsp;391)&nbsp;: «&nbsp;la qualité éducative se compose de deux parties, l'une émergée et visible, celle des normes, et l'autre immergée et invisible, celle de l'humain dans sa complexité et sa singularité.&nbsp;» Pivot opératoire en contexte de crise institutionnelle.
+          </div>
+        </details>
+        <div class="pub-links">
+          <a href="https://theses.fr/2024LORR0186" class="pub-link rouge-l" target="_blank" rel="noopener">theses.fr</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAÏD AIT HAMMOU TALEB -->
+    <div class="these-card">
+      <img src="/these_said_cover.jpg" class="these-cover" alt="Thèse Saïd Ait Hammou Taleb 2022">
+      <div class="these-body">
+        <div class="pub-year">2022</div>
+        <p class="pub-titre">Les praxéologies des chargés d'accueil et d'accompagnement dans une Université inclusive</p>
+        <p class="pub-auteurs">Saïd Ait Hammou Taleb — Thèse de doctorat (Section 70), Université de Lorraine, LISEC UR 2310</p>
+        <p class="pub-source">Direction&nbsp;: Jean-Michel Perez (PR, UL). Soutenue le 18 novembre 2022</p>
+        <p class="these-resume">L'université qui se dit inclusive produit, dans ses procédures mêmes d'accompagnement du handicap, les conditions de l'assujettissement. Saïd met au jour les praxéologies effectives des chargés d'accueil et identifie les conditions pour que l'accessibilité advienne.</p>
+        <details class="these-details">
+          <summary>Lire le résumé développé</summary>
+          <div class="these-long">
+            L'université qui se dit inclusive produit, dans ses procédures mêmes d'accompagnement du handicap, les conditions de l'assujettissement. C'est ce que Saïd met au jour. Ses conclusions (p.&nbsp;336-348) nomment l'«&nbsp;acteur assujettissant&nbsp;» (p.&nbsp;339) — celui qui, croyant accompagner, reconduit la norme. Puis le renversement&nbsp;: «&nbsp;la notion d'affranchissement et de transgression pour permettre à ce que cette accessibilité advienne&nbsp;» (p.&nbsp;341, citant Perez, 2021), articulée au geste de «&nbsp;permettre à l'autre d'advenir&nbsp;» (Perez, 2017) et à la suspension du jugement (p.&nbsp;342). Sa modélisation (Fig.&nbsp;77) intègre Chevallard et Perez (2007, 2017, 2021) par le contre-transfert et la transposition institutionnelle. Déclinaison universitaire la plus aboutie du cadre.
+          </div>
+        </details>
+        <div class="pub-links">
+          <a href="https://theses.fr/2022LORR0240" class="pub-link rouge-l" target="_blank" rel="noopener">theses.fr</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GÉRALDINE SUAU HDR -->
+    <div class="these-card bleu-c">
+      <img src="/hdr_suau_cover.jpg" class="these-cover" alt="HDR Géraldine Suau 2024">
+      <div class="these-body">
+        <div class="pub-year" style="color:var(--bleu-vif)">2024</div>
+        <p class="pub-titre">Accompagner les fragilités humaines par une exploration praxéologique de l'activité professionnelle</p>
+        <p class="pub-auteurs">Géraldine Suau — HDR, Université de Lorraine, LISEC EA 2310, École Doctorale SLTC</p>
+        <p class="pub-source">Garante&nbsp;: Dominique Macaire (PR émérite, UL). Soutenue le 18 novembre 2024</p>
+        <p class="these-resume">Pas le handicap, pas le déficit&nbsp;: la fragilité — ce qui, dans l'humain, résiste à la norme sans la combattre. Exploration praxéologique des dynamiques institutionnelles assujettissantes et des micro-violences en lien avec les fragilités humaines.</p>
+        <details class="these-details">
+          <summary>Lire le résumé développé</summary>
+          <div class="these-long">
+            Pas le handicap, pas le déficit&nbsp;: la fragilité — ce qui, dans l'humain, résiste à la norme sans la combattre. Géraldine Suau entre par les «&nbsp;dynamiques institutionnelles assujettissantes&nbsp;» et les micro-violences institutionnelles pour montrer comment les dispositifs censés protéger les personnes fragiles les assujettissent par leur fonctionnement même. Co-autrice de la formule «&nbsp;subversion de l'intérieur&nbsp;» (Perez &amp; Suau, 2025, NR-ESI 102, p.&nbsp;145), elle reprend les rapports d'assujettissement, d'affranchissement et de transgression au sein des institutions éducatives (p.&nbsp;113) en référence au chercheur-apprenant (Perez, 2018, 2020).
+          </div>
+        </details>
+        <div class="pub-links">
+          <a href="https://hal.science/tel-04845714" class="pub-link bleu-l" target="_blank" rel="noopener">HAL</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════
+       3 — CONTRIBUTIONS DE COLLÈGUES
        (avec ou sans JMP, ordre alpha)
        ══════════════════════════════ -->
   <div class="revue-section">
