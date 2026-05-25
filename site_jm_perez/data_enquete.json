@@ -1,6 +1,12 @@
 {
   "micro_violences": [
     {
+      "text": "Au CE1, mon institutrice m'a déclaré que je n'aurai jamais le baccalauréat et cela m'a marqué. J'ai essayé de la démentir et j'ai réussi. Mon orientation a été modifiée car je devais choisir entre devenir pianiste où réussir le baccalauréat.",
+      "genre": "Femme",
+      "age": "59",
+      "sig": "Femme - 59 ans - 2026-05-25 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
       "text": "J’avais une bande d’amies depuis la sixième et en classe de 3eme elles se sont un peu liguées contre moi sans raison valable : paroles à voix basses, regards de travers, surnoms désagréables…",
       "genre": "Femme",
       "age": "40",
@@ -5259,6 +5265,12 @@
   ],
   "micro_attentions": [
     {
+      "text": "Pendant mes années universitaires, j'ai rencontré un professeur désagréable qui donnait de mauvaises notes à presque tout le monde. Ses exigences étaient insurmontables. Elle accusait les étudiants de ne pas travailler suffisamment et elle soulignait mon incompétence sans vraiment m'aider. Je n'ai pas eu mon master en partie à cause de ses mauvaises notes. Je n'étais pas ses remarques insultantes et le fait de rabaisser constamment ceux qui ne réussissaient pas.",
+      "genre": "Femme",
+      "age": "59",
+      "sig": "Femme - 59 ans - 2026-05-25 - impact durable - choix marqués - décisions importantes"
+    },
+    {
       "text": "J’ai toujours été cataloguée comme une élève scientifique donc je me rangeais moi-même dans cette case. Arrivée en terminale j’ai adoré la philosophie et j’avais un enseignement exceptionnel qui m’a permis de m’épanouir et de me sentir valorisée dans une discipline qui sur le papier ne collait pas à mon profil pré-défini. Encore aujourd’hui je repense régulièrement à des cours passionnants, à sa façon de nous faire progresser dans nous stigmatiser et à ses mots valorisants qu’il tenait devant nous mais également devant ses collègues enseignants.",
       "genre": "Femme",
       "age": "40",
@@ -9909,5 +9921,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1651
+  "total_reponses": 1653
 }
