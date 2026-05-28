@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conf&eacute;rences &amp; m&eacute;diation — Jean-Michel Perez</title>
+<meta name="description" content="Conférences, tables rondes, colloques et médiation scientifique. Jean-Michel Perez, Professeur des Universités, Sciences de l'éducation, Université de Lorraine, LISEC.">
+<link rel="canonical" href="https://jean-michel-perez.fr/conferences.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --noir: #101828; --noir-profond: #0c1220; --blanc: #f5f0eb;
+  --rouge: #c41e1e; --rouge-vif: #e52020; --bleu: #1565c0; --bleu-vif: #1e88e5;
+  --gris: #888; --gris-clair: #bbb;
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
+
+#bandeau {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0.55rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(10,10,10,0.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+}
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-weight: 300; letter-spacing: 0.04em; }
+.bandeau-nav { display: flex; gap: 2.2rem; align-items: center; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,240,235,0.92); text-decoration: none; transition: color 0.2s; }
+.bandeau-nav a:hover { color: #fff; }
+.bandeau-nav a.active { color: #fff; border-bottom: 1px solid rgba(245,240,235,0.5); padding-bottom: 2px; }
+.bandeau-id { text-align: right; }
+
+.med-ouv { min-height: 40vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 7rem 2rem 4rem; }
+.med-ouv h2 { font-family: 'EB Garamond', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 400; font-style: italic; color: var(--blanc); line-height: 1.25; max-width: 820px; }
+.med-ouv .sous { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #fff; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 1.8rem; }
+.med-accroche { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.2rem); color: #fff; max-width: 680px; margin-top: 1.6rem; line-height: 1.6; }
+
+.section-label {
+  font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase;
+  letter-spacing: 0.14em; color: #fff; padding: 2rem 2rem 1.5rem;
+  max-width: 1100px; margin: 0 auto;
+}
+
+.med-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; max-width: 1100px; margin: 0 auto; padding: 0 0 3px; }
+.med-card { position: relative; overflow: hidden; text-decoration: none; aspect-ratio: 16/9; display: block; background: #111; }
+.med-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s, filter 0.4s; filter: brightness(0.6) saturate(0.85); }
+.med-card:hover img { transform: scale(1.04); filter: brightness(0.4) saturate(0.7); }
+.med-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 52px; height: 52px; background: rgba(245,240,235,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--blanc); opacity: 0; transition: opacity 0.3s; backdrop-filter: blur(6px); }
+.med-card:hover .med-play-btn { opacity: 1; }
+.med-card-over { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.4rem 1.6rem; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 60%); }
+.med-card-tag { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #fff; margin-bottom: 0.4rem; display: block; }
+.med-card-title { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.3rem); font-style: italic; color: var(--blanc); line-height: 1.35; display: block; }
+.med-card-lieu { font-family: 'Inter', sans-serif; font-size: 0.72rem; color: #fff; margin-top: 0.3rem; display: block; }
+
+.med-avenir { max-width: 1100px; margin: 0 auto; padding: 3px 0 0; }
+.med-avenir-label { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: #fff; padding: 2rem 2rem 1.5rem; }
+.med-grid-av { display: flex; gap: 3px; align-items: flex-start; }
+.med-grid-av .med-card-av:nth-child(1) { margin-top: 0; flex: 1; }
+.med-grid-av .med-card-av:nth-child(2) { margin-top: 36px; flex: 1; }
+.med-grid-av .med-card-av:nth-child(3) { margin-top: 72px; flex: 1; }
+.med-grid-av .med-card-av:nth-child(4) { margin-top: 36px; flex: 1; }
+.med-grid-av .med-card-av:nth-child(5) { margin-top: 0; flex: 1; }
+.med-card-av {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 1.8rem 1.8rem 1.6rem; min-height: 260px;
+  text-decoration: none; position: relative; overflow: hidden;
+  background-size: cover; background-position: center;
+  transition: transform 0.3s ease;
+}
+.med-card-av::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 40%, rgba(0,0,0,0.35) 100%);
+  transition: background 0.3s; z-index: 0;
+}
+.med-card-av:hover::before { background: linear-gradient(to top, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.45) 100%); }
+.med-card-av::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: rgba(245,240,235,0.07); transition: background 0.3s; z-index: 1; }
+.med-card-av:hover::after { background: rgba(196,30,30,0.55); }
+.med-card-av:hover { transform: scale(1.01); }
+.med-av-logo-wrap { position: absolute; top: 1.4rem; left: 1.6rem; z-index: 2; }
+.med-av-logo { height: 36px; width: auto; max-width: 120px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); opacity: 0.75; transition: opacity 0.3s; }
+.med-card-av:hover .med-av-logo { opacity: 1; }
+.med-av-body { position: relative; z-index: 2; }
+.med-av-tag { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #fff; margin-bottom: 0.7rem; }
+.med-av-titre { font-family: 'EB Garamond', serif; font-size: clamp(1.05rem, 1.7vw, 1.3rem); font-style: italic; color: #fff; line-height: 1.35; margin-bottom: 0.5rem; }
+.med-av-sub { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #fff; line-height: 1.5; }
+.med-av-arr { font-size: 0.85rem; color: #fff; margin-top: 1rem; transition: color 0.3s; }
+.med-card-av:hover .med-av-arr { color: #fff; }
+
+@media (max-width: 700px) { .med-grid-av { flex-direction: column; } .med-grid-av .med-card-av:nth-child(n) { margin-top: 0; } }
+@media (max-width: 600px) { .med-grid { grid-template-columns: 1fr; } #bandeau { padding: 0.5rem 1rem; flex-direction: column; gap: 0.3rem; } .bandeau-nav { gap: 1rem; flex-wrap: wrap; justify-content: center; } }
+</style>
+</head>
+<body>
+
+<header id="bandeau">
+  <nav class="bandeau-nav">
+    <a href="/">Accueil</a>
+    <a href="/formation-master-2.html">Formation Master 2</a>
+    <a href="/recherche.html">Recherche</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/conferences.html" class="active">Conf&eacute;rences</a>
+    <a href="/espace-prive.html">Espace priv&eacute; &#128274;</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<div class="med-ouv">
+  <h2>La m&eacute;diation <span>dans tous ses &eacute;tats</span></h2>
+  <div class="sous">Du mus&eacute;um au podcast &middot; De la conf&eacute;rence pl&eacute;ni&egrave;re au court-m&eacute;trage</div>
+  <p class="med-accroche"><em>Construire des ponts entre la production de savoirs acad&eacute;miques et la soci&eacute;t&eacute; civile.</em></p>
+</div>
+
+<!-- ═══ CONFÉRENCES À VENIR ═══ -->
+<div class="med-avenir">
+  <div class="med-avenir-label">Conf&eacute;rences &agrave; venir</div>
+  <div class="med-grid-av">
+
+    <a class="med-card-av" href="https://journee-assude.sciencesconf.org/" target="_blank" rel="noopener"
+       style="background-image: linear-gradient(135deg, #c06014 0%, #e8a04c 50%, #f5d6a0 100%);">
+      <div class="med-av-logo-wrap">
+        <img class="med-av-logo" src="https://www.google.com/s2/favicons?domain=sciencesconf.org&sz=128" alt="Sciencesconf">
+      </div>
+      <div class="med-av-body">
+        <div class="med-av-tag">Journ&eacute;e T.&nbsp;Assude &middot; 5 juin 2026 &middot; Aix-en-Provence</div>
+        <div class="med-av-titre">Traces et h&eacute;ritages de PIMS &middot; Les recherches OPHRIS</div>
+        <div class="med-av-sub">Liber Amicorum avec G.&nbsp;Suau &middot; Insp&eacute; d&rsquo;Aix-Marseille</div>
+        <div class="med-av-arr">&nearr;</div>
+      </div>
+    </a>
+
+    <a class="med-card-av" href="#" target="_blank" rel="noopener"
+       style="background-image: url('https://www.usherbrooke.ca/accueil/fileadmin/templates/accueil/images-entete/hiver.jpg');">
+      <div class="med-av-logo-wrap">
+        <img class="med-av-logo" src="https://www.google.com/s2/favicons?domain=usherbrooke.ca&sz=128" alt="U de Sherbrooke">
+      </div>
+      <div class="med-av-body">
+        <div class="med-av-tag">REF 2026 &middot; Sherbrooke &middot; avec G.&nbsp;Suau</div>
+        <div class="med-av-titre">Pratiques inclusives et micro-dispositifs de pouvoir</div>
+        <div class="med-av-sub">Ce que les micro-violences disent de l&rsquo;accessibilit&eacute; aux savoirs</div>
+        <div class="med-av-arr">&nearr;</div>
+      </div>
+    </a>
+
+    <a class="med-card-av" href="https://jre-riiclas2026.sciencesconf.org/resource/page/id/9" target="_blank" rel="noopener"
+       style="background-image: linear-gradient(135deg, #0a6b8e 0%, #2ca6a4 55%, #f4c95d 100%);">
+      <div class="med-av-logo-wrap">
+        <img class="med-av-logo" src="https://www.google.com/s2/favicons?domain=sciencesconf.org&sz=128" alt="Sciencesconf">
+      </div>
+      <div class="med-av-body">
+        <div class="med-av-tag">RIICLAS 2026 &middot; Guadeloupe &middot; soumis</div>
+        <div class="med-av-titre">L&rsquo;entretien &agrave; vis&eacute;e de conscientisation</div>
+        <div class="med-av-sub">Pour le d&eacute;veloppement du pouvoir d&rsquo;agir &middot; Une contribution &agrave; la recherche participative renouvel&eacute;e</div>
+        <div class="med-av-arr">&nearr;</div>
+      </div>
+    </a>
+
+    <a class="med-card-av" href="https://www.aacademica.org/4.congreso.eh.unsam/tabs/cfp" target="_blank" rel="noopener"
+       style="background: linear-gradient(135deg, #75AADB 0%, #4a8abf 50%, #2b6a9e 100%);">
+      <div class="med-av-logo-wrap">
+        <img class="med-av-logo" src="https://www.google.com/s2/favicons?domain=unsam.edu.ar&sz=128" alt="UNSAM">
+      </div>
+      <div class="med-av-body">
+        <div class="med-av-tag">UNSAM 2026 &middot; Buenos Aires &middot; accept&eacute;</div>
+        <div class="med-av-titre">Corps, handicap et &eacute;cole&nbsp;: micro-violences et structures de pouvoir</div>
+        <div class="med-av-sub">Mesa&nbsp;2 &middot; Politiques d&rsquo;in/exclusion &mdash; avec G.&nbsp;Suau</div>
+        <div class="med-av-arr">&nearr;</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ═══ 2026 — PASSÉS ═══ -->
+<div class="section-label">2026</div>
+<div class="med-grid">
+
+    <a class="med-card" href="2026-05-28_AccessibleEU_TR2_Perez_FINAL.html" target="_blank" rel="noopener"
+       style="background: linear-gradient(135deg, #2c3e5f 0%, #5a7a9e 50%, #8B2332 100%);">
+      <div class="med-card-over">
+        <span class="med-card-tag">AccessibleEU &middot; 28 mai 2026 &middot; Annecy</span>
+        <span class="med-card-title">Micro-violences et hypocrisie organisationnelle</span>
+        <span class="med-card-lieu">Table ronde &middot; Tous diff&eacute;rents, tous apprenants &middot; Diaporama</span>
+      </div>
+    </a>
+
+    <a class="med-card" href="https://www.canotech.fr/s/41348/micro-violences-et-micro-attentions-ces-petits-riens-qui-changent-tout" target="_blank" rel="noopener" style="background:linear-gradient(135deg, #00897b 0%, #26a69a 50%, #80cbc4 100%);">
+      <img src="https://www.google.com/s2/favicons?domain=reseau-canope.fr&sz=128" alt="R&eacute;seau Canop&eacute;" style="object-fit:contain;padding:2rem;">
+      <div class="med-card-over">
+        <span class="med-card-tag">CanoTech &middot; 20 mai 2026 &middot; en ligne &middot; 650+ participants</span>
+        <span class="med-card-title">Micro-violences et micro-attentions&nbsp;: ces &laquo;&nbsp;petits riens&nbsp;&raquo; qui changent tout</span>
+        <span class="med-card-lieu">Conf&eacute;rence en ligne &middot; R&eacute;seau Canop&eacute;</span>
+      </div>
+    </a>
+
+    <a class="med-card" href="/ecole-inclusive-leurre-bruxelles-2026.pptx" download target="_blank" rel="noopener">
+      <img src="ecole-inclusive-bruxelles-2026.jpg" alt="Colloque Inclusion et Partage Bruxelles">
+      <div class="med-card-over">
+        <span class="med-card-tag">Colloque &middot; 10-11 avr. 2026 &middot; Bruxelles</span>
+        <span class="med-card-title">L&rsquo;&eacute;cole inclusive est-elle un leurre&nbsp;?</span>
+        <span class="med-card-lieu">Lyc&eacute;e Fran&ccedil;ais Jean Monnet &middot; Inclusion et Partage</span>
+      </div>
+    </a>
+
+    <a class="med-card" href="https://www.ulb.be/" target="_blank" rel="noopener">
+      <img src="https://www.ulb.be/medias/photo/ulb50-campus-solbosch-bat-s-facade-2-credit-alain-anthonissen-2018_1717747992813-jpg" alt="ULB Bruxelles">
+      <div class="med-card-over">
+        <span class="med-card-tag">Colloque IDEE &middot; ULB &middot; 30-31 mars 2026 &middot; Bruxelles</span>
+        <span class="med-card-title">Diversit&eacute; culturelle et &eacute;ducation inclusive&nbsp;: alt&eacute;rit&eacute;, alt&eacute;risation et pratiques transformatrices</span>
+        <span class="med-card-lieu">Les infirmi&egrave;res scolaires, agents invisibilis&eacute;s de l&rsquo;inclusion &mdash; avec G.&nbsp;Suau &amp; E.&nbsp;Marques</span>
+      </div>
+    </a>
+
+    <a class="med-card" href="https://cardie.ac-nancy-metz.fr/jare2/" target="_blank" rel="noopener">
+      <img src="jare2026.jpg" alt="JARE Nancy-Metz">
+      <div class="med-card-over">
+        <span class="med-card-tag">JARE &middot; 18 mars 2026 &middot; Acad&eacute;mie Nancy-Metz</span>
+        <span class="med-card-title">De l&rsquo;inclusion &agrave; l&rsquo;acceptation &mdash; Le retournement</span>
+        <span class="med-card-lieu">Journ&eacute;e Acad&eacute;mique des Recherches en &Eacute;ducation</span>
+      </div>
+    </a>
+
+    <a class="med-card" href="https://ophris26.sciencesconf.org/" target="_blank" rel="noopener">
+      <img src="https://ophris26.sciencesconf.org/data/header/Sans_titre_5.png" alt="OPHriS Toulouse">
+      <div class="med-card-over">
+        <span class="med-card-tag">Colloque OPHriS &middot; 11-12 mars 2026 &middot; Toulouse</span>
+        <span class="med-card-title">Accessibilit&eacute; et hypocrisie organisationnelle</span>
+        <span class="med-card-lieu">avec G.&nbsp;Suau &amp; M.&nbsp;Gualandi</span>
+      </div>
+    </a>
+
+    <a class="med-card" href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves-2/" target="_blank" rel="noopener">
+      <img src="unys-sciences-mars-2026.jpg" alt="Unys Sciences">
+      <div class="med-card-over">
+        <span class="med-card-tag">UNYS SCIENCES &middot; Mars 2026</span>
+        <span class="med-card-title">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</span>
+        <span class="med-card-lieu">M&eacute;diation scientifique universitaire</span>
+      </div>
+    </a>
+
+</div>
+
+<!-- ═══ 2025 ═══ -->
+<div class="section-label">2025</div>
+<div class="med-grid">
+
+    <a class="med-card yt-inline" data-yt="bc_KbxaHDbo" href="https://theconversation.com/les-micro-violences-educatives-ordinaires-un-impense-de-linstitution-scolaire-253794" target="_blank" rel="noopener">
+      <img src="tc_article_img.jpg" alt="The Conversation">
+      <div class="med-play-btn">&#9654;</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">Recherche en espace public &middot; 8 nov. 2025</span>
+        <span class="med-card-title">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases qui d&eacute;truisent</span>
+        <span class="med-card-lieu">The Conversation France &middot; Vid&eacute;o + article</span>
+      </div>
+    </a>
+
+    <a class="med-card ext-inline" href="https://ultv.univ-lorraine.fr/video/22620-entendu-episode-49-deconstruire-la-non-violence-micro-violences-et-impenses-institutionnels-par-jean-michel-perez/" target="_blank" rel="noopener">
+      <img src="https://ultv.univ-lorraine.fr/media/cache/f5/93/f593c3665619cd718d11b470f0fe7eb7.jpg" alt="Entendu ep.49">
+      <div class="med-play-btn">&#9654;</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">ULTV &middot; Entendu&nbsp;! ep.&nbsp;49 &middot; 15 oct. 2025</span>
+        <span class="med-card-title">D&eacute;construire la non-violence&nbsp;: micro-violences et impens&eacute;s institutionnels</span>
+        <span class="med-card-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine</span>
+      </div>
+    </a>
+
+    <a class="med-card yt-inline" data-yt="TtX5Bf-Xpws" href="https://www.youtube.com/watch?v=TtX5Bf-Xpws" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/TtX5Bf-Xpws/maxresdefault.jpg" alt="Table ronde Mus&eacute;um-Aquarium Nancy">
+      <div class="med-play-btn">&#9654;</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">YouTube &middot; Table ronde &middot; 18 sept. 2025</span>
+        <span class="med-card-title">Table ronde &laquo;&nbsp;Et demain&nbsp;?&nbsp;&raquo; &mdash; L&rsquo;&eacute;cole inclusive est un leurre</span>
+        <span class="med-card-lieu">Mus&eacute;um-Aquarium de Nancy</span>
+      </div>
+    </a>
+
+    <a class="med-card yt-inline" data-yt="n8qTSP1OKrI" href="https://www.youtube.com/watch?v=n8qTSP1OKrI" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/n8qTSP1OKrI/maxresdefault.jpg" alt="CIACE An&aacute;huac M&eacute;xico">
+      <div class="med-play-btn">&#9654;</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">YouTube &middot; 6 mars 2025 &middot; M&eacute;xico</span>
+        <span class="med-card-title">Transformer les pratiques &eacute;ducatives inclusives</span>
+        <span class="med-card-lieu">CIACE &middot; Universidad An&aacute;huac M&eacute;xico</span>
+      </div>
+    </a>
+
+    <a class="med-card yt-inline" data-yt="frwjsdUUjB8" href="https://www.youtube.com/watch?v=frwjsdUUjB8" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/frwjsdUUjB8/hqdefault.jpg" alt="Webinaire CRAP">
+      <div class="med-play-btn">&#9654;</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">YouTube &middot; Webinaire &middot; 22 janv. 2025</span>
+        <span class="med-card-title">Apprendre par le corps</span>
+        <span class="med-card-lieu">CRAP &mdash; Cahiers P&eacute;dagogiques N&deg;597</span>
+      </div>
+    </a>
+
+</div>
+
+<!-- ═══ 2024 ═══ -->
+<div class="section-label">2024</div>
+<div class="med-grid" style="padding-bottom:5rem;">
+
+    <a class="med-card yt-inline" data-yt="5kKB9Uw5FMo" href="https://www.youtube.com/watch?v=5kKB9Uw5FMo" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/5kKB9Uw5FMo/maxresdefault.jpg" alt="AEIM-Adapei 54">
+      <div class="med-play-btn">&#9654;</div>
+      <div class="med-card-over">
+        <span class="med-card-tag">Grand t&eacute;moin &middot; 2024 &middot; Nancy</span>
+        <span class="med-card-title">Micro-violences et les impens&eacute;s du syst&egrave;me scolaire</span>
+        <span class="med-card-lieu">Congr&egrave;s AEIM-Adapei&nbsp;54</span>
+      </div>
+    </a>
+
+</div>
+
+</body>
+</html>
