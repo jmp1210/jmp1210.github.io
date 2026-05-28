@@ -310,15 +310,6 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   border: none; cursor: pointer; transition: var(--transition);
 }
 .btn-principal:hover { background: #9b1515; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(196,30,30,0.35); }
-.btn-ia {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  padding: 0.75rem 2rem;
-  background: transparent; border: 1px solid rgba(245,240,235,0.2);
-  color: #fff; font-family: 'Inter', sans-serif;
-  font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;
-  cursor: pointer; transition: var(--transition);
-}
-.btn-ia:hover { border-color: #fff; color: var(--blanc); }
 
 /* Stats */
 .stats-inline { display: flex; gap: 2.5rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap; }
@@ -326,117 +317,6 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .si .n { font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--blanc); line-height: 1; }
 .si .l { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: var(--gris-clair); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.2rem; }
 
-/* ══════════════════════════════
-   DIALOGUE IA — VOICE FIRST
-   Même charge graphique que les flashers
-   ══════════════════════════════ */
-#dialogue-ia {
-  display: none; position: relative;
-  min-height: 100vh; background: #0d1b2a;
-  flex-direction: column; justify-content: center; align-items: center;
-  padding: 8rem 2rem 5rem;
-}
-#dialogue-ia::before {
-  content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 50% 40%, rgba(196,30,30,0.06) 0%, transparent 60%);
-  pointer-events: none; transition: background 0.8s;
-}
-#dialogue-ia.bleu-phase::before {
-  background: radial-gradient(ellipse at 50% 40%, rgba(21,101,192,0.06) 0%, transparent 60%);
-}
-#dialogue-ia.visible { display: flex; }
-
-.dialogue-inner {
-  width: 100%; max-width: 780px;
-  display: flex; flex-direction: column; align-items: center;
-  text-align: center; position: relative; z-index: 1;
-}
-.dialogue-header {
-  font-family: 'Inter', sans-serif; font-size: 0.78rem;
-  text-transform: uppercase; letter-spacing: 0.2em; color: var(--gris-clair);
-  margin-bottom: 3rem;
-}
-.dial-ia-label {
-  font-family: 'Inter', sans-serif; font-size: 0.75rem;
-  text-transform: uppercase; letter-spacing: 0.18em;
-  color: rgba(196,30,30,0.75); margin-bottom: 2rem; display: block;
-  transition: color 0.5s;
-}
-.dial-ia-label.bleu-label { color: rgba(30,136,229,0.6); }
-
-/* La question — grand, Garamond, comme les flashers */
-.dial-question {
-  max-width: 760px; min-height: 10rem;
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 4rem;
-}
-.dial-question p {
-  font-family: 'EB Garamond', serif;
-  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
-  font-style: italic; line-height: 1.5;
-  color: var(--blanc); transition: opacity 0.4s ease;
-}
-
-/* Confirmation discrète */
-.dial-confirm {
-  font-family: 'Inter', sans-serif; font-size: 0.78rem;
-  color: #fff; min-height: 1.2em;
-  font-style: italic; margin-bottom: 1.5rem;
-  transition: opacity 0.4s;
-}
-
-/* Grand bouton micro */
-.micro-zone { text-align: center; padding: 0.5rem 0 0.5rem; }
-.btn-micro-grand {
-  width: 88px; height: 88px; border-radius: 50%;
-  background: var(--rouge); border: none; cursor: pointer;
-  display: flex; flex-direction: column; align-items: center;
-  justify-content: center; gap: 0.3rem; margin: 0 auto;
-  box-shadow: 0 4px 28px rgba(196,30,30,0.4); transition: var(--transition);
-}
-.btn-micro-grand.bleu-mic { background: var(--bleu); box-shadow: 0 4px 28px rgba(21,101,192,0.4); }
-.btn-micro-grand:hover { transform: scale(1.06); }
-.btn-micro-grand.enr-actif { animation: pulse 1s infinite; }
-.transcription-live {
-  font-family: 'EB Garamond', serif; font-size: 1.1rem; font-style: italic;
-  color: #fff; min-height: 2rem; max-width: 600px;
-  margin: 1.2rem auto 0; text-align: center; line-height: 1.75;
-}
-.transcription-live .interim { color: #fff; }
-.transcription-edit {
-  display: none; width: 100%; max-width: 600px; margin: 1.2rem auto 0;
-  background: rgba(245,240,235,0.06); border: 1px solid rgba(245,240,235,0.2);
-  color: var(--blanc); font-family: 'EB Garamond', serif; font-size: 1.05rem;
-  font-style: italic; padding: 1rem 1.2rem; resize: vertical; min-height: 90px;
-  line-height: 1.7; outline: none;
-}
-.transcription-edit:focus { border-color: #fff; }
-.micro-icon-g { font-size: 2rem; line-height: 1; }
-.micro-label-g { font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: #fff; }
-.micro-status {
-  font-family: 'Inter', sans-serif; font-size: 0.8rem;
-  color: var(--gris-clair); text-align: center; margin-top: 1rem;
-  min-height: 1.1em; font-style: italic;
-}
-
-/* Bouton valider */
-.dialogue-actions { display: flex; justify-content: center; margin-top: 1.5rem; }
-.btn-valider {
-  padding: 0.85rem 2.8rem; font-family: 'Inter', sans-serif;
-  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
-  cursor: pointer; border: none; background: var(--rouge); color: var(--blanc);
-  transition: var(--transition);
-}
-.btn-valider:hover { background: #9b1515; }
-.btn-valider.bleu-btn { background: var(--bleu); }
-.btn-valider.bleu-btn:hover { background: #0d47a1; }
-
-/* Progression */
-.dialogue-progress { margin-top: 2.5rem; }
-.prog-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: rgba(245,240,235,0.12); margin: 0 4px; vertical-align: middle; }
-.prog-dot.actif { background: var(--rouge); }
-.prog-dot.bleu-dot.actif { background: var(--bleu-vif); }
-.prog-dot.done { background: rgba(245,240,235,0.35); }
 
 /* ── Intro micro-violences ── */
 .mv-intro { background: #0d1b2a; text-align: center; padding: 6rem 2rem 4rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; gap: 2rem; }
@@ -974,13 +854,9 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   </div>
 
   <div class="cta-groupe">
-    <a href="https://enquetes.univ-lorraine.fr/index.php/415241?lang=fr" class="btn-principal" target="_blank" rel="noopener">
+    <a href="https://enquetes.univ-lorraine.fr/index.php/641553?lang=fr" class="btn-principal" target="_blank" rel="noopener">
       R&eacute;pondre au questionnaire &rarr;
     </a>
-    <button class="btn-ia" id="btn-ouvrir-ia">
-      <span>🎙</span>
-      Ou me raconter &agrave; voix haute &mdash; ici (version d&rsquo;essai - test)
-    </button>
   </div>
 
   <div class="stats-inline">
@@ -1072,36 +948,6 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
   <div class="scroll-arrow">↓</div>
 </div>
 
-<!-- ═══ DIALOGUE IA — VOICE FIRST ═══ -->
-<section id="dialogue-ia">
-  <div class="dialogue-inner">
-    <div class="dialogue-header">Dialogue de recherche &mdash; vos souvenirs scolaires</div>
-    <span class="dial-ia-label" id="dial-label">Chercheur</span>
-    <div class="dial-question" id="dial-question"><p></p></div>
-    <div class="dial-confirm" id="dial-confirm"></div>
-    <div class="micro-zone" id="micro-zone">
-      <button class="btn-micro-grand" id="btn-micro-d">
-        <span class="micro-icon-g">🎙</span>
-        <span class="micro-label-g">Parler</span>
-      </button>
-      <div class="micro-status" id="micro-status"></div>
-      <div class="transcription-live" id="transcription-live"></div>
-      <textarea class="transcription-edit" id="transcription-edit" placeholder="&Eacute;crivez votre souvenir ici…" rows="4"></textarea>
-    </div>
-    <div class="dialogue-actions" id="dialogue-actions" style="display:none">
-      <button class="btn-valider" id="btn-valider">Valider &rarr;</button>
-    </div>
-    <div class="dialogue-progress" id="dialogue-progress">
-      <span class="prog-dot actif" id="d0"></span>
-      <span class="prog-dot" id="d1"></span>
-      <span class="prog-dot" id="d2"></span>
-      <span class="prog-dot bleu-dot" id="d3"></span>
-      <span class="prog-dot bleu-dot" id="d4"></span>
-      <span class="prog-dot bleu-dot" id="d5"></span>
-    </div>
-  </div>
-  <div class="scroll-arrow">↓</div>
-</section>
 
 <!-- ═══ MÉDIATION ═══ -->
 <section id="mediation">
@@ -1686,179 +1532,7 @@ creerFlasher({
   duree: 5000,
 });
 
-// ══════════════════════════════
-// DIALOGUE IA — VOICE FIRST
-// ══════════════════════════════
-const FLOW = [
-  { id:0, ia:'Durant votre parcours scolaire ou universitaire, vous avez peut-être vécu des moments difficiles.\n\nNous vous invitons à partager l\'un de ces moments — librement, sans contrainte de longueur ni de détail.', type:'rouge' },
-  { id:1, ia:'Quel âge aviez-vous à cette époque, et à quel niveau étiez-vous ?', type:'rouge' },
-  { id:2, ia:'En y réfléchissant maintenant — ce souvenir a-t-il influencé votre orientation scolaire, professionnelle, ou des décisions importantes dans votre vie ?', type:'rouge' },
-  { id:3, ia:'Durant ce même parcours académique, vous avez probablement aussi vécu des moments agréables.\n\nNous vous invitons à décrire l\'un de ces moments.', type:'bleu' },
-  { id:4, ia:'En y réfléchissant maintenant — ce souvenir a-t-il influencé certains de vos choix, votre confiance en vous, ou votre rapport au savoir ?', type:'bleu' },
-  { id:5, ia:'Merci pour ces deux souvenirs.\n\nVos réponses contribuent à une enquête sur les micro-violences et micro-attentions éducatives menée à l\'Université de Lorraine.\n\nSouhaitez-vous aller plus loin avec le questionnaire complet ?', type:'fin' },
-];
 
-let etape = 0;
-const reponses = [];
-const dialQuestion  = document.getElementById('dial-question');
-const dialLabel     = document.getElementById('dial-label');
-const dialConfirm   = document.getElementById('dial-confirm');
-const btnValider    = document.getElementById('btn-valider');
-const dialogueActions = document.getElementById('dialogue-actions');
-const microStatus   = document.getElementById('micro-status');
-const microZone     = document.getElementById('micro-zone');
-const dialogueIA    = document.getElementById('dialogue-ia');
-
-function majProgression(i) {
-  for (let j = 0; j < 6; j++) {
-    const d = document.getElementById('d'+j);
-    if (!d) continue;
-    d.className = 'prog-dot' + (j < 3 ? '' : ' bleu-dot') + (j < i ? ' done' : (j === i ? ' actif' : ''));
-  }
-}
-
-function lancerEtape(i) {
-  if (i >= FLOW.length) return;
-  const f = FLOW[i];
-  const isBleu = i >= 3;
-  // Texte de la question — fade
-  const qEl = dialQuestion.querySelector('p');
-  qEl.style.opacity = '0';
-  setTimeout(() => { qEl.innerHTML = f.ia.replace(/\n/g, '<br>'); qEl.style.opacity = '1'; }, 300);
-  // Couleurs
-  dialLabel.className = 'dial-ia-label' + (isBleu ? ' bleu-label' : '');
-  document.getElementById('btn-micro-d').className = 'btn-micro-grand' + (isBleu ? ' bleu-mic' : '');
-  btnValider.className = 'btn-valider' + (isBleu ? ' bleu-btn' : '');
-  // Fond radial
-  dialogueIA.classList.toggle('bleu-phase', isBleu);
-  majProgression(i);
-  // Étape finale
-  if (f.type === 'fin') {
-    microZone.style.display = 'none';
-    dialogueActions.style.display = 'none';
-    const btns = document.createElement('div');
-    btns.style.cssText = 'display:flex;gap:.8rem;margin-top:2rem;flex-wrap:wrap;justify-content:center;';
-    const oui = document.createElement('button');
-    oui.className = 'btn-valider'; oui.textContent = 'Oui, aller plus loin →';
-    oui.addEventListener('click', () => {
-      const r0 = (reponses.find(r => r.q === 0) || {}).r || '';
-      const r3 = (reponses.find(r => r.q === 3) || {}).r || '';
-      const params = new URLSearchParams({ lang: 'fr' });
-      if (r0) params.set('415241X74121X1087478', r0);
-      if (r3) params.set('415241X74123X1087479', r3);
-      window.open('https://enquetes.univ-lorraine.fr/index.php/415241?' + params.toString(), '_blank');
-    });
-    const non = document.createElement('button');
-    non.className = 'btn-valider'; non.style.background = '#333'; non.textContent = 'Non, merci';
-    non.addEventListener('click', () => { dialConfirm.textContent = 'Merci pour votre temps.'; btns.remove(); });
-    btns.appendChild(oui); btns.appendChild(non);
-    dialQuestion.after(btns);
-  }
-}
-
-document.getElementById('btn-ouvrir-ia').addEventListener('click', () => {
-  dialogueIA.classList.add('visible');
-  dialogueIA.scrollIntoView({ behavior: 'smooth' });
-  lancerEtape(0);
-});
-
-// ── SpeechRecognition + fallback textarea ──
-const btnMicD          = document.getElementById('btn-micro-d');
-const transcriptionLive = document.getElementById('transcription-live');
-const transcriptionEdit = document.getElementById('transcription-edit');
-const SpeechRec        = window.SpeechRecognition || window.webkitSpeechRecognition;
-let currentTranscript  = '';
-let recActive          = false;
-let rec                = null;
-
-function getTexte() {
-  return transcriptionEdit.style.display !== 'none'
-    ? transcriptionEdit.value.trim()
-    : currentTranscript.trim();
-}
-function resetMicro() {
-  currentTranscript = '';
-  transcriptionLive.innerHTML = '';
-  transcriptionEdit.value = '';
-  transcriptionEdit.style.display = 'none';
-  transcriptionLive.style.display = 'block';
-  microStatus.textContent = '';
-  dialogueActions.style.display = 'none';
-  btnMicD.classList.remove('enr-actif');
-  btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-}
-
-if (!SpeechRec) {
-  btnMicD.style.display = 'none';
-  transcriptionEdit.style.display = 'block';
-  transcriptionEdit.addEventListener('input', () => {
-    dialogueActions.style.display = transcriptionEdit.value.trim() ? 'flex' : 'none';
-  });
-} else {
-  btnMicD.addEventListener('click', () => {
-    if (recActive) { rec.stop(); return; }
-    rec = new SpeechRec();
-    rec.lang = 'fr-FR';
-    rec.continuous = true;
-    rec.interimResults = true;
-    rec.onstart = () => {
-      recActive = true;
-      btnMicD.classList.add('enr-actif');
-      btnMicD.querySelector('.micro-label-g').textContent = 'Stop ⏹';
-      microStatus.textContent = 'Écoute en cours…';
-    };
-    rec.onresult = e => {
-      let final = '', interim = '';
-      for (let i = e.resultIndex; i < e.results.length; i++) {
-        e.results[i].isFinal ? final += e.results[i][0].transcript
-                             : interim += e.results[i][0].transcript;
-      }
-      currentTranscript += final;
-      transcriptionLive.innerHTML =
-        currentTranscript + (interim ? '<span class="interim"> ' + interim + '</span>' : '');
-    };
-    rec.onend = () => {
-      recActive = false;
-      btnMicD.classList.remove('enr-actif');
-      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-      if (currentTranscript) {
-        microStatus.textContent = '';
-        transcriptionEdit.value = currentTranscript;
-        transcriptionEdit.style.display = 'block';
-        transcriptionLive.style.display = 'none';
-        dialogueActions.style.display = 'flex';
-      } else {
-        microStatus.textContent = '';
-      }
-    };
-    rec.onerror = e => {
-      recActive = false;
-      btnMicD.classList.remove('enr-actif');
-      btnMicD.querySelector('.micro-label-g').textContent = 'Parler';
-      microStatus.textContent = '';
-      transcriptionEdit.style.display = 'block';
-    };
-    rec.start();
-  });
-}
-
-btnValider.addEventListener('click', () => {
-  const texte = getTexte();
-  if (!texte || FLOW[etape]?.type === 'fin') return;
-  reponses.push({ q: FLOW[etape].id, r: texte });
-  // Sauvegarde vers n8n
-  const sv = new URLSearchParams({ q: FLOW[etape].id, r: texte, ts: new Date().toISOString() });
-  fetch('https://srv1351710.tail38289b.ts.net:8444/webhook/souvenir-jmp?' + sv.toString(), {
-    headers: { 'X-JMP-Token': '_qnpjlkQGjH5J53eOZNjOA' }
-  }).catch(() => {});
-  resetMicro();
-  dialConfirm.textContent = '✓';
-  microZone.style.display = 'block';
-  etape++;
-  if (etape < FLOW.length) {
-    setTimeout(() => { dialConfirm.textContent = ''; lancerEtape(etape); }, 700);
-  }
-});
 
 // ── Animations scroll cartes médiation ──
 const animEls = document.querySelectorAll('.med-carte');
