@@ -412,12 +412,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 /* Événements à venir — cartes avec photo/couleur de fond */
 .med-avenir { max-width: 1100px; margin: 0 auto; padding: 3px 0 0; }
 .med-avenir-label { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: #fff; padding: 2rem 2rem 1.5rem; }
-.med-grid-av { display: flex; gap: 3px; align-items: flex-start; }
-.med-grid-av .med-card-av:nth-child(1) { margin-top: 0; flex: 1; }
-.med-grid-av .med-card-av:nth-child(2) { margin-top: 36px; flex: 1; }
-.med-grid-av .med-card-av:nth-child(3) { margin-top: 72px; flex: 1; }
-.med-grid-av .med-card-av:nth-child(4) { margin-top: 36px; flex: 1; }
-.med-grid-av .med-card-av:nth-child(5) { margin-top: 0; flex: 1; }
+.med-grid-av { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 .med-card-av {
   display: flex; flex-direction: column; justify-content: flex-end;
   padding: 1.8rem 1.8rem 1.6rem; min-height: 260px;
@@ -451,7 +446,7 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .med-av-sub { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #fff; line-height: 1.5; }
 .med-av-arr { font-size: 0.85rem; color: #fff; margin-top: 1rem; transition: color 0.3s; }
 .med-card-av:hover .med-av-arr { color: #fff; }
-@media (max-width: 700px) { .med-grid-av { flex-direction: column; } .med-grid-av .med-card-av:nth-child(n) { margin-top: 0; } }
+@media (max-width: 700px) { .med-grid-av { grid-template-columns: 1fr; } }
 
 /* ══════════════════════════════
    PUBLICATIONS & PROFILS
