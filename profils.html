@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profils &amp; publications — Jean-Michel Perez</title>
+<meta name="description" content="Profils académiques et publications de Jean-Michel Perez. Google Scholar, HAL, ORCID, LinkedIn, LISEC, scanR.">
+<meta name="theme-color" content="#04080f">
+<link rel="canonical" href="https://jean-michel-perez.fr/profils.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blanc: #f5f0eb;
+  --gris-clair: rgba(245,240,235,0.55);
+  --bleu-vif: #1e88e5;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #04080f; color: var(--blanc); font-family: 'EB Garamond', serif; -webkit-font-smoothing: antialiased; }
+
+.bandeau { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,18,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,240,235,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 56px; }
+.bandeau nav { display: flex; gap: 1.8rem; }
+.bandeau nav a { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blanc); text-decoration: none; transition: var(--transition); }
+.bandeau nav a:hover { color: var(--bleu-vif); }
+.bandeau-id { text-align: right; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blanc); }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.62rem; color: var(--gris-clair); letter-spacing: 0.04em; max-width: 320px; }
+
+#pilotage {
+  background: #04080f;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 8rem 2rem 4rem;
+  position: relative;
+}
+#pilotage::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(21,101,192,0.12) 0%, transparent 65%),
+    repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(245,240,235,0.025) 80px),
+    repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(245,240,235,0.025) 80px);
+  pointer-events: none;
+}
+.pilotage-h {
+  font-family: 'EB Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-style: italic; font-weight: 400;
+  color: #fff; margin-bottom: 2.8rem;
+  position: relative; letter-spacing: 0.01em;
+}
+.profils-g {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; max-width: 900px; width: 100%; position: relative;
+}
+.pl {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 2.8rem 1.5rem 2.4rem; text-decoration: none;
+  background: rgba(245,240,235,0.025); border: 1px solid rgba(245,240,235,0.06);
+  transition: var(--transition); text-align: center; gap: 0.8rem;
+  position: relative; overflow: hidden;
+}
+.pl::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px; background: var(--bleu-vif); transform: scaleX(0);
+  transition: transform 0.35s; transform-origin: left;
+}
+.pl:hover { background: rgba(245,240,235,0.06); border-color: #fff; transform: translateY(-3px); }
+.pl:hover::after { transform: scaleX(1); }
+.pl-logo {
+  width: 52px; height: 52px; object-fit: contain; border-radius: 12px;
+  display: block; margin-bottom: 0.2rem; background: rgba(255,255,255,0.06); padding: 6px;
+}
+.pl-nom { font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 600; color: #fff; letter-spacing: 0.02em; display: block; }
+.pl-desc { font-family: 'Inter', sans-serif; font-size: 0.7rem; color: #fff; display: block; margin-top: 0.1rem; }
+
+footer { text-align: center; padding: 3rem 2rem; font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--gris-clair); }
+footer a { color: var(--blanc); text-decoration: underline; }
+.contact-lieu { font-size: 0.72rem; color: var(--gris-clair); margin-top: 0.8rem; line-height: 1.6; }
+.footer-note { font-size: 0.65rem; color: rgba(245,240,235,0.25); margin-top: 1.5rem; }
+
+.retour-site { text-align: center; padding: 2rem 2rem; }
+.retour-site a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--blanc); text-decoration: underline; letter-spacing: 0.04em; }
+
+@media (max-width: 700px) { .profils-g { grid-template-columns: repeat(2, 1fr); } .bandeau { padding: 0 1rem; } .bandeau nav { gap: 1rem; } .bandeau-sous { display: none; } }
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/#entree">Enqu&ecirc;te</a>
+    <a href="/#mediation">M&eacute;diation</a>
+    <a href="/micro-attentions.html">Micro-attentions</a>
+    <a href="/quiz.html">Quiz</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<section id="pilotage">
+  <div class="pilotage-h">Profils &amp; publications &mdash; Jean-Michel Perez</div>
+  <div class="profils-g">
+    <a class="pl" href="https://scholar.google.com/citations?user=LjmJvZQAAAAJ" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=128" alt="Google Scholar">
+      <span class="pl-nom">Google Scholar</span>
+      <span class="pl-desc">502 citations &middot; H-index 14</span>
+    </a>
+    <a class="pl" href="https://cv.hal.science/jean-michel-perez" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=hal.science&sz=128" alt="HAL">
+      <span class="pl-nom">HAL &mdash; CV complet</span>
+      <span class="pl-desc">102 d&eacute;p&ocirc;ts &middot; Archives ouvertes</span>
+    </a>
+    <a class="pl" href="https://orcid.org/0000-0001-9677-7364" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=orcid.org&sz=128" alt="ORCID">
+      <span class="pl-nom">ORCID</span>
+      <span class="pl-desc">0000-0001-9677-7364</span>
+    </a>
+    <a class="pl" href="https://www.linkedin.com/in/jeanmichelperez/" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=128" alt="LinkedIn">
+      <span class="pl-nom">LinkedIn</span>
+      <span class="pl-desc">284 abonn&eacute;s &middot; Micro-violences &eacute;ducatives</span>
+    </a>
+    <a class="pl" href="https://www.lisec-recherche.eu/membre/perez-jean-michel/" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=lisec-recherche.eu&sz=128" alt="LISEC">
+      <span class="pl-nom">LISEC</span>
+      <span class="pl-desc">Laboratoire UR 2310 &middot; P&ocirc;le CLCS</span>
+    </a>
+    <a class="pl" href="https://scanr.enseignementsup-recherche.gouv.fr/person/idref117204080" target="_blank" rel="noopener">
+      <img class="pl-logo" src="https://www.google.com/s2/favicons?domain=scanr.enseignementsup-recherche.gouv.fr&sz=128" alt="scanR">
+      <span class="pl-nom">scanR</span>
+      <span class="pl-desc">Portail national de la recherche</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a>
+  <div class="contact-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine &middot; Nancy<br>LISEC (UR 2310) &middot; P&ocirc;le scientifique CLCS</div>
+  <div class="footer-note">&copy; 2026 Jean-Michel Perez</div>
+</footer>
+
+</body>
+</html>
