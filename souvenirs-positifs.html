@@ -642,8 +642,8 @@ function init(staticryptConfig, templateConfig) {
         if (!result.success) {
             return false;
         }
-        const plainHTML = result.decoded;
-
+        let plainHTML = result.decoded;
+        plainHTML = plainHTML + '<style id="fix-contraste">/* correctif lisibilite cible : texte sombre sur cartes a fond clair, theme nuit intact */.souvenirs-summary{color:#1a2433!important}.souvenirs-summary strong{color:#0d2a4a!important}.souvenir-text{color:#1a2433!important}.souvenir-sig{color:#44566a!important}</style>';
         // if the user configured a callback call it, otherwise just replace the whole HTML
         if (typeof replaceHtmlCallback === "function") {
             replaceHtmlCallback(plainHTML);
