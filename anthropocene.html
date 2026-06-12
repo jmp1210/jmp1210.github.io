@@ -53,7 +53,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem 5rem; }
 .lignes { list-style: none; counter-reset: ligne; max-width: 780px; margin-top: 0.5rem; }
 .lignes li { counter-increment: ligne; position: relative; padding: 1rem 0 1rem 3.2rem; border-top: 1px solid rgba(245,240,235,0.08); font-family: 'EB Garamond', serif; font-size: clamp(1.1rem, 1.8vw, 1.35rem); color: var(--blanc); }
 .lignes li::before { content: counter(ligne, decimal-leading-zero); position: absolute; left: 0; top: 1.15rem; font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 600; color: var(--bleu-vif); letter-spacing: 0.1em; }
+.lignes li .glose { display: block; font-family: 'Inter', sans-serif; font-size: 0.9rem; color: rgba(245,240,235,0.6); margin-top: 0.35rem; line-height: 1.55; }
 .lignes-src { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: rgba(245,240,235,0.5); letter-spacing: 0.04em; margin-top: 1.2rem; }
+
+.dims { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; max-width: 880px; margin-top: 1rem; background: rgba(245,240,235,0.08); border: 1px solid rgba(245,240,235,0.08); }
+.dims > div { background: #0d1b2a; padding: 1.5rem 1.6rem; }
+.dim-t { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--bleu-vif); margin-bottom: 0.6rem; }
+.dim-d { font-family: 'EB Garamond', serif; font-size: 1.05rem; line-height: 1.6; color: rgba(245,240,235,0.85); }
+@media (max-width: 600px) { .dims { grid-template-columns: 1fr; } }
 
 .prog { list-style: none; max-width: 860px; margin-top: 0.5rem; }
 .prog li { padding: 1.2rem 0; border-top: 1px solid rgba(245,240,235,0.08); }
@@ -98,7 +105,7 @@ footer a { color: var(--blanc); text-decoration: none; font-family: 'Inter', san
 
 <div class="med-ouv">
   <h1>&Eacute;ducation &agrave; l'heure de l'anthropoc&egrave;ne</h1>
-  <div class="sous">S&eacute;minaire de recherche &middot; LISEC &middot; &Eacute;quipe Normes et Valeurs</div>
+  <div class="sous">S&eacute;minaire de recherche &middot; Ancr&eacute; dans Normes et Valeurs (LISEC), travers&eacute; par d'autres &eacute;quipes et laboratoires</div>
   <p class="med-question">&Agrave; quel collectif l'&Eacute;cole pr&eacute;pare-t-elle - syst&egrave;me scolaire, universitaire, professionnel ; humains et non-humains ?</p>
 </div>
 
@@ -107,8 +114,9 @@ footer a { color: var(--blanc); text-decoration: none; font-family: 'Inter', san
   <section class="axe">
     <div class="axe-num">Le geste</div>
     <h2 class="axe-titre">D&eacute;placer la question du collectif</h2>
-    <p class="axe-cadre">&Agrave; l'heure o&ugrave; les technologies humaines affectent les milieux et les &eacute;quilibres du vivant eux-m&ecirc;mes, la question de nos mod&egrave;les et syst&egrave;mes &eacute;ducatifs se repose : &agrave; quel collectif l'&Eacute;cole pr&eacute;pare-t-elle ? Cr&eacute;&eacute; en 2024 au sein de l'&eacute;quipe Normes et Valeurs (LISEC), le s&eacute;minaire <em>&Eacute;ducation et Anthropoc&egrave;ne</em> reprend cette interrogation - d&eacute;j&agrave; travaill&eacute;e dans le programme franco-allemand KILA - et la porte au-del&agrave; de l'humain.</p>
+    <p class="axe-cadre">&Agrave; l'heure o&ugrave; les technologies humaines affectent les milieux et les &eacute;quilibres du vivant eux-m&ecirc;mes, la question de nos mod&egrave;les et syst&egrave;mes &eacute;ducatifs se repose : &agrave; quel collectif l'&Eacute;cole pr&eacute;pare-t-elle ? Cr&eacute;&eacute; en 2024 dans l'&eacute;quipe Normes et Valeurs (LISEC) mais travers&eacute; par d'autres &eacute;quipes du laboratoire (AP2E, Tech&amp;Co, ATIP) et d'autres laboratoires (CREAT, INTERPSY), avec des participant&middot;es de France et de Belgique, le s&eacute;minaire <em>&Eacute;ducation et Anthropoc&egrave;ne</em> reprend cette interrogation - d&eacute;j&agrave; travaill&eacute;e dans le programme franco-allemand KILA - et la porte au-del&agrave; de l'humain.</p>
     <p class="axe-cadre">Il l'inscrit dans l'axe <em>anthropoc&egrave;ne et micro-attentions</em> du programme de recherche : ce que l'incertitude des transitions fait aux pratiques, aux normes et &agrave; l'acc&egrave;s aux savoirs. Penser l'&eacute;ducation depuis l'anthropoc&egrave;ne, ce n'est pas ajouter un th&egrave;me ; c'est d&eacute;placer la fronti&egrave;re du collectif que l'&Eacute;cole institue, et y r&eacute;inscrire les non-humains, le vivant, les objets.</p>
+    <p class="axe-cadre">Cette question est ins&eacute;parable de celle de l'<strong>alt&eacute;rit&eacute;</strong> et de l'<strong>alt&eacute;risation</strong> : l'Anthropoc&egrave;ne se laisse lire comme le produit d'une &eacute;pist&eacute;mologie qui a disjoint l'Homme du Monde et le Moi des Autres. Penser l'&eacute;ducation &agrave; son heure, c'est interroger ce que l'&Eacute;cole fait de l'autre - humain et non-humain. Autour de ce noyau, le s&eacute;minaire f&eacute;d&egrave;re un champ large : la reliance au monde, les capabilit&eacute;s et les environnements capacitants, l'&eacute;coformation et les savoirs autochtones, la <em>Bildung</em> et la p&eacute;dagogie du c&oelig;ur, la r&eacute;silience communautaire, l'accessibilit&eacute; conjointe et les praxéologies inclusives.</p>
   </section>
 
   <section class="axe">
@@ -116,20 +124,42 @@ footer a { color: var(--blanc); text-decoration: none; font-family: 'Inter', san
     <h2 class="axe-titre">Six lignes de travail</h2>
     <p class="axe-cadre">D&eacute;gag&eacute;es collectivement &agrave; Colmar, &agrave; partir de cinq ateliers, six lignes structurent le travail du s&eacute;minaire :</p>
     <ol class="lignes">
-      <li>Le rapport au temps</li>
-      <li>La vuln&eacute;rabilit&eacute; et les environnements capacitants</li>
-      <li>La n&eacute;gociation des savoirs</li>
-      <li>La tension entre singularit&eacute; et collectif</li>
-      <li>Les traces</li>
-      <li>Le r&eacute;versible, l'incertain et l'irr&eacute;versible</li>
+      <li>Le rapport au temps<span class="glose">Tension entre l'urgence d'agir et le temps long de la transformation.</span></li>
+      <li>La vuln&eacute;rabilit&eacute; et les environnements capacitants<span class="glose">Rendre capable une personne en situation de vuln&eacute;rabilit&eacute; ; la responsabilit&eacute; partag&eacute;e.</span></li>
+      <li>La n&eacute;gociation des savoirs<span class="glose">Reconna&icirc;tre la multiplicit&eacute; des savoirs face &agrave; la crise ; sa dimension politique.</span></li>
+      <li>La tension entre singularit&eacute; et collectif<span class="glose">L'objet-fronti&egrave;re, les espaces de traduction, les co-constructions.</span></li>
+      <li>Les traces<span class="glose">Recueillies et produites dans les recherches participatives ; l'humain qui &laquo; signe le monde &raquo;.</span></li>
+      <li>Le r&eacute;versible, l'incertain et l'irr&eacute;versible<span class="glose">Adaptabilit&eacute;, r&eacute;silience, responsabilit&eacute; partag&eacute;e face &agrave; l'incertitude.</span></li>
     </ol>
+    <p class="axe-cadre" style="margin-top:1.2rem;">Ces lignes ont &eacute;merg&eacute; d'un exercice - dire &laquo; en quoi je suis beau &raquo;, au-del&agrave; des publications. Sa difficult&eacute; m&ecirc;me fut un r&eacute;sultat : nos collectifs acad&eacute;miques peinent encore &agrave; nommer ce que chacun&middot;e porte en propre.</p>
     <p class="lignes-src">S&eacute;ance n&deg;7 &middot; Colmar &middot; 12 f&eacute;vrier 2026</p>
+  </section>
+
+  <section class="axe">
+    <div class="axe-num">Cadre</div>
+    <h2 class="axe-titre">Les dimensions du travail</h2>
+    <p class="axe-cadre">Le s&eacute;minaire interroge la place des savoirs dans les lieux d'&eacute;ducation &agrave; travers trois dimensions :</p>
+    <div class="dims">
+      <div>
+        <div class="dim-t">Art</div>
+        <div class="dim-d">La qualit&eacute; de la relation, la r&eacute;sonance (au sens de Rosa).</div>
+      </div>
+      <div>
+        <div class="dim-t">Science</div>
+        <div class="dim-d">Le rapport au terrain, aux m&eacute;thodes et &agrave; l'autre en tant que scientifique.</div>
+      </div>
+      <div>
+        <div class="dim-t">&Eacute;cole et relation</div>
+        <div class="dim-d">L'&eacute;cole au sens large, de la naissance &agrave; la fin de la vie - et ce qu'elle accueille plut&ocirc;t que ce qu'elle externalise.</div>
+      </div>
+    </div>
+    <p class="axe-cadre" style="margin-top:1.4rem;">Depuis juin 2026 s'y ajoutent le rapport &agrave; l'<strong>IA</strong> (le non-humain technologique), le rapport &agrave; l'<strong>animal</strong> (la m&eacute;diation animale) et les <strong>pratiques artistiques</strong> (musique, piano, fresque du climat). La cartographie par IA sert d'outil, en traitement local.</p>
   </section>
 
   <section class="axe">
     <div class="axe-num">S&eacute;ance</div>
     <h2 class="axe-titre">Matin&eacute;e prolong&eacute;e - 10 juin 2026</h2>
-    <p class="axe-cadre">Une s&eacute;ance o&ugrave; les lignes de travail se mettent &agrave; l'&eacute;preuve du corps, des objets et du vivant.</p>
+    <p class="axe-cadre">Une s&eacute;ance o&ugrave; ces dimensions s'incarnent : la cartographie par IA (humain / non-humain), la musique (l'artistique) et la m&eacute;diation animale (humain / animal) mises &agrave; l'&eacute;preuve du corps, des objets et du vivant.</p>
     <ul class="prog">
       <li>
         <span class="prog-t">Cartographie du groupe IA (Master 2)</span>
@@ -147,14 +177,22 @@ footer a { color: var(--blanc); text-decoration: none; font-family: 'Inter', san
   </section>
 
   <section class="axe">
+    <div class="axe-num">Enjeu</div>
+    <h2 class="axe-titre">Former &agrave; l'incertitude</h2>
+    <p class="axe-cadre">Il ne s'agit pas d'une &eacute;ducation <em>&agrave;</em> la sobri&eacute;t&eacute;, mais d'une &eacute;ducation <em>dans</em> un monde transform&eacute; par l'anthropoc&egrave;ne. Un monde de <strong>probl&egrave;mes pernicieux</strong> (<em>wicked problems</em>) - complexes, jamais compl&egrave;tement r&eacute;solus, o&ugrave; chaque solution en appelle d'autres. Il invite, avec Edgar Morin, &agrave; sortir d'un &laquo; somnambulisme g&eacute;n&eacute;ralis&eacute; &raquo; et &agrave; former &agrave; l'analyse des situations complexes.</p>
+    <p class="axe-cadre">L'enjeu : que les savoirs transmis ne soient pas des <strong>savoirs morts</strong>, mais des <strong>savoirs mobilisables</strong> pour affronter l'incertitude - l&agrave; o&ugrave; les champs professionnels se transforment, o&ugrave; les lieux pour apprendre se multiplient, o&ugrave; les comp&eacute;tences de vie deviennent d&eacute;cisives. En r&eacute;sonance avec la <em>Revue internationale d'&eacute;ducation de S&egrave;vres</em> (n&deg; 100, <em>R&eacute;inventer l'&eacute;cole face &agrave; un monde incertain</em>).</p>
+  </section>
+
+  <section class="axe">
     <div class="axe-num">Horizon</div>
     <h2 class="axe-titre">Vers le colloque 2027</h2>
-    <p class="axe-cadre">Le s&eacute;minaire pr&eacute;pare un colloque international en 2027. Il prolonge les axes de l'&eacute;quipe Normes et Valeurs et contribue &agrave; r&eacute;pondre aux d&eacute;fis pos&eacute;s par les grandes transitions, en articulant alt&eacute;rit&eacute;, micro-violences, incertitude et transitions &eacute;ducatives.</p>
+    <p class="axe-cadre">Le s&eacute;minaire pr&eacute;pare un colloque international en 2027. Il prolonge le travail des &eacute;quipes et laboratoires engag&eacute;s et contribue &agrave; r&eacute;pondre aux d&eacute;fis pos&eacute;s par les grandes transitions, en articulant alt&eacute;rit&eacute;, micro-violences, incertitude et transitions &eacute;ducatives.</p>
   </section>
 
   <section class="axe">
     <div class="axe-num">Collectif</div>
     <h2 class="axe-titre">L'&eacute;quipe du s&eacute;minaire</h2>
+    <p class="axe-cadre">Un collectif inter-&eacute;quipes et inter-laboratoires, de France et de Belgique, o&ugrave; le poids des &eacute;m&eacute;rites, des doctorant&middot;es, des post-doctorant&middot;es et des &eacute;tudiant&middot;es est d&eacute;terminant - &laquo; doctorants, docteurs post-th&egrave;se, statutaires et &eacute;m&eacute;rites &raquo;.</p>
     <p class="equipe">Sa&iuml;d Ait Hammou Taleb &middot; Fenel Bourdeau &middot; Emmanuel Burguete &middot; Jean-Christophe Olive &middot; Lo&iuml;c Chalmel &middot; Jean-Marie De Ketele &middot; Julien Delord &middot; Juan Lorenzo Diez &middot; Daniel Fischer &middot; R&eacute;gis Forgione &middot; Elisa Frassetto &middot; Nathalie Gettliffe &middot; Manon Grandvall &middot; Josiane Grou &middot; M&eacute;lanie Gualandi &middot; Virginie Haegelin &middot; Anne Hermann &middot; Isabelle Houot &middot; C&eacute;cile Lamy &middot; Clody Lecot &middot; Ma&euml;l Loquais &middot; Claude-Alexandre Magot &middot; Holly Mani &middot; Elodie Marques &middot; Manuella Ngnafeu &middot; Jonathan Niyongabo &middot; Andr&eacute; Pachod &middot; Jean-Michel Perez &middot; Aurore Promonet-Th&eacute;r&egrave;se &middot; Tiago Ribeiro-Santos &middot; Fabienne Rondelli &middot; Florence Soriano-Gafiuk &middot; G&eacute;raldine Suau &middot; Emmanuel Triby &middot; Luc Verbesselt</p>
     <a class="lien-lisec" href="https://www.lisec-recherche.eu/projet/seminaire-anthropocene-et-education/" target="_blank" rel="noopener">
       <span class="badge">S&eacute;minaire</span>
