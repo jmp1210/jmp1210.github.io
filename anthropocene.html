@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Éducation à l'heure de l'anthropocène — Jean-Michel Perez</title>
+<meta name="description" content="Séminaire de recherche Éducation et Anthropocène (LISEC, Université de Lorraine). À quel collectif l'École prépare-t-elle, humains et non-humains ? Six lignes de travail, accès aux savoirs, vulnérabilité et environnements capacitants. Jean-Michel Perez.">
+<meta name="keywords" content="éducation et anthropocène, séminaire, collectif, humains et non-humains, accès aux savoirs, vulnérabilité, environnements capacitants, négociation des savoirs, singularité et collectif, traces, réversible incertain irréversible, micro-attentions, le corps à l'école, Jean-Michel Perez, LISEC, Université de Lorraine, Normes et Valeurs">
+<link rel="canonical" href="https://jean-michel-perez.fr/anthropocene.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --noir: #101828; --noir-profond: #0c1220; --blanc: #f5f0eb;
+  --rouge: #c41e1e; --rouge-vif: #e52020; --bleu: #1565c0; --bleu-vif: #1e88e5;
+  --gris: #888; --gris-clair: #bbb;
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
+
+#bandeau {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0.55rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(10,10,10,0.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+}
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-weight: 300; letter-spacing: 0.04em; }
+.bandeau-nav { display: flex; gap: 2.2rem; align-items: center; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,240,235,0.92); text-decoration: none; transition: color 0.2s; }
+.bandeau-nav a:hover { color: #fff; }
+.bandeau-nav a.active { color: #fff; border-bottom: 1px solid rgba(245,240,235,0.5); padding-bottom: 2px; }
+.bandeau-id { text-align: right; }
+
+.med-ouv { min-height: 46vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 8rem 2rem 4rem; }
+.med-ouv h1 { font-family: 'EB Garamond', serif; font-size: clamp(2.2rem, 4.8vw, 3.6rem); font-weight: 400; font-style: italic; color: var(--blanc); line-height: 1.2; max-width: 880px; }
+.med-ouv .sous { font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #fff; text-transform: uppercase; letter-spacing: 0.16em; margin-top: 1.8rem; }
+.med-question { font-family: 'EB Garamond', serif; font-style: italic; font-size: clamp(1.2rem, 2.2vw, 1.6rem); color: rgba(245,240,235,0.92); max-width: 760px; margin-top: 2rem; line-height: 1.55; }
+
+main { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem 5rem; }
+.axe { margin-bottom: 3.5rem; padding-top: 2.4rem; border-top: 1px solid rgba(245,240,235,0.08); scroll-margin-top: 5rem; }
+.axe-num { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.22em; color: var(--bleu-vif); margin-bottom: 0.6rem; }
+.axe-titre { font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 400; color: var(--blanc); margin-bottom: 1.5rem; line-height: 1.3; }
+.axe-cadre { font-family: 'EB Garamond', serif; font-size: 1.12rem; line-height: 1.78; color: rgba(245,240,235,0.85); margin-bottom: 1rem; max-width: 820px; }
+.axe-cadre em { color: var(--blanc); font-style: italic; }
+.axe-cadre strong { color: var(--blanc); font-weight: 600; }
+
+.lignes { list-style: none; counter-reset: ligne; max-width: 780px; margin-top: 0.5rem; }
+.lignes li { counter-increment: ligne; position: relative; padding: 1rem 0 1rem 3.2rem; border-top: 1px solid rgba(245,240,235,0.08); font-family: 'EB Garamond', serif; font-size: clamp(1.1rem, 1.8vw, 1.35rem); color: var(--blanc); }
+.lignes li::before { content: counter(ligne, decimal-leading-zero); position: absolute; left: 0; top: 1.15rem; font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 600; color: var(--bleu-vif); letter-spacing: 0.1em; }
+.lignes-src { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: rgba(245,240,235,0.5); letter-spacing: 0.04em; margin-top: 1.2rem; }
+
+.prog { list-style: none; max-width: 860px; margin-top: 0.5rem; }
+.prog li { padding: 1.2rem 0; border-top: 1px solid rgba(245,240,235,0.08); }
+.prog-t { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.25rem; color: var(--blanc); display: block; margin-bottom: 0.4rem; }
+.prog-d { font-family: 'Inter', sans-serif; font-size: 0.95rem; color: rgba(245,240,235,0.72); line-height: 1.65; }
+
+.equipe { font-family: 'Inter', sans-serif; font-size: 0.86rem; line-height: 1.95; color: rgba(245,240,235,0.6); max-width: 940px; margin-top: 0.5rem; }
+.lien-lisec { display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none; margin-top: 1.6rem; }
+.lien-lisec .badge { background: #003e8f; color: #fff; font-family: 'Inter', sans-serif; font-size: 0.72rem; letter-spacing: 0.12em; padding: 0.25rem 0.7rem; border-radius: 3px; text-transform: uppercase; }
+.lien-lisec .lib { color: rgba(245,240,235,0.92); font-family: 'Inter', sans-serif; font-size: 0.95rem; letter-spacing: 0.04em; border-bottom: 1px solid rgba(245,240,235,0.25); padding-bottom: 1px; }
+.lien-lisec:hover .lib { color: #fff; border-color: rgba(245,240,235,0.6); }
+
+footer { text-align: center; padding: 4rem 2rem; border-top: 1px solid rgba(245,240,235,0.08); }
+footer a { color: var(--blanc); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 0.95rem; letter-spacing: 0.04em; }
+.contact-lieu { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); margin-top: 1rem; line-height: 1.6; }
+.footer-note { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: var(--gris); margin-top: 1.4rem; }
+
+@media (max-width: 700px) {
+  #bandeau { padding: 0.5rem 1rem; flex-direction: column; gap: 0.3rem; }
+  .bandeau-nav { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  .bandeau-id { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header id="bandeau">
+  <nav class="bandeau-nav">
+    <a href="/">Accueil</a>
+    <a href="/formation-master-2.html">Formation Master 2</a>
+    <a href="/recherche.html">Recherche</a>
+    <a href="/anthropocene.html" class="active">Anthropoc&egrave;ne</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/conferences.html">Conf&eacute;rences</a>
+    <a href="/espace-prive.html">Espace priv&eacute; &#128274;</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<div class="med-ouv">
+  <h1>&Eacute;ducation &agrave; l'heure de l'anthropoc&egrave;ne</h1>
+  <div class="sous">S&eacute;minaire de recherche &middot; LISEC &middot; &Eacute;quipe Normes et Valeurs</div>
+  <p class="med-question">&Agrave; quel collectif l'&Eacute;cole pr&eacute;pare-t-elle - syst&egrave;me scolaire, universitaire, professionnel ; humains et non-humains ?</p>
+</div>
+
+<main>
+
+  <section class="axe">
+    <div class="axe-num">Le geste</div>
+    <h2 class="axe-titre">D&eacute;placer la question du collectif</h2>
+    <p class="axe-cadre">&Agrave; l'heure o&ugrave; les technologies humaines affectent les milieux et les &eacute;quilibres du vivant eux-m&ecirc;mes, la question de nos mod&egrave;les et syst&egrave;mes &eacute;ducatifs se repose : &agrave; quel collectif l'&Eacute;cole pr&eacute;pare-t-elle ? Cr&eacute;&eacute; en 2024 au sein de l'&eacute;quipe Normes et Valeurs (LISEC), le s&eacute;minaire <em>&Eacute;ducation et Anthropoc&egrave;ne</em> reprend cette interrogation - d&eacute;j&agrave; travaill&eacute;e dans le programme franco-allemand KILA - et la porte au-del&agrave; de l'humain.</p>
+    <p class="axe-cadre">Il l'inscrit dans l'axe <em>anthropoc&egrave;ne et micro-attentions</em> du programme de recherche : ce que l'incertitude des transitions fait aux pratiques, aux normes et &agrave; l'acc&egrave;s aux savoirs. Penser l'&eacute;ducation depuis l'anthropoc&egrave;ne, ce n'est pas ajouter un th&egrave;me ; c'est d&eacute;placer la fronti&egrave;re du collectif que l'&Eacute;cole institue, et y r&eacute;inscrire les non-humains, le vivant, les objets.</p>
+  </section>
+
+  <section class="axe">
+    <div class="axe-num">Armature</div>
+    <h2 class="axe-titre">Six lignes de travail</h2>
+    <p class="axe-cadre">D&eacute;gag&eacute;es collectivement &agrave; Colmar, &agrave; partir de cinq ateliers, six lignes structurent le travail du s&eacute;minaire :</p>
+    <ol class="lignes">
+      <li>Le rapport au temps</li>
+      <li>La vuln&eacute;rabilit&eacute; et les environnements capacitants</li>
+      <li>La n&eacute;gociation des savoirs</li>
+      <li>La tension entre singularit&eacute; et collectif</li>
+      <li>Les traces</li>
+      <li>Le r&eacute;versible, l'incertain et l'irr&eacute;versible</li>
+    </ol>
+    <p class="lignes-src">S&eacute;ance n&deg;7 &middot; Colmar &middot; 12 f&eacute;vrier 2026</p>
+  </section>
+
+  <section class="axe">
+    <div class="axe-num">S&eacute;ance</div>
+    <h2 class="axe-titre">Matin&eacute;e prolong&eacute;e - 10 juin 2026</h2>
+    <p class="axe-cadre">Une s&eacute;ance o&ugrave; les lignes de travail se mettent &agrave; l'&eacute;preuve du corps, des objets et du vivant.</p>
+    <ul class="prog">
+      <li>
+        <span class="prog-t">Cartographie du groupe IA (Master 2)</span>
+        <span class="prog-d">Retour d'un groupe d'&eacute;tudiants ayant men&eacute; des entretiens avec les chercheurs du s&eacute;minaire : une premi&egrave;re cartographie des th&eacute;matiques abord&eacute;es, suivie d'un &eacute;change sur les rapports entre humains et non-humains et sur l'acc&egrave;s aux savoirs.</span>
+      </li>
+      <li>
+        <span class="prog-t">Musique, corps et &eacute;ducation</span>
+        <span class="prog-d">Avec Melynda (violoncelliste et &eacute;tudiante) et Ma&euml;l Loquais (guitariste et chercheur) : ce que le corps, les instruments et les objets disent des processus de compr&eacute;hension, d'apprentissage et d'appropriation des savoirs.</span>
+      </li>
+      <li>
+        <span class="prog-t">Chiens et humains, &agrave; l'universit&eacute; et &agrave; l'&eacute;cole</span>
+        <span class="prog-d">Ce que la relation &agrave; l'animal dit de nos mani&egrave;res de construire les collectifs, de reconna&icirc;tre les singularit&eacute;s et de nous situer dans les savoirs.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="axe">
+    <div class="axe-num">Horizon</div>
+    <h2 class="axe-titre">Vers le colloque 2027</h2>
+    <p class="axe-cadre">Le s&eacute;minaire pr&eacute;pare un colloque international en 2027. Il prolonge les axes de l'&eacute;quipe Normes et Valeurs et contribue &agrave; r&eacute;pondre aux d&eacute;fis pos&eacute;s par les grandes transitions, en articulant alt&eacute;rit&eacute;, micro-violences, incertitude et transitions &eacute;ducatives.</p>
+  </section>
+
+  <section class="axe">
+    <div class="axe-num">Collectif</div>
+    <h2 class="axe-titre">L'&eacute;quipe du s&eacute;minaire</h2>
+    <p class="equipe">Sa&iuml;d Ait Hammou Taleb &middot; Fenel Bourdeau &middot; Emmanuel Burguete &middot; Jean-Christophe Olive &middot; Lo&iuml;c Chalmel &middot; Jean-Marie De Ketele &middot; Julien Delord &middot; Juan Lorenzo Diez &middot; Daniel Fischer &middot; R&eacute;gis Forgione &middot; Elisa Frassetto &middot; Nathalie Gettliffe &middot; Manon Grandvall &middot; Josiane Grou &middot; M&eacute;lanie Gualandi &middot; Virginie Haegelin &middot; Anne Hermann &middot; Isabelle Houot &middot; C&eacute;cile Lamy &middot; Clody Lecot &middot; Ma&euml;l Loquais &middot; Claude-Alexandre Magot &middot; Holly Mani &middot; Elodie Marques &middot; Manuella Ngnafeu &middot; Jonathan Niyongabo &middot; Andr&eacute; Pachod &middot; Jean-Michel Perez &middot; Aurore Promonet-Th&eacute;r&egrave;se &middot; Tiago Ribeiro-Santos &middot; Fabienne Rondelli &middot; Florence Soriano-Gafiuk &middot; G&eacute;raldine Suau &middot; Emmanuel Triby &middot; Luc Verbesselt</p>
+    <a class="lien-lisec" href="https://www.lisec-recherche.eu/projet/seminaire-anthropocene-et-education/" target="_blank" rel="noopener">
+      <span class="badge">S&eacute;minaire</span>
+      <span class="lib">La page du s&eacute;minaire sur le site du LISEC</span>
+    </a>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a>
+  <div class="contact-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine &middot; Nancy<br>LISEC (UR 2310) &middot; P&ocirc;le scientifique CLCS</div>
+  <div class="footer-note">&copy; 2026 Jean-Michel Perez</div>
+</footer>
+
+</body>
+</html>
