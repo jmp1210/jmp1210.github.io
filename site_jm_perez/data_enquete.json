@@ -1,6 +1,630 @@
 {
   "micro_violences": [
     {
+      "text": "En CE1, j'étais sur l'estrade, et mon enseignante en tirant sur mes tresses, m'a traitée de dinde. Une autre fois cette même enseignante, a dit devant toute la classe que j'avais copié ce qui n'était absolument pas vrai. Elle a même demandé à ma voisine de mettre un classeur lors des évaluations.",
+      "genre": "Femme",
+      "age": "54",
+      "sig": "Femme - 54 ans - 2025-04-18 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Mes années primaires un enseignant s'est moqué de moi en raison de mon poids devant mes camarades a l piscine en disant que les gros flottaient. Plus tard il a convoqué ma famille en disant que je bougeais trop. Que je faisais des fautes et que j étais nul en maths ( j étais TDA mais a l époque on ne le savait pas). Il a vu mes parents en disant que je ne ferai pas grande chose dans ma vie.",
+      "genre": "Homme",
+      "age": "55",
+      "sig": "Homme - 55 ans - 2025-04-18 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "rascisme à l'école",
+      "genre": "Homme",
+      "age": "39",
+      "sig": "Homme - 39 ans - 2025-04-21 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Durant mes années primaires un enseignant s est moqué de moi en raison de mon poids devant mes camarades à la piscine en disant que les gros flottaient et que j étais nul en maths ( j etais TDA mais à l époque on le savait pas). Il a vu mes parents en disant que je ne ferai pas grand chose dans ma vie.",
+      "genre": "Homme",
+      "age": "52",
+      "sig": "Homme - 52 ans - 2025-04-29 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Harcèlement en maternelle. Aucun professeur n'a compris pourquoi je me cachais derrière eux aux moments des récréations.",
+      "genre": "Femme",
+      "age": "46",
+      "sig": "Femme - 46 ans - 2025-04-29 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "J etais plutot forte au collègue, c etait des moments d insécurité et de moqueries",
+      "genre": "Femme",
+      "age": "22",
+      "sig": "Femme - 22 ans - 2025-05-10 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "Harcèlement au collège, classe de 5e, tout allait bien, j’étais bonne élève. Une des filles de ma classe m’en voulait de réussir mes cours (ce qu’elle a dit à ma mère ), cette petite avait son père hospitalisé. Ce harcèlement a été un déclencheur de mon anorexie mentale qui m’a coûté 9 mois d’hospitalisation.",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2025-05-10 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Seconde, ma prof de maths, 30 ans?",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2025-05-11 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En cm2 , la maîtresse, suite à des tests à dit devant moi à ma mère, que j'avais dû mal à abstraire, que j'étais plus à l'aise avec le concret .",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2025-05-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "J’ai le souvenir de mes années lycée en 1 ère avec ma prof de français qui n’hésitait pas voire avait plaisir à commenter les mauvaises notes obtenues à haute voix . Un sentiment d’humiliation que je trouve inacceptable et pas productif si ce n’est que de décourager .",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2025-05-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "CE2. La maîtresse m'avait pris en grippe.",
+      "genre": "Femme",
+      "age": "38",
+      "sig": "Femme - 38 ans - 2025-05-12 - Autre [-oth-]"
+    },
+    {
+      "text": "J'ai eu la même institutrice en Cm1 et Cm2",
+      "genre": "Femme",
+      "age": "66",
+      "sig": "Femme - 66 ans - 2025-05-15 - Autre [-oth-]"
+    },
+    {
+      "text": "À l'école primaire, j'ai vécu de mauvais souvenirs :",
+      "genre": "Homme",
+      "age": "64",
+      "sig": "Homme - 64 ans - 2025-09-29 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Une enseignante a insisté lourdement sur l'importance de ma présence en cours, alors même qu'elle était informée de ma dispense d'assiduité. Il est déjà très difficile d'accepter de manquer les cours pour préserver ma santé, et si les enseignants en rajoutent une couche ça n'aide absolument pas. Ce genre de réponse à mes absences part certes d'une bonne intention, mais ça rend les choses plus difficiles à accepter pour moi, et ça s'est accompagné d'une absence de soutien adapté face à mes absences.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-01-30"
+    },
+    {
+      "text": "J'ai rencontré un professeur d'université en charge d'un de mes EC qui s'énervait face aux élèves qui avaient des difficultés pour accomplir les exercices lors des TD. Cette personne ne donnait pas les corrections des exercices (ni lors des TD ni sur Arche). C'est un fonctionnement stupide étant donné que l'étudiant ne peut pas comparer ses réponses face à des résultats correctes. Les rares exemples corrigés dans le cours étaient le seul moyen de constater ses erreurs. C'est le seul professeur auquel j'ai eu affaire qui m'a impacté négativement durant mes études.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-01-30"
+    },
+    {
+      "text": "Personnellement, j’ai eu une mauvaise expérience avec un professeur à l’université. Je trouve qu’il n’est pas gentil avec les étudiants étrangers. Ce n’est pas seulement avec moi, j’ai aussi remarqué son comportement avec d’autres.",
+      "genre": "Non renseigné",
+      "age": "26-30 ans",
+      "sig": "26-30 ans ans - 2026-01-30"
+    },
+    {
+      "text": "Une bonne partie des professeurs ne sont pas formés sur le handicap, ce qui se voit sur des remarques déplacés, voire des refus d'aménagements. Critique quand aux difficultés à interagir, refus d'accès à une salle séparée. Les commentaires quand aux sorties de classes et aux absences pourraient aussi être mentionnés.",
+      "genre": "Non renseigné",
+      "age": "Moins de 20 ans",
+      "sig": "Moins de 20 ans ans - 2026-01-30"
+    },
+    {
+      "text": "Un professeur, qui ne se remet pas en question et qui n'améliore pas son cœur, résultat toute la classe loupe le contrôle. Et ose dire que l'on a pas le niveau.",
+      "genre": "Non renseigné",
+      "age": "Moins de 20 ans",
+      "sig": "Moins de 20 ans ans - 2026-01-30"
+    },
+    {
+      "text": "Une prof avait mal pris le fait que j’étais stressé lors d’un oral d’anglais et à compté cela comme un malus je pense que ma note.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-01-30"
+    },
+    {
+      "text": "une école pas à l'écoute et des référents handicap pas très renseignés sur ces sujet. Je n'ai pas eu des personnes de référence à l'école pour m'aider. j'ai plusieurs fois sollicité de l'aide pour certaines taches que je n'arrivais pas à faire et je n'ai jamais reçu l'aide appropriée. J'ai passé 1 an sous antidépresseur, je l'ai aient arrêtés quand je suis parti de cette école.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-01-31"
+    },
+    {
+      "text": "Oui j'ai subi des traumatismes qui ont fait que je pouvais plus suivre les cours",
+      "genre": "Non renseigné",
+      "age": "Moins de 20 ans",
+      "sig": "Moins de 20 ans ans - 2026-01-31"
+    },
+    {
+      "text": "Certains professeur juge les problèmes d'orthographe , de calculs des élèves etc . Mais il ne se rendent pas compte que cela peut venir de problème plus profond , et que c'est pas juste du m'enfoutisme de la part des élèves.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-01"
+    },
+    {
+      "text": "Professeur qui refuse les aménagements d’étude",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-01"
+    },
+    {
+      "text": "Certaines remarques négatives provenant de professeurs/intervenants extérieurs concernant l'aménagement handicap pour les épreuves de partiels",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-02"
+    },
+    {
+      "text": "Sachant que l'accessibilité des locaux serait forcément difficile malgré les bonnes intentions de l'université, je me suis rendu sur les lieux 1 jour avant mon examen pour m'assurer que j'aurais toutes les informations et la tranquillité d'esprit le lendemain. Non seulement l'accès aux ascenseur nécessitait l'emprunt d'une clé spéciale, ce qui n'était spécifié nulle part à l'avance, mais j'ai aussi fait face à un monte-charge dysfonctionnel, probablement dû à la neige. J'ai fait remonter le problème, on m'a assuré que c'était réglé le lendemain matin, pourtant j'ai dû faire face aux mêmes dysfonctionnements de ce monte-charge et je me suis retrouvé en sortie d'examens face à un monte-charge en panne et mes camarades étudiants ont dû me porter moi et mon fauteuil dans les escaliers, ce qui est très dangereux et anormal, d'autant plus que j'avais déjà signalé ce dysfonctionnement la veille. Il aurait fallu changer la salle d'examen, quitte à me mettre dans une salle à part. Il est très anormal que l'on doive se confronter à ce genre de problème sur une journée qui est déjà très longue et très stressante. Les salles d'examen \"accessibles\" ne devraient pas dépendre de la météo, elles d",
+      "genre": "Non renseigné",
+      "age": "26-30 ans",
+      "sig": "26-30 ans ans - 2026-02-02"
+    },
+    {
+      "text": "Le professeur était en retard au début d'un examen et pendant ces 20 minutes d'absence, les autres élèves de la promotion en ont profité pour parler et regarder des vidéos avec le son très fort. Certains vapotaient même dans la salle. Etant autiste asperger, le bruit et les odeurs m'ont vraiment dérangée et j'ai dû rentrer chez moi avant d'avoir fait l'examen parce que j'ai eu une crise autistique. Ma mère et moi avons envoyé un mail à l'administration et au professeur pour expliquer la situation et demander si je pouvais repasser l'examen ultérieurement. Nous n'avons eu que pure indifférence de la part de l'administration, et le professeur quant à lui nous a répondu d'une manière particulièrement odieuse et discriminative, insinuant que j'étais une petite capricieuse et qu'il n'y avait aucune raison valable d'avoir une crise. Quant à savoir si je pouvais repasser ce contrôle, nous n'avons jamais eu de retour.",
+      "genre": "Non renseigné",
+      "age": "Moins de 20 ans",
+      "sig": "Moins de 20 ans ans - 2026-02-02"
+    },
+    {
+      "text": "Des professeurs qui ignorent les besoins spécifiques des étudiants en situation de handicap.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-03"
+    },
+    {
+      "text": "Pour le moment, tout se passe bien pour moi à l'UL malgré ma situation PMR, je suis bien entouré, de camarades, de professeurs bienveillants et soucieux d'inclusion ; sans aucune forme de discrimination ou dans la mesure que ce n'est pas possible autrement (en termes d'accessibilité).",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-03"
+    },
+    {
+      "text": "Je suis tombé à vélo en t-shirt manche courtes et short le jour de mon anniversaire en allant en cours et j'ai failli me faire renverser par une voiture. Le problème c'est que le cours auquel j'allais était un cours de chinois \"test\", et il avait été précisé que si je voulais continuer avec le chinois ensuite (ce qui était mon cas), alors je devais obligatoirement assister au cours test (il y avait une fiche de présence). Je n'ai pas osé rentrer chez moi me reposer et je suis allé en saignant à moitié et en me mettant du gel hydroalcoolique sur mes plaies (il n'y a pas d'infirmerie à mon établissement) pour faire le cours. Je pense que j'aurais pu être un peu plus respectueux de moi-même et un peu moins des règles et me reposer.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-06"
+    },
+    {
+      "text": "Un jour que je prenais l’ascenseur comme j’en ai le droit du à une situation de handicap invisible , j’attends l’arrivée de celui-ci quand un professeur accompagnée d’étudiants arrive également et du à la lenteur de l’appareil le professeur ce permet de faire une remarque du genre « c’est pas possible ca doit encore être un handicapé il mettent toujours 3ans ils pourraient faire un effort »",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-06"
+    },
+    {
+      "text": "j’étais vraiment contente quand j’ai lu l’article qui disait que l’ul voulait lutter contre la précarité menstruelle et aussi les 12 forfaits annuels parce que je devais payer 20-30€ à chaque fois que je voulais un justificatif pour la prépa. parce que si mon absence est injustifiée je perd 0.1 sur la moyenne. alors je rempli ma commande, je mets mon numéro étudiant et ça passe pas parce que je ne suis pas primo entrante. et jetais tellement déçue et frustrée parce que je vois pas comment moi en 2A de prépa je n’ai plus de problème de précarité, genre ça s’arrête dès que tu passes en 2A. mais je me suis dite que ce n’était pas grave et que je n’y pouvais rien mais qu’au moins tout le monde aurait les 12 forfaits annuels et que j’aurais plus besoin de payer autant en téléconsultation sans me faire rembourser juste pour ne pas souffrir à l’école ou être pénalisée. j’en utilise un, je demande à la responsable de scolarité si elle a bien reçu elle me dit que non. que la prépa des inp n’a pas accès à assiduité et donc on pouvais pas utiliser les forfaits menstruels pour justifier nos absences. elle m’a dit de demander à mon médecin d’écrire un justificatif pour dire qu’il est possible q",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-09"
+    },
+    {
+      "text": "En CE2, mon instituteur, que j'appréciai beaucoup (nous jouions aux échecs après la fin de cours...), a interrogé un élève que je n'appréciais pas, et qui était certainement TSA. Il lui a demandé de réciter l'alphabet ; et l'élève en question a commencé, puis a bloqué vers la lettre G ou H. L'enseignant ne l'a pas aidé, et attendait. C'était un moment de gêne intense, et, pour ma part, je n'avais aucune empathie pour l'élève, j'étais juste abasourdi qu'il ne connaisse pas son alphabet. Rétrospectivement, ce qu'il a vécu devait être intensément humiliant... Ce qui me surprend le plus aujourd'hui, c'est à quel point j'avais été stupéfait par la conduite de l'élève, et non par celle de l'enseignant.",
+      "genre": "Homme",
+      "age": "46",
+      "sig": "Homme - 46 ans - 2026-02-16 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Un professeur m'a un jour privé de binôme parce que je travaillais \"trop lentement\". Je mettais plus de temps à faire un exercice en vue d'un handicap, et cet enseignant n'a pas hésité à faire une remarque à voix haute et mettre mon binôme avec quelqu'un d'autre. Cela m'a beaucoup affecté à ce moment (en venant aux larmes) et à ce jour.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-02-16"
+    },
+    {
+      "text": "Les autres élèves utilisent comme insulte \"t'es autiste\" entre eux.",
+      "genre": "Non renseigné",
+      "age": "Moins de 20 ans",
+      "sig": "Moins de 20 ans ans - 2026-03-04"
+    },
+    {
+      "text": "Mes responsables de licence ne sont pas à l’écoute pour résoudre des problèmes qui les concernent, c’est frustrant",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-03-04"
+    },
+    {
+      "text": "J'ai étais accusé d'harcèlement morale par une étudiante. J'ai appris par la même occasion que j'avais mauvaise réputation au sein de ma promotion, j'ai ressentie de l'exclusion social de par mon genre et mon âge.",
+      "genre": "Non renseigné",
+      "age": "Plus de 30 ans",
+      "sig": "Plus de 30 ans ans - 2026-03-04"
+    },
+    {
+      "text": "l'école a toujours été un calvaire pour moi, les cours qui se passaient bien sont plus faciles à compter que ceux où ça allait mal, et ce de la maternelle jusqu'à actuellement, à la fac. Je pense que c'est plutôt dû à un système solaire qui encourage la compétitivité, et qui oblige des enfants désintéressés à rester enfermé 8 heures par jour pendant presque les 20 premières années de leurs vie plutôt que des professeurs, eux aussi souvent détruits après des années d'enseignement compliquées et totalement dégoutés de l'enseignement, même si, sur le fait, j'en ai détesté beaucoup, et de fait, beaucoup étaient détestables.",
+      "genre": "Homme",
+      "age": "20",
+      "sig": "Homme - 20 ans - 2026-03-04"
+    },
+    {
+      "text": "Pour l’instant je n’est subit aucun évènement comme cela",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-03-04"
+    },
+    {
+      "text": "Mon enseignante de CP tout comme celle de CM2 étaient des femmes qui hurlaient contre les élèves, voire les frappaient. J'étais bonne élève et très discrète, et je n'ai jamais été la cible de leurs agressions mais j'ai passé toute ma scolarité avec la boule au ventre, la peur de mal faire, de ne pas faire ce que les \"adultes\" attendent de moi.",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-03-04 - Métiers des services (commerce, vente, tourisme, accueil, restauration, nettoyage…)"
+    },
+    {
+      "text": "Incomprehension et méconnaissance des profs sur le tiraau sort des sujets de partiels pour les étudians suivi par le SISU et en plus ils nous disent que c'est de notre fautre",
+      "genre": "Non renseigné",
+      "age": "Moins de 20 ans",
+      "sig": "Moins de 20 ans ans - 2026-03-04"
+    },
+    {
+      "text": "J'ai eu une scolarité assez épanouie car j'étais bonne élève mais je me souviens de mon enseignante en CM1 qui réprimandaient les élèves avec sa règle et un jour, j'ai été blessée par sa règle alors qu'elle visait l'élève à côté de moi.",
+      "genre": "Femme",
+      "age": "41",
+      "sig": "Femme - 41 ans - 2026-03-13 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "A l'université, lors de ma licence d'Arts Plastiques, nous avions des UE unités de découverte à choisir, pour justement s'ouvrir et découvrir d'autres domaines/filière. J'étais très heureuse de participer à ces cours de psychologie. Je suis quelqu'un d'assez discraite et qui participe assez peu. J'ai tout de même pris mon courage à deux mains pour participer, donner une suggestion de réponse ou poser une question, je ne sais plus exactement. Je me souviens du thème de ma participation : l'instinct maternel. Je rappelle que je ne suis, à l'époque, pas en études de psychologie, et que je participe à ces cours sous forme d'introduction, de découverte.",
+      "genre": "Femme",
+      "age": "30",
+      "sig": "Femme - 30 ans - 2026-03-17 - Métiers des services (commerce, vente, tourisme, accueil, restauration, nettoyage…)"
+    },
+    {
+      "text": "Mes années de primaire ont été pour moi très difficiles car je subissait du harcèlement de la part de certains élèves de ma classe. Notamment en raison de ma corpulence. J’étais stigmatiser de vouloir majoritairement jouer avec des filles. Ma scolarisation a été assez complexe, j’ai su bien plus tard que j’avais un TDAH. Clairement mon environnement scolaire n’était pas du tout adapté. Par ailleurs, mon enseignant n’était pas du tout soutenant, il a lui-même eu envers moi tes propos, tels que tu ne feras jamais rien de ta vie. J’ai vécu à plusieurs reprises, l’humiliation d’avoir des pages arrachées, mais chaque fois que je me retrouvais en larmes, face à mes livres, incapable de me concentrer et de déchiffrer la moindre chose, je repensais à cette autre camarade, qui avait été traîné par les oreilles et passer sous le robinet d’eau froide, parce qu’elle n’était pas capable de répondre à une question, et je me disais que ç’aurait pu être pire",
+      "genre": "Homme",
+      "age": "36",
+      "sig": "Homme - 36 ans - 2026-03-30 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Toute ma scolarité a été une torture et ce dès la maternelle. Du CE1 au CM2 j’avais une maitresse qui m’humiliait en permanence. J’étais désavantagé par rapport aux autres. Elle passait son temps à me dire que j’étais nulle et que je n’irai pas loin dans la vie. Elle demandait aux autres élèves de m’apporter des carottes car j’étais un âne. Lorsque je ne comprenais pas un exercice elle m’attrapait par les cheveux et me cognait la tête sur la table. Elle montait tout le monde contre moi. Je n’ai parlé à mes parents qu’une fois au collège. D’ailleurs les élèves de mon école étaient scolarisés dans le même collège que moi et cela a eu pour conséquence la poursuite du harcèlement.",
+      "genre": "Femme",
+      "age": "34",
+      "sig": "Femme - 34 ans - 2026-03-30 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "À l'école primaire (précisément en CM1, 8ème), l'instituteur m'a balancé des claques hyper fortes suite à une dénonciation d'un autre élève que je croyais être un bon camarade... J'avais fait un jeu de mots à propos du nom d'une autre instit détestée par tous les élèves... Je ne sais pas ce qui m'a le plus blessé dans l'affaire...",
+      "genre": "Homme",
+      "age": "73",
+      "sig": "Homme - 73 ans - 2026-03-31 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J'ai vécu du harcèlement tout au long de mon parcours scolaire, de la primaire à l'université car j'étais \"différente\" : l'\"intello\", la \"fayotte\", la \"grosse tête\"... J'ai donc passé mon enfance et mon adolescence seule, exclue, moquée en pensant avoir des amis et amies mais en réalité ils et elles se servaient de moi pour que je les aide à faire leurs devoirs ou à demander des informations aux personnes enseignantes. A l'Université rien n'a changé : personnessensées être plus matures... mais même combat. Jusqu'à jour où on m'a diagnostiquée un HPI et TSA léger. Cela m'a permis d'apprendre à m'accepter comme je suis et à prendre de la distance avec le regard des autres.",
+      "genre": "Femme",
+      "age": "32",
+      "sig": "Femme - 32 ans - 2026-04-08 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Mon professeur de mathématiques en classe de 5ième utilisait des méthodes d'un autre temps. Il nous terrorisait la rigueur d'un tortionnaire minutieux. A chaque heure de cours, il faisait le tour de la classe, en nous hélant par nos noms de famille",
+      "genre": "Homme",
+      "age": "39",
+      "sig": "Homme - 39 ans - 2026-04-09 - Enseignement supérieur et recherche – Lettres, langues, littérature et arts (langues étrangères, musique, arts plastiques, arts du spectacle…)"
+    },
+    {
+      "text": "Mes plus gros souvenirs sur ma scolarité primaire/collège, ce sont les cours de sport. En particulier au collège. Mal dans ma peau, vivant avec un handicap non reconnu à l'époque, je n'arrivais pas à faire les exercices. Une prof de sport m'a humiliée pendant 4 ans en me prenant systématiquement en exemple pour montrer les exercices, sachant pertinemment que je n'y arriverai pas. Alors j'echouais devant tout le monde, avec la prof qui me disait de faire un effort.",
+      "genre": "Autre [-oth-]",
+      "age": "24",
+      "sig": "Autre [-oth-] - 24 ans - 2026-04-09 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Un prof de psycho a dit à tout l’amphi : « on est tois un peu tdah et autiste. » j’ai trouvé cela d’une violence !",
+      "genre": "Non renseigné",
+      "age": "Plus de 30 ans",
+      "sig": "Plus de 30 ans ans - 2026-04-09"
+    },
+    {
+      "text": "En maternelle, un jour, je suis tombée accidentellement en arrière, je ne sais pour quelle raison; ma chaise, sur laquelle j'étais assise, a basculé avec moi. Alors que la sonnerie de la récréation retentissait, l'institutrice m'a ordonné de rester dans la même position durant tout le temps de cette pause récréative. J'ai dû obéir. J'étais une enfant très timide et très réservée. Ma maman, qui venait parfois à l'heure de la récréation pour m'apporter un croissant, ne m'a jamais trouvée ce jour-là. Je n'ai jamais osé lui en donner la raison. Mes camarades sont rentrés de récréation et m'ont trouvée toujours dans la même position. De toute ma vie, je n'oublierai jamais ce qu'a fait cette maîtresse.",
+      "genre": "Femme",
+      "age": "58",
+      "sig": "Femme - 58 ans - 2026-04-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En 3ième, le directeur du collège, les enseignants et mes parents se sont ligués pour me faire changer d'avis sur mon orientation. Je n'ai pas changé d'avis, mais j'ai dû obtempérer. Je voulais aller en Bac technologique E, eux voulaient que je fasse un bac général. J'ai fait ce qu'ils voulaient, mais avec un ennui infini tout mon lycée et un comportement à la limite du décrochage (copies blanches, absences, peu de travail personnel, peu d'investissement en classe. Il sont aussi mis en doute mon sentiment d'être apte à choisir ce qui est bon pour moi-même.",
+      "genre": "Femme",
+      "age": "56",
+      "sig": "Femme - 56 ans - 2026-04-13 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En quatrième comme en troisième, l’entrée en classe de notre professeur de français était un rituel qui glaçait immédiatement l’assemblée : il franchissait le seuil et faisait claquer la porte derrière lui avec une autorité brutale, scellant notre sort pour l’heure à venir. Il imposait une terreur silencieuse, se déplaçant lentement entre les rangées, les mains croisées dans le dos, son regard sévère balayant la salle comme s'il cherchait la moindre faille. Je garde un souvenir particulièrement vif de la cruauté subtile avec laquelle il gérait les interrogations, surtout parce que ma cousine, qui portait le même nom de famille que moi, se trouvait dans la même classe. Il prenait un malin plaisir à appeler notre nom commun, suspendant le temps dans un silence pesant, nous toisant intensément dans les yeux, avant de laisser planer le suspense avant de prononcer le prénom, nous laissant toutes deux dans une attente anxieuse et désarmée.",
+      "genre": "Homme",
+      "age": "65",
+      "sig": "Homme - 65 ans - 2026-04-16 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En anglais, la prof nous assoyait en ordre des notes obtenues les plus faibles devant et les meilleurs derrières. J'étais dans les moins bonnes dans cette classe notamment à cause de la peur de l'enseignante. Lorsque nous n'avions pas la bonne réponse, elle nous crachait une pastille au visage (Elle suçait toujours des pastilles pour la gorge). J'étais terrifiés chaque fois que j'entrais dans cette classe. L'année suivante c'était une toute autre ambiance et j'ai terminé avec une moyenne de 87% en anglais. Cette prof créait de l'échec et traumatisait les élèves.",
+      "genre": "Femme",
+      "age": "57",
+      "sig": "Femme - 57 ans - 2026-04-23 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Ma posture de recherche et ma neurodiversité entrait directement en opposition avec la posture et les intérêts d'un membre du jury. Elle refusait la critique sur un sujet lié à ses intérêts professionnels et personnels. Plusieurs commentaires dénigrant et tentative de m'exclure du domaine de la recherche. J'ai changé d'université et maintenant mon potentiel en recherche est vraiment reconnu, tout comme la perspective différente de ma neurodiversité.",
+      "genre": "Non renseigné",
+      "age": "Plus de 30 ans",
+      "sig": "Plus de 30 ans ans - 2026-04-24"
+    },
+    {
+      "text": "Un enseignant de physique avait appris mon prénom et dès que quelque chose n’allait pas en classe, il criait mon nom en disant de cesser. Même si je ne faisais pas l’action à cesser. Il lui arrivait même de me lancer des craies.",
+      "genre": "Femme",
+      "age": "43",
+      "sig": "Femme - 43 ans - 2026-04-24 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "In grade 9 math in a quebec school in in 1990, my teacher would ask me a question and I would answer back in a question because I was unsure of the answer. I passed my course with 65 geade. I always hated math and I avoided studying in university that math in rhe curriculum ( ie accounting)Then I rebook math (algebra) in cegep I got 80%. This affected me all my life when every I do math calculations, I'm insecure about making errors - i don't have that skill to detailed work.",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-04-24 - Autre [-oth-]"
+    },
+    {
+      "text": "À 16 ans, dans un cours d’anglais langue seconde, j’étais plutôt effacée et je n’aimais pas beaucoup la matière ni le professeur. Un jour, j’ai osé posé une question de clarification en classe et le professeur m’a répondu qu’il venait tout juste de répondre et que je n’avais qu’à écouter… C’est justement parce que je n’avais pas compris que je posais la question mais il a néanmoins à refusé d’y répondre. Quelques jours plus tard, alors que j’effectuais un exercice écrit en cours d’anglais, ce professeur s’est penché par-dessus mon épaule pour lire ce que j’écrivais en posant sa main sur mon épaule. Je lui ai demandé de retirer sa main, et il s’est exécuté, mais il a tenté d’atténuer son geste en disant qu’il vous lait m’aider alors que je n’avais pas demandé d’aide… Je suis allée voir le directeur adjoint pour lui parler de ces deux situations et, contre toute attente, il a demandé au professeur de se présenter sur-le-champ dans son bureau. Il l’a confronté devant moi et le professeur a dû s’excuser. Ce fut un moment très particulier, on ne peut plus malaisant, mais le professeur n’a plus jamais eu de comportement déplacé à mon égard. J’ai cependant appréhendé mon retour en classe,",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2026-04-28 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En 1ère, le prof de physique nous a asséné « vous serez toutes caissières » de façon très injuste et condescendante ( classe de filles dans le privé catholique)",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-01 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En 2nde un professeur de SES m'a prise comme bouc émissaire de ma classe. Interdiction de mettre une veste en dépit des fenêtres ouvertes en toute saison, même malade. Un total de 36 heures de colle pour divers \"motifs\" (regardait ses ongles, a mis une veste, a écrit pendant l'explication au lieu d'écouter, cahier oublié). Je n'ai jamais eu de colles ni avant ni après ni ailleurs. J'allais à l'infirmerie régulièrement pour ne pas sécher mais éviter un peu de ce cours. Malgré mes plaintes au directeur adjoint, rien n'a été fait. Bonne élève ayant sauté une classe auparavant , j'ai fini par redoubler.",
+      "genre": "Femme",
+      "age": "29",
+      "sig": "Femme - 29 ans - 2026-05-05 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J'ai toujours eu une scolarité dans l'enseignement obligatoire très positive. Meilleures notes partout, premier de classe, tout ça sans avoir le profil de \"l'intello\". Ma scolarité obligatoire a été une période heureuse. Ça a été plus compliqué après. Rentrée à l'université en Belgique, très grosse machine, très administrative. J'étais un élève brillant et ai quand-même été un étudiant brillant. Mais le côté administratif de l'université m'a broyé au début. Je me suis malheureusement mal orienté: psycho car à 18 ans, je pensais que c'était plutôt philosophique et cela résonnait avec mes intérêts philo et mes lectures un peu originales en cours de français, telles que du Boris Vian, ou encore l'introduction que nous avions eue au surréalisme. Grosse erreur: la psycho, dans les premières années de l'université en Belgique, c'est presque une science dure, très axée neurosciences, médecine, etc. Je me décide donc à demander de l'aide pour l'orientation, car je pressens bien que la psycho, ça n'est pas mon truc. Et c'est là que je suis transbahuté entre différents services administratifs tous moins compréhensifs les uns que les autres. Le message récurrent était: tu sais, l'université,",
+      "genre": "Homme",
+      "age": "43",
+      "sig": "Homme - 43 ans - 2026-05-07 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En 4 ou 3 eme j’ai été harcelé par un groupe de filles. Je n’ai presque plus de souvenirs.",
+      "genre": "Femme",
+      "age": "33",
+      "sig": "Femme - 33 ans - 2026-05-08 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J’ai bien aimé mon parcours scolaire. Le premier grand événement était changement de la ville et par conséquent de l’école. Le premier jour une fille, assise derrière moi, m’a touché à l’épaule et m’a demandé mon prénom. On janvier 2027 nous fêterons 50 ans d’amitié.",
+      "genre": "Femme",
+      "age": "56",
+      "sig": "Femme - 56 ans - 2026-05-08 - Autre [-oth-]"
+    },
+    {
+      "text": "En première, section S, je me suis trouvé mal orienté et en difficulté dans les matières scientifiques. Cela a été d'autant plus difficile que certains de mes enseignants avaient eu mes frères et soeur en cours, lesquel·les étaient bien plus doués que moi dans ces disciplines. Ce fut une année très difficile d'un point de vue moral, de me retrouver dans le groupe des élèves \"médiocres\" pour une part des enseignements. Je pense avoir été victime du préjugé selon lequel après des études scientifiques, on peut choisir de faire ce que l'on veut. Je me serais beaucoup plus épanoui en section littéraire, une réorientation que j'ai effectuée l'année suivante, pour la Terminale.",
+      "genre": "Homme",
+      "age": "56",
+      "sig": "Homme - 56 ans - 2026-05-11 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En 3ème année primaire, je me souviens de cette enseignante, M., qui était censée m’aider à apprendre le français comme langue seconde (elle me donnait des cours particuliers). Elle me comparait toujours à une fille qui venait de France, qui habite là-bas. Elle me disait : « Tu vois ? » ou alors elle l’interrogeait si moi je ne savais pas répondre. Bah oui, forcément, elle parle français tous les jours dans sa vie, elle sera meilleure que moi. Moi, j’apprenais encore l’alphabet et les syllabes, bien sûr que je n’avais pas beaucoup de vocabulaire et que j’avais du mal avec la prononciation et la lecture. Je déteste le français encore aujourd’hui, et j’ai toujours peur de l’utiliser devant beaucoup de monde ou devant ma famille. Pourtant, j’ai enseigné le français en 6e et j’étais excellente, et même dans mes examins de français, je réussis bien et j’écris bien. Mais j’ai toujours peur, je ne me sens pas assez confiante pour parler, et je préfère parler dans mes langues ou en anglais. Même pour mon mémoire, je choisis toujours de travailler en anglais, je me sens plus à l’aise.",
+      "genre": "Femme",
+      "age": "Non renseigné",
+      "sig": "Femme - 2026-05-13 - Autre [-oth-]"
+    },
+    {
+      "text": "• J'ai été enfermé en CP dans une cave à la place d'aller en promenade parce je ne mettais pas de point sur la lettre i",
+      "genre": "Homme",
+      "age": "64",
+      "sig": "Homme - 64 ans - 2026-05-17 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Précarité financière, sentiment de ne pas exister aux yeux des autres",
+      "genre": "Homme",
+      "age": "30",
+      "sig": "Homme - 30 ans - 2026-05-17"
+    },
+    {
+      "text": "En 3e ma prof de français, me traitait de bon à rien.",
+      "genre": "Homme",
+      "age": "33",
+      "sig": "Homme - 33 ans - 2026-05-21 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "En 4e et 3e , nous avions des professeurs de mathematiques qui ne nous ont pas aide dans la maitrise des mathematiques",
+      "genre": "Homme",
+      "age": "44",
+      "sig": "Homme - 44 ans - 2026-05-21 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Durant mon parcours en CM1, j'avais accidentellement cassé la règle d'une camarade. Elle ne m'a pas pardonné et a préféré me le faire payer en me faisant croire qu'elle coûtait un prix astronomique. Elle me faisait chanter en disant qu'elle allait tout raconter à la professeur. De peur de ses remontrances, je lui filais chaque jour l'argent que j'avais pour mon déjeuner. Et ça durant des semaines !",
+      "genre": "Homme",
+      "age": "29",
+      "sig": "Homme - 29 ans - 2026-05-21 - Autre [-oth-]"
+    },
+    {
+      "text": "Hormis quelques petites embrouilles de gamins dans l'ensemble c'était relativement calme.",
+      "genre": "Homme",
+      "age": "38",
+      "sig": "Homme - 38 ans - 2026-05-21 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Je me souviens d'une agression dans la cour de récréation en CP ou je me suis retrouvée à moitié déshabiller.",
+      "genre": "Femme",
+      "age": "43",
+      "sig": "Femme - 43 ans - 2026-05-22 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Au collège, notre professeur de sport hurlait à mes camarades féminines et moi-même, que nous étions nulles et que nous ne serions jamais Marie José Perec. Il était en surpoids et s'asseyait sur une chaise en hauteur de la piste d'athlétisme pour nous surveiller et nous rabaisser par ses remarques et ses hurlements constants.",
+      "genre": "Femme",
+      "age": "41",
+      "sig": "Femme - 41 ans - 2026-05-23 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "J’ai redoublé mon CM1 et j’étais avec la même enseignante.",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-23 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Le jour de la rentrée en classe de 2nde, la professeure de français, du haut de son estrade, a dit à toute la classe : \"Ceux qui ne viennent pas du collège Renan n'ont rien à faire ici\"",
+      "genre": "Non renseigné",
+      "age": "61",
+      "sig": "61 ans - 2026-05-27"
+    },
+    {
+      "text": "Un professeur de mathématiques dans une classe de 36 élèves filles en seconde C (le lycée était non mixte, le lycée de garçon, le prestigieux premier lycée napoléonien étant réservé aux garçons et doté des meilleurs enseignants). Cet enseignant était ouvertement misogyne et élitiste. Il avait l'habitude de faire passer au tableau en début de cours une élève pour faire en direct un exercice. Il feuilletait longuement son carnet, tournait les pages sèchement et pointait le nom de la victime du jour qui se faisait agonir et humilier au tableau sur ses insuffisances et incompétences, sa médiocrité et sa paresse. C'était traumatisant et je redoutais ces heures de mathématiques. Finalement, j'ai bifurqué et fait une classe d’hypokhâgne après le baccalauréat.",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-27 - Autre [-oth-]"
+    },
+    {
+      "text": "En classe de cinquième, il y avait le cycle natation. J'étais complexé car en surpoids. Aller à la piscine était très difficile pour moi. Malgré tout je faisais l'effoft. Un jour, avec notre professeur, nous faisions une activité pour qu'on se laisse couler dans l'eau. Je n'y arrivais pas. Devant mes camarades, l'enseignant a dit \"C'est la graisse, c'est la grasse\". Moment très humiliant qui n'a fait que m'éloigner de la pratique sportive et qu'accentuer mes complexes et ma confiance en moi.",
+      "genre": "Homme",
+      "age": "43",
+      "sig": "Homme - 43 ans - 2026-05-27 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Pendant toutes mes années de collège, de lycée et universitaire ont me faisait remarquer que je devais faire plus d'efforts dans mon apprentissage, dans ma manière d'écrire alors que je faisais mon maximum. J'ai récemment été diagnostiqué d'un trouble dys expliquant de nombreux problèmes d'apprentissage. Ces évenements ont develloppé ma non confiance en moi et un perfectionnisme très fort, j'estime que je ne fais jamais assez et que je dois toujours faire plus que les autres. Malgrés le fait que j'ai obtenu un master je suis aujourd'hui dégoûté du système scolaire.",
+      "genre": "Autre [-oth-]",
+      "age": "32",
+      "sig": "Autre [-oth-] - 32 ans - 2026-05-27 - Autre [-oth-]"
+    },
+    {
+      "text": "5ème : cours de mathématique. Je ne comprends pas la formulation de l'intitulé des problèmes, à chaque fois ça bloque et je réponds faux. Je fais des crises d'angoisse, le professeur ne comprend pas car je suis \"bonne à l'école\". Je finis par me dire que je suis bête et nulle en maths, puisque personne ne sait m'expliquer ce que je ne comprends pas.",
+      "genre": "Femme",
+      "age": "32",
+      "sig": "Femme - 32 ans - 2026-05-27 - Autre [-oth-]"
+    },
+    {
+      "text": "En 4ème. Trop naïf et gentil, je suis devenu la cible de tous les autres élèves, à cause de ma timidité, de mon émotivité, et d'une relative passivité du corps enseignant. Les pires insultes / moqueries venant, sans surprise en fin de compte, d'autres élèves en même en butte au harcèlement (qui pensaient ainsi pouvoir se faire accepter)",
+      "genre": "Homme",
+      "age": "42",
+      "sig": "Homme - 42 ans - 2026-05-27 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "Je ne me suis pas sentie comprise alors que j'étais en difficultés. En primaire, j'ai eu des réflexions comme \"c'est un vrai pot de colle\", en me pinçant le nez: \"je n'ai jamais dit qu'il fallait recopier le tableau!\", à persévérer dans une question que je ne pouvais comprendre quand j'étais au tableau.",
+      "genre": "Non renseigné",
+      "age": "43",
+      "sig": "43 ans - 2026-05-27 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En première, après la recréation du matin, mes camarades avaient tendance à traîner dans la cour et c'est souvent moi qui les appelais pour prévenir que le professeur de physique-chimie était là.",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-29 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En primaire, ma maitresse de CP avait une baguette pour taper sur les doigts des enfants dissipés, principalement, voire exclusivement sur les garçons. Un camarade, seul personne arabe de ma classe était souvent maltraité, ine fois elle a balancé ses affaires par dessus la fenêtre. Je me souviens avoir eu très peur et avoir compris très tôt un sentiment d'injustice. Elle nois dosait facilement qu'on avait tout faux, nul.. quand on se trompait.",
+      "genre": "Femme",
+      "age": "33",
+      "sig": "Femme - 33 ans - 2026-05-29 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Au début du collège je me sentais parfois mal à l'aise à cause de la mode, c'est à dire que je me comparais souvent avec les autres filles portant des habits, chaussures et sacs de marque. De fait, je n'étais pas très confiante.",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2026-05-29 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Des moqueries d'un professeur de français au collège qui me disait que j'avais un petit vélo dans la tête.",
+      "genre": "Femme",
+      "age": "54",
+      "sig": "Femme - 54 ans - 2026-05-30 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En 4ème mon prof de math m'a dit dès le début de l'année que je redoublerais car nulle dans sa matière et malgré mes demandes d'explication je ne comprenais rien car il ne reformulait pas, ne prenait pas d'exemple. Alors j'ai haï les maths mais curieusement quelques années après j'ai fait un cursus avec de la comptabilité et là voyant du concret j'étais l'une des meilleures de ma promo dans cette matière.",
+      "genre": "Femme",
+      "age": "63",
+      "sig": "Femme - 63 ans - 2026-05-31"
+    },
+    {
+      "text": "5ème professeur de Français plus club chorale qui avait des gestes et paroles déplacés pour les garçons. Il c’est fait surprendre se masturbant sous son bureau par le proviseur… sans suite.",
+      "genre": "Homme",
+      "age": "60",
+      "sig": "Homme - 60 ans - 2026-06-01 - Autre [-oth-]"
+    },
+    {
+      "text": "En classe préparatoire hypokhâgne, j’ai été mise à l’écart par mes camarades car jugée « idiote ». Cela a fait suite à ces commentaires de ma professeure d’histoire en rendant ma copie.",
+      "genre": "Femme",
+      "age": "54",
+      "sig": "Femme - 54 ans - 2026-06-02 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "J'avais deux ans d'avance dès la 6è et jusqu'au Bac et j'appréhendais chaque année le jour où un professeur allait le faire remarquer à la classe - j'étais sportive et personne ne pouvait deviner que j'étais plus jeune sauf si mon âge était révélé. A partir du moment où les élèves le savaient, ils me traitaient comme un animal bizarre, mas comme quelqu'un de normal -- et les profs aussi.",
+      "genre": "Femme",
+      "age": "64",
+      "sig": "Femme - 64 ans - 2026-06-04 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Durant toutes mes années de collège , j’ai été moqué du fait d’avoir eu deux ans d’avance en plus de ça j’étais un peu en surpoids et j’ai très vite assumé mon homosexualité … le package total. Précoce en surpoids et gay",
+      "genre": "Homme",
+      "age": "34",
+      "sig": "Homme - 34 ans - 2026-06-22 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Au CP quand la maîtresse a dit a tout le monde qu'elle avait renversé de l'eau alors que je venais de faire pipi dans ma culotte en classe étant trop timide pour demander.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-06-23 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Au lycée, après une scolarité impeccable, j'étais devenue absentéiste, en fin de parcours ; presque dans un processus de décrochage. La CPE m'a convoquée et m'a dit que ce n'était pas étonnant vu la mère que j'avais (ma mère était maman solo, sans soutien paternel depuis bon nombre d'année). Je n'avais pas de conscience de classe à cette époque et ça a été comme une baffe !",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-06-27 - Autre [-oth-]"
+    },
+    {
+      "text": "En classe de 1ère, ma professeure de Français a lu à plusieurs reprises mes copies en classe (j'étais la seule à subir cela) en se moquant de ce que j'écrivais par des commentaires désobligeants auxquels je ne pouvais pas répondre.",
+      "genre": "Femme",
+      "age": "66",
+      "sig": "Femme - 66 ans - 2026-06-29 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "Ma scolarité s’est globalement bien déroulée mais j’ai quelques exemples en tête qui n’étaient pas acceptables et dont je me souviens. Quand j’étais au lycée, l’enseignant d’histoire géographie avait des propos très déplacés envers les femmes. Au point d’une fois dire à une de mes camarades « avec vos seins de serveuses ». J’étais la seule à m’être une fois offusquée de son comportement et de lui avoir signalé ce qui m’a valu de (très) mauvaises notes tout au long de l’année et un presque harcèlement. Si un téléphone sonnait, c’était moi qu’on sortait, alors que ce n’était pas le mien. Si quelqu’un parlait, c’était moi qui me faisait renvoyer de cours, même si je ne parlais pas.",
+      "genre": "Femme",
+      "age": "29",
+      "sig": "Femme - 29 ans - 2026-07-04 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Mon père voyageait pour son travail m'amenant à changer de lieu de scolarité ce qui avait un impact plutôt négatif sur mes résultats scolaires. Je n'arrivais pas à m'intégrer pour me faire des amis jusqu'en 6ème. Ensuite, le fait de me poser m'a permis de m'ancrer et de créer des amitiés.",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2026-07-11 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Dans nos cours sur les dys, les professeurs on tendance a dire que les dys ne vont pas souvent au superieur, ni en lettres... Actuellement, professeur de philosophie... Et on est plusieurs, je trouve sa stereotype et ça pousse pas assez juste on nous vois comme une cause perdu... En plus des profs qui disent vous avez eu plus de temps, c'est une chance ! Juste ça crée de l'enervement et de la fustration et envie de faire plus.",
+      "genre": "Non renseigné",
+      "age": "20-25 ans",
+      "sig": "20-25 ans ans - 2026-07-12"
+    },
+    {
+      "text": "En classe prépa, hypokhâgne, souvenir humiliant de la prof de latin qui se fichait de nous quand on passait au tableau, et moi qui consommait des chewing-gums, elle me traitait de vache qui rumine …. La prof de philo nous montait les uns contre les autres; un jour, elle nous demande d’écrire sur un papier le nom de l’élève que l’on aimait pas dans la classe ( je ne l’ai pas fait) puis … elle les a lus à toute la classe. Je n’ai jamais compris ce besoin d’humilier de bons élèves, était ce pour faire du tri ? Pour nous inciter à la concurrence ? J’ai dû faire une dépression cette année la, et j’ai eu d’énormes angines à répétition. Il a fallu m’opérer des amygdales. Quand on pense à la pression que l’on subit déjà et au rythme de travail, ce comportement aggravait le stress de manière inutile ! Devenue prof puis inspectrice, la relation a l’élève a toujours été ma priorité.",
+      "genre": "Femme",
+      "age": "56",
+      "sig": "Femme - 56 ans - 2026-07-18 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "À part une année de ce2 paisible, j’ai souvenir de ce beaucoup d’humiliation, d’injustice et d’arbitraire",
+      "genre": "Homme",
+      "age": "63",
+      "sig": "Homme - 63 ans - 2026-07-21 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En troisième, rendez-vous d’orientation obligatoire avec la conseillère d’orientation. Je lui expose mon souhait : passer un bac général (ES ou L) pour aller en fac d’anglais et devenir prof d’anglais. Sa réponse est directe « Vu vos résultats, allez en bac pro. Vu n’êtes pas bonne en math ni en LV2. Ne faites pas d’études longues. » J’en suis ressortie en pleurs.",
+      "genre": "Femme",
+      "age": "39",
+      "sig": "Femme - 39 ans - 2026-07-26 - Autre [-oth-]"
+    },
+    {
+      "text": "A l'école primaire, en CM2, lorsque nous ne répondions pas aux attentes de l'institutrice, elle pouvait nous envoyer des craies voire la brosse qui servait à nettoyer le tableau.",
+      "genre": "Homme",
+      "age": "44",
+      "sig": "Homme - 44 ans - 2026-07-27 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Quand j’étais en primaire, je pleurais souvent car les autres élèves se liguaient contre moi. Une fois ma maîtresse est arrivée pour nous chercher et dans le rang je pleurais seule d’un côté avec les autres qui se moquaient ouvertement de moi. Elle m’a demandé ce qu’il y avait et avant même que j’ai eu finit d’expliquer elle m’a coupé en disant que je devais arrêter de chialer pour rien",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2026-07-28 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En premiere, j'ai été convoquée par la CPE parce que ma moyenne générale etait en dessous de 10 au premier trimestre.",
+      "genre": "Femme",
+      "age": "22",
+      "sig": "Femme - 22 ans - 2026-07-28 - Autre [-oth-]"
+    },
+    {
+      "text": "J'ai toujours aimé l'école mais en ce1 une institutrice c'était vers 1981 m a désigné comme étant la râleuse de service, j'étais du genre à donner mon avis certes, et a même transformé les paroles d'une chanson en mettant mon prénom pour dire que je râlais.bien sur tout le monde chantait en riant...",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-07-29 - Autre [-oth-]"
+    },
+    {
+      "text": "En CM2 ma maîtresse avait fait un commentaire sur ma tenue, une robe à fleur qu'elle estimait trop courte. Elle a dit que ce type de tenue serait à prohibé au collège...Elle a fait se commentaire dans la cour alors que les deux classes de CM2 étaient réunis ! J'aurais voulu disparaître...",
+      "genre": "Femme",
+      "age": "35",
+      "sig": "Femme - 35 ans - 2026-07-31 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En maternelle",
+      "genre": "Homme",
+      "age": "25",
+      "sig": "Homme - 25 ans - 2026-08-01 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
       "text": "Au CE1, mon institutrice m'a déclaré que je n'aurai jamais le baccalauréat et cela m'a marqué. J'ai essayé de la démentir et j'ai réussi. Mon orientation a été modifiée car je devais choisir entre devenir pianiste où réussir le baccalauréat.",
       "genre": "Femme",
       "age": "59",
@@ -5265,6 +5889,492 @@
   ],
   "micro_attentions": [
     {
+      "text": "Au lycée, mon professeur de Mathématiques, me félicitait régulièrement sur mes productions, tout comme mon professeur de Français et d'Histoire.",
+      "genre": "Femme",
+      "age": "54",
+      "sig": "Femme - 54 ans - 2025-04-18 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En 4eme j étais en échec scolaire. un professeur m a demandé de jouer le rôle de Bernard Pivot d Apostrophe . Je devais lire les 4 livres et interroger 4 camarades jouant le role d auteur. J ai regardé des apostrophes pour mimer Pivot. La classe m a applaudi. Je n avais jamais lu de livre en dehors de bd. Depuis je suis devenu un serial lecteur. J ai commence a travailler et a m inscrire dans une dynamique de reussite grâce à ses encouragements répétés.",
+      "genre": "Homme",
+      "age": "55",
+      "sig": "Homme - 55 ans - 2025-04-18 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "pas d'autre souvenir",
+      "genre": "Homme",
+      "age": "39",
+      "sig": "Homme - 39 ans - 2025-04-21 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En 4ème, j étais en échec scolaire. Un professeur de français m'a demandé de jouer le rôle de Bernard Pivot d'Apostrophe. Je devais lire 4 livres et interroger 4 camarades louant le rôle des auteurs. J ai regardé les émissions pour imiter Pivot. La classe m a applaudi. Je n'avais jamais lu de livre en dehors de BD. Depuis je suis devenu un serial lecteur. A l époque cela a eu un impact. J ai commencé a travailler et suis passé de 5 en français à 14 et de 8 en histoire à 17. Je n ai plus jamais eu de notes en dessous de ces moyennes dans ces deux matières durant toute ma scolarité.",
+      "genre": "Homme",
+      "age": "52",
+      "sig": "Homme - 52 ans - 2025-04-29 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Rencontre de mes amis proches.",
+      "genre": "Homme",
+      "age": "21",
+      "sig": "Homme - 21 ans - 2025-05-11 - Métiers des services (commerce, vente, tourisme, accueil, restauration, nettoyage…)"
+    },
+    {
+      "text": "Prof d histoire geo de 5ème, passionnant.",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2025-05-11 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "CM1 et CM2 avec un maître exceptionnel.",
+      "genre": "Femme",
+      "age": "57",
+      "sig": "Femme - 57 ans - 2025-05-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Non pas vraiment au collège et lycée.",
+      "genre": "Femme",
+      "age": "51",
+      "sig": "Femme - 51 ans - 2025-05-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Des professeurs des écoles encourageants, bienveillants . Qui se déplaçaient jusqu’au domicile et ont pris en compte ma situation personnelle. Je les remercie .",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2025-05-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Bonne année de cm1 et cm2",
+      "genre": "Femme",
+      "age": "48",
+      "sig": "Femme - 48 ans - 2025-05-13 - Métiers des services (commerce, vente, tourisme, accueil, restauration, nettoyage…)"
+    },
+    {
+      "text": "Après avoir redoublé ma 5eme",
+      "genre": "Homme",
+      "age": "45",
+      "sig": "Homme - 45 ans - 2025-05-14 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Ma professeure de français, en 2nde et 1ere était extrêmement bienveillante, toujours ouverte au dialogue, et aussi très ferme sur le plan de la rigueur scientifique et des valeurs humaines. Elle était également directrice adjointe de l'établissement. C'était une référence positive et inspirante pour beaucoup d'entre nous.",
+      "genre": "Femme",
+      "age": "62",
+      "sig": "Femme - 62 ans - 2025-05-16 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Mon instituteur de CM2 est venu me demander ce que j’avais écrit dans ma dictée car il n’arrivait pas à me relire. Selon ma réponse je perdais ou non un point. J’ai répondu que je m’étais trompée ce qui a fait baisser ma note. Mon instituteur m’a félicitée pour mon honnêteté. J’étais très fière.",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2025-05-21 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Un prof en BUT m'a dit ''....., il sera patron'' ,cela donne une motivation, ainsi qu'une confiance des enseignants en nos capacités.",
+      "genre": "Homme",
+      "age": "20",
+      "sig": "Homme - 20 ans - 2025-10-14 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Année de Première et de Terminale STI2D magnifique. Ce n'était même plus des copains mais une 2ème famille ! Lors de mon BUT j'ai retrouvé cette même ambiance ce qui m'a fait pleinement profiter de ces 3ans.",
+      "genre": "Homme",
+      "age": "21",
+      "sig": "Homme - 21 ans - 2025-10-14 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Dernière année de BUT, le prof qui nous a donné le plus de cours dans mon cursus nous avait demandé de soutenir sur un projet. Celui ci me passionnait (il était sur le secteur d'activités dans lequel je me suis engagée maintenant:), et je me suis donnée à fond pour les aspects règlementaires et le futur des installations concernées etc. Et il a été épaté, me disant qu'il était fière de mon analyse et fière d'avoir former des gens comme moi pour le futur (écologique et climatique) qui nous attend. Il a toujours été très optimiste, croyant en nous et a nous encouragé à poursuivre nos petits efforts afin de faire réussir à instaurer des nouvelles pratiques dans l'environnement.",
+      "genre": "Femme",
+      "age": "21",
+      "sig": "Femme - 21 ans - 2025-10-21 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Un jour mon responsable de formation m'a dit de travailler et que je réussirai. Et ça m'a vraiment beaucoup motivé.",
+      "genre": "Homme",
+      "age": "27",
+      "sig": "Homme - 27 ans - 2025-10-22 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Toujours en CE2, cet instituteur qui jouait avec moi aux échecs après les cours, qui me faisait confiance. Ce souvenir irrigue encore mon coeur 35 ans plus tard. J'ai même voulu devenir professeur des écoles, en pensant faire à d'autres ce que j'avais eu la chance de vivre ; mais l'IUFM, il y a 20 ans, m'a écoeuré (je pèse mes mots), si bien que, ayant réussi le concours, j'ai préféré démissionné.",
+      "genre": "Homme",
+      "age": "46",
+      "sig": "Homme - 46 ans - 2026-02-16 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "l''arrivée de Mélanie dans le parcours EPI, et toute son écoute et son interet pour les questions liées au rapport Ecole et Handicap",
+      "genre": "Homme",
+      "age": "61",
+      "sig": "Homme - 61 ans - 2026-03-04 - Enseignement supérieur et recherche – Lettres, langues, littérature et arts (langues étrangères, musique, arts plastiques, arts du spectacle…)"
+    },
+    {
+      "text": "mes professeurs de littérature et d'audiovisuel au lycée étaient vraiment des gens intéressants, qui aimaient leur métier et ont toujours fait leur possible pour me motiver à faire des choses, et à ne pas me laisser traîner par le courant",
+      "genre": "Homme",
+      "age": "20",
+      "sig": "Homme - 20 ans - 2026-03-04"
+    },
+    {
+      "text": "Au collège mon professeur de français me félicitait sur mon niveau d'orthographe.",
+      "genre": "Femme",
+      "age": "41",
+      "sig": "Femme - 41 ans - 2026-03-13 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J'ai beaucoup apprécié la recherche de mon orientation au lycée, mais je n'ai pas de souvenir précis de la personne ou d'un encouragement ou d'une attention particulière. Je pense simplement que j'apprennais à mieux me connaître (envies, valeurs, domaines dans lesquels je pouvais me projeter, etc.)",
+      "genre": "Femme",
+      "age": "30",
+      "sig": "Femme - 30 ans - 2026-03-17 - Métiers des services (commerce, vente, tourisme, accueil, restauration, nettoyage…)"
+    },
+    {
+      "text": "Lorsque je suis arrivé en sixième, sans savoir vraiment lire ou en tout cas en ayant pas le niveau de lecture correspondant à la classe, j’ai rencontré une professeur qui s’est rendu compte et qui avec la plus grande bienveillance m’a accompagné sans jamais nommer mes difficultés pour ne pas me heurter. Tout au long de mon primaire, je suis passé de classe en classe sans que personne ne s’attarde sur le problème bien que chaque professeur était au courant. C’est la première qui a pris le temps de m’accompagner et son engagement envers moi à clairement changer ma vie scolaire, et je pense ma vie de manière générale.",
+      "genre": "Homme",
+      "age": "36",
+      "sig": "Homme - 36 ans - 2026-03-30 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "J’ai du mal à me rappeler un souvenir positif dans ma scolarité. Je me souviens qu’après l’obtention de mon BTS, mon professeur de droit m’a avoué que si il y avait une personne pour qui il ne doutait pas de la réussite c’était moi. Ces paroles m’ont fait beaucoup de bien.",
+      "genre": "Femme",
+      "age": "34",
+      "sig": "Femme - 34 ans - 2026-03-30 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "En 3ème, j'avais un prof de français qui aimait vraiment la littérature et savait le partager. Je me suis découvert très \"participatif\" (au point d'être un peu mal vu par certains camarades ...la forme scolaire tue la solidarité). Moi qui, jusque là étais plutôt au mieux intéressé mais distant, au pire, en plein ennui... Cela tombait bien, en 3ème, un âge où on change. Le prof appréciait beaucoup.",
+      "genre": "Homme",
+      "age": "73",
+      "sig": "Homme - 73 ans - 2026-03-31 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "La professeure documentaliste (ou dame du CDI comme on l'aimait à l'appeler amicalement) qui m'a accueillie tous les temps de midi pendant mon année de première et de terminale, me faisant réviser, me donnant des tâches à faire pour l'aider à ranger les livres, à faire des commandes, à gérer les archives... Me permettant de me sentir dans une bulle, d'apprendre, de faire mon chemin malgré tout. Elle, et de nombreux enseignants et enseignantes que j'ai croisés sur la route m'ont permis de ne jamais me laisser abattre et de toujours croire en moi, malgré tout.",
+      "genre": "Femme",
+      "age": "32",
+      "sig": "Femme - 32 ans - 2026-04-08 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En classe de première littéraire, un des cours sur les évènements de Mai 1968. Pendant 2 heures, notre professeur d'Histoire s'assoit et nous raconte l'Histoire, le contexte, l'avant, le pendant, l'après des évènements. Je n'ai compris que plus tard qu'il nous racontait son vécu, comment il avait traversé cette période tumultueuse. Il nous a transmis plus que les faits historiques, il nous a transmis la foi en l'engagement, l'espoir en l'avenir et au changement, une certaine idée de la citoyenneté, de la démocratie et de nos institutions. L'idée même que nous sommes maître de nos destinées et que nous avons pouvoir d'action sur nos chemins de vie. Ces 2 heures sont passées en un éclair, je repense encore souvent à lui.",
+      "genre": "Homme",
+      "age": "39",
+      "sig": "Homme - 39 ans - 2026-04-09 - Enseignement supérieur et recherche – Lettres, langues, littérature et arts (langues étrangères, musique, arts plastiques, arts du spectacle…)"
+    },
+    {
+      "text": "En Licence, un prof m'a félicité pour mes engagements associatifs et m'a dit que mes compétences étaient attendues en Master. Il m'a dit que j'avais des réflexions intéressantes et qu'il cherchait des étudiants comme moi . J'ai ensuite rejoint son Master.",
+      "genre": "Autre [-oth-]",
+      "age": "24",
+      "sig": "Autre [-oth-] - 24 ans - 2026-04-09 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Lors de notre année de Terminale, l'établissement dans lequel j'étais scolarisée à organisé de ce que l'on a appelé les \"Olympiades\". Tous les élèves étaient invités à participer à différentes épreuves et mêmes les professeurs pouvaient y prendre part. Cette expérience m'a marquée car j'ai vu comment une cause pouvaient rassembler des gens différents autour de valeurs nobles et dans la bonne humeur.",
+      "genre": "Femme",
+      "age": "19",
+      "sig": "Femme - 19 ans - 2026-04-10 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Au lycée, j'avais toujours de mauvaises notes en histoire-géographie. J'aimais pourtant beaucoup cette matière et je passais beaucoup de temps à l'étudier. Un jour, j'ai eu la meilleure note de la classe et le professeur m'a très chaleureusement félicitée devant toute la classe. C'est un souvenir prégnant pour moi. Le jour-là, j'ai su que j'avais des capacités pour réussir.",
+      "genre": "Femme",
+      "age": "58",
+      "sig": "Femme - 58 ans - 2026-04-12 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En primaire, une enseignante m'a proposé de participer à un concours de diction (poésie) et a passé du temps avec moi pour me préparer. ça m'a donné confiance dans ma capacité à bien m'exprimer à l'oral, ce qui m'a aidé lorsque ma timidité a été plus forte au moment de l'adolescence.",
+      "genre": "Femme",
+      "age": "56",
+      "sig": "Femme - 56 ans - 2026-04-13 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Je me souviens avec beaucoup de plaisir du groupe de théâtre, notre professeur avait décidé de transformer la salle en véritable scène. Nous avions poussé les tables contre les murs, et le trac que je ressentais initialement a rapidement laissé place à une excitation joyeuse. L'ambiance était électrique et bienveillante ; nous riions aux éclats à chaque réplique maladroite ou exagérée, et pour la première fois, l'apprentissage ne ressemblait plus à une contrainte, mais à un jeu collectif où chacun se sentait libre de s'exprimer sans crainte du jugement.",
+      "genre": "Homme",
+      "age": "65",
+      "sig": "Homme - 65 ans - 2026-04-16 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Au Cégep, un enseignant de français me faisait des compliments sur mon style d'écriture et ma créativité. Ce qui était nouveau pour moi et me stimulait à lire différents auteurs.",
+      "genre": "Femme",
+      "age": "57",
+      "sig": "Femme - 57 ans - 2026-04-23 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Une nouvelle enseignante a eu notre groupe. Ses cours étaient d’un ennui mortel. J’ai pris mon courage et à la fin d’un cours, je lui ai demandé si je pouvais lui parler seule à seule. Je lui ai dit que tout le monde s’ennuyait dans ses cours et je lui ai suggéré des manières de faire qui nous plaisait davantage. L’enseignante m’a écoutée sans trop réagir. Je me suis dit qu’on verrait bien ce que ça donnerait. Les cours ont passé et les cours étaient de plus en plus agréables. À la fin de l’étape, elle a souligné mon courage et ma franchise devant toute la classe. Bien évidemment, j’étais gênée, mais en même temps très flattée. Tout le reste de l’année, cette enseignante m’a fait confiance sur plusieurs plans ce que j’ai beaucoup apprécié.",
+      "genre": "Femme",
+      "age": "43",
+      "sig": "Femme - 43 ans - 2026-04-24 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "In grade 10 history, I got 94% on provincial exam. My teacher said you are one my best students. In university I studied geography/history because of my positive experience in school.",
+      "genre": "Femme",
+      "age": "50",
+      "sig": "Femme - 50 ans - 2026-04-24 - Autre [-oth-]"
+    },
+    {
+      "text": "À 15 ans, mon professeur de mathématiques a su agrémenter ses cours tout au long de l’année scolaire en débutant ses cours par des anecdotes personnelles qui finissaient souvent par avoir un lien avec la matière enseignée (algèbre, géométrie, etc.). Cela a rendu mon année beaucoup plus agréable, car je n’aimais vraiment pas cette matière académique.",
+      "genre": "Femme",
+      "age": "45",
+      "sig": "Femme - 45 ans - 2026-04-28 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Mon prof de français en seconde nous a fait lire des textes profonds ou poétiques dans la pénombre, volets fermés , assis sur les tables un peu à la manière innovante ou décalé du prof dans le film « le cercle des poètes disparus » . Ce fut un moment unique et innovant à mon goût et il m’a transmis beaucoup de sensibilité.",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-05-01 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Suite à l'année difficile ayant conduit à mon redoublement, j'ai changé de lycée. J'y ai trouvé des enseignants bienveillants et accompagnants. Le professeur d'Histoire-géo (également directeur adjoint) nous partageait son amour du patrimoine local, et me donnait toujours les sujets de travail les plus complexes tout en me poussant à montrer mes compétences, il croyait en moi et je le ressentais.",
+      "genre": "Femme",
+      "age": "29",
+      "sig": "Femme - 29 ans - 2026-05-05 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Ayant toujours été premier de classe, j'ai beaucoup de ces souvenirs. Un souvenir particulier est en 5ème année secondaire, quand la prof de français a bien remarqué mon intérêt et mes capacités pour la littérature. Elle m'a permis de faire un travail sur un sujet un peu plus original, elle m'a permis de lire d'autres livres de Boris Vian et d'en faire une analyse, et elle m'a donné des feedbacks intéressants. Elle s'est vraiment intéressée à mon travail et à mes intérêts. C'était pourtant une prof très exigeante, qui était détestée par beaucoup de mes camarades de classe. Peut-être totalement élitiste, et c'est pour ça qu'elle m'a \"favorisé\" dans un sens. Mais je me suis, à ce moment, senti \"vu\" et \"entendu\" dans mes intérêts et mes capacités.",
+      "genre": "Homme",
+      "age": "43",
+      "sig": "Homme - 43 ans - 2026-05-07 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Durant ma seconde technique, un professeur de français a écrit sur l’une de mes copies que j’avais le sens de l’écriture. Il a aussi montré ma copie aux autres élèves de ma promo en me félicitant. Ce professeur était vraiment chouette, comme la plupart de ceux que j’ai rencontré dans cet établissement.",
+      "genre": "Femme",
+      "age": "33",
+      "sig": "Femme - 33 ans - 2026-05-08 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "En lycée, toute ja chasse est partie de l’école pour que la professeure du latin ne peux pas effectuer le contrôle prévu. Elle était très très rigide. A notre retour, au lieu d’avoir le cours avec notre professeur principal, qui était génial, nous ânons fait le contrôle du latin.",
+      "genre": "Femme",
+      "age": "56",
+      "sig": "Femme - 56 ans - 2026-05-08 - Autre [-oth-]"
+    },
+    {
+      "text": "Au lycée, je suivais une option Cinéma & audiovisuel, que je n'ai pas passée au Bac, puisqu'il s'agissait d'une promo \"expérimentale\". Cela a été un espace de liberté et j'ai eu l'impression de gagner en profondeur d'analyse et de pouvoir croiser différents domaines de savoir pour parvenir à des niveaux de compréhension culturelle que je n'avais pas expérimentés auparavant. L'enseignant en charge des cours d'analyse filmique m'a beaucoup encouragé et a valorisé cet engagement intellectuel \"gratuit\" : cela m'a fait gagner en confiance et engagé sur une voie assez interdisciplinaire.",
+      "genre": "Homme",
+      "age": "56",
+      "sig": "Homme - 56 ans - 2026-05-11 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Je me souviens qu'en 1ère année secondaire, j'avais des difficultés en maths, et toute la classe galérait avec cette matière (je détestais étudier parce que je ne comprenais pas pourquoi il fallait étudier, et le fait d'étudier me privait de tout ce qui était agréable, j'avais aussi de l'anxiété). Cette année-là, j'ai travaillé dur parce qu'à chaque examen, j'avais moins de 10 sur 20. Je me souviens de trois examens où j'ai eu 3, 3,5 et 3,75. Ce qui compte, c'est le progrès, j'en faisais, mais il était très lent. Puis finalement, j'ai eu 10, puis plus, jusqu'à obtenir à l'examen final 15,75, la meilleure note, et le professeur a dit à quel point elle était heureuse, car la personne qui avait eu la première place était quelqu'un qui n'avait jamais abandonné, qui avait continué à se relever après chaque mauvaise note, à poser des questions, à s'accrocher, à refaire les exercices encore et encore. Elle a dit que c'était la plus belle réussite de l'année pour elle, qu'elle était fière de moi, et que cela prouvait que la persévérance finit toujours par payer, bien plus que le talent seul. Même si j'avais eu de mauvaises notes dès le premier examen, la gentillesse et la douceur de Mme S.",
+      "genre": "Femme",
+      "age": "Non renseigné",
+      "sig": "Femme - 2026-05-13 - Autre [-oth-]"
+    },
+    {
+      "text": "En 6ème, j'avais demandé au prof de math ce que c'était sinus et cosinus. Il m'a fait un cours particulier pendant une récréation.",
+      "genre": "Homme",
+      "age": "64",
+      "sig": "Homme - 64 ans - 2026-05-17 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "En CE1, mon enseignant m'a dit que je serai un grand homme. J'y ai cru.",
+      "genre": "Homme",
+      "age": "30",
+      "sig": "Homme - 30 ans - 2026-05-17"
+    },
+    {
+      "text": "En terminal, mon professeur de physique a trouvé le moyen de me faire progresser en étant plus sévère avec moi sur les notes. Il m'a jamais mal parlé mais il m'a piqué de façon à prendre tous cela comme un challenge. Il m'a félicité quand je progressais. À la fin de l'année, il a demandé à ce qu'on m'applaudisse pour m'a réussite au BAC.",
+      "genre": "Homme",
+      "age": "33",
+      "sig": "Homme - 33 ans - 2026-05-21 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "La premiere fois que j ai discute avec mon professeur de français en seconde, elle etait très contente de mon niveau linguistique",
+      "genre": "Homme",
+      "age": "44",
+      "sig": "Homme - 44 ans - 2026-05-21 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Les plus proches de mon entourage sont ceux avec qui j'ai fait les bancs. Réussir à garder un contact régulier après toutes ces années et la distance est la preuve que mes années d'apprentissage étaient assez joyeuses.",
+      "genre": "Homme",
+      "age": "38",
+      "sig": "Homme - 38 ans - 2026-05-21 - Métiers techniques ou manuels (artisanat, agriculture, bâtiment, industrie, maintenance…)"
+    },
+    {
+      "text": "Jet de craie et d'éponge mouillée en CM1 sur des camarades de classe de la part d'un maître d'école.",
+      "genre": "Femme",
+      "age": "43",
+      "sig": "Femme - 43 ans - 2026-05-22 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Ma tutrice de mémoire universitaire m’a un jour confié qu’elle était à la fois étonnée et admirative de ma vision de l’enseignement. Selon elle, mon parcours atypique avait fait émerger un changement de paradigme nécessaire, une manière différente d’aborder les apprentissages et les postures professionnelles — et que cela méritait d’être partagé.",
+      "genre": "Femme",
+      "age": "41",
+      "sig": "Femme - 41 ans - 2026-05-23 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En 6eme, la professeur de math avait convoqué mes parents pour leur exposer mon comportement en classe.",
+      "genre": "Femme",
+      "age": "52",
+      "sig": "Femme - 52 ans - 2026-05-23 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "À l'université, un professeur, spécialiste du XVIIème siècle, avait écouté mes remarques sur un point de langue ; remarques qui contredisaient un point de son cours. Mais je l'avais fait discrètement, après le cours.",
+      "genre": "Non renseigné",
+      "age": "61",
+      "sig": "61 ans - 2026-05-27"
+    },
+    {
+      "text": "Mon enseignante de grande section nous lisait tous les soirs des histoires. Nous étions assis par terre sur le parquet et, dans mon souvenir, par la fenêtre haute, je pouvais voir dans une lumière orangée de la fin de l'après-midi, de fins grains de poussière en mouvement. Les parents attendaient dans le couloir, mécontents d'attendre mais elle prenait le temps de nous raconter la fin de l'histoire et n'ouvrait la porte du couloir que lorsque le fin mot avait été dit. C'était une femme puissante, haute en couleurs (vêtements, maquillage noir aussi noir que ses cheveux courts, ongles et lèvres recouverts d'un rouge intense, voix cuivrée et tenues flamboyantes), avec un charisme évident.",
+      "genre": "Femme",
+      "age": "61",
+      "sig": "Femme - 61 ans - 2026-05-27 - Autre [-oth-]"
+    },
+    {
+      "text": "Ma professeure de CM2 nous faisait jouer Le petit prince de Saint-Exupéry, en fin d'année, devant nos parents, et les élèves des autres classes. On le préparait toute l'année. C'était chouette car ça nous valorisait autrement que par les résultats scolaires.",
+      "genre": "Homme",
+      "age": "43",
+      "sig": "Homme - 43 ans - 2026-05-27 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Durant ma première année de licence en sciences du langage je devais créer une langue dans un cours. Je n'ai pas seulement fait un dossier simple, j'ai créé toute une histoire autour de la découverte de la langue ce qui a beaucouo plus à l'enseignant. Je reste toujours très fière de ce projet.",
+      "genre": "Autre [-oth-]",
+      "age": "32",
+      "sig": "Autre [-oth-] - 32 ans - 2026-05-27 - Autre [-oth-]"
+    },
+    {
+      "text": "En 5ème (décidément), nous avions un professeur d'anglais qui appliquait la méthode anglaise : on valorise et on donne des points, au lieu d'en supprimer. En tant qu'élève timide, j'avais habituellement de mauvaises notes à l'oral, et des commentaires du type \"excellente, mais pourrait participer plus en classe\". Dans ce cours, on avait des stickers vert ou jaunes, et des commentaires encourageants : \"tu as réussi ceci, bravo\", au lieu de nous montrer ce qu'on ne faisait pas assez bien.",
+      "genre": "Femme",
+      "age": "32",
+      "sig": "Femme - 32 ans - 2026-05-27 - Autre [-oth-]"
+    },
+    {
+      "text": "En 5ème, j'ai dû réciter devant toute la classe une poésie, et j'y suis arrivé non sans mal (bafouilles, oublis). Mais l'enseignante m'a donné 20/20 et elle a expliqué aux autres que j'avais été courageux. Dans mon souvenir, les autres ont compris. Et surtout, moi, j'ai compris qu'on pouvait me comprendre.",
+      "genre": "Homme",
+      "age": "42",
+      "sig": "Homme - 42 ans - 2026-05-27 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "Au collège, j'ai deux professeurs qui m'ont acceptée dans ma particularité et m'ont valorisée. En terminale, deux professeurs ont proposé une solution pour pallier à mes difficultés et je me suis sentie reconnue.",
+      "genre": "Non renseigné",
+      "age": "43",
+      "sig": "43 ans - 2026-05-27 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J'ai eu la chance d'être tombée toute ma scolarité primaire et secondaire sur des professeurs à l'écoute et bienveillants ou alors neutres, exceptés trois d'entre eux. De fait, c'est plus une expérience globale positive de l'école que je garde et c'est aussi quelque part ce qui m'a donné envie d'abord de travailler avec les jeunes puis de devenir enseignante à mon tour.",
+      "genre": "Femme",
+      "age": "42",
+      "sig": "Femme - 42 ans - 2026-05-29 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Mon prof de CM2 a été très à l'écoute et patient quand j'ai eu des moment d'imagination débordante (hallucinations dans sa classe), il a valorisé mon travail a de nombreuses reprises et a su me redonner confiance en moi même.",
+      "genre": "Femme",
+      "age": "33",
+      "sig": "Femme - 33 ans - 2026-05-29 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "En seconde, j'ai rencontré une fille qui est devenue ma meilleure amie et cela m'a permis de comprendre les valeurs de l'amitié. Par conséquent, durant mes années de lycée j'ai eu cette relation qui m'a fait beaucoup de bien.",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2026-05-29 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Une ATSEM en maternelle a eu une vraie attention vis à vis de moi car je ne voulais pas faire de sieste.",
+      "genre": "Femme",
+      "age": "54",
+      "sig": "Femme - 54 ans - 2026-05-30 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "J'ai passé des moments très agréables de la 5ème à la 3ème grâce à trois profs de français/latin et d'histoire géo qui nous faisaient réfléchir, nous ouvraient sur le monde, ouvraient des débats avec les élèves, nous donnaient des éléments d'analyse, etc...",
+      "genre": "Femme",
+      "age": "63",
+      "sig": "Femme - 63 ans - 2026-05-31"
+    },
+    {
+      "text": "Lors de la soutenance de mon mémoire de recherche en maîtrise d’histoire médiévale j’ai eu mention très bien avec félicitations du jury.",
+      "genre": "Femme",
+      "age": "54",
+      "sig": "Femme - 54 ans - 2026-06-02 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Au bac, j'ai pros l'option dessin et le thème était la viellesse ; je n'avais pas d'idées puis j'ai regardé par terre et observé que mes baskets étaient très usées et la semelle se décollait. J'ai pris mas chaussure que j'ai mosée sur la table et l'ai dessinée en exagérant le côté usé, vieux et ridé ... j'ai pris un risque mais je me suis amusée en le faisant - et j'ai eu 19/20 !!",
+      "genre": "Femme",
+      "age": "64",
+      "sig": "Femme - 64 ans - 2026-06-04 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J’avais un super professeur de mathématiques, qui m’a encouragée. Les mathématiques n’étaient pas mon point fort, et, pourtant, j’ai réussi à avoir la note de 80/100 au Brevet des Collèges.",
+      "genre": "Femme",
+      "age": "19",
+      "sig": "Femme - 19 ans - 2026-06-05 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "En terminale , je n’ai jamais travaillé pour le bac et j’ai tout de même eu la mention bien au bac S malgré mes deux ans d’avance … plusieurs enseignants sont venus s’excuser de m’avoir jugé trop tôt et d’avoir eu des propos de démotivation et dépréciatifs",
+      "genre": "Homme",
+      "age": "34",
+      "sig": "Homme - 34 ans - 2026-06-22 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "En terminale mon professeur de philosophie m'a recommandé et fait le dossier pour la prépa HEC à Henri IV.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-06-23 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "J'ai vécu énormément de moments agréables au cours de ma scolarité, essentiellement parce que j'étais une très bonne élève. Certains enseignants appréciaient mon attitude critique qu'ils qualifiaient de pertinence quand pour certains autres il s'agissait d'insolence. Je me souviens avoir été choisie pour lire un texte au cours d'un événement public dans la ville de mon collège, à la mémoire des victimes de la Shoah. J'ai pu y rencontrer des survivants de la Shoah. J'ai été si fière de moi et si émue de ces rencontres que ce souvenir m'a fortement marqué.",
+      "genre": "Femme",
+      "age": "40",
+      "sig": "Femme - 40 ans - 2026-06-27 - Autre [-oth-]"
+    },
+    {
+      "text": "En CM2, j'ai fait partie de la 1ère cohorte mixte d'élèves, suite au changement de réglementation. Le Maître d'école, à la fin de l'année, a dit à mes parents, qu'il n'avait jamais eu un élève aussi brillant de toute sa carrière. NB : Mes parents ne s'intéressaient pas à ma scoalrité.",
+      "genre": "Femme",
+      "age": "66",
+      "sig": "Femme - 66 ans - 2026-06-29 - Enseignement supérieur et recherche – Économie, gestion, droit, administration"
+    },
+    {
+      "text": "Je n’étais pas très bonne en maths malgré mon bac S et mon amour pour cette matière. Je me suis orientée à l’université en maths et informatique appliqués aux sciences humaines et sociales. L’enseignante de mathématiques était formidable, elle m’a gardé une fois à la fin de l’heure pour me dire que même si j’avais eu 9 à un contrôle continu, il ne fallait pas que je relâche mes efforts. Elle était aux petits soins et prenait toujours le temps de me réexpliquer certains cours quand je ne les comprenais pas bien.",
+      "genre": "Femme",
+      "age": "29",
+      "sig": "Femme - 29 ans - 2026-07-04 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
+      "text": "Je suis sortie major du concours d'entrée à l'école d'assistante sociale alors que j'avais eu mon bac au rattrapage et la 2ème fois. J'ai ensuite travaillé 3 ans, et j'ai décidé de passer ce concours après avoir travaillé seule pour m'entraîner. J'ai été très heureuse de mes résultats m'ayant toujours considéré comme très très moyenne, voir passable sur le plan scolaire. J'ai réitéré le succès 3 ans plus tard en obtenant mon diplôme.",
+      "genre": "Femme",
+      "age": "60",
+      "sig": "Femme - 60 ans - 2026-07-11 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Au collège , j’étais très timide. Je ne connaissais personne car mes parents avaient décidé de me mettre dans un établissement privé. Mon professeur de français a perçu et soutenu mon goût pour la poésie et le théâtre, c’était très important pour moi. Je l ai adoré !",
+      "genre": "Femme",
+      "age": "56",
+      "sig": "Femme - 56 ans - 2026-07-18 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Pas de souvenir de cet ordre",
+      "genre": "Homme",
+      "age": "63",
+      "sig": "Homme - 63 ans - 2026-07-21 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Une de mes enseignantes a l’université en master d’anglais. Je préparais le CAPES. Elle était un peu « rebelle » dans ses propos vis à vis de l’institution et du système Éducation Nationale. C’est la seules enseignantes qui nous a parlé de tout ce qui n’est pas rose dans le métier d’enseignant. Elle n’essayait pas de nous vendre du rêve comme les autres. Sans elle mon arrivée dans le métier aurait été un choc!",
+      "genre": "Femme",
+      "age": "39",
+      "sig": "Femme - 39 ans - 2026-07-26 - Autre [-oth-]"
+    },
+    {
+      "text": "Mon instituteur de CE1 m'a encouragé lorsque je récitais mes poésies alors que j'avais énormément de difficultés à parler devant mes camarades.",
+      "genre": "Homme",
+      "age": "44",
+      "sig": "Homme - 44 ans - 2026-07-27 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "En terminal j’avais du mal à trouver un projet professionnel et quand j’ai eu l’idée de devenir professeur des écoles, mon professeur de spécialité qui était aussi mon professeur principal m’a dit : « je pense que tu feras une bonne professeur et qu’avec ta sensibilité tu réussiras à déceler les problèmes que peuvent rencontrer les élèves »",
+      "genre": "Femme",
+      "age": "23",
+      "sig": "Femme - 23 ans - 2026-07-28 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
+      "text": "Au collège, j'avais une professeure d'histoire, au delà d'un moment marquant, cette femme a toujours cru en moi, elle etait d'une gentillesse incroyable, lorsque ma meilleure amie (aussi son eleve) est décédée d'un cancer, elle m'a soutenu et ceux meme lorsqu'elle n'était plus mon enseignante. J'aimais deja l'histoire mais son impact sur moi a etait tel que j'ai entamé des études d'histoire lors de mes premières annees dans le supérieur.",
+      "genre": "Femme",
+      "age": "22",
+      "sig": "Femme - 22 ans - 2026-07-28 - Autre [-oth-]"
+    },
+    {
+      "text": "Un professeur que j'admirais pour son savoir a dit à ma mère c'est une bête à concours tellement elle est brillante",
+      "genre": "Femme",
+      "age": "53",
+      "sig": "Femme - 53 ans - 2026-07-29 - Autre [-oth-]"
+    },
+    {
+      "text": "Les professeurs encourageant malgré les difficultés",
+      "genre": "Femme",
+      "age": "21",
+      "sig": "Femme - 21 ans - 2026-07-31 - Métiers de la santé et du travail social (médical, paramédical, social, éducateur spécialisé, vétérinaire…)"
+    },
+    {
+      "text": "Mon PP de 3e m’a beaucoup booster. Elle avait eu ma meilleure amie en 3e l'année précédente. J'avais décidé de mettre les bouchées doubles pour cette année de 3e pour avoir l'orientation que je voulais. Mon 1er trimestre était déjà bon et elle m'a dit que je pouvais me féliciter parce que je n'avais pas les capacités de ma meilleure amie et que j'avais du bosser dur. Je n'en avais pas forcément confiance, ca m'a donnée envie de continuer sur cette lancée.",
+      "genre": "Femme",
+      "age": "35",
+      "sig": "Femme - 35 ans - 2026-07-31 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
       "text": "Pendant mes années universitaires, j'ai rencontré un professeur désagréable qui donnait de mauvaises notes à presque tout le monde. Ses exigences étaient insurmontables. Elle accusait les étudiants de ne pas travailler suffisamment et elle soulignait mon incompétence sans vraiment m'aider. Je n'ai pas eu mon master en partie à cause de ses mauvaises notes. Je n'étais pas ses remarques insultantes et le fait de rabaisser constamment ceux qui ne réussissaient pas.",
       "genre": "Femme",
       "age": "59",
@@ -9921,5 +11031,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1653
+  "total_reponses": 1838
 }
