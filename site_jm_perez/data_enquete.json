@@ -1,6 +1,12 @@
 {
   "micro_violences": [
     {
+      "text": "En 6ème j'avais un professeur de Mathématiques violent : très agressif, qui hurlait, punissait pour le moindre écart de concentration ou une mauvaise réponse, il nous lançait des craies et nous humiliait. Je l'ai vu accrocher un élève à un porte manteau. Moi qui n'avait pas particulièrement de difficultés scolaires, j'ai fait un blocage avec la discipline qui s'est -en partie- réglé en 1ère, grâce à une professeure bienveillante et pédagogue. Je reste toutefois peu confiante et facilement découragée lorsqu'il s'agit de faire un calcul mental ou me confronter à un problème de logico Mathématiques.",
+      "genre": "Femme",
+      "age": "35",
+      "sig": "Femme - 35 ans - 2026-08-01 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
       "text": "En CE1, j'étais sur l'estrade, et mon enseignante en tirant sur mes tresses, m'a traitée de dinde. Une autre fois cette même enseignante, a dit devant toute la classe que j'avais copié ce qui n'était absolument pas vrai. Elle a même demandé à ma voisine de mettre un classeur lors des évaluations.",
       "genre": "Femme",
       "age": "54",
@@ -5889,6 +5895,12 @@
   ],
   "micro_attentions": [
     {
+      "text": "En 5ème, une professeure de français captivante, douce et pédagogue nous a présenté plusieurs livres en nous demandant d'en lire au moins un de la liste. (Contexte et enjeu de l'histoire, niveau de difficulté de lecture) En feuilletant les ouvrages, je me suis plongée dans un roman, pourtant le plus long, et cela a déclenché en moi l'intérêt et la curiosité pour la lecture. Cette même professeure nous avait donné un exercice de rédaction personnalisé où il fallait se décrire tel un portrait chinois, accompagné d'une photo pour illustrer la production. Je me suis énormément impliquée pour cet exercice introspectif et créatif, j'ai reçu une belle note et un feedback élogieux qui a soutenu mon engagement et mon sentiment de compétence.",
+      "genre": "Femme",
+      "age": "35",
+      "sig": "Femme - 35 ans - 2026-08-01 - Enseignement supérieur et recherche – Sciences humaines et sociales (psychologie, sociologie, histoire, STAPS, sciences de l'éducation…)"
+    },
+    {
       "text": "Au lycée, mon professeur de Mathématiques, me félicitait régulièrement sur mes productions, tout comme mon professeur de Français et d'Histoire.",
       "genre": "Femme",
       "age": "54",
@@ -11031,5 +11043,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1838
+  "total_reponses": 1840
 }
