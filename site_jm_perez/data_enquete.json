@@ -1,6 +1,12 @@
 {
   "micro_violences": [
     {
+      "text": "Jusqu'au collège, tout allait bien puis en 5ème, en maths, nous avions une enseignante, enfin... Elle faisait son cours uniquement pour les bon. ne. s élèves et ceux ou celles qui avaient plus de difficultés, elle nous laissaient de côté. Elle ne comprenait pas ce que nous comprenions pas et réexpliquai identiquement son cours.",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-08-03 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
       "text": "En 6ème j'avais un professeur de Mathématiques violent : très agressif, qui hurlait, punissait pour le moindre écart de concentration ou une mauvaise réponse, il nous lançait des craies et nous humiliait. Je l'ai vu accrocher un élève à un porte manteau. Moi qui n'avait pas particulièrement de difficultés scolaires, j'ai fait un blocage avec la discipline qui s'est -en partie- réglé en 1ère, grâce à une professeure bienveillante et pédagogue. Je reste toutefois peu confiante et facilement découragée lorsqu'il s'agit de faire un calcul mental ou me confronter à un problème de logico Mathématiques.",
       "genre": "Femme",
       "age": "35",
@@ -5895,6 +5901,12 @@
   ],
   "micro_attentions": [
     {
+      "text": "Les meilleurs souvenirs sont au primaire où j'étais dans une école de village, on jouait dans le pré, tout le monde se connaissait, il n'y avait pas de distinction entre nous. Il y avait une instit' sévère qui nous impressionnait mais jamais d'humiliation et les parents étaient présents et acceptés dans la vie de l'école !",
+      "genre": "Femme",
+      "age": "49",
+      "sig": "Femme - 49 ans - 2026-08-03 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
       "text": "En 5ème, une professeure de français captivante, douce et pédagogue nous a présenté plusieurs livres en nous demandant d'en lire au moins un de la liste. (Contexte et enjeu de l'histoire, niveau de difficulté de lecture) En feuilletant les ouvrages, je me suis plongée dans un roman, pourtant le plus long, et cela a déclenché en moi l'intérêt et la curiosité pour la lecture. Cette même professeure nous avait donné un exercice de rédaction personnalisé où il fallait se décrire tel un portrait chinois, accompagné d'une photo pour illustrer la production. Je me suis énormément impliquée pour cet exercice introspectif et créatif, j'ai reçu une belle note et un feedback élogieux qui a soutenu mon engagement et mon sentiment de compétence.",
       "genre": "Femme",
       "age": "35",
@@ -11043,5 +11055,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1840
+  "total_reponses": 1842
 }
