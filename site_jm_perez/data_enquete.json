@@ -1,6 +1,12 @@
 {
   "micro_violences": [
     {
+      "text": "Ma professeure de français me disait que je ne ferais rien de ma vie et que j'étais nulle en français.",
+      "genre": "Femme",
+      "age": "34",
+      "sig": "Femme - 34 ans - 2026-08-03 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
       "text": "Jusqu'au collège, tout allait bien puis en 5ème, en maths, nous avions une enseignante, enfin... Elle faisait son cours uniquement pour les bon. ne. s élèves et ceux ou celles qui avaient plus de difficultés, elle nous laissaient de côté. Elle ne comprenait pas ce que nous comprenions pas et réexpliquai identiquement son cours.",
       "genre": "Femme",
       "age": "49",
@@ -5901,6 +5907,12 @@
   ],
   "micro_attentions": [
     {
+      "text": "Un prof à la fac m'avait dit que je ferais de grandes études en étudiant ma graphie.",
+      "genre": "Femme",
+      "age": "34",
+      "sig": "Femme - 34 ans - 2026-08-03 - Métiers de l’enseignement primaire ou secondaire (écoles, collèges, lycées, toutes disciplines)"
+    },
+    {
       "text": "Les meilleurs souvenirs sont au primaire où j'étais dans une école de village, on jouait dans le pré, tout le monde se connaissait, il n'y avait pas de distinction entre nous. Il y avait une instit' sévère qui nous impressionnait mais jamais d'humiliation et les parents étaient présents et acceptés dans la vie de l'école !",
       "genre": "Femme",
       "age": "49",
@@ -11055,5 +11067,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1842
+  "total_reponses": 1844
 }
