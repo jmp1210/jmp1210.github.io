@@ -60,4 +60,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://jean-michel-perez.fr/posts-linkedin.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
