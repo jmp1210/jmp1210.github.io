@@ -1,6 +1,12 @@
 {
   "micro_violences": [
     {
+      "text": "Au college, j'avais un CPE qui n'arrêtait pas de nous dire vous êtes mal élevés, vous voulez rester des cassos toute votre vie sur la dalle d'Argenteuil.",
+      "genre": "Non renseigné",
+      "age": "37",
+      "sig": "37 ans - 2026-08-08 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
       "text": "En classe de seconde, j’ai eu un enseignant d’histoire géographie qui nous traité avec mépris avec des propos proche de « stupide » ou « ignorant » dès que l’on osait participer sans avoir la bonne. À force, il finissait par quitter la salle et donc le cours face à notre manque de connaissance et de culture",
       "genre": "Femme",
       "age": "26",
@@ -6009,6 +6015,12 @@
   ],
   "micro_attentions": [
     {
+      "text": "Soyez fière de ce que vous êtes et de ce que vous représentez, phrase dite par ma prof de maths de prépa. Elle savait que j'avais honte de mes conditions de départ et que j'appréhendais les oraux de concours des grandes écoles car je lui disais que je n'avais rien d'intéressant à dire sur moi, contrairement aux autres candidats qui faisaient des compétitions sportives, de la voile le week-end etc.",
+      "genre": "Non renseigné",
+      "age": "37",
+      "sig": "37 ans - 2026-08-08 - impact très fort - choix décisifs - décisions majeures"
+    },
+    {
       "text": "Durant mon deuxième master, j’ai eu une maîtresse de conférence juste incroyable qui m’a poussé à être la meilleure version de moi même. Durant nos rdv pour la mémoire elle avait toujours des propos encourageants et bienveillant comma « si j’avais que des étudiants comme vous, je voudrais encadrer plus de mémoire, c’est brillant »",
       "genre": "Femme",
       "age": "26",
@@ -11373,5 +11385,5 @@
       "domaine": ""
     }
   ],
-  "total_reponses": 1895
+  "total_reponses": 1897
 }
