@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz — Micro-violences éducatives — Jean-Michel Perez</title>
+<meta name="description" content="3 questions pour faire le point sur les micro-violences éducatives. Jean-Michel Perez, Université de Lorraine.">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://jean-michel-perez.fr/quiz.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blanc: #f5f0eb;
+  --gris-clair: rgba(245,240,235,0.55);
+  --rouge: #c41e1e;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', serif; -webkit-font-smoothing: antialiased; }
+
+/* NAV */
+.bandeau { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,18,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,240,235,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 56px; }
+.bandeau nav { display: flex; gap: 1.8rem; }
+.bandeau nav a { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blanc); text-decoration: none; transition: var(--transition); }
+.bandeau nav a:hover { color: var(--rouge); }
+.bandeau-id { text-align: right; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blanc); }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.62rem; color: var(--gris-clair); letter-spacing: 0.04em; max-width: 320px; }
+
+/* QUIZ */
+#questions { background: #0d1b2a; padding: 6rem 2rem 4rem; min-height: 100vh; }
+.questions-intro { max-width: 800px; margin: 0 auto 3rem; text-align: center; }
+.questions-intro p { font-family: 'EB Garamond', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-style: italic; color: #fff; line-height: 1.65; }
+.questions-intro p strong { color: var(--blanc); font-style: normal; }
+
+.q-bloc { max-width: 900px; margin: 0 auto 4rem; padding: 0; background: transparent; border: none; }
+.q-bloc:last-of-type { margin-bottom: 0; }
+.q-num { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(196,30,30,0.75); margin-bottom: 1rem; display: block; }
+.q-texte { font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-style: italic; font-weight: 400; line-height: 1.4; color: var(--blanc); margin-bottom: 0.8rem; }
+.q-sous { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-style: italic; color: #fff; margin-bottom: 2.2rem; line-height: 1.5; }
+.q-reponses { display: flex; flex-direction: column; gap: 0; max-width: 680px; }
+.q-btn {
+  display: block; padding: 1rem 1.4rem;
+  background: transparent; border: none; border-left: 2px solid rgba(245,240,235,0.12);
+  color: var(--blanc); font-family: 'Inter', sans-serif;
+  font-size: 0.92rem; font-weight: 600; letter-spacing: 0.02em;
+  text-align: left; cursor: pointer; transition: var(--transition); line-height: 1.5;
+}
+.q-btn:hover { border-left-color: var(--rouge); color: var(--blanc); padding-left: 1.8rem; }
+.q-btn.sel { border-left-color: var(--rouge); color: var(--blanc); background: rgba(196,30,30,0.05); }
+.q-retour {
+  max-height: 0; overflow: hidden; transition: max-height 0.8s ease, padding 0.4s ease;
+  font-family: 'EB Garamond', serif; font-size: clamp(1.4rem, 3vw, 2.2rem); font-style: italic; font-weight: 400;
+  line-height: 1.4; color: var(--blanc); padding: 0;
+  border-left: none; margin-top: 2rem;
+}
+.q-retour.v { max-height: 800px; padding: 0; }
+.q-retour p { margin-bottom: 1.2rem; }
+.q-retour p:last-child { margin-bottom: 0; }
+.q-retour strong { font-weight: 400; }
+.q-retour em { font-style: italic; }
+.q-retour blockquote {
+  font-family: 'EB Garamond', serif; font-style: italic; font-weight: 400;
+  font-size: inherit; color: inherit;
+  border-left: none; padding: 0; margin: 1.2rem 0; line-height: inherit;
+}
+
+.retour-site { text-align: center; padding: 3rem 2rem; }
+.retour-site a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--blanc); text-decoration: underline; letter-spacing: 0.04em; }
+
+@media (max-width: 768px) {
+  .bandeau { padding: 0 1rem; }
+  .bandeau nav { gap: 1rem; }
+  .bandeau-sous { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/#entree">Enqu&ecirc;te</a>
+    <a href="/#mediation">M&eacute;diation</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<section id="questions">
+
+  <div class="questions-intro">
+    <p><strong style="font-family:'Inter',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;font-style:normal;">3 questions pour faire le point sur le sujet</strong></p>
+  </div>
+
+  <div class="q-bloc" id="q-bloc-1" data-q="1">
+    <span class="q-num">1 / 3</span>
+    <div class="q-texte">L'&eacute;cole prot&egrave;ge nos enfants. Vrai ou faux&nbsp;?</div>
+    <div class="q-sous">Rapport du D&eacute;fenseur des droits &mdash; <em>Enfance et violence&nbsp;: la part des institutions publiques</em>, 2019</div>
+    <div class="q-reponses" id="q-opts-1">
+      <button class="q-btn" onclick="repondreQ(1,0)">Oui - c'est sa mission, elle la remplit</button>
+      <button class="q-btn" onclick="repondreQ(1,1)">Pas toujours, mais elle essaie</button>
+      <button class="q-btn" onclick="repondreQ(1,2)">L'institution elle-m&ecirc;me peut produire de la violence</button>
+    </div>
+    <div class="q-retour" id="qr-1">
+      <p>Quelle que soit votre r&eacute;ponse, voici ce qu'&eacute;crit <strong>Jacques Toubon</strong>, D&eacute;fenseur des droits (2014-2020), dans <em>Enfance et violence&nbsp;: la part des institutions publiques</em> (2019)&nbsp;:</p>
+      <blockquote>&laquo;&nbsp;Les violences sont une r&eacute;alit&eacute; dans le quotidien des enfants, y compris au sein des institutions dans lesquelles ils sont accueillis ou pris en charge.&nbsp;&raquo;</blockquote>
+      <blockquote>&laquo;&nbsp;Le fonctionnement des institutions publiques est susceptible en lui-m&ecirc;me d'induire ou d'amplifier les violences faites aux enfants dont elles ont la charge.&nbsp;&raquo;</blockquote>
+      <p>La loi parle d'une &laquo;&nbsp;&eacute;cole de la bienveillance&nbsp;&raquo; (2013) et d'une &laquo;&nbsp;&eacute;cole de la confiance&nbsp;&raquo; (2019). L'&eacute;cart entre le discours l&eacute;gislatif et la r&eacute;alit&eacute; v&eacute;cue est un gouffre.</p>
+    </div>
+  </div>
+
+  <div class="q-bloc" id="q-bloc-2" data-q="2">
+    <span class="q-num">2 / 3</span>
+    <div class="q-texte">Maintenant que vous savez, est-ce que &ccedil;a change quelque chose&nbsp;?</div>
+    <div class="q-sous">Indignation, normalisation &mdash; le pi&egrave;ge que suivent toutes les controverses sociales</div>
+    <div class="q-reponses" id="q-opts-2">
+      <button class="q-btn" onclick="repondreQ(2,0)">Savoir suffit - la prise de conscience transforme les pratiques</button>
+      <button class="q-btn" onclick="repondreQ(2,1)">Non, rien ne bouge jamais vraiment</button>
+      <button class="q-btn" onclick="repondreQ(2,2)">C'est plus compliqu&eacute; que &ccedil;a</button>
+    </div>
+    <div class="q-retour" id="qr-2">
+      <p>Les controverses sociales suivent presque toujours le m&ecirc;me sc&eacute;nario&nbsp;: d'abord <strong>l'indignation</strong>, puis <strong>la normalisation</strong>. La vache folle, inacceptable en 1996, est devenue un risque &laquo;&nbsp;g&eacute;r&eacute;&nbsp;&raquo;. Le COVID, terreur collective en 2020, fait aujourd'hui partie du d&eacute;cor.</p>
+      <p>Les violences &eacute;ducatives suivent exactement le m&ecirc;me chemin. Transformer demande un sursaut, du courage, de l'entra&icirc;nement.</p>
+    </div>
+  </div>
+
+  <div class="q-bloc" id="q-bloc-3" data-q="3">
+    <span class="q-num">3 / 3</span>
+    <div class="q-texte">&laquo;&nbsp;&Ccedil;a le forme. On n'est pas chez les Bisounours.&nbsp;&raquo;</div>
+    <div class="q-sous">Holt-Lunstad et al., 2015 &mdash; 70 &eacute;tudes, 3,4 millions de personnes</div>
+    <div class="q-reponses" id="q-opts-3">
+      <button class="q-btn" onclick="repondreQ(3,0)">C'est vrai - l'adversit&eacute; forge le caract&egrave;re</button>
+      <button class="q-btn" onclick="repondreQ(3,1)">Les enfants sont r&eacute;silients, ils s'en remettent</button>
+      <button class="q-btn" onclick="repondreQ(3,2)">L'isolement n'est pas formateur - c'est un danger</button>
+    </div>
+    <div class="q-retour" id="qr-3">
+      <p>Quand un &eacute;l&egrave;ve est isol&eacute; et qu'aucun m&eacute;canisme de reliance ne vient compenser, ce n'est pas du &laquo;&nbsp;caract&egrave;re&nbsp;&raquo; qui se construit. La science est formelle&nbsp;:</p>
+      <p><strong>Holt-Lunstad et al., 2015</strong> (70 &eacute;tudes, 3,4 millions de personnes)&nbsp;: l'isolement social augmente le risque de mortalit&eacute; pr&eacute;matur&eacute;e - un effet sur la sant&eacute; comparable au tabagisme et &agrave; l'ob&eacute;sit&eacute;.</p>
+      <p>Ce n'est pas une question de Bisounours. C'est une question de vivre ensemble. Les micro-attentions - ces gestes minuscules qui disent &laquo;&nbsp;tu existes, tu comptes&nbsp;&raquo; - sont peut-&ecirc;tre le seul antidote que l'&eacute;cole peut inventer de l'int&eacute;rieur. Encore faut-il que nos institutions apprennent &agrave; les prot&eacute;ger.</p>
+    </div>
+  </div>
+
+</section>
+
+<div class="retour-site">
+  <a href="/">&larr; Retour au site</a>
+</div>
+
+<script>
+window.repondreQ = function(etape, choix) {
+  const opts = document.getElementById('q-opts-' + etape);
+  if (opts.querySelector('button[disabled]')) return;
+  opts.querySelectorAll('button').forEach(b => { b.disabled = true; });
+  opts.querySelectorAll('button')[choix].classList.add('sel');
+  const fb = document.getElementById('qr-' + etape);
+  fb.classList.add('v');
+  fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+};
+</script>
+</body>
+</html>

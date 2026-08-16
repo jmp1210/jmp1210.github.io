@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 200" width="140" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1f35"/>
+      <stop offset="100%" stop-color="#071220"/>
+    </linearGradient>
+  </defs>
+  <!-- Fond -->
+  <rect width="140" height="200" fill="url(#bg)"/>
+  <!-- Bande rouge haut -->
+  <rect width="140" height="4" fill="#c41e1e"/>
+  <!-- Bande rouge bas -->
+  <rect y="196" width="140" height="4" fill="#c41e1e"/>
+  <!-- Filet latéral gauche -->
+  <rect width="3" height="200" fill="#c41e1e" opacity="0.6"/>
+  <!-- Titre revue -->
+  <text x="12" y="24" font-family="Georgia,serif" font-size="7.5" fill="#f5f0eb" font-weight="bold" letter-spacing="0.5">La Nouvelle Revue</text>
+  <text x="12" y="35" font-family="Georgia,serif" font-size="6.5" fill="#bbb" letter-spacing="0.3">Éducation et société</text>
+  <text x="12" y="45" font-family="Georgia,serif" font-size="6.5" fill="#bbb" letter-spacing="0.3">inclusives</text>
+  <!-- Numéro -->
+  <text x="12" y="90" font-family="Arial,sans-serif" font-size="46" fill="#c41e1e" font-weight="bold" opacity="0.9">103</text>
+  <!-- Séparateur -->
+  <rect x="12" y="100" width="116" height="1" fill="rgba(245,240,235,0.15)"/>
+  <!-- Titre dossier -->
+  <text x="12" y="118" font-family="Georgia,serif" font-size="7" fill="#f5f0eb" font-style="italic">Éducation et</text>
+  <text x="12" y="129" font-family="Georgia,serif" font-size="7" fill="#f5f0eb" font-style="italic">micro-violences :</text>
+  <text x="12" y="140" font-family="Georgia,serif" font-size="6.5" fill="#bbb" font-style="italic">effet de loupe sur les</text>
+  <text x="12" y="151" font-family="Georgia,serif" font-size="6.5" fill="#bbb" font-style="italic">freins à la transition</text>
+  <text x="12" y="162" font-family="Georgia,serif" font-size="6.5" fill="#bbb" font-style="italic">inclusive</text>
+  <!-- INSEI -->
+  <text x="12" y="188" font-family="Arial,sans-serif" font-size="6" fill="rgba(245,240,235,0.35)" letter-spacing="1">INSEI · 2025</text>
+</svg>

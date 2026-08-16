@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les posts LinkedIn &mdash; Jean-Michel Perez</title>
+<meta name="description" content="Les posts LinkedIn de Jean-Michel Perez sur les micro-violences et micro-attentions &eacute;ducatives, du plus r&eacute;cent au plus ancien.">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://jean-michel-perez.fr/posts-linkedin.html">
+<link rel="me" href="https://www.linkedin.com/in/jeanmichelperez/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --noir: #101828; --noir-profond: #0c1220; --blanc: #f5f0eb;
+  --rouge: #c41e1e; --rouge-vif: #e52020; --bleu: #1565c0; --bleu-vif: #1e88e5;
+  --gris: #888; --gris-clair: #bbb;
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Georgia, serif; line-height: 1.6; overflow-x: hidden; }
+
+#bandeau {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0.55rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(10,10,10,0.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245,240,235,0.05);
+}
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); font-weight: 300; letter-spacing: 0.04em; }
+.bandeau-nav { display: flex; gap: 2.2rem; align-items: center; }
+.bandeau-nav a { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,240,235,0.92); text-decoration: none; transition: color 0.2s; }
+.bandeau-nav a:hover { color: #fff; }
+.bandeau-id { text-align: right; }
+
+.fil-ouv { min-height: 34vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 7rem 2rem 3rem; }
+.fil-ouv h1 { font-family: 'EB Garamond', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 400; font-style: italic; color: var(--blanc); line-height: 1.25; max-width: 820px; }
+.fil-ouv .sous { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #fff; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 1.8rem; }
+.fil-accroche { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.2rem); color: #fff; max-width: 680px; margin-top: 1.6rem; line-height: 1.6; }
+.fil-periode { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--gris-clair); margin-top: 1.4rem; letter-spacing: 0.06em; }
+.fil-periode a { color: var(--bleu-vif); text-decoration: none; }
+.fil-periode a:hover { text-decoration: underline; }
+
+.fil-liste { max-width: 760px; margin: 0 auto; padding: 1rem 1.5rem 4rem; }
+.fil-carte {
+  border-top: 1px solid rgba(245,240,235,0.1);
+  padding: 2.4rem 0.5rem 2.6rem;
+}
+.fil-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
+.fil-meta time { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); letter-spacing: 0.08em; }
+.fil-badge {
+  font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  padding: 0.22rem 0.7rem; border-radius: 2px;
+}
+.b-post { color: #fff; background: rgba(30,136,229,0.28); border: 1px solid rgba(30,136,229,0.55); }
+.b-repu { color: var(--blanc); background: rgba(245,240,235,0.06); border: 1px solid rgba(245,240,235,0.3); }
+.b-comm { color: #ffd9d9; background: rgba(196,30,30,0.18); border: 1px solid rgba(196,30,30,0.5); }
+.fil-titre { font-family: 'EB Garamond', serif; font-size: clamp(1.2rem, 2.2vw, 1.5rem); font-style: italic; font-weight: 600; line-height: 1.35; margin-bottom: 1.1rem; color: var(--blanc); }
+.fil-texte p { margin-bottom: 1rem; font-size: 1.08rem; color: rgba(245,240,235,0.92); overflow-wrap: break-word; }
+.fil-texte a { color: var(--bleu-vif); text-decoration: none; word-break: break-all; }
+.fil-texte a:hover { text-decoration: underline; }
+.fil-lien {
+  display: inline-block; margin-top: 0.6rem;
+  font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--bleu-vif); text-decoration: none;
+  border: 1px solid rgba(30,136,229,0.45); padding: 0.45rem 0.95rem; border-radius: 2px;
+  transition: var(--transition);
+}
+.fil-lien:hover { background: rgba(30,136,229,0.15); color: #fff; }
+
+footer { text-align: center; padding: 3.5rem 2rem 3rem; border-top: 1px solid rgba(245,240,235,0.08); }
+.pied-profil {
+  display: inline-block; font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600;
+  letter-spacing: 0.06em; color: var(--blanc); text-decoration: none;
+  border: 1px solid rgba(245,240,235,0.3); padding: 0.7rem 1.4rem; border-radius: 2px;
+  transition: var(--transition);
+}
+.pied-profil:hover { border-color: var(--bleu-vif); color: var(--bleu-vif); }
+.pied-contact { margin-top: 2rem; }
+.pied-contact a { color: var(--blanc); font-family: 'Inter', sans-serif; font-size: 0.85rem; text-decoration: none; }
+.pied-contact a:hover { text-decoration: underline; }
+.contact-lieu { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--gris-clair); margin-top: 0.8rem; line-height: 1.6; }
+.footer-note { font-family: 'Inter', sans-serif; font-size: 0.72rem; color: #fff; margin-top: 2.2rem; }
+
+@media (max-width: 600px) {
+  #bandeau { padding: 0.5rem 1rem; flex-direction: column; gap: 0.3rem; }
+  .bandeau-nav { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  .fil-liste { padding: 0.5rem 1rem 3rem; }
+}
+</style>
+</head>
+<body>
+
+<header id="bandeau">
+  <nav class="bandeau-nav">
+    <a href="/">Accueil</a>
+    <a href="/formation-master-2.html">Formation Master 2</a>
+    <a href="/recherche.html">Recherche</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/conferences.html">Conf&eacute;rences</a>
+    <a href="/micro-attentions.html">Micro-attentions</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<div class="fil-ouv">
+  <h1>Les posts LinkedIn</h1>
+  <div class="sous">41 posts</div>
+  <p class="fil-accroche">Micro-violences &middot; micro-attentions &middot; souvenirs scolaires &middot; hypocrisie organisationnelle &middot; isolement et reliance : les posts publics, du plus r&eacute;cent au plus ancien.</p>
+</div>
+
+<main class="fil-liste">
+
+<article class="fil-carte" id="post-2026-08-08-micro-attentions">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-08">8 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>3 récits de micro-attentions scolaires : ce que nous disent celles et ceux qui en sont revenus</p>
+<p>« Soyez fière de ce que vous êtes et de ce que vous représentez - phrase dite par ma prof de maths de prépa. Elle savait que j'avais honte de mes conditions de départ et que j'appréhendais les oraux de [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7491845073530310656/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="post-2026-08-08-maltraitance">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-08">8 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>5 récits de maltraitance dans les lieux de l'accès aux savoirs</p>
+<p>« Jusqu'au collège, tout allait bien. Puis, en 5e, en maths, nous... » (texte intégral à lire sur LinkedIn)</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7491843042086322177/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="act-7491381914671587329">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-07">7 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>4 récits de micro-attentions scolaires : ce que nous disent celles et ceux qui en sont revenus</p>
+<p>« Les meilleurs souvenirs sont au primaire, où j’étais dans une école de village. On jouait dans le pré, tout le monde se connaissait, il n’y avait pas de distinction entre nous. Il y avait une instit’ [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7491381914671587329/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="act-7491377464649154562">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-07">7 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>4 récits de maltraitance dans les lieux de l'accessibilité aux savoirs</p>
+<p>« En étant AESH à mi-temps étudiante en master IDAISI et en maternelle, j’ai assisté à des violences terribles de la part d’enseignantes. Je l’ai signalé, mais rien ne bouge. J’ai vu aussi des AESH humilier des élèves. »<br>– [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7491377464649154562/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="act-7490027540665839616">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-03">3 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>4 récits de micro-attentions scolaires : ce que nous en disent ceux qui en sont revenus.</p>
+<p>« En terminale j'avais du mal à trouver un projet professionnel et quand j'ai eu l'idée de devenir professeur des écoles, mon professeur de spécialité, qui était aussi mon professeur principal, m'a dit : "je [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7490027540665839616/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="act-7489859518227529729">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-03">3 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>4 récits de maltraitance scolaire</p>
+<p>« Quand j’étais en primaire, je pleurais souvent car les autres élèves se liguaient contre moi. Une fois, ma maîtresse est arrivée pour nous chercher et, dans le rang, je pleurais seule d’un côté, avec les autres qui se moquaient ouvertement de moi. Elle m’a [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7489859518227529729/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="act-7489322333220888577">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-01">1 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Sur LinkedIn vous êtes desormais presque 2 000 abonnés (1 978) +<br> 37 341 impressions sur les douze derniers mois.</p>
+<p>La pause académique m'offre l’occasion de revenir vers celles et ceux ayant manifesté leur intérêt à suivre la recherche et l’enquête sur ce qui se joue à l’école, l’université, et [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7489322333220888577/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="act-7489319877044842496">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-08-01">1 août 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>OU ÉTIONS-NOUS LORSQUE CES GESTES, ATTITUDES OU PROPOS SE DEROULAIENT OU S'ENTENDAIENT (Cf. TAbleau ci-dessous) .. AVONS-NOUS ENCORE ENVIE D'ÊTRE CES ÉDUCATEURS LÀ... où peut être pire AVONS NOUS ENCORE ENVIE DE LAISSER SE DEVELOPPER-PERPETUER CES ATTITUDES LÀ ?</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:activity:7489319877044842496/" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-001">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-23">23 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>N’ayez pas honte. Relions nous. Cette honte doit changer de camp.</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7463919011106549760" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-002">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-23">23 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Un problème récurent connu de la recherche depuis 2008 (Plaisance et al, 2008)</p>
+<p><a href="https://lnkd.in/eq5G9tuA" target="_blank" rel="noopener">lnkd.in/eq5G9tuA</a>.</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7464077823193042945" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-008">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-17">17 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Acte 1/3 - Féminicide, infanticide... : 24 actes mortels ou quasi-mortels par jour (?)<br>6 féminicides en 9 jours, nous rappelle Nadia BOUGHIDA BAKOUR. Mais l’habitude de compter par silo masque effrite la force de du propos - déjà dramatique en soi -.</p>
+<p>Que peut-on dire de ce total ?<br>- D’abord : seul [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7461675240985870336" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-011">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-16">16 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>… Les mots manquent ici pour dire cette terreur du quotidien, l’émiettement de nos institutions, jusqu’à la désolation de ces vies broyées.</p>
+<p>Il faut pourtant rajouter à ces chiffres ceux, tout aussi terrifiants, des plus jeunes, des anciens et de tous ceux qui, parce que rendus fragiles au regard de [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7461234269223346176" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-012">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-14">14 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>30 001 vues : les micro‑violences éducatives pour désigner un impensé de l’institution scolaire.<br>La notion de micro-violence sert à désigner un défaut majeur dans le rapport éducatif d'autorité, d'autant plus insidieux qu'il est légitimé, camouflé ou enfoui institutionnellement par la littérature [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7460672934697938946" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-014">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-13">13 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Actualités... Université</p>
+<p> "J'ai un diagnostic d'autisme et de dyslexie donc j'ai la possibilité de concourir dans une salle à effectifs réduits. C'est la première fois que je demande cet aménagement. Il m'a été refusé à plusieurs reprises, alors que le président de l'Université avait signé [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7460436796317798400" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-015">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-11">11 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>À 68 vues des 30 000 pour cet article qui introduit l’impensé de l’institution scolaire : les micro-violences, cette forme prototypique d’une violence qui ne porte pas - encore- ce nom.<br>Avec un recueil de plus de 4 000 souvenirs scolaires (positifs et négatifs), la statistique confirme cette [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7459480814217658368" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-016">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-09">9 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>« Sortir de l’angle mort », dit avec finesse Andreea Gruev-Vintila ; « conscientiser les points aveugles » en ce qui concerne le système éducatif et ses publics. Du « contrôle coercitif » à « l’hypocrisie organisationnelle » (Brunsson, 1989), il n'y a qu'un pas : c’est la même paroi.<br>,<br>Outre la [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7458918975498833920" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-017">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-08">8 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Le "contrôle coercitif" rejoint ici les travaux en contexte éducatif autour des « micro-violences » - ce que l’institution produit « sans le penser » -.</p>
+<p>La formation de tous les agents, au premier rang desquels ceux du système éducatif — premier degré, second degré, universitaire — apparaît [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7458508879102894080" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-019">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-05-01">1 mai 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Baisse du niveau scolaire et dégradation salariale des enseignants</p>
+<p>"Et si la dégradation salariale des enseignants et la baisse du niveau scolaire étaient cohérentes plutôt que contradictoires ?"</p>
+<p>C’est la question qui se pose à la lecture du post de Laurent BABIKIAN sur le grand déclassement [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7455942042527985664" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-021">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-29">29 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>1 enfant sur 5 en Europe est concerné par un rapport de maltraitance majeur (Scherrer &amp; Van Ballegooi, 2017). Environ 60 % des élèves français estimaient, en 2003 ou en 2022, que leurs enseignants ne s’intéressaient ni à qui ils sont ni à leur progression (PISA).</p>
+<p>Ces chiffres, en France [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7455390176077590528" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-023">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-25">25 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Lorsque Foi, Science, amour de ses racines, œuvrent ensemble, il se dégage un « je<br>-ne-sais-quoi, un presque-rien » (Jankélévitch) qui dépasse les singularités et fait œuvre collective.<br>Respect pour Jonathan Niyongabo, dont la seconde thèse - en Histoire et Théologie- , après celle déjà soutenue en [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7453746013372194816" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-024">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-25">25 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Merci pour ces chiffres. 10 % / 25 %. 45 % / 65 %.<br>Ces écarts ne disent pas que les enseignants français manquent de bonne volonté. Ils disent que la loi française, elle, n’a jamais voulu -ou pu- penser autre chose.<br>Le seul droit que le Code de l’éducation a inscrit pour les parents, c’est le droit [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7453727774864740352" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-026">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-23">23 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>MICRO-VIOLENCES : introduire au débat</p>
+<p>Il manque 500 vues pour parvenir à 30 000 vues pour cet article qui introduit l’impensé de l’institution scolaire : les micro-violences, cette forme prototypique d’une violence qui ne porte pas -encore- ce nom.<br>Avec un recueil de plus de 4 000 souvenirs [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7453095710683611136" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-028">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-21">21 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Repenser à partir de l’isolement institutionnalisé — Des micro-violences éducatives à la reliance scolaire</p>
+<p>« Que faire de cette conscientisation que l’École blesse en silence le plus grand nombre, tout en sachant qu’à la marge, elle sait et peut relier ? »</p>
+<p>En libre accès, le premier volet du [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7452350395487563776" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-031">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-19">19 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Et si l'isolement à l'école était la racine de maux bien plus profonds ?</p>
+<p>Le témoignage de "Lilimay", diagnostiquée d'un Trouble de la Personnalité Antisociale (TPA), est une leçon sur notre rapport à l'autre - et une lecture de notre système éducatif.</p>
+<p>Son courage, d'abord, nous livre une vérité [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7451656524021714944" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-037">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-18">18 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Ci-dessous une offre d'excellence dirigée par notre collègue A. Bergamaschi (CREAT), dans laquelle nous prenons plaisir à contribuer. Elle s'adosse pour partie à l'un des 2 parcours existants du Master MEEF-PIF parcours « Éducation et Pratiques Inclusives » (EPI).<br>Ces offres de formation partagent 1 [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7451382297481773056" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-041">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-13">13 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>▸EST-CE QUE NOUS SOUHAITONS ÊTRE CES ENSEIGNANTS-LÀ ? (5/10)<br>Promu et Intouchable mais...</p>
+<p> « J'avais toujours zéro en dictée. Une fois, j'ai  obtenu une meilleure note - il a recouvert entièrement ma copie en écrivant  "bravo" à l'encre rouge. Mon voisin, il l'avait surnommé "le cheval". Un autre [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7449519623236071425" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-050">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-08">8 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>EST-CE QUE NOUS SOUHAITONS ÊTRE CES ENSEIGNANTS-LÀ ? (5/10)<br>"À L'ERREUR de s'être trompé se rajoutte l'HUMILIATION ...voire l'INSULTE ?"</p>
+<p>• Années 1970 : « En seconde, une professeure rendait nos DS en donnant notre note à voix haute devant tout le groupe classe. "Mademoiselle, c'est à se demander [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7447706756031426561" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-056">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-02">2 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>EST-CE QUE NOUS SOUHAITONS ÊTRE CES ENSEIGNANTS-LÀ ? (1/10)<br>À l'humiliation publique se rajoute l'insulte</p>
+<p>▸ Années 1980-90<br>« En CM2, ma prof principale se moquait de moi parce que j'étais gros et que je n'arriverai à rien dans la vie. »</p>
+<p>« En CE1, j'avais une enseignante très humiliante, qui s'en [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7445543172866220032" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-057">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-04-02">2 avril 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>📍Le Master 2 EPI est ouvert aux candidatures jusqu'au 21 juin 2026<br>📍 Grade Master 2 - 80% à distance · 297h sur 1 ou 2 ans.<br>📍 <a href="https://lnkd.in/ehcgECDZ" target="_blank" rel="noopener">lnkd.in/ehcgECDZ</a></p>
+<p>L'éducation inclusive est à considérer comme un objet en tension. Si l'effet de démocratisation de « l'École pour tous » est quantitativement [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7445525340434747392" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-059">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-31">31 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>𝗗𝗲𝘀 𝗺𝗶𝗰𝗿𝗼-𝘃𝗶𝗼𝗹𝗲𝗻𝗰𝗲𝘀 𝗮𝘂𝘅 𝗺𝗶𝗰𝗿𝗼-𝗮𝘁𝘁𝗲𝗻𝘁𝗶𝗼𝗻𝘀 : 𝗨𝗻𝗲 𝗼𝗿𝗰𝗵𝗶𝗱𝗲́𝗲 𝗱𝗮𝗻𝘀 𝘂𝗻𝗲 𝗕𝗨<br>𝘌́𝘱𝘪𝘴𝘰𝘥𝘦 3/3  construire &amp; institutionnaliser)</p>
+<p>Qu'est-ce que cette bibliothécaire sait et que l'institution ignore ?</p>
+<p>Elle sait qu'une voix de détresse ne se traite pas par un formulaire. Elle sait qu'une salle fermée pour raisons [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7444812247832547329" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-062">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-30">30 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>EST CE QUE NOUS SOUHAITONS ÊTRE CES ENSEIGNANTS LÀ ? (2/10)</p>
+<p>Le scotch sur la bouche : de la maternelle au CM1, des années 1960 aux années 2010</p>
+<p>- 1960 « À la maternelle, l’institutrice me scotchait la bouche et m’attachait les pieds. Ce souvenir m’a suivi toute ma vie. »(Homme, 67 ans — scolarité [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7444259845026938880" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-064">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-27">27 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>𝗗𝗲𝘀 𝗺𝗶𝗰𝗿𝗼-𝘃𝗶𝗼𝗹𝗲𝗻𝗰𝗲𝘀 𝗮𝘂𝘅 𝗺𝗶𝗰𝗿𝗼-𝗮𝘁𝘁𝗲𝗻𝘁𝗶𝗼𝗻𝘀 : 𝗨𝗻𝗲 𝗼𝗿𝗰𝗵𝗶𝗱𝗲́𝗲 𝗱𝗮𝗻𝘀 𝘂𝗻𝗲 𝗕𝗨 (Episode 1/3 "𝘙𝘦𝘤𝘰𝘯𝘯𝘢𝘪̂𝘵𝘳𝘦 &amp; 𝘢𝘨𝘪𝘳")</p>
+<p>Lors de la journée du 26 mars <a href="https://lnkd.in/eU22hS_b" target="_blank" rel="noopener">lnkd.in/eU22hS_b</a></p>
+<p>Pendant le Covid, les places en bibliothèque étaient réservées à l'avance, prises à la seconde. Une étudiante appelle. Détresse dans la [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7443168936977805313" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-066">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-25">25 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>EST CE QUE NOUS SOUHAITONS ÊTRE CES ENSEIGNANTS LÀ ? (3/10)<br>"Le refus d'autoriser l'élève d'aller aux toillettes"</p>
+<p>1980 « Ce souvenir remonte à mon année de CP en 1989. La maîtresse m’a refusée d’aller aux toilettes. Je me suis fait pipi dessus. Elle m’a disputée. On s’est moquée de moi et j’ai dû [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7442670408039882752" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-069">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-24">24 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>QU'EST-CE QUI AUTORISE DES COMPORTEMENTS DELÉTAIRES ?<br>Actualités... Université</p>
+<p> "J'ai un diagnostic d'autisme et de dyslexie donc j'ai la possibilité de concourir dans une salle à effectifs réduits. C'est la première fois que je demande cet aménagement. Il m'a été refusé à plusieurs reprises, alors [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7442263766307635200" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-070">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-24">24 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Très intéressant article. Ce que vous documentez rejoint ce qui se rencontre dans les souvenirs qui ont laissé des traces chez de nombreux anciens élèves. La "sécurité émotionnelle", c'est une condition de l'apprentissage. Oser se tromper, c'est du pouvoir d'agir - et ça se construit (ou se détruit) [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7442032125677125633" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-072">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-23">23 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>« Le fonctionnement des institutions publiques est susceptible en lui-même d'induire ou d'amplifier les violences faites aux enfants dont elles ont la charge. #DéfenseurDesDroits #Impensé<br>#MicroViolences #Violences<br>#Éducation #DroitsDeLEnfant #École<br>»<br>Quel souvenir d'école vous a marqué ?<br>🔗 [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7441728774158798848" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-073">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-23">23 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Une question vive très bien approchée dans ce dossier. Bravo aux auteurs et aux coordinat.rice.eur.s de ce numéro.</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7441927923793584128" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-074">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-23">23 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Une très belle contribution pour une question culturellement vive. Félicitations</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7441932253695348737" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-078">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-22">22 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>#Éducation #violences #Hypocrisieorganisationnelle #pasdevague</p>
+<p>L'hypocrisie organisationnelle - De quoi parle-t-on ?</p>
+<p>L'université dit "inclusion". Elle légifère, crée des services, affiche des chartes, répond à des appels  ministériels comme celui de 2024 dit "Université démonstratrice inclusive" [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7441588178425286656" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-079">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-20">20 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>Unys Sciences vient de publier :<br>🔗 <a href="https://lnkd.in/e9tq62Ug" target="_blank" rel="noopener">lnkd.in/e9tq62Ug</a><br>#MicroViolences #Éducation #Recherche #UnysSciences</p>
+<p>───</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7440586137032687617" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+
+<article class="fil-carte" id="jmp-li-080">
+  <div class="fil-meta">
+    <span class="fil-badge b-post">Post</span>
+    <time datetime="2026-03-19">19 mars 2026</time>
+  </div>
+  <div class="fil-texte">
+<p>97 % de micro-violences.<br>Quand on demande aux gens de raconter un mauvais souvenir d'école, ce ne sont  presque jamais des coups. Ce sont des mots. Des regards. Des humiliations.</p>
+<p> Sur 2 200 témoignages recueillis dans notre enquête, le constat est net : la<br> violence scolaire la plus répandue est [...]</p>
+  </div>
+    <a class="fil-lien" href="https://www.linkedin.com/feed/update/urn:li:share:7440429180883763200" target="_blank" rel="noopener">Voir sur LinkedIn&nbsp;&nearr;</a>
+</article>
+</main>
+
+<footer>
+  <a class="pied-profil" href="https://www.linkedin.com/in/jeanmichelperez/" target="_blank" rel="noopener">Suivre Jean-Michel Perez sur LinkedIn&nbsp;&nearr;</a>
+  <div class="pied-contact"><a href="mailto:jean-michel.perez@univ-lorraine.fr">jean-michel.perez@univ-lorraine.fr</a></div>
+  <div class="contact-lieu">INSP&Eacute; de Lorraine &middot; Universit&eacute; de Lorraine &middot; Nancy<br>LISEC (UR 2310) &middot; P&ocirc;le scientifique CLCS</div>
+  <div class="footer-note">&copy; 2026 Jean-Michel Perez</div>
+</footer>
+
+</body>
+</html>

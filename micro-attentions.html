@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micro-attentions — Jean-Michel Perez</title>
+<meta name="description" content="Il existe aussi des micro-attentions — des gestes qui réparent, qui reconnaissent, qui tiennent. Témoignages et recherche. Jean-Michel Perez, Université de Lorraine.">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://jean-michel-perez.fr/micro-attentions.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blanc: #f5f0eb;
+  --gris-clair: rgba(245,240,235,0.55);
+  --rouge: #c41e1e;
+  --bleu-vif: #1e88e5;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', serif; -webkit-font-smoothing: antialiased; }
+
+.bandeau { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,18,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,240,235,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 56px; }
+.bandeau nav { display: flex; gap: 1.8rem; }
+.bandeau nav a { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blanc); text-decoration: none; transition: var(--transition); }
+.bandeau nav a:hover { color: var(--bleu-vif); }
+.bandeau-id { text-align: right; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blanc); }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.62rem; color: var(--gris-clair); letter-spacing: 0.04em; max-width: 320px; }
+
+.sas-reflexif {
+  max-width: 640px; margin: 1.5rem auto 0; padding: 2rem 2rem 1rem;
+  text-align: center; font-family: 'EB Garamond', serif;
+  font-size: 1.15rem; font-style: italic; color: #fff;
+  line-height: 1.8; border-top: 1px solid rgba(245,240,235,0.06);
+}
+.sas-reflexif strong { color: #fff; font-style: normal; }
+
+.flash-bleu {
+  display: flex; flex-direction: column; padding: 3rem 2rem;
+  justify-content: center; align-items: center; position: relative;
+  transition: background 0.6s ease;
+}
+.flash-bleu.pair { background: #0d1b2a; }
+.flash-bleu.impair { background: #0b1724; }
+
+.flash-badge { font-family: 'Inter', sans-serif; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gris-clair); margin-bottom: 1.5rem; }
+.flash-badge.bleu-b { color: rgba(30,136,229,0.85); }
+.flash-q {
+  max-width: 780px; text-align: center; padding: 0 2rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1.6rem;
+}
+.flash-q blockquote {
+  font-family: 'EB Garamond', serif; font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-style: italic; font-weight: 400; line-height: 1.35; color: var(--blanc);
+  opacity: 0; transition: opacity 0.6s ease;
+}
+.flash-q blockquote.v { opacity: 1; }
+.flash-q cite {
+  font-family: 'Inter', sans-serif; font-size: 0.82rem; font-style: normal;
+  color: var(--gris-clair); letter-spacing: 0.06em;
+  opacity: 0; transition: opacity 0.6s ease 0.15s;
+}
+.flash-q cite.v { opacity: 1; }
+.flash-pied {
+  margin-top: 3rem; display: flex; align-items: center; gap: 1.5rem;
+}
+.flash-barre-w { width: 180px; height: 2px; background: rgba(245,240,235,0.08); overflow: hidden; }
+.flash-barre-bl { height: 100%; width: 0%; background: var(--bleu-vif); }
+.flash-controls { display: flex; align-items: center; gap: 1.2rem; font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--gris-clair); }
+.flash-num-txt { letter-spacing: 0.04em; }
+.flash-cd-txt { color: var(--gris-clair); }
+.flash-ctrl-btn {
+  background: none; border: 1px solid rgba(245,240,235,0.15); color: var(--gris-clair);
+  font-size: 0.78rem; padding: 0.3rem 0.8rem; cursor: pointer; transition: var(--transition);
+  font-family: 'Inter', sans-serif;
+}
+.flash-ctrl-btn:hover { color: var(--blanc); border-color: #fff; }
+
+.retour-site { text-align: center; padding: 3rem 2rem; }
+.retour-site a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--blanc); text-decoration: underline; letter-spacing: 0.04em; }
+
+@media (max-width: 768px) {
+  .bandeau { padding: 0 1rem; }
+  .bandeau nav { gap: 1rem; }
+  .bandeau-sous { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/#entree">Enqu&ecirc;te</a>
+    <a href="/#mediation">M&eacute;diation</a>
+    <a href="/quiz.html">Quiz</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<div style="padding-top:56px;"></div>
+
+<div class="sas-reflexif">
+  Il existe aussi des <strong>micro-attentions</strong> &mdash; des gestes qui r&eacute;parent, qui reconnaissent, qui tiennent.
+</div>
+
+<div class="flash-bleu pair" id="flash-bleu-section">
+  <div class="flash-badge bleu-b">T&eacute;moignages &mdash; micro-attentions</div>
+  <div class="flash-q">
+    <blockquote id="fb-text"></blockquote>
+    <cite id="fb-cite"></cite>
+  </div>
+  <div class="flash-pied">
+    <div class="flash-barre-w"><div class="flash-barre-bl" id="fb-barre"></div></div>
+    <div class="flash-controls">
+      <span class="flash-num-txt"><span id="fb-num">1</span>&thinsp;/&thinsp;<span id="fb-tot">15</span></span>
+      <span class="flash-cd-txt">change dans <span id="fb-cd">3</span>s</span>
+      <button class="flash-ctrl-btn" id="fb-pause">&#x23F8;</button>
+    </div>
+  </div>
+</div>
+
+<div class="sas-reflexif">
+  <div style="font-family:'Inter',sans-serif;font-size:clamp(1.2rem,2.4vw,1.8rem);font-weight:700;color:var(--blanc);line-height:1.4;">Il n'y a pas &agrave; changer l'&eacute;cole, mais &agrave; prot&eacute;ger les enseignants qui font ces petits gestes.</div>
+</div>
+
+<div class="retour-site">
+  <a href="/">&larr; Retour au site</a>
+</div>
+
+<script>
+const BLEUS = [
+  {q:'&laquo;&nbsp;Un professeur de français en 3ème m\'a dit que j\'avais du talent pour l\'écriture. Personne ne me l\'avait jamais dit. J\'y pense encore.&nbsp;&raquo;', c:'Femme, 34 ans'},
+  {q:'&laquo;&nbsp;Ma professeure de CM1 passait près de moi et murmurait "je sais que tu sais". Ça suffisait.&nbsp;&raquo;', c:'Femme, 28 ans'},
+  {q:'&laquo;&nbsp;Mon instituteur m\'a dit&nbsp;: "Tu n\'es pas obligé d\'être comme les autres pour être bien." J\'avais 9 ans.&nbsp;&raquo;', c:'Homme, 45 ans'},
+  {q:'&laquo;&nbsp;Un prof de philo a lu mon devoir à voix haute — pour me montrer que ce que je pensais avait de la valeur.&nbsp;&raquo;', c:'Homme, 29 ans'},
+  {q:'&laquo;&nbsp;Ma maîtresse de CE1 m\'a appris à lire sans pression, sans comparaison. Juste de la patience. Je suis devenue bibliothécaire.&nbsp;&raquo;', c:'Femme, 52 ans'},
+  {q:'&laquo;&nbsp;Quand j\'ai redoublé, le nouveau prof principal m\'a dit&nbsp;: "Un redoublement, c\'est pas un échec. C\'est un détour." J\'ai fini ingénieur.&nbsp;&raquo;', c:'Homme, 38 ans'},
+  {q:'&laquo;&nbsp;Ma professeure de primaire m\'a fait un compliment sur l\'étymologie de mon prénom, qu\'il correspondait à ma gentillesse.&nbsp;&raquo;', c:'Femme, 21 ans'},
+  {q:'&laquo;&nbsp;J\'avais des difficultés en anglais et à l\'oral en 6ème. Ma professeure a mis en place entre elle et moi un jeu où je devais participer minimum 3 fois en cours. Ça m\'a encouragée, et voyant les résultats, elle l\'a étendu à toute la classe.&nbsp;&raquo;', c:'Femme, 20 ans'},
+  {q:'&laquo;&nbsp;Mon professeur de philosophie en terminale m\'a dit, lors d\'une discussion sur l\'orientation, que peu importe ce que je ferais comme études, il souhaitait que ça me plaise et que j\'aille le plus loin possible.&nbsp;&raquo;', c:'Homme, 20 ans'},
+  {q:'&laquo;&nbsp;Mon année de CM1 est celle qui m\'a marquée le plus. Ma maîtresse était douce, gentille et attentive. Ce que j\'adorais, c\'était le coin jeu où dès qu\'on avait fini notre travail, on pouvait s\'y rendre et jouer librement.&nbsp;&raquo;', c:'Femme, 21 ans'},
+  {q:'&laquo;&nbsp;Mon voyage scolaire en Italie en 3e a été un moment inoubliable. Nous avons visité des villes magnifiques et renforcé nos liens avec nos camarades.&nbsp;&raquo;', c:'21 ans'},
+  {q:'&laquo;&nbsp;Mr Perez m\'a laissé faire l\'appel. Ceci m\'a permis d\'avoir un avant-goût de mon futur métier.&nbsp;&raquo;', c:'M1, 2024'},
+  {q:'&laquo;&nbsp;En maternelle, nous faisions beaucoup de cours de cuisine que j\'adorais. Une fois, nous avons fait de la confiture de citrouille et c\'était la meilleure que j\'aie jamais mangée.&nbsp;&raquo;', c:'21 ans'},
+  {q:'&laquo;&nbsp;En CP, il y avait un jeune homme sourd. Durant les moments de chorale, la directrice avait à cœur de nous apprendre tous les chants en langue des signes, pour qu\'il puisse participer.&nbsp;&raquo;', c:'22 ans'},
+  {q:'&laquo;&nbsp;En CM1, notre maître avait installé un énorme aquarium en classe. Chaque élève avait un poisson attitré. Cela a créé une vraie responsabilité et beaucoup de motivation.&nbsp;&raquo;', c:'22 ans'},
+];
+
+function creerFlasher({ textes, sectionEl, textEl, citeEl, barreEl, numEl, totEl, cdEl, pauseBtn, duree }) {
+  let idx = 0, paused = false, startT, elapsed = 0, raf;
+  const DUR = duree || 4000;
+  totEl.textContent = textes.length;
+  function setBg() {
+    sectionEl.className = sectionEl.className.replace(/\s*(pair|impair)/, '');
+    sectionEl.classList.add(idx % 2 === 0 ? 'pair' : 'impair');
+  }
+  function show(i) {
+    textEl.classList.remove('v'); citeEl.classList.remove('v');
+    setTimeout(() => {
+      textEl.innerHTML = textes[i].q;
+      citeEl.textContent = textes[i].c;
+      numEl.textContent = i + 1;
+      setBg();
+      textEl.classList.add('v'); citeEl.classList.add('v');
+    }, 350);
+  }
+  function tick(ts) {
+    if (!startT) startT = ts;
+    if (!paused) {
+      const delta = ts - startT + elapsed;
+      barreEl.style.width = Math.min(100, (delta / DUR) * 100) + '%';
+      cdEl.textContent = Math.max(Math.ceil((DUR - delta) / 1000), 0);
+      if (delta >= DUR) {
+        idx = (idx + 1) % textes.length;
+        show(idx);
+        elapsed = 0; startT = ts;
+      }
+    }
+    raf = requestAnimationFrame(tick);
+  }
+  pauseBtn.addEventListener('click', () => {
+    paused = !paused;
+    if (paused) { elapsed += performance.now() - startT; startT = null; pauseBtn.textContent = '▶'; }
+    else { startT = performance.now(); pauseBtn.textContent = '⏸'; }
+  });
+  show(0);
+  raf = requestAnimationFrame(tick);
+}
+
+creerFlasher({
+  textes: BLEUS, sectionEl: document.getElementById('flash-bleu-section'),
+  textEl: document.getElementById('fb-text'), citeEl: document.getElementById('fb-cite'),
+  barreEl: document.getElementById('fb-barre'), numEl: document.getElementById('fb-num'),
+  totEl: document.getElementById('fb-tot'), cdEl: document.getElementById('fb-cd'),
+  pauseBtn: document.getElementById('fb-pause'),
+  duree: 5000,
+});
+</script>
+</body>
+</html>

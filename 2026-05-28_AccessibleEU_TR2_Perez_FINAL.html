@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micro-violences en contexte scolaire - J.-M. Perez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #fafaf8;
+  --bg-alt: #f0ede8;
+  --navy: #1a2744;
+  --navy-mid: #3d5a80;
+  --teal: #2a9d8f;
+  --teal-light: #e8f5f3;
+  --coral: #c1443e;
+  --coral-light: #fdf0ef;
+  --text: #2d2d2d;
+  --text-light: #6b7280;
+  --border: #e5e2dc;
+  --white: #ffffff;
+  --shadow: 0 4px 24px rgba(26, 39, 68, 0.08);
+  --shadow-lg: 0 12px 48px rgba(26, 39, 68, 0.12);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Progress bar */
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--navy-mid));
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+
+/* Navigation */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  z-index: 90;
+  background: rgba(250, 250, 248, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-left {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.85rem;
+  color: var(--navy);
+  font-weight: 700;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-page {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  letter-spacing: 0.05em;
+}
+.nav-dots {
+  display: flex;
+  gap: 6px;
+}
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav-dot.active {
+  background: var(--teal);
+  transform: scale(1.3);
+}
+
+/* Slides */
+.slide {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 7rem 8vw 4rem;
+  animation: fadeIn 0.4s ease;
+}
+.slide.active { display: flex; flex-direction: column; justify-content: center; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cover */
+.cover {
+  background: var(--navy);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(42, 157, 143, 0.15) 0%, transparent 70%);
+}
+.cover::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(193, 68, 62, 0.1) 0%, transparent 70%);
+}
+.cover * { position: relative; z-index: 2; }
+.cover .tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  border: 1px solid rgba(42, 157, 143, 0.4);
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  margin-bottom: 2.5rem;
+}
+.cover h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 18em;
+  margin-bottom: 1.5rem;
+}
+.cover .subtitle {
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 36em;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.cover .author {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+}
+.cover .author strong { color: var(--white); font-weight: 600; }
+
+/* Typography */
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+p {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  line-height: 1.75;
+  max-width: 48em;
+  color: var(--text);
+}
+.section-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+/* Quote */
+.quote {
+  position: relative;
+  padding: 1.5rem 0 1.5rem 2rem;
+  margin: 1.5rem 0;
+  max-width: 42em;
+}
+.quote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--teal), var(--navy-mid));
+  border-radius: 2px;
+}
+.quote p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--navy);
+}
+.quote .attr {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-top: 0.6rem;
+  display: block;
+}
+.quote.coral::before {
+  background: linear-gradient(180deg, var(--coral), #e07070);
+}
+.quote.coral p { color: var(--coral); }
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.card-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--navy-mid);
+  margin-bottom: 0.6rem;
+}
+.card-text {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.card.teal { border-left: 3px solid var(--teal); }
+.card.coral { border-left: 3px solid var(--coral); }
+.card.navy { border-left: 3px solid var(--navy); }
+
+/* Hypocrisie diagram */
+.hypo-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem 1.5rem;
+  align-items: center;
+  margin: 1.5rem 0;
+  max-width: 38em;
+}
+.hypo-verb {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-align: right;
+  min-width: 6rem;
+}
+.hypo-desc {
+  font-size: 0.92rem;
+  color: var(--text-light);
+  padding: 0.6rem 1rem;
+  background: var(--bg-alt);
+  border-radius: 6px;
+}
+
+/* Stats */
+.stat-row {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1;
+}
+.stat-desc {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  max-width: 12em;
+}
+
+/* Mini-these box */
+.these {
+  background: var(--teal-light);
+  border: 1px solid rgba(42, 157, 143, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  max-width: 44em;
+}
+.these-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 0.6rem;
+}
+.these p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.these.coral-box {
+  background: var(--coral-light);
+  border-color: rgba(193, 68, 62, 0.2);
+}
+.these.coral-box .these-label { color: var(--coral); }
+
+/* Two columns */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+/* References */
+.ref-list {
+  columns: 2;
+  column-gap: 3rem;
+  font-size: 0.82rem;
+  line-height: 2;
+  color: var(--text-light);
+  max-width: 60em;
+}
+.ref-list p { font-size: 0.82rem; margin-bottom: 0.3rem; }
+
+/* Emphasis */
+.strong { font-weight: 600; color: var(--navy); }
+.teal-text { color: var(--teal); font-weight: 600; }
+.coral-text { color: var(--coral); font-weight: 600; }
+.small { font-size: 0.85rem; color: var(--text-light); }
+.mt { margin-top: 1.5rem; }
+.mb { margin-bottom: 1.5rem; }
+
+/* SVG illustrations */
+.illust {
+  position: absolute;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+/* Explore links */
+.explore {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.explore-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--navy-mid);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+.explore-link:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+.explore-link::before {
+  content: '\2197';
+  font-size: 0.85rem;
+}
+.explore-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Keyboard hint */
+.kbd-hint {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  font-size: 0.7rem;
+  color: var(--text-light);
+  opacity: 0.6;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 2rem;
+  left: 3rem;
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .slide { padding: 6rem 5vw 3rem; }
+  .nav { padding: 1rem 1.5rem; }
+  .two-col { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+  .ref-list { columns: 1; }
+  .stat-row { flex-direction: column; gap: 1.5rem; }
+  .hypo-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav">
+  <div class="nav-left"></div>
+  <div class="nav-right">
+    <div class="nav-dots" id="dots"></div>
+    <div class="nav-page" id="page-num">1 / 7</div>
+  </div>
+</nav>
+
+<!-- 1. COUVERTURE -->
+<div class="slide cover active">
+  <span class="tag">AccessibleEU · Table ronde 2 · Annecy, 28 mai 2026</span>
+  <h1>Quels obstacles institutionnels et pédagogiques freinent la mise en œuvre de pratiques « réellement » inclusives ?</h1>
+  <p class="subtitle">Les micro-violences ordinaires : obstacle à l'accessibilité</p>
+  <p style="font-size:0.8rem; color:rgba(255,255,255,0.45); margin-top:1.5rem; letter-spacing:0.1em">4 000+ souvenirs scolaires · Enquête permanente 2023–2026</p>
+  <div class="author">
+    <strong>Jean-Michel Perez</strong><br>
+    Université de Lorraine · LISEC · INSPÉ de Lorraine
+  </div>
+</div>
+
+
+<!-- 2. L’ÉCOLE BIENVEILLANTE ? -->
+<div class="slide">
+  <h2>L’école bienveillante ? <span style="font-weight:400; font-size:0.65em; color:var(--text-light)">(Loi pour une « école de la confiance », 2019)</span></h2>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:54em">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem; font-size:1rem; min-width:5rem">ordinaire</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Un prof m’a écrit “bouffonne” sur la copie. »</p>
+        <span class="attr">femme, 21 ans · fait actuel</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem; font-size:1rem; min-width:5rem">handicap</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Tu n’es pas idiote au point d’avoir des aides auditives, tu n’avais qu’à écouter. »</p>
+        <span class="attr">femme, 61 ans · malentendante, appareillée à 5 ans · influence 10/10</span>
+        <p style="font-style:italic; color:var(--text-light); font-size:0.85rem; margin-top:0.3rem; line-height:1.4">J’ai cru qu’être malentendante, c’était être idiote. J’ai 4 enfants de 37 à 14 ans et ça ne s’est pas arrêté.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="small mt" style="max-width:42em; color:var(--navy); font-weight:500">À la souffrance vécue se rajoute l’humiliation, voire l’injure : le handicap comme facteur aggravant.</p>
+
+  <p style="margin-top:1rem"><a href="https://www.youtube.com/watch?v=bc_KbxaHDbo" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:var(--coral); font-size:0.85rem; text-decoration:none; border-bottom:1px solid var(--coral)">&#9654; Les micro-violences à l'école : ces petites phrases qui détruisent</a> <span style="font-size:0.7rem; color:var(--text-light)">(The Conversation · YouTube)</span></p>
+
+  
+
+</div>
+
+<!-- 2. I. SUR LE CORPS -->
+<div class="slide">
+  <span class="section-tag">I. Le mécanisme structurel · 97 % des souvenirs négatifs = mots, regards, humiliations</span>
+  <h2>Sur le corps</h2>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:54em">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">1960</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« À la maternelle, l’institutrice me scotchait la bouche et m’attachait les pieds. Ce souvenir m’a suivi toute ma vie. »</p>
+        <span class="attr">homme, 67 ans</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">1980</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Quand j’étais en maternelle, ma maîtresse me trouvait trop bavarde. Elle me mettait du scotch sur la bouche et m’attachait aussi parfois à une chaise. »</p>
+        <span class="attr">femme, 49 ans</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">2010</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« En CM1, la professeure trouvait un élève trop bavard. Elle a donc décidé de le faire taire en le bâillonnant avec du scotch de déménagement pendant la matinée de cours. »</p>
+        <span class="attr">homme, 22 ans</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. I. L'HUMILIATION PUBLIQUE -->
+<div class="slide">
+  <span class="section-tag">I. Le mécanisme structurel</span>
+  <h2>L'humiliation publique</h2>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:54em">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">1987</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Mademoiselle, c'est à se demander si vous êtes née en France ! Comment se fait-il que vous n'ayez pas été orientée en CAP ? »</p>
+        <span class="attr">femme, 54 ans · lycée · genre + origine</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">1994</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Vous faites partie de l'erreur de recrutement. »</p>
+        <span class="attr">femme, 50 ans · hypokhâgne · influence 10/10</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">2024</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Ma professeure de mathématiques se moquait de mes notes devant toute la classe et m'a dit que je finirai ma vie sous un pont. »</p>
+        <span class="attr">femme, 21 ans · fait actuel</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. I. LA RECONNAISSANCE PROFESSIONNELLE -->
+<div class="slide">
+  <span class="section-tag">I. Le mécanisme structurel</span>
+  <h2>La reconnaissance professionnelle <span style="font-weight:400; font-size:0.65em; color:var(--text-light)">(les personnes humiliantes reconnues par l’institution : un signal qui interroge)</span></h2>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:54em">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">1986</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« En CE1, mon enseignante mettait des fessées aux élèves, pantalon baissé devant la classe, enfant avec du Scotch sur la bouche, tirage d'oreilles. J'allais chaque jour à l'école avec la boule au ventre. Mes parents ne sont jamais allés la voir. Cela ne se faisait pas. L'enseignante du village était un personnage reconnu. »</p>
+        <span class="attr">femme, 47 ans</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem">2000</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« J'avais toujours zéro en dictée. Une fois, j'ai obtenu une meilleure note — il a recouvert entièrement ma copie en écrivant « bravo » à l'encre rouge. Mon voisin, il l'avait surnommé « le cheval ». Un autre, « le putois ». Quelques années après, j'ai appris que cet enseignant était devenu directeur de la nouvelle école du village. »</p>
+        <span class="attr">femme, 33 ans</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. II. LE DROIT SANS EFFET -->
+<div class="slide">
+  <span class="section-tag">II. L'effet de loupe</span>
+  <h2>Le handicap <span style="font-weight:400; font-size:0.65em; color:var(--text-light)">(effet multiplié)</span></h2>
+  <p style="font-size:0.9rem; color:var(--text-light); font-style:italic; margin-top:-0.3rem; margin-bottom:1.2rem">À la souffrance vécue se rajoute l’injure — <span style="font-style:italic; color:var(--coral)">“Adding insult to injury.”</span></p>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:54em">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem; font-size:1rem; min-width:5rem">refus</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« J'ai un diagnostic d'autisme et de dyslexie. L'aménagement m'a été refusé à plusieurs reprises, alors que le président de l'Université avait signé l'arrêté. »</p>
+        <span class="attr">étudiante autiste et dyslexique</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem; font-size:1rem; min-width:5rem">budget</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« On m'a dit que c'était pas possible, qu'il y avait pas assez de budget pour deux surveillants, que s'il fallait faire ça pour tout le monde… »</p>
+        <span class="attr">étudiante en situation de handicap</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem; font-size:1rem; min-width:5rem">déni</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Une enseignante m'a dit : moi aussi je suis dyslexique, j'en fais pas un plat. J'ai réussi, il n'y a pas de raison que tu ne réussisses pas. »</p>
+        <span class="attr">étudiante dyslexique</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem">
+      <span style="font-family:'Libre Baskerville',serif; font-size:1.6rem; color:var(--coral); min-width:3.5rem; font-weight:700; padding-top:0.7rem; font-size:1rem; min-width:5rem">lieu</span>
+      <div class="quote coral" style="flex:1; margin:0">
+        <p>« Je suis TDA/H. J'ai été placée dans une salle donnant sur la sortie de l'amphi — avec les étudiants qui sortaient après l'épreuve et qui, très excités, échangeaient… »</p>
+        <span class="attr">étudiante TDA/H</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ 1/3 -->
+<div class="slide">
+  <span class="section-tag">Quiz — 1/3</span>
+  <h2>L'école protège nos enfants. Vrai ou faux ?</h2>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:44em; margin-top:1rem">
+    <button onclick="quizAnswer(1, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">Oui — c'est sa mission, elle la remplit</button>
+    <button onclick="quizAnswer(1, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">Pas toujours, mais elle essaie</button>
+    <button onclick="quizAnswer(1, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">L'institution elle-même peut produire de la violence</button>
+  </div>
+
+  <div id="qr-1" style="display:none; margin-top:1.2rem; max-width:48em">
+    <div class="quote coral" style="margin:0">
+      <p>Quelle que soit votre réponse, voici ce qu'écrit <strong>Jacques Toubon</strong>, Défenseur des droits (2014-2020), dans <em>Enfance et violence : la part des institutions publiques</em> (2019) :</p>
+      <p style="margin-top:0.5rem">« Les violences sont une réalité dans le quotidien des enfants, y compris au sein des institutions dans lesquelles ils sont accueillis ou pris en charge. »</p>
+      <p style="margin-top:0.5rem">« Le fonctionnement des institutions publiques est susceptible en lui-même d'induire ou d'amplifier les violences faites aux enfants dont elles ont la charge. »</p>
+      <p style="margin-top:0.5rem">La loi parle d'une « école de la bienveillance » (2013) et d'une « école de la confiance » (2019). L'écart entre le discours législatif et la réalité vécue est un gouffre.</p>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ 2/3 -->
+<div class="slide">
+  <span class="section-tag">Quiz — 2/3</span>
+  <h2>Maintenant que vous savez, est-ce que ça change quelque chose ?</h2>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:44em; margin-top:1rem">
+    <button onclick="quizAnswer(2, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">Savoir suffit — la prise de conscience transforme les pratiques</button>
+    <button onclick="quizAnswer(2, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">Non, rien ne bouge jamais vraiment</button>
+    <button onclick="quizAnswer(2, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">C'est plus compliqué que ça</button>
+  </div>
+
+  <div id="qr-2" style="display:none; margin-top:1.2rem; max-width:48em">
+    <div class="quote coral" style="margin:0">
+      <p>Les controverses sociales suivent presque toujours le même scénario : d'abord <strong>l'indignation</strong>, puis <strong>la normalisation</strong>. La vache folle, inacceptable en 1996, est devenue un risque « géré ». Le COVID, terreur collective en 2020, fait aujourd'hui partie du décor.</p>
+      <p style="margin-top:0.5rem">Les violences éducatives suivent exactement le même chemin. Transformer demande une prise de conscience à l'échelle nationale. D'autres nations ont fait d'autres choix.</p>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ 3/3 -->
+<div class="slide">
+  <span class="section-tag">Quiz — 3/3</span>
+  <h2>« Ça le forme. On n'est pas chez les Bisounours. »</h2>
+  <p style="font-size:0.85rem; color:var(--text-light); font-style:italic; margin-top:-0.3rem; margin-bottom:1rem">Holt-Lunstad et al., 2015 — 70 études, 3,4 millions de personnes</p>
+
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:44em">
+    <button onclick="quizAnswer(3, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">C'est vrai — l'adversité forge le caractère</button>
+    <button onclick="quizAnswer(3, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">Les enfants sont résilients, ils s'en remettent</button>
+    <button onclick="quizAnswer(3, event)" style="display:block; padding:1rem 1.4rem; background:rgba(193,68,62,0.08); border:1px solid rgba(193,68,62,0.25); border-radius:8px; font-family:'Libre Baskerville',serif; font-size:1.1rem; color:var(--navy); cursor:pointer; text-align:left; transition:opacity 0.3s">L'isolement n'est pas formateur — c'est un danger</button>
+  </div>
+
+  <div id="qr-3" style="display:none; margin-top:1.2rem; max-width:48em">
+    <div class="quote coral" style="margin:0">
+      <p>Quand un élève est isolé et qu'aucun mécanisme de reliance ne vient compenser, ce n'est pas du « caractère » qui se construit. La science est formelle :</p>
+      <p style="margin-top:0.5rem"><strong>Holt-Lunstad et al., 2015</strong> (70 études, 3,4 millions de personnes) : l'isolement social augmente le risque de mortalité prématurée — un effet sur la santé comparable au tabagisme et à l'obésité.</p>
+      <p style="margin-top:0.5rem">Ce n'est pas une question de Bisounours. C'est une question de vivre ensemble. Les micro-attentions — ces gestes minuscules qui disent « tu existes, tu comptes » — sont peut-être le seul antidote que l'école peut inventer de l'intérieur. Encore faut-il que nos institutions apprennent à les protéger.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 6. LA THÈSE -->
+<div class="slide">
+  <span class="section-tag">Quels obstacles freinent l'inclusion ?</span>
+  <h2>Ce que montrent 4 000 témoignages</h2>
+
+  <div class="these coral-box" style="max-width:44em">
+    <p>Être enfant dans l’institution scolaire, c’est déjà occuper une position basse. Être fille, c’est y ajouter un second marqueur. Être en situation de handicap, c’est cumuler une troisième vulnérabilité — et le handicap fonctionne comme un effet de loupe : il ne crée pas la micro-violence, il révèle ce que l’institution fait à tout le monde, mais plus intensivement.</p>
+  </div>
+
+  <div class="quote mt" style="border-left-color:var(--navy-mid); max-width:44em">
+    <p>« Le fonctionnement des institutions publiques est susceptible en lui-même d’induire ou d’amplifier les violences faites aux enfants dont elles ont la charge. »</p>
+    <span class="attr">Défenseur des droits, 2019</span>
+  </div>
+
+  <div class="explore mt">
+    <a class="explore-link" href="https://enquetes.univ-lorraine.fr/index.php/641553" target="_blank" onclick="event.stopPropagation()">Enquête souvenirs scolaires</a>
+    <a class="explore-link" href="https://jean-michel-perez.fr" target="_blank" onclick="event.stopPropagation()">jean-michel-perez.fr</a>
+  </div>
+  <p class="small mt" style="opacity:0.7">Vous avez reçu le questionnaire. Partagez vos 2 souvenirs.</p>
+</div>
+
+<!-- 7. RÉFÉRENCES -->
+<div class="slide">
+  <span class="section-tag">Travaux mobilisés</span>
+  <h2>Références</h2>
+  <div class="ref-list">
+    <p>Brunsson, N. (1989). <em>The Organization of Hypocrisy</em>. Wiley.</p>
+    <p>Défenseur des droits (2019). <em>Enfance et violence : la part des institutions publiques</em>.</p>
+    <p>Jury, M., et al. (2021). Les AESH face à l’école inclusive. <em>n</em> = 2 203.</p>
+    <p>Muller, L. & Perez, J.-M. (2024). <em>Comprendre les micro-violences en éducation</em>. Champ social.</p>
+    <p>Muller, L. & Perez, J.-M. (dir.) (2024). Éducation et micro-violences [dossier]. <em>La nouvelle revue - Éducation et société inclusives</em>, 103.</p>
+    <p>Perez, J.-M. & Suau, G. (2024). <em>Formation aux pratiques inclusives</em>. PUN.</p>
+    <p>Suau, G. (2024). Ce que vivent les AESH. <em>JARES / NRESI</em>, 103.</p>
+    <p>Enquête permanente « souvenirs scolaires » (en cours, 4 000+ répondants).</p>
+    <p>Perez, J.-M. (2026). Micro-violences et accessibilité. AccessibleEU, Annecy, 28 mai.</p>
+    <p><a href="https://jean-michel-perez.fr" target="_blank" style="color:var(--coral)">jean-michel-perez.fr</a> — site, questionnaire et quiz en ligne.</p>
+  </div>
+</div>
+
+
+<div class="footer"></div>
+<div class="kbd-hint">&#8592; &#8594; ou clic pour naviguer</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const progress = document.getElementById('progress');
+const pageNum = document.getElementById('page-num');
+const dotsContainer = document.getElementById('dots');
+let current = 0;
+
+// Create dots
+slides.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', (e) => { e.stopPropagation(); goTo(i); });
+  dotsContainer.appendChild(dot);
+});
+
+function goTo(n) {
+  slides[current].classList.remove('active');
+  current = Math.max(0, Math.min(n, slides.length - 1));
+  slides[current].classList.add('active');
+  // Update progress
+  progress.style.width = ((current + 1) / slides.length * 100) + '%';
+  pageNum.textContent = (current + 1) + ' / ' + slides.length;
+  // Update dots
+  document.querySelectorAll('.nav-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === current);
+  });
+  // Hide nav elements on cover
+  const nav = document.querySelector('.nav');
+  nav.style.borderBottom = current === 0 ? 'none' : '';
+  nav.style.background = current === 0 ? 'transparent' : '';
+  document.querySelector('.nav-left').style.color = current === 0 ? '#fff' : '';
+  pageNum.style.color = current === 0 ? 'rgba(255,255,255,0.6)' : '';
+  document.querySelector('.footer').style.display = current === 0 ? 'none' : '';
+  document.querySelector('.kbd-hint').style.display = current === 0 ? 'none' : '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); goTo(current + 1); }
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(current - 1); }
+  if (e.key === 'Home') goTo(0);
+  if (e.key === 'End') goTo(slides.length - 1);
+});
+
+document.addEventListener('click', e => {
+  if (e.target.closest('.nav') || e.target.closest('.explore-link') || e.target.closest('a')) return;
+  e.clientX > innerWidth / 2 ? goTo(current + 1) : goTo(current - 1);
+});
+
+// Touch support
+let touchStartX = 0;
+document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+document.addEventListener('touchend', e => {
+  const diff = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(diff) > 50) {
+    diff < 0 ? goTo(current + 1) : goTo(current - 1);
+  }
+});
+
+// Init
+goTo(0);
+</script>
+
+<script>
+function quizAnswer(n, evt) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  var slide = evt.target.closest('.slide');
+  slide.querySelectorAll('button').forEach(function(b) { b.disabled = true; b.style.opacity = '0.4'; });
+  evt.target.style.opacity = '1'; evt.target.style.borderColor = 'var(--coral)';
+  document.getElementById('qr-' + n).style.display = 'block';
+}
+</script>
+</body>
+</html>
