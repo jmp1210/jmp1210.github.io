@@ -274,6 +274,17 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .mv-video-unys { max-width: 500px; }
 .mv-souscap { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #cfd8e3; letter-spacing: 0.04em; margin-top: -0.6rem; max-width: 680px; }
 .mv-souscap a { color: #fff; text-decoration: underline; }
+.quad-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.3rem; width: 100%; max-width: 1060px; }
+.quad-card { display: block; border-radius: 10px; overflow: hidden; text-decoration: none; background: rgba(245,240,235,0.04); border: 1px solid rgba(245,240,235,0.10); transition: border-color 0.3s, transform 0.3s; }
+.quad-card:hover { border-color: rgba(245,240,235,0.3); transform: translateY(-2px); }
+.quad-media { position: relative; aspect-ratio: 16/9; background: #111; overflow: hidden; }
+.quad-media img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.85); transition: filter 0.3s; }
+.quad-card:hover .quad-media img { filter: brightness(1); }
+.quad-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,0.65); pointer-events: none; }
+.quad-txt { padding: 0.9rem 1.2rem 1.05rem; }
+.quad-tag { font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.12em; color: #fff; opacity: 0.75; margin-bottom: 0.4rem; display: block; }
+.quad-title { font-family: 'EB Garamond', serif; font-size: 1.08rem; color: var(--blanc); line-height: 1.35; display: block; }
+@media (max-width: 700px) { .quad-grid { grid-template-columns: 1fr; } }
 .mv-q { font-family: 'EB Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-style: italic; color: var(--blanc); margin: 0 0 0.8rem; }
 .mv-r { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.3rem); font-style: italic; color: #fff; margin: 0; }
 
@@ -662,18 +673,40 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 <!-- ═══ CADRAGE — Micro-violences et Maltraitance ═══ -->
 <div class="mv-intro">
   <p class="mv-q">Recherche en espace public&nbsp;:<br>Les micro-violences &eacute;ducatives. De quoi parle-t-on&nbsp;?</p>
-  <div class="mv-video" id="mv-video-hero" style="cursor:pointer">
-    <img id="mv-thumb" src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="Les micro-violences &agrave; l'&eacute;cole : ces petites phrases et ces gestes banalis&eacute;s qui d&eacute;truisent">
-    <div class="mv-play" id="mv-play-btn">▶</div>
-    <div class="mv-video-caption">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases et ces gestes banalis&eacute;s qui d&eacute;truisent &mdash; The Conversation France &middot; 8 nov. 2025</div>
+  <!-- Carre 2x2 (demande JMP 06/09/2026) : rangee The Conversation, rangee Unys - articles a gauche, videos a droite -->
+  <div class="quad-grid">
+    <a class="quad-card" href="https://theconversation.com/les-micro-violences-educatives-ordinaires-un-impense-de-linstitution-scolaire-253794" target="_blank" rel="noopener">
+      <div class="quad-media"><img src="tc_article_img.jpg" alt="Les micro-violences &agrave; l&rsquo;&eacute;cole &mdash; article The Conversation"></div>
+      <div class="quad-txt">
+        <span class="quad-tag">L&rsquo;article &middot; The Conversation France &middot; 8 nov. 2025</span>
+        <span class="quad-title">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases et ces gestes banalis&eacute;s qui d&eacute;truisent</span>
+      </div>
+    </a>
+    <div class="quad-card" style="cursor:pointer">
+      <div class="quad-media" id="mv-video-hero">
+        <img id="mv-thumb" src="https://img.youtube.com/vi/bc_KbxaHDbo/maxresdefault.jpg" alt="La vid&eacute;o The Conversation &mdash; les micro-violences &agrave; l&rsquo;&eacute;cole">
+        <div class="quad-play" id="mv-play-btn">▶</div>
+      </div>
+      <div class="quad-txt">
+        <span class="quad-tag">La vid&eacute;o &middot; The Conversation France &middot; 8 nov. 2025</span>
+        <span class="quad-title">Les micro-violences &agrave; l&rsquo;&eacute;cole &mdash; la vid&eacute;o</span>
+      </div>
+    </div>
+    <a class="quad-card" href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves/" target="_blank" rel="noopener">
+      <div class="quad-media"><img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/Couv_JeanMichelPerez.png" alt="UNYS Sciences &mdash; Micro-violences &eacute;ducatives"></div>
+      <div class="quad-txt">
+        <span class="quad-tag">L&rsquo;article &middot; Unys Sciences &middot; mars 2026</span>
+        <span class="quad-title">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</span>
+      </div>
+    </a>
+    <a class="quad-card" href="https://www.linkedin.com/posts/recherche-aezducation-aezcole-ugcPost-7501211928157921282-JET1/" target="_blank" rel="noopener">
+      <div class="quad-media"><img src="unys_capsule_img.jpg" alt="Capsule Unys Sciences &mdash; les micro-violences &eacute;ducatives"><div class="quad-play">▶</div></div>
+      <div class="quad-txt">
+        <span class="quad-tag">La capsule vid&eacute;o &middot; Unys Sciences &middot; 3 sept. 2026</span>
+        <span class="quad-title">Les micro-violences &eacute;ducatives et les micro-attentions</span>
+      </div>
+    </a>
   </div>
-  <!-- Capsule Unys Sciences - en ligne depuis le 3 septembre 2026 -->
-  <a class="mv-video mv-video-unys" href="https://www.linkedin.com/posts/recherche-aezducation-aezcole-ugcPost-7501211928157921282-JET1/" target="_blank" rel="noopener">
-    <img src="unys_capsule_img.jpg" alt="Capsule Unys Sciences &mdash; les micro-violences &eacute;ducatives">
-    <div class="mv-play">▶</div>
-    <div class="mv-video-caption">Les micro-violences &eacute;ducatives et les micro-attentions &mdash; la capsule Unys Sciences &middot; 3 sept. 2026</div>
-  </a>
-  <div class="mv-souscap"><a href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves/" target="_blank" rel="noopener">Lire l&rsquo;article Unys&nbsp;: &laquo;&nbsp;Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?&nbsp;&raquo;</a></div>
   <div class="scroll-arrow">&darr;</div>
 </div>
 
@@ -751,27 +784,6 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 </section>
 
 
-
-<!-- ═══ ENCARTS PRESSE ═══ -->
-<div style="background:#0d1b2a;padding:2rem 0;">
-  <div style="max-width:640px;margin:0 auto;padding:0 2rem;">
-    <a href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves-2/" target="_blank" rel="noopener" style="display:block;border-radius:10px;overflow:hidden;text-decoration:none;background:rgba(245,240,235,0.04);border:1px solid rgba(245,240,235,0.10);transition:border-color 0.3s,transform 0.3s;margin-bottom:1rem;" onmouseover="this.style.borderColor='rgba(245,240,235,0.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(245,240,235,0.10)';this.style.transform='none'">
-      <img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/Couv_JeanMichelPerez.png" alt="UNYS Sciences &mdash; Micro-violences &eacute;ducatives" style="width:100%;display:block;object-fit:cover;max-height:420px;">
-      <div style="padding:1rem 1.4rem 1.2rem;">
-        <div style="font-family:'Inter',sans-serif;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.12em;color:#fff;margin-bottom:0.5rem;">UNYS Sciences &middot; mars 2026</div>
-        <div style="font-family:'EB Garamond',serif;font-size:1.2rem;color:#fff;line-height:1.4;">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</div>
-      </div>
-    </a>
-    <a href="https://theconversation.com/les-micro-violences-educatives-ordinaires-un-impense-de-linstitution-scolaire-253794" target="_blank" rel="noopener" style="display:block;border-radius:10px;overflow:hidden;text-decoration:none;background:rgba(245,240,235,0.04);border:1px solid rgba(245,240,235,0.10);transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(245,240,235,0.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(245,240,235,0.10)';this.style.transform='none'">
-      <img src="tc_article_img.jpg" alt="Les micro-violences &agrave; l&rsquo;&eacute;cole" style="width:100%;display:block;object-fit:cover;max-height:420px;">
-      <div style="padding:1rem 1.4rem 1.2rem;">
-        <div style="font-family:'Inter',sans-serif;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.12em;color:#fff;margin-bottom:0.5rem;">The Conversation France &middot; 8 nov. 2025</div>
-        <div style="font-family:'EB Garamond',serif;font-size:1.2rem;color:#fff;line-height:1.4;">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases et ces gestes banalis&eacute;s qui d&eacute;truisent</div>
-      </div>
-    </a>
-  </div>
-  <div class="scroll-arrow">&darr;</div>
-</div>
 
 <!-- ═══ CHOC — Premier impact ═══ -->
 <div style="background:#0d1b2a;padding:0;">
@@ -1272,6 +1284,7 @@ document.getElementById('mv-video-hero').addEventListener('click', function() {
   this.innerHTML = '';
   this.style.display = 'flex';
   this.style.justifyContent = 'center';
+  this.style.aspectRatio = 'auto';
   this.appendChild(iframe);
 });
 
