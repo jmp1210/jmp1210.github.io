@@ -208,6 +208,16 @@ ul.modalites li::before {
 }
 ul.modalites li strong { color: var(--blanc); font-weight: 600; }
 
+/* MAQUETTE */
+.maquette-table { width: 100%; border-collapse: collapse; margin: 1.2rem 0 2rem; font-family: 'EB Garamond', serif; }
+.maquette-table caption { text-align: left; font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bleu-vif); padding-bottom: 0.6rem; }
+.maquette-table th { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris-clair); text-align: left; padding: 0.5rem 0.8rem; border-bottom: 1px solid rgba(245,240,235,0.25); }
+.maquette-table td { font-size: 1.02rem; color: #fff; padding: 0.5rem 0.8rem; border-bottom: 1px solid rgba(245,240,235,0.08); vertical-align: top; line-height: 1.5; }
+.maquette-table td.bloc { color: var(--blanc); font-weight: 600; }
+.maquette-table td.ects { white-space: nowrap; color: var(--bleu-vif); font-weight: 600; }
+.maquette-table tr.entete-bloc td { padding-top: 0.9rem; }
+@media (max-width: 768px) { .maquette-table { display: block; overflow-x: auto; } }
+
 /* BOUTONS ACTION */
 .actions-grid {
   display: flex; flex-wrap: wrap; gap: 1rem; margin: 2rem 0 1rem;
@@ -340,6 +350,48 @@ footer {
   <section class="section-bloc">
     <div class="section-label"><span class="dot"></span>Le parcours</div>
     <h2 class="section-titre">Une approche pluridisciplinaire, adoss&eacute;e &agrave; 6 laboratoires de recherche et construit au plus pr&egrave;s des prax&eacute;ologies professionnelles</h2>
+  </section>
+
+  <!-- Section maquette (ajoutee 16/09/2026, source : maquette nationale du parcours, VD 25 juin 2022) -->
+  <section class="section-bloc" id="maquette">
+    <div class="section-label"><span class="dot"></span>La maquette</div>
+    <h2 class="section-titre">Les enseignements du parcours : 297 heures, deux semestres, cinq blocs de comp&eacute;tences</h2>
+    <p class="section-texte">Chaque bloc d'enseignements est &eacute;valu&eacute; par une <em>situation int&eacute;gratrice</em> (SI), au service d'un bloc de comp&eacute;tences&nbsp;: identifier les probl&eacute;matiques pos&eacute;es par l'&eacute;ducation inclusive (BC1)&nbsp;; comprendre, analyser et mettre en &oelig;uvre des situations d'enseignement et de formation en fonction de la diversit&eacute; des publics (BC2)&nbsp;; concevoir et mettre en &oelig;uvre des projets collectifs au service des institutions (BC3)&nbsp;; mettre en &oelig;uvre une d&eacute;marche scientifique dans le champ de l'&eacute;ducation et de la formation (BC4)&nbsp;; ma&icirc;triser une langue-culture &eacute;trang&egrave;re au niveau B2 (BC5).</p>
+
+    <table class="maquette-table">
+      <caption>Semestre 9</caption>
+      <thead><tr><th>Bloc d'enseignements</th><th>Modules</th><th>Volume</th><th>&Eacute;valuation</th></tr></thead>
+      <tbody>
+        <tr class="entete-bloc"><td class="bloc" rowspan="2">Inclusion&nbsp;: cadre normatif, constats et enjeux</td><td>ME&nbsp;901 &ndash; Introduction g&eacute;n&eacute;rale aux questions de l'&eacute;ducation inclusive</td><td>12&nbsp;h</td><td class="ects" rowspan="2">SI&nbsp;9.1 &middot; 6&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;902 &ndash; Approche nationale et internationale de l'&eacute;ducation inclusive</td><td>18&nbsp;h</td></tr>
+        <tr class="entete-bloc"><td class="bloc" rowspan="6">Accessibilit&eacute; et pratiques inclusives</td><td>ME&nbsp;903 &ndash; Accessibilit&eacute; et pratiques de coop&eacute;ration</td><td>12&nbsp;h</td><td class="ects" rowspan="6">SI&nbsp;9.2 &middot; 10&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;904 &ndash; Traces &eacute;crites et m&eacute;diation</td><td>12&nbsp;h</td></tr>
+        <tr><td>ME&nbsp;905 &ndash; Arts, m&eacute;diation et situation &eacute;ducative</td><td>12&nbsp;h</td></tr>
+        <tr><td>ME&nbsp;906 &ndash; Diversit&eacute; et langues-cultures au c&oelig;ur des apprentissages</td><td>12&nbsp;h</td></tr>
+        <tr><td>ME&nbsp;907 &ndash; Existentialisme et &eacute;ducation inclusive</td><td>12&nbsp;h</td></tr>
+        <tr><td>ME&nbsp;908 &ndash; &Eacute;valuation et inclusion</td><td>12&nbsp;h</td></tr>
+        <tr class="entete-bloc"><td class="bloc" rowspan="2">Projet et institutions d'enseignement et de formation</td><td>ME&nbsp;909 &ndash; M&eacute;thodologie du projet</td><td>12&nbsp;h</td><td class="ects" rowspan="2">SI&nbsp;9.3 &middot; 6&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;910 &ndash; De l'analyse des besoins &agrave; un projet partag&eacute; en territoire local, national ou international</td><td>12&nbsp;h</td></tr>
+        <tr class="entete-bloc"><td class="bloc" rowspan="2">M&eacute;thodologie et recherche en &eacute;ducation</td><td>ME&nbsp;911 &ndash; Apprentissages rh&eacute;toriques &agrave; propos de la th&eacute;matique de l'&eacute;ducation et des pratiques inclusives</td><td>18&nbsp;h</td><td class="ects" rowspan="2">SI&nbsp;9.4 &middot; 8&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;912 &ndash; Histoire des id&eacute;es scientifiques&nbsp;: ruptures et continuit&eacute;s</td><td>30&nbsp;h</td></tr>
+      </tbody>
+    </table>
+
+    <table class="maquette-table">
+      <caption>Semestre 10</caption>
+      <thead><tr><th>Bloc d'enseignements</th><th>Modules</th><th>Volume</th><th>&Eacute;valuation</th></tr></thead>
+      <tbody>
+        <tr class="entete-bloc"><td class="bloc" rowspan="2">Accessibilit&eacute; et pratiques inclusives</td><td>ME&nbsp;1001 &ndash; Psychologie humaniste du sujet et &eacute;ducation inclusive</td><td>12&nbsp;h</td><td class="ects" rowspan="2">SI&nbsp;10.2 &middot; 7&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;1002 &ndash; Analyse des situations et des prax&eacute;ologies professionnelles inclusives</td><td>12&nbsp;h</td></tr>
+        <tr class="entete-bloc"><td class="bloc" rowspan="2">Projet et institutions d'enseignement et de formation</td><td>ME&nbsp;1003 &ndash; Conception et conduite de projet</td><td>12&nbsp;h</td><td class="ects" rowspan="2">SI&nbsp;10.3 &middot; 7&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;1004 &ndash; Mise en &oelig;uvre d'un projet en &eacute;ducation sur le territoire local, national ou international</td><td>18&nbsp;h</td></tr>
+        <tr class="entete-bloc"><td class="bloc" rowspan="2">M&eacute;thodologie et recherche en &eacute;ducation</td><td>ME&nbsp;1005 &ndash; S&eacute;minaires de recherche</td><td>18&nbsp;h</td><td class="ects" rowspan="2">SI&nbsp;10.4 &middot; 14&nbsp;ECTS</td></tr>
+        <tr><td>ME&nbsp;1006 &ndash; Recherche et d&eacute;veloppement professionnel</td><td>12&nbsp;h</td></tr>
+        <tr class="entete-bloc"><td class="bloc">Langues et cultures &eacute;trang&egrave;res</td><td>ME&nbsp;1007 &ndash; Langues-Cultures &eacute;trang&egrave;res</td><td>24&nbsp;h</td><td class="ects">SI&nbsp;10.5 &middot; 2&nbsp;ECTS</td></tr>
+      </tbody>
+    </table>
+
+    <p class="section-texte" style="font-size:0.9rem; color:#fff; opacity:0.55; font-style:italic;">Le m&eacute;moire de recherche s'&eacute;labore tout au long de l'ann&eacute;e, adoss&eacute; aux s&eacute;minaires de recherche&nbsp;; la formation croise les apports des Sciences de l'&eacute;ducation et de la formation (LISEC), des Sciences du langage (ATILF), de la psychologie (INTERPSY), de la philosophie (&Eacute;CRITURES) et des sciences de l'information et de la communication (CREM).</p>
   </section>
 
   <!-- Section modalités -->
