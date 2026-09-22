@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Un levier pour protéger l'école — Jean-Michel Perez</title>
+<meta name="description" content="Des micro-violences aux micro-attentions. Jean-Michel Perez, inspiré de et par Fabienne Haab-Calais, à partir de Thomas Gunzig, Spectres (2026).">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://jean-michel-perez.fr/levier.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blanc: #f5f0eb;
+  --gris-clair: rgba(245,240,235,0.55);
+  --rouge: #c41e1e;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', serif; -webkit-font-smoothing: antialiased; }
+
+/* NAV */
+.bandeau { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,18,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,240,235,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 56px; }
+.bandeau nav { display: flex; gap: 1.8rem; }
+.bandeau nav a { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blanc); text-decoration: none; transition: var(--transition); }
+.bandeau nav a:hover { color: var(--rouge); }
+.bandeau-id { text-align: right; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blanc); }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.62rem; color: var(--gris-clair); letter-spacing: 0.04em; max-width: 320px; }
+
+/* TEXTE */
+#levier { padding: 6.5rem 2rem 3rem; }
+.texte { max-width: 760px; margin: 0 auto; }
+.surtitre { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(196,30,30,0.85); margin-bottom: 1.2rem; display: block; }
+h1 { font-family: 'EB Garamond', serif; font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 400; line-height: 1.2; color: #fff; margin-bottom: 1.4rem; }
+.chapeau { font-size: clamp(1.25rem, 2.4vw, 1.5rem); font-style: italic; line-height: 1.55; color: var(--blanc); margin-bottom: 1.6rem; }
+.auteurs { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; color: var(--blanc); margin-bottom: 0.5rem; }
+.reference { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); line-height: 1.6; padding-bottom: 2.2rem; margin-bottom: 2.4rem; border-bottom: 1px solid rgba(245,240,235,0.12); }
+.recit { font-size: clamp(1.15rem, 2.2vw, 1.3rem); line-height: 1.6; margin-bottom: 1.2rem; }
+.recit .ch { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(196,30,30,0.85); margin-right: 0.4rem; }
+blockquote { margin: 0 0 2.2rem 1.4rem; padding: 0.2rem 0 0.2rem 1.3rem; border-left: 2px solid rgba(196,30,30,0.6); font-size: clamp(1.1rem, 2.1vw, 1.25rem); font-style: italic; line-height: 1.6; color: #fff; }
+blockquote p { margin-bottom: 0.35rem; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote em { font-style: normal; }
+blockquote .page { font-family: 'Inter', sans-serif; font-style: normal; font-size: 0.75rem; color: var(--gris-clair); margin-left: 0.3rem; }
+.commentaire { font-size: clamp(1.1rem, 2.1vw, 1.25rem); line-height: 1.6; color: var(--blanc); margin: 0 0 2.2rem; padding: 1rem 1.3rem; background: rgba(245,240,235,0.04); border-left: 2px solid rgba(245,240,235,0.25); }
+.envoi { margin-top: 3rem; padding-top: 2.2rem; border-top: 1px solid rgba(245,240,235,0.12); }
+.envoi h2 { font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 400; font-style: italic; color: #fff; margin-bottom: 1rem; }
+.envoi p { font-size: clamp(1.2rem, 2.4vw, 1.45rem); font-style: italic; line-height: 1.6; color: var(--blanc); }
+.conclusion { font-size: clamp(1.3rem, 2.6vw, 1.6rem); font-style: italic; line-height: 1.5; color: #fff; margin: 2.6rem 0 0; padding-top: 2rem; border-top: 1px solid rgba(245,240,235,0.12); }
+
+.retour-site { text-align: center; padding: 3rem 2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.retour-site a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--blanc); text-decoration: underline; letter-spacing: 0.04em; }
+
+@media (max-width: 768px) {
+  .bandeau { padding: 0 1rem; }
+  .bandeau nav { gap: 1rem; }
+  .bandeau-sous { display: none; }
+  #levier { padding: 5.5rem 1rem 2rem; }
+  blockquote { margin-left: 0.4rem; padding-left: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/#entree">Enqu&ecirc;te</a>
+    <a href="/#mediation">M&eacute;diation</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<section id="levier">
+<div class="texte">
+
+  <span class="surtitre">Un levier pour prot&eacute;ger l'&eacute;cole</span>
+  <h1>Des micro-violences aux micro-attentions.</h1>
+  <p class="auteurs"><em>Jean-Michel Perez, inspir&eacute; de et par Fabienne Haab-Calais, 09-2026</em></p>
+  <p class="reference">Gunzig, T. (2026). <em>Spectres</em>. Au Diable Vauvert. Extrait&nbsp;: pp.&nbsp;47-63 (chapitres 5, 6 et 7).</p>
+
+  <p class="recit"><span class="ch">Ch. 5</span>L&eacute;a a une enfance &laquo;&nbsp;normale&nbsp;&raquo; jusqu'&agrave; 6 ans. Une semaine apr&egrave;s la rentr&eacute;e, dans la cour de r&eacute;cr&eacute;ation, arrive ce qu'elle appelle &laquo;&nbsp;la catastrophe&nbsp;&raquo;. Alors qu'elle descend les escaliers, elle est assaillie&nbsp;: un flot de questions sur le fonctionnement du monde (lumi&egrave;re, mati&egrave;re, infini).</p>
+  <blockquote>
+    <p>Quelque chose venait d'&eacute;clater en elle.</p>
+    <p>Sans bruit.</p>
+    <p>Sans douleur.</p>
+    <p>[...] cette chaleur qui lui arrivait sur le visage, cette lumi&egrave;re qui lui rentrait dans les yeux, d'o&ugrave; venaient-elles&nbsp;? De quoi &eacute;taient-elles faites&nbsp;? Pourquoi le ciel &eacute;tait-il bleu et le soleil blanc&nbsp;? <span class="page">(p.&nbsp;49)</span></p>
+  </blockquote>
+  <blockquote>
+    <p>De retour en classe, le professeur leur avait parl&eacute; de l'addition. [...]</p>
+    <p>Et en ch&oelig;ur, tous les enfants avaient r&eacute;pondu &laquo;&nbsp;deux&nbsp;&raquo;. <span class="page">(p.&nbsp;50)</span></p>
+  </blockquote>
+
+  <p class="recit">Mais si en classe, la question para&icirc;t simple, pour L&eacute;a, elle cache un pi&egrave;ge, tant elle ouvre sur l'infini. Et chez L&eacute;a, &laquo;&nbsp;<em>dans l'esprit de laquelle r&eacute;gnait le chaos</em>&nbsp;&raquo; (p.&nbsp;50).</p>
+
+  <p class="recit">Le professeur l'interroge&nbsp;: combien de pommes ajouter aux trois premi&egrave;res pour en avoir cinq&nbsp;? L&eacute;a cherche la r&eacute;ponse exacte, au gramme, &agrave; l'atome. Quelqu'un souffle &laquo;&nbsp;elle est tr&egrave;s b&ecirc;te&nbsp;&raquo;&nbsp;; dans le regard du professeur, elle lit la m&ecirc;me chose (p.&nbsp;51).</p>
+  <blockquote>
+    <p>&mdash; Il... Il me faudrait du temps.</p>
+    <p>Et tout le monde &eacute;clata de rire.</p>
+    <p>[...] Fini l'insouciance. Termin&eacute; l'enfance. <span class="page">(p.&nbsp;51)</span></p>
+  </blockquote>
+
+  <p class="recit">Ce jour-l&agrave;, quelque chose se fixe.</p>
+  <blockquote>
+    <p>Elle sut qu'&agrave; pr&eacute;sent, au c&oelig;ur de son c&oelig;ur, il y aurait toujours un trou et qu'elle y serait irr&eacute;m&eacute;diablement, tristement et douloureusement seule. <span class="page">(p.&nbsp;52)</span></p>
+  </blockquote>
+
+  <p class="commentaire">L'isolement, premi&egrave;re cause de morbidit&eacute; pr&eacute;coce dans nos soci&eacute;t&eacute;s occidentales, emplit le territoire de L&eacute;a (Holt-Lunstad et al., 2015&nbsp;: 70 &eacute;tudes, 3,4 millions de personnes)&nbsp;: l'isolement social augmente le risque de mortalit&eacute; pr&eacute;matur&eacute;e - un effet sur la sant&eacute; comparable au tabagisme et &agrave; l'ob&eacute;sit&eacute;.</p>
+
+  <p class="recit">Les ann&eacute;es suivantes, elle et ses pens&eacute;es survivent dans des forums sous le pseudo &laquo;&nbsp;<em>leasciencegirl</em>&nbsp;&infin;&nbsp;&raquo; (<em>Maxwell &agrave; 11 ans, l'&eacute;nergie noire &agrave; 14 ans</em>). &Agrave; l'&eacute;cole, ses r&eacute;sultats restent m&eacute;diocres. En seconde, les choses ne s'arrangent pas. Dans un moment de &laquo;&nbsp;laisser-aller&nbsp;&raquo;, elle corrige son professeur de sciences... Einstein &agrave; l'appui. Mal lui en a pris&nbsp;: il &laquo;&nbsp;n'avait pas envie de perdre la face&nbsp;&raquo; (p.&nbsp;53).</p>
+  <blockquote>
+    <p>Le professeur avait lev&eacute; les yeux et il s'&eacute;tait adress&eacute; &agrave; elle en articulant bien, comme lorsqu'on essaye d'apprendre la propret&eacute; &agrave; un jeune chiot&nbsp;:</p>
+    <p>&mdash; Nous sommes tous tr&egrave;s heureux que tu aies beaucoup lu mais je crois que tu as lu un peu vite et un peu de travers. [...] <span class="page">(pp.&nbsp;53-54)</span></p>
+  </blockquote>
+  <p class="recit">... Et les autres lyc&eacute;ens pouffent...</p>
+
+  <p class="recit">L&eacute;a comprend qu'il la prend &laquo;&nbsp;pour une imb&eacute;cile pr&eacute;tentieuse&nbsp;&raquo; (p.&nbsp;54).</p>
+  <blockquote>
+    <p>Ce jour-l&agrave;, elle d&eacute;cida de ne plus intervenir [...]. Ces yeux mi-clos, cette bouche entrouverte lui donnaient un air somnolent que ses professeurs prenaient pour de la stupidit&eacute; et rapidement, ils ne lui demand&egrave;rent plus rien du tout. <span class="page">(p.&nbsp;54)</span></p>
+  </blockquote>
+
+  <p class="recit">Dans ce contexte, ses parents esp&egrave;rent que, &laquo;&nbsp;<em>malgr&eacute; ses limitations intellectuelles</em>&nbsp;&raquo;, elle pourra un jour &laquo;&nbsp;<em>les aider dans la gestion</em>&nbsp;&raquo; de l'entreprise familiale (p.&nbsp;54). Si l'&eacute;cole parle, c'est que l'&eacute;cole sait... et les parents... suivent.</p>
+
+  <p class="recit"><span class="ch">Ch. 6</span>&Agrave; l'universit&eacute;, en physique, un retournement va signer son retour au monde du vivant. Pour la premi&egrave;re fois, &laquo;&nbsp;tout &eacute;tait &agrave; sa place&nbsp;&raquo; (p.&nbsp;55).</p>
+
+  <p class="recit">M. Aharon Lewinsky, vieux professeur, ancien assistant de Roger Penrose, la rep&egrave;re &agrave; la fin d'un cours.</p>
+  <blockquote>
+    <p>&mdash; Mademoiselle, je sens que vous avez quelque chose [...]. J'ai besoin d'esprits jeunes pour dialoguer de temps &agrave; autre, vous seriez d'accord&nbsp;?</p>
+    <p>D'abord, L&eacute;a se m&eacute;fia. <span class="page">(p.&nbsp;56)</span></p>
+  </blockquote>
+
+  <p class="recit">Depuis ses douze ans, elle conna&icirc;t les &laquo;&nbsp;<em>sacs-poubelles</em>&nbsp;&raquo;, dont ceux qui &laquo;&nbsp;<em>profitaient d'une position hi&eacute;rarchique pour tenter d'obtenir un bout de son corps</em>&nbsp;&raquo; (p.&nbsp;56). D'autant que Lewinsky lui donne rendez-vous dans son bureau, en fin de journ&eacute;e, &laquo;&nbsp;<em>&agrave; une heure o&ugrave; l'universit&eacute; &eacute;tait presque vide</em>&nbsp;&raquo; (p.&nbsp;56). L&agrave;, il lui demande si elle conna&icirc;t la gravit&eacute; quantique &agrave; boucles. &Agrave; 14 ans, elle avait &eacute;crit un article sur Matve&iuml; Bronstein, physicien sovi&eacute;tique fusill&eacute; en 1938, son &laquo;&nbsp;<em>premier amour</em>&nbsp;&raquo;.</p>
+
+  <p class="recit">Il lui propose de creuser la question, avec lui.</p>
+  <blockquote>
+    <p>[...] Il y a beaucoup de potentiel l&agrave;-dedans, je le sens. Mais il faudrait un regard comme le v&ocirc;tre, jeune, neuf, brillant... Je crois que tous les deux nous pourrions apporter quelque chose &agrave; cette histoire, qu'en pensez-vous&nbsp;? <span class="page">(p.&nbsp;61)</span></p>
+  </blockquote>
+
+  <p class="recit"><span class="ch">Ch. 7</span>L&eacute;a accepte.</p>
+  <blockquote>
+    <p>Ce qui s'&eacute;tait pass&eacute; n'avait pas agi sur son ego, ce qui s'&eacute;tait pass&eacute; avait agi sur le trou qu'elle avait au milieu du c&oelig;ur depuis la r&eacute;cr&eacute;ation maudite de ses six ans.</p>
+    <p>Pour la premi&egrave;re fois, quelqu'un avait senti <em>qui</em> elle &eacute;tait [...] <span class="page">(p.&nbsp;63)</span></p>
+  </blockquote>
+  <blockquote>
+    <p>[...] ses professeurs comprenaient ses questions, [...] et l'accompagnaient dans ses hypoth&egrave;ses sans aucune forme de jugement. <span class="page">(p.&nbsp;55)</span></p>
+  </blockquote>
+
+  <p class="conclusion">L'isolement, depuis lors, n'est plus de m&ecirc;me nature. Il est choisi et non plus subi, partag&eacute; et productif, reconnu et utile&nbsp;; en un mot, reli&eacute;.</p>
+
+  <div class="envoi">
+    <h2>Des micro-violences aux micro-attentions.</h2>
+    <p>Il n'y a qu'un pas que les institutions doivent apprendre &agrave; distinguer... et s'organiser pour pouvoir les prot&eacute;ger... D&egrave;s lors, les formations pourront s'y employer... et les &eacute;valuations, contr&ocirc;ler. Entre-temps, c'est le hasard des rencontres... et le discours des survivants, ceux qui en reviennent et, de temps &agrave; autre, racontent... Pour que la peur change de camp, que la brutalit&eacute; soit contenue, et que l'institution sache se prot&eacute;ger d'elle-m&ecirc;me autant que prot&eacute;ger ce.lles.ux pour qui elle - et qu'ils/elles l'ont - s'est construite.</p>
+  </div>
+
+</div>
+</section>
+
+<div class="retour-site">
+  <a href="quiz.html">&larr; Retour au quiz</a>
+  <a href="/">Retour au site</a>
+</div>
+
+</body>
+</html>
