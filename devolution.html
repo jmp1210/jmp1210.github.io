@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dévolution et accessibilité — Jean-Michel Perez</title>
+<meta name="description" content="La dévolution d'un problème n'est pas de la micro-violence : quand empêcher sert à l'accessibilité. Jean-Michel Perez.">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://jean-michel-perez.fr/devolution.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blanc: #f5f0eb;
+  --gris-clair: rgba(245,240,235,0.55);
+  --rouge: #c41e1e;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', serif; -webkit-font-smoothing: antialiased; }
+
+/* NAV */
+.bandeau { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,18,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,240,235,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 56px; }
+.bandeau nav { display: flex; gap: 1.8rem; }
+.bandeau nav a { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blanc); text-decoration: none; transition: var(--transition); }
+.bandeau nav a:hover { color: var(--rouge); }
+.bandeau-id { text-align: right; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blanc); }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.62rem; color: var(--gris-clair); letter-spacing: 0.04em; max-width: 320px; }
+
+/* TEXTE */
+#levier { padding: 6.5rem 2rem 3rem; }
+.texte { max-width: 760px; margin: 0 auto; }
+.surtitre { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(196,30,30,0.85); margin-bottom: 1.2rem; display: block; }
+h1 { font-family: 'EB Garamond', serif; font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 400; line-height: 1.2; color: #fff; margin-bottom: 1.4rem; }
+.chapeau { font-size: clamp(1.25rem, 2.4vw, 1.5rem); font-style: italic; line-height: 1.55; color: var(--blanc); margin-bottom: 1.6rem; }
+.auteurs { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; color: var(--blanc); margin-bottom: 0.5rem; }
+.reference { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); line-height: 1.6; padding-bottom: 2.2rem; margin-bottom: 2.4rem; border-bottom: 1px solid rgba(245,240,235,0.12); }
+.recit { font-size: clamp(1.15rem, 2.2vw, 1.3rem); line-height: 1.6; margin-bottom: 1.2rem; }
+.recit .ch { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(196,30,30,0.85); margin-right: 0.4rem; }
+blockquote { margin: 0 0 2.2rem 1.4rem; padding: 0.2rem 0 0.2rem 1.3rem; border-left: 2px solid rgba(196,30,30,0.6); font-size: clamp(1.1rem, 2.1vw, 1.25rem); font-style: italic; line-height: 1.6; color: #fff; }
+blockquote p { margin-bottom: 0.35rem; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote em { font-style: normal; }
+blockquote .page { font-family: 'Inter', sans-serif; font-style: normal; font-size: 0.75rem; color: var(--gris-clair); margin-left: 0.3rem; }
+.commentaire { font-size: clamp(1.1rem, 2.1vw, 1.25rem); line-height: 1.6; color: var(--blanc); margin: 0 0 2.2rem; padding: 1rem 1.3rem; background: rgba(245,240,235,0.04); border-left: 2px solid rgba(245,240,235,0.25); }
+.envoi { margin-top: 3rem; padding-top: 2.2rem; border-top: 1px solid rgba(245,240,235,0.12); }
+.envoi h2 { font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 400; font-style: italic; color: #fff; margin-bottom: 1rem; }
+.envoi p { font-size: clamp(1.2rem, 2.4vw, 1.45rem); font-style: italic; line-height: 1.6; color: var(--blanc); }
+.conclusion { font-size: clamp(1.3rem, 2.6vw, 1.6rem); font-style: italic; line-height: 1.5; color: #fff; margin: 2.6rem 0 0; padding-top: 2rem; border-top: 1px solid rgba(245,240,235,0.12); }
+
+.retour-site { text-align: center; padding: 3rem 2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.retour-site a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--blanc); text-decoration: underline; letter-spacing: 0.04em; }
+
+@media (max-width: 768px) {
+  .bandeau { padding: 0 1rem; }
+  .bandeau nav { gap: 1rem; }
+  .bandeau-sous { display: none; }
+  #levier { padding: 5.5rem 1rem 2rem; }
+  blockquote { margin-left: 0.4rem; padding-left: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/#entree">Enqu&ecirc;te</a>
+    <a href="/#mediation">M&eacute;diation</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<section id="levier">
+<div class="texte">
+
+  <span class="surtitre">Un levier pour prot&eacute;ger l'&eacute;cole</span>
+  <h1>La d&eacute;volution d'un probl&egrave;me n'est pas de la micro-violence&nbsp;: quand emp&ecirc;cher sert &agrave; l'accessibilit&eacute;.</h1>
+  <p class="auteurs"><em>Jean-Michel Perez, 09-2026</em></p>
+  <p class="reference">Assude, T., Perez, J.-M., Tambone, J. et V&eacute;rillon, A. (2011). Apprentissage du nombre et &eacute;l&egrave;ves &agrave; besoins &eacute;ducatifs particuliers. <em>&Eacute;ducation &amp; Didactique</em>, 5(2), 65-84.<br>
+  Assude, T., Perez, J.-M. et Tambone, J. (2012). Adaptation des gestes professionnels&nbsp;: questionnement &agrave; partir des math&eacute;matiques enseign&eacute;es. <em>La nouvelle revue de l'adaptation et de la scolarisation</em>, 57, 131-138.</p>
+
+  <p class="recit">L&eacute;a a &eacute;t&eacute; emp&ecirc;ch&eacute;e. Ses questions, sa sinc&eacute;rit&eacute;, sa place dans la classe... Ses professeurs &laquo;&nbsp;<em>ne lui demand&egrave;rent plus rien du tout</em>&nbsp;&raquo; (Gunzig, 2026, p.&nbsp;54).</p>
+  <p class="recit">Un enseignant peut aussi emp&ecirc;cher. Et ouvrir, par ce geste m&ecirc;me, l'acc&egrave;s au savoir.</p>
+
+  <p class="recit">La situation &laquo;&nbsp;Voitures et garages&nbsp;&raquo;, con&ccedil;ue par Brousseau au COREM, a &eacute;t&eacute; reprise dans nos travaux sur l'apprentissage du nombre en CLIS (Assude et al., 2011). L'&eacute;l&egrave;ve doit produire une collection de voitures qui compte autant d'&eacute;l&eacute;ments que la collection de garages.</p>
+  <p class="recit"><span class="ch">1</span>Garages et voitures sont proches. La correspondance terme &agrave; terme suffit.</p>
+  <p class="recit"><span class="ch">2</span>Les deux collections sont &eacute;loign&eacute;es. Il faut compter les garages, garder le nombre en m&eacute;moire, aller chercher les voitures.</p>
+  <p class="recit"><span class="ch">3</span>L'&eacute;loignement est dans le temps. Il faut une trace du nombre.</p>
+
+  <p class="recit">L'&eacute;loignement emp&ecirc;che la correspondance terme &agrave; terme. C'est lui qui rend le nombre n&eacute;cessaire, comme m&eacute;moire de la quantit&eacute;.</p>
+  <blockquote>
+    <p>En emp&ecirc;chant les &eacute;l&egrave;ves d'utiliser cette technique, l'enseignante pose un probl&egrave;me aux &eacute;l&egrave;ves dont la r&eacute;solution permettra non seulement d'acqu&eacute;rir les &eacute;l&eacute;ments de savoir vis&eacute;s mais aussi de mettre en &oelig;uvre des techniques pour d&eacute;nombrer les &eacute;l&eacute;ments d'une collection donn&eacute;e. <span class="page">(Assude et al., 2011)</span></p>
+  </blockquote>
+
+  <p class="recit">La d&eacute;volution est l&agrave;&nbsp;: &laquo;&nbsp;<em>faire en sorte que l'&eacute;l&egrave;ve prenne la responsabilit&eacute; de jouer &agrave; la premi&egrave;re personne</em>&nbsp;&raquo; (Assude, Perez et Tambone, 2012, p.&nbsp;135).</p>
+  <p class="recit">Le crit&egrave;re tient en quelques mots&nbsp;: l'enjeu de savoir. Simplifier pour aider peut faire jouer un autre jeu.</p>
+  <blockquote>
+    <p>[...] les gestes de simplification des consignes ne sont pas en soi une aide pour les &eacute;l&egrave;ves car ils peuvent amener &agrave; jouer un autre jeu que celui qui &eacute;tait pr&eacute;vu. <span class="page">(Assude, Perez et Tambone, 2012, p.&nbsp;137)</span></p>
+  </blockquote>
+
+  <p class="recit">Deux gestes, un m&ecirc;me verbe.</p>
+  <p class="recit">Emp&ecirc;cher une technique&nbsp;: le probl&egrave;me est donn&eacute; &agrave; l'&eacute;l&egrave;ve, le savoir devient n&eacute;cessaire.</p>
+  <p class="recit">Emp&ecirc;cher une &eacute;l&egrave;ve de questionner&nbsp;: on ne lui demande plus rien.</p>
+
+  <p class="conclusion">C'est cette diff&eacute;rence que les institutions doivent apprendre &agrave; distinguer...</p>
+
+</div>
+</section>
+
+<div class="retour-site">
+  <a href="levier.html">&larr; Des micro-violences aux micro-attentions</a>
+  <a href="quiz.html">Retour au quiz</a>
+  <a href="/">Retour au site</a>
+</div>
+
+</body>
+</html>
