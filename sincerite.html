@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&laquo; L'injustice de ne pas avoir &eacute;t&eacute; reconnue dans sa sinc&eacute;rit&eacute; &raquo; — Jean-Michel Perez</title>
+<meta name="description" content="Une catégorie émergente de micro-violences : la parole sincère reçue comme insolence, mensonge ou tricherie. Souvenirs du corpus et témoignages oraux.">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://jean-michel-perez.fr/sincerite.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blanc: #f5f0eb;
+  --gris-clair: rgba(245,240,235,0.55);
+  --rouge: #c41e1e;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', serif; -webkit-font-smoothing: antialiased; }
+
+/* NAV */
+.bandeau { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,18,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,240,235,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 56px; }
+.bandeau nav { display: flex; gap: 1.8rem; }
+.bandeau nav a { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blanc); text-decoration: none; transition: var(--transition); }
+.bandeau nav a:hover { color: var(--rouge); }
+.bandeau-id { text-align: right; }
+.bandeau-nom { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blanc); }
+.bandeau-sous { font-family: 'Inter', sans-serif; font-size: 0.62rem; color: var(--gris-clair); letter-spacing: 0.04em; max-width: 320px; }
+
+/* TEXTE */
+#sincerite { padding: 6.5rem 2rem 3rem; }
+.texte { max-width: 760px; margin: 0 auto; }
+.surtitre { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(196,30,30,0.85); margin-bottom: 1.2rem; display: block; }
+h1 { font-family: 'EB Garamond', serif; font-size: clamp(1.9rem, 4.2vw, 2.8rem); font-weight: 400; font-style: italic; line-height: 1.25; color: #fff; margin-bottom: 1.4rem; }
+.chapeau { font-size: clamp(1.25rem, 2.4vw, 1.5rem); font-style: italic; line-height: 1.55; color: var(--blanc); margin-bottom: 1.6rem; }
+.reference { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gris-clair); line-height: 1.6; padding-bottom: 2.2rem; margin-bottom: 2.4rem; border-bottom: 1px solid rgba(245,240,235,0.12); }
+.reference a { color: var(--gris-clair); }
+.recit { font-size: clamp(1.15rem, 2.2vw, 1.3rem); line-height: 1.6; margin-bottom: 1.2rem; }
+.commentaire { font-size: clamp(1.1rem, 2.1vw, 1.25rem); line-height: 1.6; color: var(--blanc); margin: 2.4rem 0 2.2rem; padding: 1rem 1.3rem; background: rgba(245,240,235,0.04); border-left: 2px solid rgba(245,240,235,0.25); }
+.envoi { margin-top: 3rem; padding-top: 2.2rem; border-top: 1px solid rgba(245,240,235,0.12); }
+.envoi h2 { font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 400; font-style: italic; color: #fff; margin-bottom: 1rem; }
+.envoi p { font-size: clamp(1.2rem, 2.4vw, 1.45rem); font-style: italic; line-height: 1.6; color: var(--blanc); }
+
+/* SOUVENIRS */
+article { margin-bottom: 2.2rem; padding-left: 1.2rem; border-left: 2px solid rgba(196,30,30,0.55); }
+article.oral { border-left-color: rgba(245,240,235,0.55); }
+.meta { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; color: var(--gris-clair); margin-bottom: 0.45rem; }
+article p { font-size: clamp(1.1rem, 2.1vw, 1.25rem); line-height: 1.65; font-style: italic; }
+mark { background: rgba(196,30,30,0.28); color: inherit; padding: 0 0.12em; }
+.note { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-style: normal; color: var(--gris-clair); display: block; margin-top: 0.5rem; }
+
+.retour-site { text-align: center; padding: 3rem 2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.retour-site a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--blanc); text-decoration: underline; letter-spacing: 0.04em; }
+
+@media (max-width: 768px) {
+  .bandeau { padding: 0 1rem; }
+  .bandeau nav { gap: 1rem; }
+  .bandeau-sous { display: none; }
+  #sincerite { padding: 5.5rem 1rem 2rem; }
+  article { padding-left: 0.9rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/#entree">Enqu&ecirc;te</a>
+    <a href="/#mediation">M&eacute;diation</a>
+  </nav>
+  <div class="bandeau-id">
+    <div class="bandeau-nom">Jean-Michel Perez</div>
+    <div class="bandeau-sous">Professeur des Universit&eacute;s &middot; Sciences de l'&eacute;ducation et de la formation &middot; Universit&eacute; de Lorraine</div>
+  </div>
+</header>
+
+<section id="sincerite">
+<div class="texte">
+
+  <span class="surtitre">Micro-violences &middot; une cat&eacute;gorie &eacute;mergente</span>
+  <h1>&laquo;&nbsp;L'injustice de ne pas avoir &eacute;t&eacute; reconnue dans sa sinc&eacute;rit&eacute;&nbsp;&raquo;</h1>
+  <p class="chapeau">La parole &eacute;tait sinc&egrave;re - une question pour comprendre, un &laquo;&nbsp;ce n'est pas moi&nbsp;&raquo;, un devoir o&ugrave; l'on a mis tout son c&oelig;ur. Elle est re&ccedil;ue comme une insolence, un mensonge, une tricherie. Le geste ne juge pas ce qui est dit&nbsp;: il fait un proc&egrave;s d'intention &agrave; celle ou celui qui parle.</p>
+  <p class="reference">Cat&eacute;gorie d&eacute;gag&eacute;e du corpus des souvenirs scolaires de l'enqu&ecirc;te &laquo;&nbsp;2 souvenirs&nbsp;&raquo;. Rep&eacute;rage lexical&nbsp;: accus&eacute;&middot;e d'avoir copi&eacute; ou trich&eacute;, &laquo;&nbsp;il ne m'a pas cru&nbsp;&raquo;, &laquo;&nbsp;menteuse&nbsp;&raquo;, accus&eacute;&middot;e &agrave; tort. La cat&eacute;gorie continue de s'&eacute;crire&nbsp;: les deux derniers r&eacute;cits sont arriv&eacute;s en septembre 2026. Sur le versant litt&eacute;raire de la m&ecirc;me exp&eacute;rience&nbsp;: <a href="levier.html">Des micro-violences aux micro-attentions</a> (Gunzig, <em>Spectres</em>, 2026).</p>
+
+  <article class="oral">
+    <div class="meta">1. Femme, &eacute;tudiante &middot; t&eacute;moignage oral (extraits)</div>
+    <p>&laquo;&nbsp;J'&eacute;tais tr&egrave;s curieuse. Et j'avais envie de poser beaucoup de questions. [...] C'&eacute;tait m&ecirc;me pour comprendre. C'&eacute;tait essentiel pour moi. [...] Il m'a envoy&eacute;e jouer &agrave; faire des constructions d'atomes dans le fond. [...] <mark>Mes questions, pour moi, elles &eacute;taient sinc&egrave;res</mark> [...]. <mark>C'est comme si on me refusait l'acc&egrave;s. Et comme si on me reconnaissait pas dans ma sinc&eacute;rit&eacute;.</mark> [...] Apr&egrave;s, j'ai plus os&eacute; demander.&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">2. Femme, 30 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;&Agrave; 5ans j'ai &eacute;t&eacute; victime de harc&egrave;lement scolaire. Le gar&ccedil;on en question avait le double mon &acirc;ge et senfermait souvent dans les toilettes avec moi, me r&eacute;clamant des bisous et des cadeaux. Cette situation s'est enfin arr&ecirc;t&eacute;e quand j'ai pris une montre de mon p&egrave;re pour lui offrir. Ma m&egrave;re s'est rendu compte qu'il y avait un probl&egrave;me et en a parl&eacute; &agrave; la directrice. Celle-ci m'a confront&eacute;e devant le gar&ccedil;on en question qui a tout ni&eacute; en pleurant et <mark>m'appelant menteuse</mark>... La directrice nous a grond&eacute; tous les deux et nous a envoy&eacute; &agrave; la recr&eacute;e, sans cons&eacute;quences pour le gar&ccedil;on. J'ai beaucoup pleur&eacute; ce jour l&agrave;.&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">3. Femme, 47 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;[...] une prof de fran&ccedil;ais qui <mark>m'a accus&eacute;e d'avoir copi&eacute; mon devoir dans un guide touristique, j'y avais mis tout mon coeur</mark>. [...]&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">4. Femme, 22 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;J'ai eu la grande chance de ne jamais avoir v&eacute;cu de situations tr&egrave;s difficiles lors de mon parcours scolaire. J'ai cependant &eacute;t&eacute; une fois <mark>accus&eacute;e &agrave; tort</mark>, par un gar&ccedil;on de ma classe durant l'ann&eacute;e de 4&egrave;me, d'agression &agrave; caract&egrave;re sexuel (je lui aurais toucher les fesses pendant un cours de sport). Ce qui m'a profond&eacute;ment affect&eacute; &eacute;tait la r&eacute;action du CPE et sa gestion de l'affaire car <mark>pour lui j'&eacute;tais coupable</mark> et j'avais vraiment fait ce dont l'&eacute;l&egrave;ve m'accusait. J'ai &eacute;t&eacute; convoqu&eacute; de mani&egrave;re syst&eacute;matique dans son bureau durant une semaine afin "d'avouer ce que j'avais fait" car selon le CPE, "c'est important d'avouer". Suite &agrave; un appel avec ma m&egrave;re, le CPE a dit qu'il en resterait l&agrave; et qu'il partait du principe que je n'avais rien fait mais j'ai tout de m&ecirc;me &eacute;t&eacute; choqu&eacute;e de cet acharnement qui pourrait &ecirc;tre l&eacute;gitime si l'accusation en elle-m&ecirc;me et le t&eacute;moignage "tenaient la route" et &eacute;taient coh&eacute;rents, ce qui n'&eacute;tait pas le cas.&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">5. Femme, 21 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;En 1&egrave;re, ma professeure d'allemand m'avait <mark>accus&eacute;e injustement d'avoir trich&eacute;</mark> &agrave; une interro.&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">6. Femme, 35 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;En CE2 un maitre rempla&ccedil;ant m'a accus&eacute; d'avoir perdu la feuille de travail qu'il avait distribu&eacute;. Je lui ai dit que j'&eacute;tais absente ce jour l&agrave;, et que je n'avais pas la feuille. <mark>Il ne m'a pas cru.</mark> Il m'a fait me lever (les pupitres &eacute;taient accroch&eacute;s aux chaises), puis il a vid&eacute; purement et simplement sans mon autorisation le contenu de mon sac et de mon casier devant toute la classe. En disant que c'&eacute;tait impossible que je ne l'ai pas. Il ne l'a pas trouv&eacute;. <mark>J'avais raison. Il ne s'est pas excus&eacute; apr&egrave;s avoir constat&eacute; son erreur.</mark>&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">7. Femme, 54 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;En CE1, j'&eacute;tais sur l'estrade, et mon enseignante en tirant sur mes tresses, m'a trait&eacute;e de dinde. Une autre fois cette m&ecirc;me enseignante, <mark>a dit devant toute la classe que j'avais copi&eacute; ce qui n'&eacute;tait absolument pas vrai</mark>. Elle a m&ecirc;me demand&eacute; &agrave; ma voisine de mettre un classeur lors des &eacute;valuations. En 5i&eacute;me, devant toute la classe, en. anglais en r&eacute;citant ma le&ccedil;on, mon professeur m'a dit que je ne r&eacute;ussirai jamais.&nbsp;&raquo;</p>
+  </article>
+
+  <article>
+    <div class="meta">8. Femme, 56 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;Le souvenir qui me vient spontan&eacute;ment &agrave; l'esprit n'a pas &eacute;t&eacute; agr&eacute;able [...]. Je suis en classe de seconde du Lyc&eacute;e [nom] et la professeure de fran&ccedil;ais s'appr&ecirc;te &agrave; nous rendre notre premi&egrave;re dissertation de l'ann&eacute;e. Celle-ci <mark>m'invective devant toute la classe en me disant que j'ai trich&eacute;, que ce n'est pas moi qui ait &eacute;crit ce devoir, mais certainement mes parents</mark>. Mon p&egrave;re est venu la rencontrer quelques jours plus tard pour lui expliquer que j'avais r&eacute;dig&eacute; [...]&nbsp;&raquo;<span class="note">Ce qui rend ensuite ce souvenir agr&eacute;able&nbsp;: son p&egrave;re, venu la d&eacute;fendre.</span></p>
+  </article>
+
+  <article>
+    <div class="meta">9. Femme, 22 ans &middot; souvenir n&eacute;gatif (questionnaire)</div>
+    <p>&laquo;&nbsp;J'&eacute;tais au lyc&eacute;e et je faisais Italien. J'ai suivi les m&ecirc;mes &eacute;coles que mes fr&egrave;res et s&oelig;urs donc forc&eacute;ment si l'un deux avait une mauvaise exp&eacute;rience avec un enseignant, dans la majeure partie des cas l'enseignant avait d&eacute;j&agrave; des aprioris/jugements sur moi ce qui m'a valu nombreuses comparaisons et nombreuses mauvaises exp&eacute;riences. J'ai de nombreux exemples mais le dernier se passe au lyc&eacute;e, j'ai une prof d'Italien qui n'aimait pas ma s&oelig;ur et donc moi non plus. Un jour, elle a d&eacute;cid&eacute; de m'interroger devant tout le monde sur un contr&ocirc;le datant de plusieurs semaines en me demandant les r&eacute;ponses &agrave; l'oral afin de v&eacute;rifier que je n'avais pas trich&eacute;, elle a attendu ma premi&egrave;re erreur apr&egrave;s plusieurs questions <mark>pour m'accuser de tricherie</mark> et me rabaisser.&nbsp;&raquo;</p>
+  </article>
+
+  <p class="commentaire">Dans chacun de ces r&eacute;cits, ce n'est pas la parole qui est examin&eacute;e, c'est la personne qui est disqualifi&eacute;e&nbsp;: trop jeune, trop curieuse, s&oelig;ur de, fille de. Et ce que le syst&egrave;me produit alors se dit en une phrase&nbsp;: &laquo;&nbsp;Apr&egrave;s, j'ai plus os&eacute; demander.&nbsp;&raquo; L'isolement - &agrave; soi et aux autres - commence l&agrave;, et ces souvenirs tiennent, intacts, quarante ans plus tard.</p>
+
+  <article class="oral">
+    <div class="meta">10. Femme, &eacute;tudiante en master &middot; t&eacute;moignage oral, septembre 2026 (scolarit&eacute; en Belgique)</div>
+    <p>&laquo;&nbsp;Je suis all&eacute;e finir le secondaire dans la partie germanophone - ce n'est pas du tout ma langue. Comme je ne parlais pas la langue, on avait d&eacute;j&agrave; des attentes de moi beaucoup plus basses. [...] Apr&egrave;s le rendu d'un travail <mark>dont j'&eacute;tais tr&egrave;s fi&egrave;re, qui &eacute;tait fait par moi-m&ecirc;me, le professeur m'a quand m&ecirc;me suspect&eacute;e d'avoir trich&eacute;</mark>. Il n'a pas pu avoir aucune preuve, parce qu'il n'y en avait pas. [...] Je me suis dit&nbsp;: est-ce que je vais devoir rendre des choses qui sont moins &agrave; la hauteur de ce dont je pense que je suis capable&nbsp;? [...] La discussion &eacute;tait informelle&nbsp;: "on sait tous que ce n'est pas vrai, allez, on passe &agrave; autre chose". <mark>Mais moi je ne voulais pas passer &agrave; autre chose, parce que je me sentais injustifi&eacute;e dans ce moment-l&agrave;.</mark>&nbsp;&raquo;</p>
+    <p class="note">Ce qui lui a &eacute;t&eacute; r&eacute;pondu, s&eacute;ance tenante&nbsp;: &laquo;&nbsp;Au nom du syst&egrave;me auquel je n'ai pas d'appartenance, je vous pr&eacute;sente mes excuses. Et moi, je vous crois - et je suis s&ucirc;r que nous, on vous croit aussi.&nbsp;&raquo; Le versant micro-attention, en acte.</p>
+  </article>
+
+  <article>
+    <div class="meta">11. Femme, 31 ans &middot; souvenir n&eacute;gatif (questionnaire, septembre 2026 - scolarit&eacute; au Togo)</div>
+    <p>&laquo;&nbsp;J'&eacute;tais interess&eacute;e par la po&eacute;sie, je voulais devenir po&egrave;te et plus tard &eacute;crivaine. J'&eacute;crivais des vers d'amour et <mark>le montrais sans gene a mon professeur de fran&ccedil;ais pour qu'il me les corrige et m'aide a affiner ma plume</mark>. Ce dernier derange par ce que j'&eacute;crit m'a convoqu&eacute; en reunion pour <mark>me demander de qui j'&eacute;tais amoureuse</mark> et si c'est cela [...] qui font que mes notes scolaires ont bais&eacute;. J'&eacute;tais en classe de 4&egrave;me. <mark>Je ne me rappel plus avoir encore &eacute;crit de vers apr&egrave;s ce jour</mark> et depuis, j'ai peur de reprendre mon envie de devenir &eacute;crivaine et de confier mes &eacute;crits a autruit.&nbsp;&raquo;</p>
+    <p class="note">La confiance sinc&egrave;re - montrer ses vers pour &laquo;&nbsp;affiner sa plume&nbsp;&raquo; - re&ccedil;ue comme une faute &agrave; instruire.</p>
+  </article>
+
+  <div class="envoi">
+    <h2>Le versant micro-attention&nbsp;: &ecirc;tre cru&middot;e.</h2>
+    <p>Un p&egrave;re qui vient d&eacute;fendre sa fille aupr&egrave;s de la professeure de fran&ccedil;ais. Un professeur qui accueille la question au lieu de la juger&nbsp;: &laquo;&nbsp;Pour la premi&egrave;re fois, quelqu'un avait senti <em>qui</em> elle &eacute;tait&nbsp;&raquo; (Gunzig, 2026, p.&nbsp;63). La m&ecirc;me sc&egrave;ne, retourn&eacute;e&nbsp;: reconna&icirc;tre la sinc&eacute;rit&eacute;, c'est rendre l'acc&egrave;s.</p>
+  </div>
+
+</div>
+</section>
+
+<div class="retour-site">
+  <a href="levier.html">&larr; Des micro-violences aux micro-attentions (Gunzig, <em>Spectres</em>)</a>
+  <a href="micro-violences.html">Les micro-violences</a>
+  <a href="/">Retour au site</a>
+</div>
+
+</body>
+</html>
