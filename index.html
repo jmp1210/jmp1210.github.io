@@ -284,7 +284,9 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 .quad-txt { padding: 0.9rem 1.2rem 1.05rem; }
 .quad-tag { font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.12em; color: #fff; opacity: 0.75; margin-bottom: 0.4rem; display: block; }
 .quad-title { font-family: 'EB Garamond', serif; font-size: 1.08rem; color: var(--blanc); line-height: 1.35; display: block; }
-@media (max-width: 700px) { .quad-grid { grid-template-columns: 1fr; } }
+.quad-grid.quad-3 { grid-template-columns: repeat(3, 1fr); max-width: 1180px; }
+@media (max-width: 1000px) { .quad-grid.quad-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .quad-grid, .quad-grid.quad-3 { grid-template-columns: 1fr; } }
 .mv-q { font-family: 'EB Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-style: italic; color: var(--blanc); margin: 0 0 0.8rem; }
 .mv-r { font-family: 'EB Garamond', serif; font-size: clamp(1rem, 1.8vw, 1.3rem); font-style: italic; color: #fff; margin: 0; }
 
@@ -673,13 +675,27 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
 <!-- ═══ CADRAGE — Micro-violences et Maltraitance ═══ -->
 <div class="mv-intro">
   <p class="mv-q">Recherche en espace public&nbsp;:<br>Les micro-violences &eacute;ducatives. De quoi parle-t-on&nbsp;?</p>
-  <!-- Carre 2x2 (demande JMP 06/09/2026) : rangee The Conversation, rangee Unys - articles a gauche, videos a droite -->
-  <div class="quad-grid">
+  <!-- Grille 2 colonnes (demande JMP 06/09/2026) : 3 colonnes (20/11/2026) : The Conversation, Unys, ULTV - en haut ecrit/son, en bas videos -->
+  <div class="quad-grid quad-3">
     <a class="quad-card" href="https://theconversation.com/les-micro-violences-educatives-ordinaires-un-impense-de-linstitution-scolaire-253794" target="_blank" rel="noopener">
       <div class="quad-media"><img src="tc_article_img.jpg" alt="Les micro-violences &agrave; l&rsquo;&eacute;cole &mdash; article The Conversation"></div>
       <div class="quad-txt">
         <span class="quad-tag">L&rsquo;article &middot; The Conversation France &middot; 8 nov. 2025</span>
         <span class="quad-title">Les micro-violences &agrave; l&rsquo;&eacute;cole&nbsp;: ces petites phrases et ces gestes banalis&eacute;s qui d&eacute;truisent</span>
+      </div>
+    </a>
+    <a class="quad-card" href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves/" target="_blank" rel="noopener">
+      <div class="quad-media"><img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/Couv_JeanMichelPerez.png" alt="UNYS Sciences &mdash; Micro-violences &eacute;ducatives"></div>
+      <div class="quad-txt">
+        <span class="quad-tag">L&rsquo;article &middot; Unys Sciences &middot; mars 2026</span>
+        <span class="quad-title">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</span>
+      </div>
+    </a>
+    <a class="quad-card" href="https://ultv.univ-lorraine.fr/video/25099-podcast-14-dheure-avec-jean-michel-perez-enseignant-chercheur-du-laboratoire-lisec-de-luniversite-de-lorraine/" target="_blank" rel="noopener">
+      <div class="quad-media"><img src="https://ultv.univ-lorraine.fr/media/cache/12/76/12765495d15abde67b92da29fc644ec5.jpg" alt="Podcast 1/4 d&rsquo;heure avec Jean-Michel Perez &mdash; ULTV"><div class="quad-play">▶</div></div>
+      <div class="quad-txt">
+        <span class="quad-tag">Le podcast &middot; Universit&eacute; de Lorraine &middot; 16 nov. 2026</span>
+        <span class="quad-title">1/4 d&rsquo;heure avec Jean-Michel Perez</span>
       </div>
     </a>
     <div class="quad-card" style="cursor:pointer">
@@ -692,18 +708,18 @@ body { background: #0d1b2a; color: var(--blanc); font-family: 'EB Garamond', Geo
         <span class="quad-title">Les micro-violences &agrave; l&rsquo;&eacute;cole &mdash; la vid&eacute;o</span>
       </div>
     </div>
-    <a class="quad-card" href="https://www.unys-sciences.fr/micro-violences-educatives-quels-sont-leurs-impacts-sur-lavenir-des-eleves/" target="_blank" rel="noopener">
-      <div class="quad-media"><img src="https://www.unys-sciences.fr/wp-content/uploads/2026/02/Couv_JeanMichelPerez.png" alt="UNYS Sciences &mdash; Micro-violences &eacute;ducatives"></div>
-      <div class="quad-txt">
-        <span class="quad-tag">L&rsquo;article &middot; Unys Sciences &middot; mars 2026</span>
-        <span class="quad-title">Micro-violences &eacute;ducatives&nbsp;: quels sont leurs impacts sur l&rsquo;avenir des &eacute;l&egrave;ves&nbsp;?</span>
-      </div>
-    </a>
     <a class="quad-card" href="https://www.linkedin.com/posts/recherche-aezducation-aezcole-ugcPost-7501211928157921282-JET1/" target="_blank" rel="noopener">
       <div class="quad-media"><img src="unys_capsule_img.jpg" alt="Capsule Unys Sciences &mdash; les micro-violences &eacute;ducatives"><div class="quad-play">▶</div></div>
       <div class="quad-txt">
         <span class="quad-tag">La capsule vid&eacute;o &middot; Unys Sciences &middot; 3 sept. 2026</span>
         <span class="quad-title">Les micro-violences &eacute;ducatives et les micro-attentions</span>
+      </div>
+    </a>
+    <a class="quad-card" href="https://ultv.univ-lorraine.fr/video/25098-que-recherchons-nous-5-des-micro-violences-aux-micro-attentions-enquete-en-milieu-educatif-avec-jean-michel-perez/" target="_blank" rel="noopener">
+      <div class="quad-media"><img src="https://ultv.univ-lorraine.fr/media/cache/fc/73/fc73439220c2c4a00e9cf3a3a25aa707.jpg" alt="Que recherchons-nous ? 5 &mdash; ULTV"><div class="quad-play">▶</div></div>
+      <div class="quad-txt">
+        <span class="quad-tag">La vid&eacute;o &middot; Universit&eacute; de Lorraine &middot; 16 nov. 2026</span>
+        <span class="quad-title">Que recherchons-nous&nbsp;? Des micro-violences aux micro-attentions&nbsp;: enqu&ecirc;te en milieu &eacute;ducatif</span>
       </div>
     </a>
   </div>
